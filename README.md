@@ -17,6 +17,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Rafael Contarini Ferreira Barbosa
 * Suelen Larissa Alvares Marchito
 * Thiago Campos Brandao Mol
+* Maria Eduarda Suzart De Carvalho
 
 
 ## Orientador
