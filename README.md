@@ -10,7 +10,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Luiz Antônio
+* Luiz Antônio Braga de Oliveira
 * Maria Eduarda da Silva Batista
 * Paolla Souza Arantes de Medeiros
 * Nicolas Souza Di Lascio
