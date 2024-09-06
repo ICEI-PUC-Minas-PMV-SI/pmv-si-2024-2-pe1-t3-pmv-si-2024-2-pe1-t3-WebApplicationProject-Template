@@ -1,20 +1,19 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+No mercado financeiro atual, onde as mudanças acontecem a uma velocidade sem precedentes, a capacidade de acessar e interpretar informações de forma eficaz é essencial para o sucesso dos investidores. Com uma vasta quantidade de dados financeiros sendo gerados diariamente, a necessidade de filtrar, entender e reagir rapidamente a essas informações tornou-se um desafio central para qualquer investidor, independentemente do seu nível de experiência.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+Apesar da abundância de informações disponíveis, muitos investidores enfrentam dificuldades significativas em gerenciar essa sobrecarga informacional. A constante necessidade de estar atualizado, somada à complexidade das notícias, muitas vezes repletas de jargões técnicos, pode levar a uma tomada de decisão apressada e mal fundamentada. Isso não só impacta negativamente os resultados, mas também consome tempo valioso que poderia ser dedicado à análise estratégica e ao planejamento de investimentos.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
-
+O FinanceHub foi criado para enfrentar esses desafios diretamente. Nosso objetivo é desenvolver uma plataforma que centralize e simplifique o acesso a notícias financeiras, organizando-as de maneira clara e acessível. Para investidores iniciantes, o FinanceHub fornecerá uma base educacional sólida, ajudando-os a compreender conceitos fundamentais e a identificar oportunidades de forma segura. Para os investidores mais experientes, a plataforma oferecerá uma visão abrangente e detalhada das informações mais relevantes, facilitando decisões informadas e estratégicas. Com o FinanceHub, buscamos capacitar investidores em todos os níveis, reduzindo a sobrecarga informacional e promovendo uma tomada de decisão mais eficaz e confiante.
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+ -- Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+O mercado financeiro é inundado diariamente por uma quantidade massiva de informações, que podem facilmente sobrecarregar investidores de todos os níveis. Essa avalanche de dados, muitas vezes complexos e repletos de jargões técnicos, torna difícil para os investidores filtrar o que é realmente relevante, levando a decisões apressadas e mal fundamentadas. Esse problema de sobrecarga informacional não só consome tempo valioso, mas também aumenta o risco de erros que podem comprometer os resultados financeiros. O FinanceHub foi desenvolvido para resolver essa questão, oferecendo uma solução que centraliza e organiza as notícias financeiras mais importantes, tornando-as acessíveis e fáceis de entender, permitindo que os investidores tomem decisões mais informadas e estratégicas.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+O FinanceHub é uma ferramenta versátil que pode ser utilizada tanto em ambientes corporativos quanto na vida pessoal de investidores. Em empresas financeiras, ele facilita a análise de mercado e a tomada de decisões estratégicas ao centralizar e organizar informações essenciais. Para investidores individuais, a plataforma simplifica o acompanhamento do mercado, auxiliando na tomada de decisões mais seguras e informadas. Além disso, pode ser aplicado em contextos educacionais, ajudando estudantes a compreender melhor as notícias financeiras e a se prepararem para o mercado.
+
+ -- Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
