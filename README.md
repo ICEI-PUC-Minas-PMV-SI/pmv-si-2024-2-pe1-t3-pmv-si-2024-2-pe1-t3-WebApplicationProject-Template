@@ -1,4 +1,4 @@
-# Título do Projeto
+# FinanceHub - Solução de Agregação de Notícias Financeiras: Atendendo às Demandas dos Investidores e Reduzindo a Sobrecarga Informacional
 
 `CURSO: Sistemas de Informação`
 
