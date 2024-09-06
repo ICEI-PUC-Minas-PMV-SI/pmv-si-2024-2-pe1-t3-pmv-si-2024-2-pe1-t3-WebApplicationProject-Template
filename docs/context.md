@@ -9,16 +9,10 @@ O FinanceHub foi criado para enfrentar esses desafios diretamente. Nosso objetiv
 
  -- Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
 
-O mercado financeiro é inundado diariamente por uma quantidade massiva de informações, que podem facilmente sobrecarregar investidores de todos os níveis. Essa avalanche de dados, muitas vezes complexos e repletos de jargões técnicos, torna difícil para os investidores filtrar o que é realmente relevante, levando a decisões apressadas e mal fundamentadas. Esse problema de sobrecarga informacional não só consome tempo valioso, mas também aumenta o risco de erros que podem comprometer os resultados financeiros. O FinanceHub foi desenvolvido para resolver essa questão, oferecendo uma solução que centraliza e organiza as notícias financeiras mais importantes, tornando-as acessíveis e fáceis de entender, permitindo que os investidores tomem decisões mais informadas e estratégicas.
+O mercado financeiro é inundado diariamente por uma quantidade massiva de informações, que podem facilmente sobrecarregar investidores de todos os níveis. Essa avalanche de dados, muitas vezes complexos e repletos de jargões técnicos, torna difícil para os investidores filtrar o que é realmente relevante, levando a decisões apressadas e mal fundamentadas. Esse problema de sobrecarga informacional não só consome tempo valioso, mas também aumenta o risco de erros que podem comprometer os resultados financeiros. 
 
-O FinanceHub é uma ferramenta versátil que pode ser utilizada tanto em ambientes corporativos quanto na vida pessoal de investidores. Em empresas financeiras, ele facilita a análise de mercado e a tomada de decisões estratégicas ao centralizar e organizar informações essenciais. Para investidores individuais, a plataforma simplifica o acompanhamento do mercado, auxiliando na tomada de decisões mais seguras e informadas. Além disso, pode ser aplicado em contextos educacionais, ajudando estudantes a compreender melhor as notícias financeiras e a se prepararem para o mercado.
+O FinanceHub é uma ferramenta versátil que pode ser utilizada tanto em ambientes corporativos quanto na vida pessoal de investidores. Em empresas financeiras, facilitando a análise de mercado e a tomada de decisões estratégicas ao centralizar e organizar informações essenciais. Para investidores individuais, a plataforma simplifica o acompanhamento do mercado, auxiliando na tomada de decisões mais seguras e informadas. Além disso, pode ser aplicado em contextos educacionais, ajudando estudantes a compreender melhor as notícias financeiras e a se prepararem para o mercado.
 
- -- Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
@@ -33,6 +27,7 @@ O estudo de McKinsey & Company intitulado “The Big Data Revolution in Financia
 
 ## Público-Alvo
 
+O FinanceHub foi desenvolvido para resolver diversas questões, oferecendo uma solução que centraliza e organiza as notícias financeiras mais importantes, tornando-as acessíveis e fáceis de entender, permitindo que os investidores, ou não investidores, tomem decisões mais informadas e estratégicas para seu futuro.
 Investidores Individuais: Iniciantes e experientes que precisam de informações claras e detalhadas.
 Profissionais de Finanças: Analistas e gestores que necessitam de dados atualizados e análises.
 Empresas Financeiras: Bancos, corretoras e gestoras que buscam otimizar o monitoramento e a análise do mercado.
