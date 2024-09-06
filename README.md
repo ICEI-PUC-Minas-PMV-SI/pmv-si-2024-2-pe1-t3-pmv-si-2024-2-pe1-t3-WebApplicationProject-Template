@@ -8,19 +8,19 @@
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido:
 
-```python
 **GreenCycle**
 Projeto para desenvolvimento de software que apresenta pontos mais próximos de coleta de materiais recicláveis específicos, como pilhas, eletrônicos, remédios, além dos materiais convencionais como papéis, plásticos, etc.
-```
 
 ## Integrantes
 
+```python
 * Lucas Israel Franca Gontijo
 * Lucas Oue
 * Alexandre Henrique Silveira
 * Rafael Contarini Ferreira Barbosa
 * Suelen Larissa Alvares Marchito
 * Thiago Campos Brandao Mol
+```
 
 ## Orientador
 
