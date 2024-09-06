@@ -22,7 +22,7 @@ Em seu contexto, o objetivo central do FinanceHub é simplificar e otimizar o ac
 ## Justificativa
 
 Trabalhar com o FinanceHub é crucial devido à crescente complexidade e volume de informações financeiras disponíveis. A plataforma atende à necessidade de simplificação e organização de dados, o que permite aos investidores filtrar e entender rapidamente as informações mais relevantes. A importância da plataforma reside em sua capacidade de tornar o processo de investimento mais acessível e eficiente, ajudando tanto investidores individuais quanto profissionais a gerenciar melhor seus recursos e estratégias. 
-O estudo de McKinsey & Company intitulado “The Big Data Revolution in Financial Services”, aborda como falhas na interpretação de dados financeiros podem levar a perdas significativas. Segundo o relatório, decisões baseadas em informações incorretas ou mal interpretadas podem resultar em perdas de até 10% nos investimentos, destacando a importância de ferramentas que garantam a precisão e clareza das informações financeiras. Utilizando a plataforma ideal, esse risco tem uma queda significativa. 
+Um estudo de McKinsey & Company intitulado “The Big Data Revolution in Financial Services”, aborda como falhas na interpretação de dados financeiros podem levar a perdas significativas. Segundo o relatório, decisões baseadas em informações incorretas ou mal interpretadas podem resultar em perdas de até 10% nos investimentos, destacando a importância de ferramentas que garantam a precisão e clareza das informações financeiras. Utilizando a plataforma ideal, esse risco tem uma queda significativa. 
 
 
 ## Público-Alvo
