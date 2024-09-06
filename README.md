@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto FinanceHub visa desenvolver uma aplicação que centralize e forneça notícias essenciais para investidores, independentemente do seu nível de experiência. Para os investidores iniciantes, a plataforma oferecerá conteúdos claros e educativos, auxiliando na compreensão dos conceitos fundamentais e na identificação de novas oportunidades. Para os investidores mais experientes, o FinanceHub proporcionará uma visão abrangente das notícias mais relevantes, facilitando a tomada de decisões informadas e eficazes. A ferramenta será equipada com uma API financeira projetada para oferecer acesso rápido e fácil a uma vasta gama de dados financeiros, incluindo notícias em tempo real, análises de mercado e identificação de entidades de destaque. Ao consolidar informações de diversas fontes confiáveis e apresentá-las de maneira organizada e acessível, o FinanceHub capacitará investidores e profissionais do mercado financeiro a tomar decisões estratégicas com maior confiança e precisão.
 
 ## Integrantes
 
