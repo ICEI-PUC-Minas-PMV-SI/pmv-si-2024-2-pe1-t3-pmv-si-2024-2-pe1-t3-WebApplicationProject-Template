@@ -21,7 +21,7 @@ O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta inf
 |Analista                  | Relatórios detalhados e atualizações em tempo real | Fornecer recomendações precisas                        |
 
  - Investidor Individual:
- - "Como um investidor que segue várias fontes de notícias financeiras, quero consolidar todas as informações em um único lugar, para que eu possa acompanhar as atualizações mais recentes sem ter que visitar diversos sites."
+"Como um investidor que segue várias fontes de notícias financeiras, quero consolidar todas as informações em um único lugar, para que eu possa acompanhar as atualizações mais recentes sem ter que visitar diversos sites."
    
 Critérios de Aceitação:
 
@@ -30,7 +30,7 @@ Critérios de Aceitação:
 > O usuário pode ser capaz de personalizar suas fontes e tópicos de interesse para filtrar as notícias que mais lhe interessam.
 
  - Gestor de Fundos:
- - "Como um gestor de fundos, preciso gerar relatórios detalhados sobre as tendências do mercado e o desempenho dos investimentos, para que eu possa apresentar análises precisas e recomendação de estratégias para os meus clientes."
+"Como um gestor de fundos, preciso gerar relatórios detalhados sobre as tendências do mercado e o desempenho dos investimentos, para que eu possa apresentar análises precisas e recomendação de estratégias para os meus clientes."
 
 Critérios de Aceitação:
 > A plataforma oferece ferramentas para criar e personalizar relatórios financeiros com gráficos, tabelas e análises detalhadas.
