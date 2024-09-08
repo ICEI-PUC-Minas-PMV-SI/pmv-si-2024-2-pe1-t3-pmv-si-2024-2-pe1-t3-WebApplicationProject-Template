@@ -6,7 +6,7 @@
 
 `SEMESTRE: 2º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido:
+<!--- Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido: --->
 
 **GreenCycle**
 Projeto para desenvolvimento de software que apresenta pontos mais próximos de coleta de materiais recicláveis específicos, como pilhas, eletrônicos, remédios, além dos materiais convencionais como papéis, plásticos, etc.
@@ -42,4 +42,6 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation/GreenCycle Slides v.1.2.pdf"> Apresentação da solução</a></li>
+<li><a href="presentation/GreenCycle Doc v.1.2.pdf"> Documento do Trabalho</a></li>
+<li><a href="presentation/README.md"> Arquivo de Exemplo</a></li>
