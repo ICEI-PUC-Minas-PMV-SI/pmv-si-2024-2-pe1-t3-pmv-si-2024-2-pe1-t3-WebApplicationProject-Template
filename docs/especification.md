@@ -47,16 +47,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+|Cadastro| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA |  
+|Autorização| O sistema deve processar o login do usuário em alguns segundos, assim como a troca de senha e recuperação de login| MÉDIA | 
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|Genrenciamento de tarefa| O usuário deve ser capaz de criar novas tarefas, excluir tarefas, poder editar informações e filtrar e classificar suas tarefas por data, prioridade e status | ALTA | 
+|Relatório| O sistema deve permitir o usuário de: Marcar uma terefa como concluída, atribuir categorias para tarefas, reverter uma tarefa de concluída para pendente |  MÉDIA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
