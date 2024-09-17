@@ -6,7 +6,7 @@ O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta inf
 
 ## Personas
 
- -  Iniciante: Busca aprender sobre investimentos e precisa de informações educacionais e simples.
+ - Iniciante: Busca aprender sobre investimentos e precisa de informações educacionais e simples.
  - Investidor Experiente: Deseja análises detalhadas e atualizações rápidas para tomar decisões estratégicas.
  - Profissional de Finanças: Requer dados precisos e ferramentas para análise aprofundada.
  - Profissional de Empresas Financeiras: Necessita de integrações e relatórios para otimizar operações e aconselhamentos.
@@ -17,8 +17,11 @@ O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta inf
 
 |  COMO                    |     QUERO/PRECISO                                  |     PARA                                               |
 |--------------------------|--------------------------------------------------- |------------------------------------------------------- |
-|Investidor Iniciante      | Receber notícias financeiras simplificadas         | Entender melhor os conceitos e identificar oportunidade|
-|Analista                  | Relatórios detalhados e atualizações em tempo real | Fornecer recomendações precisas                        |
+|Investidor Iniciante      | Receber notícias e análises simples de rendimentos | Investir pelas primeira vez em renda fixa e variável   |
+|Profissional de Finanças  | Relatórios detalhados e atualizações em tempo real | Enviar os próprios reports para os clientes da carteira|
+|Investidor Experiente     | Análises contábeis, balancetes e relatórios        | Analisar resultados para escolher novos investimentos  |
+|Profissional de empresas  | Relatórios detalhados e atualizações em tempo real | Tomar decisões de investimentos da sua carteira        |
+|Estudante                 | Receber notícias e estudos                         | Utilizar o material como fonte de pesquisa             |
 
  - Investidor Individual:
 "Como um investidor que segue várias fontes de notícias financeiras, quero consolidar todas as informações em um único lugar, para que eu possa acompanhar as atualizações mais recentes sem ter que visitar diversos sites."
@@ -47,8 +50,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|Cadastro| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA |  
-|Autorização| O sistema deve processar o login do usuário em alguns segundos, assim como a troca de senha e recuperação de login| MÉDIA | 
+|RF-001| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA |  
+|| O sistema deve processar o login do usuário em alguns segundos, assim como a troca de senha e recuperação de login| MÉDIA | 
 
 
 ### Requisitos não Funcionais
