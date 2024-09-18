@@ -50,31 +50,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA |  
-|| O sistema deve processar o login do usuário em alguns segundos, assim como a troca de senha e recuperação de login| MÉDIA | 
-
+|RF-001| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA | 
+|RF-002| Efetuar a troca de senha do usuário| MÉDIA |
+|RF-003| Cadastro de notícias, Análises financeiras, Relatórios e Balancetes | ALTA|
+|RF-004| Cadastro de Tipos de Usuários| MÉDIA|
+|RF-005| List de notícias, análises financeiras, relatórios e Balancetes com filtro do usuário| MÉDIA|
+|RF-006| Asset de notícias, análises financeiras, relatórios e balancetes| MÉDIA
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|Genrenciamento de tarefa| O usuário deve ser capaz de criar novas tarefas, excluir tarefas, poder editar informações e filtrar e classificar suas tarefas por data, prioridade e status | ALTA | 
-|Relatório| O sistema deve permitir o usuário de: Marcar uma terefa como concluída, atribuir categorias para tarefas, reverter uma tarefa de concluída para pendente |  MÉDIA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RN-001| Aplicação responsiva para rodar em celulares, tablets, e desktops| ALTA | 
+|RN-002| O sistema dever ser utilizando utilizando HTML, CSS e JavaScript |  MÉDIA |
+|RN-003| Ao utlizar a aplicação os dados devem ser salvos em localStorage | BAIXA|
 
 ## Restrições
 
@@ -84,10 +73,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|03| O Projeto não pode ser usado com nenhuma biblioteca, como React, Vue.js ou Angular|
