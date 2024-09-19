@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenCycle | Homepage </title>
-  <link rel="style" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<!-- Cabeçalho -->
+    <!-- Cabeçalho -->
     <header>
-      <div class="header-container">
-          <div class="logo">
-              <img src="../docs/img/GreenCycleLogo.png" alt="Logo GreenCycle">
-              <span>GreenCycle®</span>
-          </div>
-          <nav>
-              <ul>
-                  <li><a href="#" class="active">Início</a></li>
-                  <li><a href="#">Regulamentação & ODS</a></li>
-                  <li><a href="#">Educacional</a></li>
-                  <li><a href="#">Acessibilidade</a></li>
-              </ul>
-          </nav>
-          <div class="auth-buttons">
-              <a href="#" class="login">LOGIN</a>
-              <a href="#" class="register">Cadastre-se</a>
-          </div>
-      </div>
-  </header>
-<footer>
-<!-- Rodapé -->
-</footer>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    GreenCycle
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <!-- Dropdown de Acessibilidade -->
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /> English</a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /> Español</a></li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /> Português</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Adicione aqui o conteúdo principal da página -->
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

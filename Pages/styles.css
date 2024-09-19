@@ -1,0 +1,239 @@
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para o Cabeçalho e Navbar */
+header {
+  background-color: #589c68;
+  padding: 15px 0; /* Aumentado para ajustar o cabeçalho mais grosso */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-image {
+  width: 60px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-list li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.navbar .nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-list a:hover,
+.navbar .nav-list .active {
+  background-color: #218838;
+  border-radius: 5px;
+}
+
+/* Estilos para o menu dropdown de Acessibilidade */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.dropdown-menu {
+  display: none; /* Oculta o menu por padrão */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #589c68; /* Cor de fundo verde */
+  min-width: 200px; /* Ajuste a largura conforme necessário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+}
+
+/* Mostrar o menu quando o botão está focado */
+.dropdown:focus-within .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos para o dropdown de Alterar Linguagem */
+.language-selector {
+  position: relative;
+}
+
+.language-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language-toggle .flag-icon {
+  width: 32px; /* Ajuste o tamanho conforme necessário */
+  height: 32px;
+  border-radius: 50%; /* Se preferir que as bandeiras apareçam como círculos */
+  object-fit: cover; /* Garante que a imagem não fique deformada */
+}
+
+.language-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Cor de fundo para o dropdown */
+  padding: 10px 0;
+  z-index: 1000; /* Garante que o dropdown fique acima de outros elementos */
+  list-style: none;
+}
+
+.language-dropdown li {
+  padding: 5px 10px;
+}
+
+.language-dropdown li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Cor do texto */
+}
+
+.language-dropdown li a .flag-icon {
+  width: 30px; /* Ajuste o tamanho conforme necessário */
+  height: 14px;
+  margin-right: 8px; /* Espaço entre a bandeira e o texto */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.language-selector:hover .language-dropdown {
+  display: block;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Empurra o rodapé para baixo */
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .footer-links li {
+  margin: 0 10px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      background-color: #28a745;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+  }
+
+  .nav-list li {
+      margin: 0;
+      text-align: center;
+  }
+
+  .nav-list a {
+      padding: 15px 0;
+      border-top: 1px solid #218838;
+  }
+
+  .navbar .menu-toggle[aria-expanded="true"] + .nav-list {
+      display: flex;
+  }
+
+  .dropdown-menu {
+      position: static;
+  }
+
+  .dropdown:hover .dropdown-menu {
+      display: none;
+  }
+}
