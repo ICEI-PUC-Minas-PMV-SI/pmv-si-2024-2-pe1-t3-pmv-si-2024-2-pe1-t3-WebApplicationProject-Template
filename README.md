@@ -11,10 +11,15 @@ O presente projeto visa desenvolver um sistema web para facilitar descarte de ma
 ## Integrantes
 
 *Alexandre Henrique Silveira*
+
 *Lucas Israel Franca Gontijo*
+
 *Lucas Oue*
+
 *Rafael Contarini Ferreira Barbosa*
+
 *Suelen Larissa Alvares Marchito*
+
 *Thiago Campos Brandao Mol*
 
 
