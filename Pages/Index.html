@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
-                    GreenCycle
+                    <span class="logo-text">GreenCycle</span>
                 </a>
             </div>
             <!-- Menu -->
@@ -25,6 +25,18 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
+                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /></a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /></a>
+                            </li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
+                        </ul>
+                    </li>
                     <!-- Dropdown de Acessibilidade -->
                     <li class="dropdown">
                         <button class="dropdown-toggle">Acessibilidade</button>
@@ -35,18 +47,14 @@
                             <li><a href="#">Lupa</a></li>
                         </ul>
                     </li>
-
-                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
-                    <li class="language-selector">
-                        <button class="language-toggle">
-                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
-                        </button>
-                        <ul class="language-dropdown">
-                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /> English</a></li>
-                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /> Español</a></li>
-                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /> Português</a></li>
-                        </ul>
-                    </li>
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="encontre no site">
+                            <input class="form-control me-2" type="search" placeholder="Procure no site" aria-label="Search">
+                            <button class="btn-procurar" type="submit">Procurar</button>
+                          </form>
+                        </div>
+                      </nav>
                 </ul>
             </div>
         </nav>
