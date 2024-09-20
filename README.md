@@ -30,7 +30,7 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 | Etapa         | Atividades |
 |      :----:   | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) |
+| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) <br> [Entregável 1 parte escrita](Presentation/01. Eixo 01 - Etapa 01 - GreenCycle Doc v.1.2.pdf) |
 | ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
 | ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
 | ETAPA 4        |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
