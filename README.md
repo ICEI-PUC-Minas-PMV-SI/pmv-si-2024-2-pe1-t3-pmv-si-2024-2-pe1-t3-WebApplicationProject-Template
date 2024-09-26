@@ -30,7 +30,7 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 | Etapa         | Atividades |
 |      :----:   | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) <br> [Entregável 1 - Parte Escrita](Presentation/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Doc%20v.1.2.pdf) <br> [Entregável 2 - Apresentação](Presentation/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Slides%20v.1.2.pdf) |
+| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) <br> [Entregável 1 - Parte Escrita](docs/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Doc%20v.1.2.pdf) <br> [Entregável 2 - Apresentação](Presentation/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Slides%20v.1.2.pdf) |
 | ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
 | ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
 | ETAPA 4        |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
