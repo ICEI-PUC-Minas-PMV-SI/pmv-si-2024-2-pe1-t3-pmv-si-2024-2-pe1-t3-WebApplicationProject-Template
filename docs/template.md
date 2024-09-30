@@ -7,19 +7,29 @@ As guias serão utilizadas para realizar o cadastro de usuário, fazer login, re
 ## Design
 
 Layouts:
+
 Layout Home Page; 
+
 Layout de Login; 
+
 Layout de Cadastro Usuário; 
+
 Layout de Recuperar Senha; 
+
 Layout Meu perfil; 
+
 Layout Cadastro - Tipo de Notícia; 
+
 Layout - Cadastro de Notícias; 
+
 Layout Cadastro - Tipo de Investidor; 
 
 Logo:
+
 Logo será colocada na parte superior da Home Page
 
 Menus:
+
 Os menus padrões terão o mesmo design e layout.
 
 ## Cores
@@ -27,9 +37,13 @@ Os menus padrões terão o mesmo design e layout.
 Paleta de cores principal:
 
 Primária: #121221 (Azul Escuro)
+
 Secundária: #F8F8F8 (Branco
+
 Background (Plano de fundo): #FFFFFF (Branco)
+
 Texto principal: #444444 (Cinza Médio)
+
 Texto secundário (local da notícia): #949494 (Cinza Claro)
 
 2.3 Cores de links e botões:
@@ -42,28 +56,42 @@ Botão Primário: #444444 (Cinza)
 Fontes principais:
 
 Título (Heading Font): Roboto, bold
+
 Texto do corpo (Body Font): Playfair Display, regular
+
 Texto da imagem da notícia principal: Playfair Display, regular
+
 Título secundário: Roboto, bold
+
 Subtítulo: Playfair Display, bold
+
 Texto do corpo - Local da notícia: Roboto, Regular
+
 Texto de Copyright: Playfair Display, bold
 
 
 Tamanhos de fontes:
 
 H1 (Título Principal): 48px
+
 H2 (Texto do corpo): 36px
+
 H3 (Texto na imagem da notícia principal): 32px
+
 H4 (Título secundário): 36px
+
 H5 (Subtítulos - notícias): 24 px
+
 H6 (Texto do corpo): 12px
+
 H7 (Texto ao final da página): 16px
+
 Parágrafo (Texto Normal): 18px
 
 Estilos de fontes:
 
 Negrito (Bold): Utilizado para dar ênfase em títulos e chamadas importantes.
+
 Itálico: Utilizado para citações ou para dar destaque sutil.
 
 Espaçamento entre linhas:
