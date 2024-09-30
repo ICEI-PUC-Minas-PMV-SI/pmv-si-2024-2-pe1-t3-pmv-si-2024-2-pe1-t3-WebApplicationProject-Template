@@ -38,7 +38,7 @@ Paleta de cores principal:
 
 Primária: #121221 (Azul Escuro)
 
-Secundária: #F8F8F8 (Branco
+Secundária: #F8F8F8 (Branco)
 
 Background (Plano de fundo): #FFFFFF (Branco)
 
@@ -46,7 +46,7 @@ Texto principal: #444444 (Cinza Médio)
 
 Texto secundário (local da notícia): #949494 (Cinza Claro)
 
-2.3 Cores de links e botões:
+Cores de links e botões:
 
 Botão Primário: #444444 (Cinza)
 
