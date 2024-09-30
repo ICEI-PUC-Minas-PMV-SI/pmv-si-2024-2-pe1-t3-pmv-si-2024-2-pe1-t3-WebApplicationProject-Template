@@ -8,14 +8,14 @@ As guias serão utilizadas para realizar o cadastro de usuário, fazer login, re
 
 Layouts:
 
-Layout Home Page
-Layout de Login
-Layout de Cadastro Usuário
-Layout de Recuperar Senha
-Layout Meu perfil
-Layout Cadastro - Tipo de Notícia
-Layout - Cadastro de Notícias
-Layout Cadastro - Tipo de Investidor
+Layout Home Page; 
+Layout de Login; 
+Layout de Cadastro Usuário; 
+Layout de Recuperar Senha; 
+Layout Meu perfil; 
+Layout Cadastro - Tipo de Notícia; 
+Layout - Cadastro de Notícias; 
+Layout Cadastro - Tipo de Investidor; 
 
 Logo:
 Logo será colocada na parte superior da Home Page
