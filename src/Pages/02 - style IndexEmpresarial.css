@@ -266,3 +266,91 @@ footer .footer-links a:hover {
   border: none !important;
   background: none !important;
 }
+
+
+/* Contêiner do Mapa e Sidebar */
+.map-container {
+  display: flex; /* Usar flexbox para disposição lado a lado */
+  height: calc(100vh - 200px); /* Ajusta a altura do contêiner */
+  padding: 20px;
+}
+
+/* Mapa */
+#map {
+  flex: 3; /* Largura do mapa */
+  height: 100%; /* Altura total do contêiner */
+  margin-right: 20px; /* Espaçamento à direita do mapa */
+}
+
+.sidebar {
+  background-color: #589c68; /* Altere para a mesma cor da barra de cima */
+  color: white; /* Texto branco */
+  padding: 20px; /* Espaçamento interno */
+  width: 300px; /* Largura da sidebar */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.sidebar h2 {
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-size: 1.5em; /* Tamanho do título */
+}
+
+.sidebar p {
+  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+}
+
+.sidebar button {
+  background-color: #4CAF50; /* Verde claro para os botões */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.sidebar button:hover {
+  background-color: #45a049; /* Verde mais claro ao passar o mouse */
+}
+
+.filter-container {
+  margin-bottom: 20px; /* Espaçamento abaixo da seção de filtro */
+}
+
+.filter-container div {
+  margin-bottom: 10px; /* Espaçamento entre as opções de filtro */
+}
+
+.filter-container input[type="checkbox"] {
+  margin-right: 10px; /* Espaçamento à direita dos checkboxes */
+}
+
+/* Adicionando a linha horizontal */
+.sidebar hr {
+  border: 1px solid #6A8E6A; /* Cor da linha horizontal */
+  margin: 15px 0; /* Margens acima e abaixo da linha */
+}
+
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #589c68; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.login-button svg {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenCycle | Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="01 - styles.css">
 </head>
 
 <body>
@@ -21,10 +21,11 @@
             <!-- Menu -->
             <div class="menu-container">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="01- Index.html">Home</a></li>
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Login</a></li> 
                     <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
@@ -47,14 +48,13 @@
                             <li><a href="#">Lupa</a></li>
                         </ul>
                     </li>
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container-fluid">
-                          <form class="d-flex" role="encontre no site">
-                            <input class="form-control me-2" type="search" placeholder="Procure no site" aria-label="Search">
-                            <button class="btn-procurar" type="submit">Procurar</button>
-                          </form>
-                        </div>
-                      </nav>
+                    <button class="login-button">
+                        <!-- Ícone SVG do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        Login
+                    </button>
                 </ul>
             </div>
         </nav>
@@ -62,8 +62,26 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <!-- Adicione aqui o conteúdo principal da página -->
+        <div class="map-container">
+            <h2>Encontre o ponto de coleta de material reciclável mais próximo de você:</h2>
+            <div class="filter-container">
+                <label for="material-filter">Filtro por tipo de material:</label>
+                <select id="material-filter">
+                    <option value="">Selecione o material</option>
+                    <option value="pilhas">Pilhas</option>
+                    <option value="baterias">Baterias</option>
+                    <option value="lampadas fluorescentes">Lâmpadas Fluorescentes</option>
+                </select>
+            </div>      
+            <img src="../images/Google Maps.jpg" alt="Mapa de Coleta" id="map" style="width: 100%; height: auto; max-height: 900px; border: 1px solid #ccc;"/> 
+        </div>
     </main>
+    
+    <!-- 
+    <script src="00 -Map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap">
+    </script>-->
 
     <!-- Rodapé -->
     <footer>
