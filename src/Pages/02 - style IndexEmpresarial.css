@@ -337,7 +337,7 @@ footer .footer-links a:hover {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #589c68; /* Cor do botão */
+  background-color: #589c68; 
   color: white;
   text-decoration: none;
   border: none;
