@@ -7,7 +7,6 @@ As guias serão utilizadas para realizar o cadastro de usuário, fazer login, re
 ## Design
 
 Layouts:
-
 Layout Home Page; 
 Layout de Login; 
 Layout de Cadastro Usuário; 
