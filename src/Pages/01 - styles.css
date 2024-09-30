@@ -275,7 +275,7 @@ footer .footer-links a:hover {
 /* Altura do mapa */
 #map {
   height: calc(100vh - 200px); /* Calcula a altura total da tela menos a altura do cabeçalho e do rodapé */
-  width: 100%; /* Largura total */
+  width: 100%; 
   margin-top: 54px; 
 }
 
