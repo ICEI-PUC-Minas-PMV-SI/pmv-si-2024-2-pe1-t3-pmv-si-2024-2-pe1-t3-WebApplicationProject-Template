@@ -25,7 +25,7 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <!-- Dropdown de Alterar Linguagem -->
                     <li class="language-selector">
                         <button class="language-toggle">
                             <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
@@ -37,7 +37,7 @@
                             <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown de Acessibilidade -->
+                    <!-- Dropdown da Acessibilidade -->
                     <li class="dropdown">
                         <button class="dropdown-toggle">Acessibilidade</button>
                         <ul class="dropdown-menu">
@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <button class="login-button">
-                        <!-- Ícone SVG do usuário -->
+                        <!-- Login do usuário -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-person" viewBox="0 0 16 16">
                             <path
@@ -64,7 +64,12 @@
     <!-- Conteúdo principal -->
     <main>
         <div class="map-container">
-            <img src="../images/Google Maps.jpg" alt="Mapa de Coleta" id="map" style="width: 100%; height: auto; max-height: 700px; border: 1px solid #ccc;"/> <!--Modificar Na Etapa 04-->
+            <!--Tirar essa parte para etapa 4 e importar a key da .env
+            <script src="00 -Map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=MY_KEY_HERE_&callback=initMap">
+                </script>-->
+            <img src="../images/Google Maps.jpg" alt="Mapa de Coleta" id="map" style="width: 100%; height: auto; max-height: 700px; border: 1px solid #ccc;"/> <!--Pintar esta linha na Etapa 04-->
             <div id="map"></div>
             <div class="sidebar">
                 <div class="credits">
