@@ -266,3 +266,41 @@ footer .footer-links a:hover {
   border: none !important;
   background: none !important;
 }
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 10px; /* Espaçamento ao redor do contêiner */
+}
+
+/* Altura do mapa */
+#map {
+  height: calc(100vh - 200px); /* Calcula a altura total da tela menos a altura do cabeçalho e do rodapé */
+  width: 100%; 
+  margin-top: 54px; 
+}
+
+.filter-container {
+  margin-bottom: 15px; /* Espaçamento abaixo do filtro */
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #589c68; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.login-button svg {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}

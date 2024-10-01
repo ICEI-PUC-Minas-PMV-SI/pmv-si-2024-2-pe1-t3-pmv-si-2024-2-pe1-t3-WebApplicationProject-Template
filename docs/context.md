@@ -1,8 +1,8 @@
 # Introdução
 
-O presente projeto visa desenvolver uma plataforma digital voltada para o descarte consciente de materiais não convencionais, como eletrônicos, resíduos perigosos e materiais recicláveis de difícil manejo. O objetivo é oferecer uma solução acessível e eficiente para que indivíduos e empresas possam descartar esses materiais de maneira segura e sustentável, em conformidade com regulamentações ambientais vigentes.
+Observa-se que o crescimento acelerado da produção e consumo, especialmente de produtos eletrônicos e materiais de difícil manejo, tem contribuído significativamente para o aumento do volume de resíduos no meio ambiente. Esse cenário torna ainda mais urgente a busca por soluções inovadoras e sustentáveis para lidar com o descarte desses materiais, que frequentemente representam riscos à saúde humana e ao ecossistema.
 
-Com o aumento do consumo de produtos tecnológicos e a crescente preocupação com o impacto ambiental, torna-se cada vez mais importante facilitar o descarte correto desses itens. A plataforma busca atender a essa demanda, conectando usuários a pontos de coleta especializados, fornecendo informações atualizadas sobre as melhores práticas de descarte e promovendo uma cultura de responsabilidade ambiental no cotidiano.
+Em resposta a esses desafios, a sociedade tem testemunhado a criação de órgãos de proteção ambiental e o estabelecimento de regulamentações específicas voltadas para a gestão de resíduos. Tais medidas visam minimizar os impactos negativos decorrentes do descarte inadequado e promover uma maior conscientização sobre a importância da responsabilidade ambiental. No entanto, a implementação eficaz dessas regulamentações depende diretamente de iniciativas que facilitem o acesso a informações e serviços adequados para o correto descarte de materiais, evitando a poluição e preservando os recursos naturais.
 
 ## Problema
 
@@ -14,7 +14,7 @@ Há uma necessidade urgente de sistemas que facilitem e orientem o descarte adeq
 
 ### Objetivo Geral
 
-Desenvolver uma plataforma digital para o descarte responsável de materiais não convencionais, facilitando o acesso a informações, pontos de coleta e serviços especializados, com foco na sustentabilidade ambiental e no cumprimento das regulamentações vigentes.
+Desenvolver uma plataforma digital para instruir e unir as partes envolvidas no descarte responsável de materiais não convencionais, facilitando o acesso a informações, pontos de coleta e serviços especializados, com foco na sustentabilidade ambiental e no cumprimento das regulamentações vigentes.
 
 ### Objetivos Específicos
 
