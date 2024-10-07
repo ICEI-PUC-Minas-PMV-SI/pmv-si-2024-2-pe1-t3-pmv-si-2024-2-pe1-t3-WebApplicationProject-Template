@@ -304,3 +304,126 @@ footer .footer-links a:hover {
 .login-button svg {
   margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
+
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 10px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px; /* Espaçamento entre o texto e o botão */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Cor do fundo do toggle */
+  transition: .4s;
+  border-radius: 34px; /* Arredondar as bordas */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Cor do círculo do toggle */
+  transition: .4s;
+  border-radius: 50%; /* Círculo perfeito */
+}
+
+/* O que acontece quando o toggle está ativo */
+input:checked + .slider {
+  background-color: #4CAF50; /* Cor do toggle quando ativado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move o círculo para a direita */
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 20px; /* Espaçamento ao redor do contêiner */
+  background-color: #ffffff; /* Fundo branco para o contêiner do mapa */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+}
+
+/* Estilos para os filtros */
+h2 {
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+#material-filter {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ced4da; /* Borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-bottom: 15px; /* Espaçamento abaixo do seletor */
+}
+
+#filter-button {
+  background-color: #589c68; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+#filter-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para o toggle */
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.toggle-container h2 {
+  margin-right: 10px; /* Espaço entre o texto e o toggle */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilos para o mapa */
+#map {
+  height: calc(100vh - 250px); /* Altura do mapa ajustada */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão "Como Chegar" (se houver) */
+.btn-directions {
+  background-color: #4CAF50; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-directions:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}

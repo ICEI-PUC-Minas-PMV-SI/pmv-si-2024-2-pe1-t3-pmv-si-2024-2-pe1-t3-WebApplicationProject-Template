@@ -64,10 +64,7 @@
     <!-- Conteúdo principal -->
     <main>
         <div class="map-container">
-            <script src="00 -Map.js"></script>
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=MY_KEY_HERE_&callback=initMap">
-                </script>
+
             
             <div id="map"></div>
             <div class="sidebar">
@@ -85,6 +82,7 @@
                         <input type="checkbox" id="material-baterias" name="material" value="baterias">
                         <label for="material-baterias">Lâmpadas Fluorescentes</label>
                     </div>
+                    <button>Atualizar para coletores</button>
                 </div>
 
                 <div class="register">
@@ -94,21 +92,15 @@
 
                 <div class="credits">
                     <h2>Créditos de Carbono</h2>
-                    <p>Inicie seu processo de créditos de carbono inserindo aqui seus dados.</p>
-                    <button>Acessar</button>
-                </div>
-
-                <div class="reports">
-                    <h2>Relatório de Impacto Ambiental</h2>
-                    <ul>
-                        <li>Último relatório gerado 02/05/2024</li>
-                    </ul>
-                    <button>Gerar Novo</button>
-                    <button>Acessar Último </button>
+                    <p>Inicie seu processo de créditos de carbono</p>
                 </div>
             </div>
         </div>
     </main>
+    <script src="01 -Map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap"></script>
+
+</body>
 
     <!-- Rodapé -->
     <footer>
@@ -126,6 +118,4 @@
             </div>
         </div>
     </footer>
-</body>
-
 </html>
