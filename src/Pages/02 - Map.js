@@ -122,7 +122,11 @@ function addEmpresaMarker() {
 
     // InfoWindow para "Minha Empresa"
     const empresaInfoWindow = new google.maps.InfoWindow({
-        content: "<h3>Minha Empresa</h3>",
+        content: `
+            <img src="../Images/empresa.jpg" style="width: 200px; height: auto;">
+            <h3>Minha Empresa</h3>
+        
+        `,
     });
 
     empresaMarker.addListener("click", () => {
