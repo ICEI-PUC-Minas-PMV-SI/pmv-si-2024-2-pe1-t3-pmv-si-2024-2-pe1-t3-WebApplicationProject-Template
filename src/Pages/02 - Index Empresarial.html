@@ -82,18 +82,45 @@
                         <input type="checkbox" id="material-baterias" name="material" value="baterias">
                         <label for="material-baterias">Lâmpadas Fluorescentes</label>
                     </div>
-                    <button>Atualizar para coletores</button>
+                    <button onclick="atualizar()">Atualizar para Coletores</button>
+                    <script>
+
+                        function atualizar() {
+                        
+                        alert("Os coletores e centros de reciclágem já foram avisados!");
+                        
+                        }
+                        
+                        </script>
                 </div>
 
                 <div class="register">
                     <h2>Cadastrar um novo material</h2>
-                    <button>Cadastrar</button>
+                    <button onclick="funcao_n_disponivel()">Cadastrar</button>
+                    <script>
+
+                        function funcao_n_disponivel() {
+                        
+                        alert("Esta função ainda não está disponível");
+                        
+                        }
+                        
+                        </script>
                 </div>
+                
 
                 <div class="credits">
                     <h2>Créditos de Carbono</h2>
-                    <p>Inicie seu processo de créditos de carbono</p>
+                    <button>Inicie seu cadastro</button><br>
+                    <br>
+                    <button>Comprar</button><button>Vender</button>
                 </div>
+
+                <div class="credits">
+                    <h2>Relatórios de Impacto Ambiental</h2>
+                    <button>Gerar Novo</button><button>Acessar Antigos</button>
+                </div>
+            </div>
             </div>
         </div>
     </main>
