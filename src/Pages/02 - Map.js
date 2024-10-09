@@ -5,25 +5,23 @@ let directionsRenderer;
 let markers = [];
 let greenMarkers = [];
 let infoWindows = [];
-const defaultLocation = { lat: -19.9208, lng: -43.9378 }; // Localização padrão se o acesso à geolocalização for negado
+const defaultLocation = { lat: -19.9208, lng: -43.9378 }; // Localização padrão
 
-// Locais de Reciclagem (centros de coleta)
 const locations = [
-  { lat: -19.9408104, lng: -44.0015892, name: "MG Recicla Reciclagem de Lixo Eletrônico", hours: "08:00 - 18:00", phone: "(31) 1234-5678", email: "contato@mgrecicla.com.br", materials: ["lixo hospitalar"] },
-  { lat: -19.9005906, lng: -43.9621804, name: "Reciclar", hours: "08:00 - 17:00", phone: "(31) 1234-5678", email: "contato@reciclar.com.br", materials: ["resíduos de óleo", "lixo tóxico"] },
-  { lat: -19.9431076, lng: -44.0048183, name: "Reciclagem Horizonte BH", hours: "08:00 - 17:00", phone: "(31) 3456-7890", email: "contato@reciclagemhorizonte.com.br", materials: ["baterias elétricas", "lâmpadas fluorescentes"] },
-  { lat: -19.9570892, lng: -44.0349695, name: "BH Recicla Gestão de Resíduos", hours: "08:00 - 18:00", phone: "(31) 4567-8901", email: "contato@bhrecicla.com.br", materials: ["baterias elétricas", "lâmpadas fluorescentes"] },
-  { lat: -19.9719886, lng: -44.018167, name: "Reciclando BH", hours: "08:00 - 17:00", phone: "(31) 5678-9012", email: "contato@reciclandobh.com.br", materials: ["biomateriais", "resíduos de óleo"] },
-  { lat: -19.9762348, lng: -44.0288099, name: "URPV - Unidade de Recebimento de Pequenos Volumes - Átila de Paiva", hours: "08:00 - 17:00", phone: "(31) 6789-0123", email: "contato@urpv.com.br", materials: ["biomateriais", "resíduos de óleo"] },
-  { lat: -19.9749688, lng: -44.0200643, name: "Pev Bhtrans - Barreiro", hours: "08:00 - 18:00", phone: "(31) 7890-1234", email: "contato@pevbhtrans.com.br", materials: ["resíduos de lâmpadas", "resíduos de metal"] },
-  { lat: -19.9227916, lng: -43.9924877, name: "PUC Minas - Coração Eucarístico", hours: "08:00 - 20:00", phone: "(31) 8901-2345", email: "contato@pucminas.br", materials: ["baterias elétricas"] },
-  { lat: -19.9294547, lng: -44.0547162, name: "Coletar Reciclagem de Eletrônicos", hours: "09:00 - 17:00", phone: "(31) 9012-3456", email: "contato@coletarreciclagem.com.br", materials: ["resíduos de plásticos contaminados", "resíduos de embalagem industrial"] },
-  { lat: -19.925871, lng: -43.9527431, name: "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)", hours: "08:00 - 18:00", phone: "(31) 0123-4567", email: "contato@ecopontoemile.com.br", materials: ["lixo industrial", "Celulares", "baterias elétricas", "lâmpadas fluorescentes"] },
-  { lat: -19.9579473, lng: -43.9945943, name: "Reciclagem Tc", hours: "09:00 - 17:00", phone: "(31) 2345-6789", email: "contato@reciclagemtc.com.br", materials: ["resíduos eletrônicos", "baterias elétricas"] },
-  // ... outros locais de reciclagem
+    { lat: -19.9408104, lng: -44.0015892, name: "MG Recicla Reciclagem de Lixo Eletrônico", hours: "08:00 - 18:00", phone: "(31) 1234-5678", email: "contato@mgrecicla.com.br", materials: ["Baterias Elétricas", "Resíduos Eletrônicos", "Metal Comum", "Plástico Comum", "Vidro Comum", "Resíduos de Metal"] },
+    { lat: -19.9005906, lng: -43.9621804, name: "Reciclar", hours: "08:00 - 17:00", phone: "(31) 1234-5678", email: "contato@reciclar.com.br", materials: ["Resíduos de Metal", "Material Radioativo", "Lâmpadas Fluorescentes"] },
+    { lat: -19.9431076, lng: -44.0048183, name: "Reciclagem Horizonte BH", hours: "08:00 - 17:00", phone: "(31) 3456-7890", email: "contato@reciclagemhorizonte.com.br", materials: ["Baterias Elétricas", "Lâmpadas Fluorescentes"] },
+    { lat: -19.9570892, lng: -44.0349695, name: "BH Recicla Gestão de Resíduos", hours: "08:00 - 18:00", phone: "(31) 4567-8901", email: "contato@bhrecicla.com.br", materials: ["Resíduos de Construção", "Baterias Elétricas", "Lâmpadas Fluorescentes"] },
+    { lat: -19.9719886, lng: -44.018167, name: "Reciclando BH", hours: "08:00 - 17:00", phone: "(31) 5678-9012", email: "contato@reciclandobh.com.br", materials: ["Resíduos de Solventes", "Resíduos de óleo", "Resíduos de Farmacos" ]},
+    { lat: -19.9762348, lng: -44.0288099, name: "URPV - Unidade de Recebimento de Pequenos Volumes - Átila de Paiva", hours: "08:00 - 17:00", phone: "(31) 6789-0123", email: "contato@urpv.com.br", materials: ["Resíduos de Solventes", "Resíduos de Óleo"] },
+    { lat: -19.9749688, lng: -44.0200643, name: "Pev Bhtrans - Barreiro", hours: "08:00 - 18:00", phone: "(31) 7890-1234", email: "contato@pevbhtrans.com.br", materials: ["Resíduos de Solventes", "Resíduos de Metal"] },
+    { lat: -19.9227916, lng: -43.9924877, name: "PUC Minas - Coração Eucarístico", hours: "08:00 - 20:00", phone: "(31) 8901-2345", email: "contato@pucminas.br", materials: ["Plástico Comum", "Metal Comum", "Baterias Elétricas","Materiais Explosivos"] },
+    { lat: -19.9294547, lng: -44.0547162, name: "Coletar Reciclagem de Eletrônicos", hours: "09:00 - 17:00", phone: "(31) 9012-3456", email: "contato@coletarreciclagem.com.br", materials: ["Resíduos de Agroquímicos", "Material Explosivo"] },
+    { lat: -19.925871, lng: -43.9527431, name: "Ecoponto E-MILE de Lixo Eletrônico (CTRL+Play)", hours: "08:00 - 18:00", phone: "(31) 0123-4567", email: "contato@ecopontoemile.com.br", materials: ["Resíduos Eletrônicos", "Resíduos Inflamáveis", "Baterias Elétricas", "Lâmpadas Fluorescentes"] },
+    { lat: -19.9579473, lng: -43.9945943, name: "Reciclagem Tc", hours: "09:00 - 17:00", phone: "(31) 2345-6789", email: "contato@reciclagemtc.com.br", materials: ["Resíduos Eletrônicos","Lixo Hospitalar","Resíduos de Farmacos","Resíduos Químicos", "Baterias Elétricas",] }
 ];
 
-// Função para inicializar o mapa
+// inicia o mapa
 function initMap() {
     geocoder = new google.maps.Geocoder();
     directionsService = new google.maps.DirectionsService();
