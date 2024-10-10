@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GreenCycle | RIA</title>
+    <link rel="stylesheet" href="style Crédito de Carbono.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+	
+
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /></a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /></a>
+                            </li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
+                        </ul>
+						
+                    </li>
+                    <!-- Dropdown de Acessibilidade -->
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <button class="login-button">
+                        <!-- Ícone SVG do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                    Login
+                    <br>
+                    </button>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+	
+	<script>
+		function goto_ria1() {
+            // Redireciona a página para exemplo.html
+            window.location.href = 'relatorio_impacto_ambiental1.html';
+        }
+        // Função para redirecionar para exemplo.html
+        function goto_ria2() {
+            // Redireciona a página para exemplo.html
+            window.location.href = 'relatorio_impacto_ambiental2.html';
+        }
+		function goto_ria3() {
+            // Redireciona a página para exemplo.html
+            window.location.href = 'relatorio_impacto_ambiental3.html';
+        }
+    </script>
+	
+    <main id="form-relatorio-impacto">
+		
+		<div id="ria_title">
+			Relatório de Impacto Ambiental</div>
+		
+		<div class="form-container">
+        <form id="relatorioForm">
+            <div class="form-row">
+                <!-- Primeira Coluna -->
+                <div class="ria_column">
+                    <label for="natureza" class="ria_label">Natureza</label>
+                    <select id="natureza" name="natureza" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="industria_textil">Indústria Têxtil</option>
+                        <option value="automobilistica">Automobilística</option>
+                    </select>
+
+                    
+					<br>
+				  <label for="medidas" class="ria_label">Medidas Mitigadoras</label>
+                    
+				  <p>
+					  <label>
+					    <input type="checkbox" name="medidas-mitigatorias" value="plano de monitoramento" id="medidas-mitigatorias_0">
+					    plano de monitoramento</label>
+					  <br>
+					  <label>
+					    <input type="checkbox" name="medidas-mitigatorias" value="áreas de conservação" id="medidas-mitigatorias_1">
+					    áreas de conservação</label>
+					  <br>
+					  <label>
+					    <input type="checkbox" name="medidas-mitigatorias" value="projetos sociais" id="medidas-mitigatorias_2">
+					    projetos sociais</label>
+					  <br>
+				  </p>
+					
+					
+					<label for="medidas" class="ria_label">Tipos de resíduos</label>
+                    <select id="medidas" name="medidas" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="medida1">Pilhas e Baterias</option>
+                        <option value="medida2">Medicações</option>
+                    </select>
+					
+					<br>
+					
+					<label for="medidas">Quantidade em quilos</label>
+					<input type="text">
+					
+                </div>
+
+                <!-- Segunda Coluna -->
+                <div class="ria_column">
+                    <label for="detalhes" class="ria_label">Outros Detalhes</label>
+                    <textarea id="detalhes" name="detalhes" placeholder="Insira outros detalhes aqui..."></textarea>
+					
+
+					<br>
+					<input type="date">
+					
+					<br>
+					<label style="font-weight: bold">Relatórios Antigos</label>
+					
+					<label>Sempre que houver modificações no projeto, mudanças nas condições ambientais, renovação de licenciamento ambiental ou acidentes ambientais gere um novo relatório.</label>
+					
+					
+                </div>
+				
+				
+
+				
+            </div>
+
+            <div class="button-container">
+                <button id="button1" onclick="goto_ria2()">Gerar Relatório</button>
+            </div>
+        </form>
+    </div>
+		<br><br>
+        <!-- fim Adicione aqui o conteúdo principal da página -->
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
