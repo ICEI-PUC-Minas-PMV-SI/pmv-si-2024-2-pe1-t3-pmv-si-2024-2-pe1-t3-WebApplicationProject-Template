@@ -95,55 +95,87 @@
             <div class="form-row">
                 <!-- Primeira Coluna -->
                 <div class="ria_column">
-                    <label for="natureza" class="ria_label">Natureza</label>
+                    <label style="font-weight: bold" for="natureza" class="ria_label">Natureza</label>
                     <select id="natureza" name="natureza" required>
                         <option value="" disabled selected>Selecione</option>
-                        <option value="industria_textil">Indústria Têxtil</option>
+                        <option value="industria_petroquimica">Petroquímica</option>
+                        <option value="alienticia">Alimentícia</option>
+                        <option value="construcao_civil">Construção Civil</option>
                         <option value="automobilistica">Automobilística</option>
                     </select>
 
                     
 					<br>
-				  <label for="medidas" class="ria_label">Medidas Mitigadoras</label>
+				  <label style="font-weight: bold" for="medidas" class="ria_label">Medidas Mitigadoras</label>
                     
 				  <p>
 					  <label>
 					    <input type="checkbox" name="medidas-mitigatorias" value="plano de monitoramento" id="medidas-mitigatorias_0">
-					    plano de monitoramento</label>
+					    diagnóstico ambiental</label>
 					  <br>
 					  <label>
 					    <input type="checkbox" name="medidas-mitigatorias" value="áreas de conservação" id="medidas-mitigatorias_1">
-					    áreas de conservação</label>
+					    áreas de estudo</label>
 					  <br>
 					  <label>
 					    <input type="checkbox" name="medidas-mitigatorias" value="projetos sociais" id="medidas-mitigatorias_2">
-					    projetos sociais</label>
+					    unidades de conservação</label>
+					  <br>
+                      <label>
+					    <input type="checkbox" name="medidas-mitigatorias" value="projetos sociais" id="medidas-mitigatorias_3">
+					    projetos sociais e ambientais</label>
 					  <br>
 				  </p>
+					<br>
 					
-					
-					<label for="medidas" class="ria_label">Tipos de resíduos</label>
+					<label style="font-weight: bold" for="medidas" class="ria_label">Tipos de resíduos</label>
                     <select id="medidas" name="medidas" required>
                         <option value="" disabled selected>Selecione</option>
-                        <option value="medida1">Pilhas e Baterias</option>
-                        <option value="medida2">Medicações</option>
+                        <option value="oleos_graxas">Óleos e Graxas</option>
+                        <option value="residuos_inflamáveis">Resíduos Inflmáveis</option>
+                        <option value="residuos_organicos">Resíduos Orgânicos</option>
+                        <option value="embalagens_plasticas">Embalagens Plásticas</option>
+                        <option value="entulho_residuos">Entulho e Resíduos de Construção</option>
+                        <option value="pneus_descartados">Pneus Descartados</option>
                     </select>
 					
 					<br>
 					
-					<label for="medidas">Quantidade em quilos</label>
-					<input type="text">
+					<label style="font-weight: bold" for="medidas">Quantidade em quilos</label>
+					<input type="number" id="quilos" name="quilos" placeholder="KG" min="0" step="1" pattern="[0-9]*">
+
 					
                 </div>
 
                 <!-- Segunda Coluna -->
+                <br>
                 <div class="ria_column">
-                    <label for="detalhes" class="ria_label">Outros Detalhes</label>
-                    <textarea id="detalhes" name="detalhes" placeholder="Insira outros detalhes aqui..."></textarea>
+				<label style="font-weight: bold" for="incluir no relatório" class="ria_label">Incluir no Relatório</label>
+				 
+                <label>
+				<input type="checkbox" name="outras-medidas-mitigatorias" value="plano de monitoramento" id="outras-medidas-mitigatorias_0">
+				mapa de da área de estudo</label>
+				<label>
+				<input type="checkbox" name="outras-medidas-mitigatorias" value="áreas de conservação" id="outras-medidas-mitigatorias_1">
+				projeção de impacto potencial/label>
+				<br>
+				<label>
+				<input type="checkbox" name="outras-medidas-mitigatorias" value="projetos sociais" id="outras-medidas-mitigatorias_2">
+				riscos ambientais associados à atividade</label>
+				<br>
+                <label>
+				<input type="checkbox" name="outras-medidas-mitigatorias" value="projetos sociais" id="outras-medidas-mitigatorias_3">
+				equipe técnica</label>
+				<br>
+
+                <label style="font-weight: bold" for="detalhes" class="ria_label">Outros Detalhes</label>
+                <br>
+                <textarea id="detalhes" name="detalhes" placeholder="Insira outros detalhes aqui..." style="width: 100%;"></textarea>
 					
 
-					<br>
-					<input type="date">
+				<br>
+                <label style="font-weight: bold" for="data" class="ria_data">Data de Início do dados</label>
+				<input type="date">
 					
 					<br>
 					<label style="font-weight: bold">Relatórios Antigos</label>
@@ -157,8 +189,8 @@
 
 				
             </div>
-
             <div class="button-container">
+                <button id="button2" onclick="goto_ria3()">Relatórios Antigos</button>
                 <button id="button1" onclick="goto_ria2()">Gerar Relatório</button>
             </div>
         </form>
