@@ -1,36 +1,96 @@
-# Template padrão do site
+## Template Padrão do Site GreenCycle
+### Layout Padrão do Site
+O layout padrão do site será utilizado em todas as páginas e incluirá os seguintes elementos:
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+### Estrutura Geral
+Cabeçalho (Header): Contém o logo da GreenCycle e a barra de navegação com links para as principais seções do site.
+Conteúdo Principal (Main): Área dedicada ao conteúdo específico de cada página, como informações sobre descarte, regulamentações, e recursos educacionais.
+Rodapé (Footer): Informações de copyright, links adicionais e contato.
+Logo
+O logo será posicionado no canto superior esquerdo do cabeçalho, garantindo que esteja sempre visível e acessível. O tamanho do logo será de aproximadamente 50px de altura, mantendo a proporção.
 
-Explique as guias de estilo utilizadas no seu projeto.
+### Menus Padrões
+Menu de Navegação: Links para as páginas "Home", "Regulamentação", "Educacional", "Sobre Nós" e um dropdown para opções de acessibilidade e linguagem.
+Barra de Busca: Localizada à direita na barra de navegação, permite que os usuários procurem informações no site.
+Cores
 
-## Design
+### A paleta de cores utilizada no site GreenCycle será a seguinte:
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+Verde (#28a745): Usado para botões e elementos de destaque.
+Cinza Claro (#e2e6ea): Fundo da navbar e do rodapé.
+Cinza Escuro (#343a40): Cor do texto principal.
+Branco (#ffffff): Fundo principal do conteúdo, garantindo boa legibilidade.
+Paleta de Cores
+| Nome        | Cor Hex  |
+|-------------|----------|
+| Verde      | #28a745  |
+| Cinza Claro | #e2e6ea  |
+| Cinza Escuro| #343a40  |
+| Branco      | #ffffff  |
+
+Tipografia
+As fontes utilizadas no site serão escolhidas para garantir legibilidade e uma estética moderna.
+
+Título de Página: Fonte Montserrat, tamanho 36px, peso bold.
+Título de Seção: Fonte Montserrat, tamanho 24px, peso semi-bold.
+Rótulos de Componentes: Fonte Arial, tamanho 14px, peso regular.
+Corpo de Texto: Fonte Arial, tamanho 16px, peso regular.
+
+Tipografia
+| Elemento          | Fonte        | Tamanho | Peso       |
+|-------------------|--------------|---------|------------|
+| Título de Página   | Montserrat   | 36px    | Bold       |
+| Título de Seção    | Montserrat   | 24px    | Semi-Bold  |
+| Rótulos            | Arial        | 14px    | Regular    |
+| Corpo de Texto     | Arial        | 16px    | Regular    |
+
+Iconografia
+Os ícones utilizados no site serão escolhidos para facilitar a navegação e melhorar a usabilidade. Exemplos incluem:
+
+Ícone de Busca: Para o campo de busca, facilitando a localização de informações.
+Ícone de Acessibilidade: Para o dropdown de opções de acessibilidade.
+Ícones de Redes Sociais: Para links de contato no rodapé.
+
+Funções dos Ícones
+
+| Ícone               | Função                        |
+|---------------------|-------------------------------|
+| Ícone de Busca      | Facilitar a pesquisa no site  |
+| Ícone de Acessibilidade | Acesso às opções de acessibilidade |
+| Ícones de Redes Sociais | Links para redes sociais   |
 
 
-## Cores
+Estilos CSS
+Os estilos CSS definidos para cada um dos elementos são os seguintes:
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+/* Estilos do Cabeçalho */
+header {
+    background-color: #e2e6ea; /* Cor de fundo da navbar */
+    padding: 10px 0;
+}
 
+.logo-image {
+    width: 50px; /* Tamanho do logo */
+    height: auto;
+}
 
-## Tipografia
+.nav-list a {
+    color: #343a40; /* Cor do texto */
+}
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+/* Estilos do Botão */
+.btn-procurar {
+    background-color: #28a745; /* Cor do botão */
+    color: white;
+}
 
+/* Estilos do Rodapé */
+.footer {
+    background-color: #e2e6ea; /* Cor de fundo do rodapé */
+}
 
-## Iconografia
-
-Defina os ícones que serão utilizados e suas respectivas funções.
-
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
-
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+/* Estilos do Corpo de Texto */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}

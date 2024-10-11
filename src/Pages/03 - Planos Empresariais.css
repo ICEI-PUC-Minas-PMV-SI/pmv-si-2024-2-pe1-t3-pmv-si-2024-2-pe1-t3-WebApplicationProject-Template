@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #4A6E4A; /* Cor da barra de navegação */
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title-container h1 {
+  font-size: 2.5em;
+  color: #4A6E4A; /* Cor do texto */
+}
+
+.plans-container {
+  display: flex; /* Use flexbox para alinhar os planos em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  flex-wrap: wrap; /* Permite que os planos se movam para a próxima linha se necessário */
+  margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+.plan {
+  background-color: #f8f8f8; /* Fundo para cada plano */
+  border: 1px solid #ddd; /* Borda ao redor do plano */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  margin: 20px; /* Aumente o espaço externo para 20px */
+  width: 300px; /* Largura fixa para os planos */
+  text-align: center; /* Centraliza o texto dentro do plano */
+}
+
+.plan button {
+  background-color: #28a745; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  cursor: pointer; /* Cursor pointer ao passar sobre o botão */
+}
+
+.plan button:hover {
+  background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+
+
+.footer {
+  background-color: #000000; /* Cor do rodapé */
+  color: white; /* Texto do rodapé */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove padding da lista */
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px; /* Espaçamento entre os links */
+}
+
+.footer-links a {
+  color: white; /* Cor dos links do rodapé */
+  text-decoration: none; /* Remove underline dos links */
+}
+.video-container {
+  display: flex;
+  justify-content: center; /* Centraliza o vídeo horizontalmente */
+  margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.video-container iframe {
+  width: 80%; /* Largura do vídeo */
+  height: 450px; /* Altura do vídeo */
+  max-width: 800px; /* Largura máxima do vídeo */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.vantagens-title {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 20px 0; /* Espaçamento acima e abaixo */
+  font-size: 24px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+}

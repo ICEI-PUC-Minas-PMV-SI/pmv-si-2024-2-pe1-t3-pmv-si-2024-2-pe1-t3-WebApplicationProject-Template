@@ -1,54 +1,54 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+Observa-se que o crescimento acelerado da produção e consumo, especialmente de produtos eletrônicos e materiais de difícil manejo, tem contribuído significativamente para o aumento do volume de resíduos no meio ambiente. Esse cenário torna ainda mais urgente a busca por soluções inovadoras e sustentáveis para lidar com o descarte desses materiais, que frequentemente representam riscos à saúde humana e ao ecossistema.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Em resposta a esses desafios, a sociedade tem testemunhado a criação de órgãos de proteção ambiental e o estabelecimento de regulamentações específicas voltadas para a gestão de resíduos. Tais medidas visam minimizar os impactos negativos decorrentes do descarte inadequado e promover uma maior conscientização sobre a importância da responsabilidade ambiental. No entanto, a implementação eficaz dessas regulamentações depende diretamente de iniciativas que facilitem o acesso a informações e serviços adequados para o correto descarte de materiais, evitando a poluição e preservando os recursos naturais.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+O descarte inadequado de materiais não convencionais, como eletrônicos, baterias e resíduos perigosos, representa um grande desafio para a sustentabilidade ambiental. Esses itens exigem tratamento especial, uma vez que podem liberar substâncias tóxicas no meio ambiente, contribuindo para a poluição e para danos à saúde pública.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Há uma necessidade urgente de sistemas que facilitem e orientem o descarte adequado desses materiais, ao mesmo tempo em que atendam às regulamentações ambientais e promovam a conscientização. O desafio central deste projeto é: Como uma plataforma digital pode simplificar o descarte seguro e responsável de materiais não convencionais, conectando usuários a soluções eficientes e sustentáveis?
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver uma plataforma digital para instruir e unir as partes envolvidas no descarte responsável de materiais não convencionais, facilitando o acesso a informações, pontos de coleta e serviços especializados, com foco na sustentabilidade ambiental e no cumprimento das regulamentações vigentes.
+
+### Objetivos Específicos
+
+Desenvolver uma interface acessível para orientar o descarte correto de materiais não convencionais.
+Integrar a plataforma com pontos de coleta e serviços especializados, facilitando a localização e o acesso por parte dos usuários.
+Implementar funcionalidades que forneçam informações atualizadas sobre regulamentações ambientais e boas práticas de descarte.
+Promover a conscientização ambiental por meio de campanhas educativas e notificações personalizadas para os usuários.
+Garantir a acessibilidade da plataforma para diferentes perfis de usuários, incluindo indivíduos e empresas.
 
 ## Justificativa
+O descarte inadequado de materiais não convencionais, como eletrônicos, baterias e resíduos perigosos, representa uma ameaça significativa ao meio ambiente e à saúde pública. Com o crescente volume de resíduos gerados pela sociedade moderna, a necessidade de soluções eficazes para lidar com esse problema tornou-se urgente. Muitos desses materiais contêm substâncias tóxicas que, quando descartadas de forma incorreta, podem contaminar solos, água e ar, causando danos a longo prazo.
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Embora existam regulamentações que orientam o descarte correto desses resíduos, a falta de conhecimento, recursos acessíveis e sistemas eficientes de coleta impede a adoção em larga escala de práticas mais sustentáveis. A criação de uma plataforma digital voltada para o descarte responsável justifica-se pela necessidade de simplificar esse processo, oferecendo uma solução prática, centralizada e acessível tanto para indivíduos quanto para empresas. Além disso, a plataforma contribuirá para a conscientização ambiental, promovendo uma cultura de responsabilidade coletiva frente aos desafios ecológicos atuais.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+### Impacto Social
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A plataforma de descarte responsável terá um impacto significativo ao promover a conscientização ambiental, educando a sociedade sobre a importância do descarte correto de materiais não convencionais. Ao facilitar o acesso a pontos de coleta e informações relevantes, a solução contribuirá para a redução da poluição e dos riscos à saúde pública, criando um ambiente mais seguro e sustentável para as gerações futuras. Além disso, a plataforma incentivará o engajamento da comunidade, ao proporcionar uma forma prática e acessível de adotar práticas ecológicas no cotidiano.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+### Relevância Econômica
+
+A plataforma também terá um papel relevante na economia, ao incentivar a reutilização e reciclagem de materiais, o que pode gerar novas oportunidades de negócios e reduzir os custos associados ao manejo inadequado de resíduos. Empresas poderão reduzir o impacto ambiental de suas operações e melhorar sua conformidade com regulamentações, o que, por sua vez, pode evitar multas e agregar valor à marca. Ao conectar consumidores e empresas a serviços especializados, o projeto contribuirá para o crescimento de setores ligados à reciclagem e descarte sustentável.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O sistema é direcionado principalmente para:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+### Empresas com material para ser descartado 
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Empresas de diversos setores que geram resíduos não convencionais, como eletrônicos, baterias e materiais perigosos, buscando soluções práticas para cumprir regulamentações ambientais e gerenciar o descarte de forma responsável e sustentável.
+
+### Centro de Coleta de Materiais
+
+Organizações especializadas em receber, tratar e reciclar resíduos não convencionais, que se beneficiam de uma plataforma que centralize e facilite a conexão com indivíduos e empresas que necessitam de serviços de coleta e descarte.
+
+### Pessoas Físicas que desejam descartar materiais não convencionais adequadamente 
+
+Indivíduos conscientes da importância do descarte correto de resíduos como eletrônicos, pilhas e outros materiais não recicláveis, que procuram uma solução acessível para garantir que seus itens sejam eliminados de forma segura e sustentável.
