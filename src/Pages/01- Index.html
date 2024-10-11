@@ -25,7 +25,7 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Login</a></li> 
+                    <li><a href="#">Login</a></li>
                     <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
@@ -50,8 +50,10 @@
                     </li>
                     <button class="login-button">
                         <!-- Ícone SVG do usuário -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                         </svg>
                         Login
                     </button>
@@ -63,21 +65,45 @@
     <!-- Conteúdo principal -->
     <main>
         <div class="map-container">
-            <h2>Encontre o ponto de coleta de material reciclável mais próximo de você:</h2>
-            <div class="filter-container">
-                <label for="material-filter">Filtro por tipo de material:</label>
-                <select id="material-filter">
-                    <option value="">Selecione o material</option>
-                    <option value="pilhas">Pilhas</option>
-                    <option value="baterias">Baterias</option>
-                    <option value="lampadas fluorescentes">Lâmpadas Fluorescentes</option>
-                </select>
-            </div>      
-            <img src="../images/Google Maps.jpg" alt="Mapa de Coleta" id="map" style="width: 100%; height: auto; max-height: 900px; border: 1px solid #ccc;"/> <!--Modificar na Etapa 04 -->
+            <h2 for="material-filter">Encontre centro de coletas pelo tipo de material:</h2>
+            <select id="material-filter">
+                <option value="">Selecione o material</option>
+                <option value="Metal Comum">Metal Comum</option>
+                <option value="Plástico Comum">Plástico Comum</option>
+                <option value="Vidro Comum">Vidro Comum</option>
+                <option value="Baterias Elétricas">Baterias Elétricas</option>
+                <option value="Lâmpadas Fluorescentes">Lâmpadas Fluorescentes</option>
+                <option value="Lixo Hospitalar">Lixo Hospitalar</option>
+                <option value="Resíduos Eletrônicos">Resíduos Eletrônicos</option>
+                <option value="Resíduos de Óleo">Resíduos de Óleo</option>
+                <option value="Resíduos de Farmacos">Resíduos de Farmacos </option>
+                <option value="Material Radioativo">Material Radioativo</option>
+                <option value="Resíduos de Construção">Resíduos de Construção</option>
+                <option value="Resíduos de Solventes">Resíduos de Solventes</option>
+                <option value="Materiais Explosivos">Materiais Explosivos</option>
+                <option value="Resíduos de Agroquímicos">Resíduos de Agroquímicos</option>
+                <option value="Resíduos Químicos">Resíduos Químicos</Q></option>
+                <option value="Resíduos Inflamáveis">Resíduos Inflamáveis</option>
+                
+            </select>
+            <button id="filter-button">Filtrar</button>
+
+            <div class="toggle-container">
+                <h2 for="toggle-industries">Ver empresas que estão descartando</h2>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-industries">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="map" style="height: 500px;"></div>
         </div>
+        </script>
+        <script src="01 -Map.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap"></script>
     </main>
-    
-   
+
+
 
     <!-- Rodapé -->
     <footer>

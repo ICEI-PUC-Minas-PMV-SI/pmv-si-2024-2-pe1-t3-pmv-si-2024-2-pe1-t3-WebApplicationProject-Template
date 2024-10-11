@@ -25,7 +25,6 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
                             <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
@@ -37,7 +36,6 @@
                             <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown de Acessibilidade -->
                     <li class="dropdown">
                         <button class="dropdown-toggle">Acessibilidade</button>
                         <ul class="dropdown-menu">
@@ -48,7 +46,6 @@
                         </ul>
                     </li>
                     <button class="login-button">
-                        <!-- Ícone SVG do usuário -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-person" viewBox="0 0 16 16">
                             <path
@@ -63,8 +60,8 @@
 
     <!-- Conteúdo principal -->
     <main>
+        <h2>Procure centros de coleta próximos a sua empresa:</h2>
         <div class="map-container">
-            <img src="../images/Google Maps.jpg" alt="Mapa de Coleta" id="map" style="width: 100%; height: auto; max-height: 700px; border: 1px solid #ccc;"/> <!--Modificar Na Etapa 04-->
             <div id="map"></div>
             <div class="sidebar">
                 <div class="credits">
@@ -81,47 +78,59 @@
                         <input type="checkbox" id="material-baterias" name="material" value="baterias">
                         <label for="material-baterias">Lâmpadas Fluorescentes</label>
                     </div>
+                    <button onclick="atualizar()">Atualizar para Coletores</button>
+                    <script>
+                        function atualizar() {
+                            alert("Os coletores e centros de reciclágem já foram avisados!");
+                        }
+                    </script>
                 </div>
-
                 <div class="register">
                     <h2>Cadastrar um novo material</h2>
-                    <button>Cadastrar</button>
+                    <button onclick="funcao_n_disponivel()">Cadastrar</button>
+                    <script>
+                        function funcao_n_disponivel() {
+                            alert("Esta função ainda não está disponível");
+                        }
+                    </script>
                 </div>
 
                 <div class="credits">
                     <h2>Créditos de Carbono</h2>
-                    <p>Inicie seu processo de créditos de carbono inserindo aqui seus dados.</p>
-                    <button>Acessar</button>
+                    <button>Inicie seu cadastro</button><br><br>
+                    <button>Comprar</button><button>Vender</button>
                 </div>
 
-                <div class="reports">
-                    <h2>Relatório de Impacto Ambiental</h2>
-                    <ul>
-                        <li>Último relatório gerado 02/05/2024</li>
-                    </ul>
-                    <button>Gerar Novo</button>
-                    <button>Acessar Último </button>
+                <div class="credits">
+                    <h2>Relatórios de Impacto Ambiental</h2>
+                    <button>Gerar Novo</button><button>Acessar Antigos</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
-                <ul class="footer-links">
-                    <li><a href="#">Regulamentação</a></li>
-                    <li><a href="#">Créditos de Carbono</a></li>
-                    <li><a href="#">Relatórios de Impacto Ambiental</a></li>
-                    <li><a href="#">Educacional</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                </ul>
-            </div>
+    <!-- Scripts do mapa -->
+    <script src="../Pages/02 - Map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap">
+        </script>
+</body>
+<!-- Rodapé -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+            <ul class="footer-links">
+                <li><a href="#">Regulamentação</a></li>
+                <li><a href="#">Créditos de Carbono</a></li>
+                <li><a href="relatorio_impacto_ambiental1.html">Relatórios de Impacto Ambiental</a></li>
+                <li><a href="#">Educacional</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>

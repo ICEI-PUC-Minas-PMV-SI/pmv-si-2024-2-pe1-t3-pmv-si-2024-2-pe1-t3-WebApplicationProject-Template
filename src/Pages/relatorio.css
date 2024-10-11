@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Container Principal do Relatório */
+.custom-report-container {
+
+    background-color: #d3d3d3; /* Fundo cinza claro do relatório */
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza horizontalmente */
+	margin-top: 20px;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Row que contém as colunas */
+.custom-report-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Estilo das Colunas */
+.custom-column {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff; /* Fundo branco para as colunas */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo dos Labels */
+.custom-label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo dos Canvas dos Gráficos */
+.custom-column canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 800px) {
+    .custom-report-row {
+        flex-direction: column;
+    }
+
+    .custom-column {
+        width: 100%;
+    }
+}
+
+
+.form-container {
+            background-color: #d3d3d3; /* Fundo cinza claro do formulário */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 900px;
+			margin-top: 30px;
+		  	margin-left: auto;
+		  	margin-right: auto;			
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ria_column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ria_label {
+            margin-bottom: 5px;
+/*            font-weight: bold;*/
+        }
+
+		.ria_select{
+			padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+		}
+		.ria_input[type="text"]{
+			padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+		}
+
+        select, textarea, input[type="text"] {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #detalhes {
+            height: 100px;
+        }
+
+        .button-container {
+			margin-top: 20px;
+            text-align: center;
+        }
+
+        #button1, #button2 {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #button1, #button2:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+
+
+		#ria_title{
+			background-color: #cfcfcf;
+			text-align: center;
+			font-weight: bold;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
