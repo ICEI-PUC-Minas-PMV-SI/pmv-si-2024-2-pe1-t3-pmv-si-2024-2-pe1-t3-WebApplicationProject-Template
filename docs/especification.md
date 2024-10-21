@@ -1,44 +1,46 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+Os investidores enfrentam desafios significativos devido à sobrecarga informacional e à complexidade das notícias financeiras. Eles lutam para filtrar informações relevantes e compreendê-las rapidamente, o que pode levar a decisões apressadas e mal fundamentadas. Essa dificuldade é sentida tanto por investidores iniciantes, que precisam de orientação e clareza, quanto por profissionais experientes, que necessitam de dados detalhados e organizados.
+# Perspectiva do Usuário:
+O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta informações financeiras de forma clara e acessível. A solução permitirá que os usuários filtram notícias relevantes, compreendam conceitos com facilidade e tomem decisões informadas de maneira mais eficiente.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+ - Iniciante: Busca aprender sobre investimentos e precisa de informações educacionais e simples.
+ - Investidor Experiente: Deseja análises detalhadas e atualizações rápidas para tomar decisões estratégicas.
+ - Profissional de Finanças: Requer dados precisos e ferramentas para análise aprofundada.
+ - Profissional de Empresas Financeiras: Necessita de integrações e relatórios para otimizar operações e aconselhamentos.
+ - Estudante de Finanças: Utiliza a plataforma para aprendizado e pesquisa.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+|  COMO                    |     QUERO/PRECISO                                  |     PARA                                               |
+|--------------------------|--------------------------------------------------- |------------------------------------------------------- |
+|Investidor Iniciante      | Receber notícias e análises simples de rendimentos | Investir pelas primeira vez em renda fixa e variável   |
+|Profissional de Finanças  | Relatórios detalhados e atualizações em tempo real | Enviar os próprios reports para os clientes da carteira|
+|Investidor Experiente     | Análises contábeis, balancetes e relatórios        | Analisar resultados para escolher novos investimentos  |
+|Profissional de empresas  | Relatórios detalhados e atualizações em tempo real | Tomar decisões de investimentos da sua carteira        |
+|Estudante                 | Receber notícias e estudos                         | Utilizar o material como fonte de pesquisa             |
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+ - Investidor Individual:
+"Como um investidor que segue várias fontes de notícias financeiras, quero consolidar todas as informações em um único lugar, para que eu possa acompanhar as atualizações mais recentes sem ter que visitar diversos sites."
+   
+Critérios de Aceitação:
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+> O FinanceHub reune e apresenta notícias financeiras de diferentes fontes confiáveis em um feed único e atualizado.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+> O usuário pode ser capaz de personalizar suas fontes e tópicos de interesse para filtrar as notícias que mais lhe interessam.
+
+ - Gestor de Fundos:
+"Como um gestor de fundos, preciso gerar relatórios detalhados sobre as tendências do mercado e o desempenho dos investimentos, para que eu possa apresentar análises precisas e recomendação de estratégias para os meus clientes."
+
+Critérios de Aceitação:
+> A plataforma oferece ferramentas para criar e personalizar relatórios financeiros com gráficos, tabelas e análises detalhadas.
+
+> O sistema permite a exportação dos relatórios em diversos formatos, como PDF e Excel.
+
+> O usuário pode agendar a geração automática de relatórios periódicos e receber notificações sobre novos dados e análises.
 
 ## Requisitos
 
@@ -48,31 +50,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
-
+|RF-001| O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail | ALTA | 
+|RF-002| Efetuar a troca de senha do usuário| MÉDIA |
+|RF-003| Cadastro de notícias, Análises financeiras, Relatórios e Balancetes | ALTA|
+|RF-004| Cadastro de Tipos de Usuários| MÉDIA|
+|RF-005| List de notícias, análises financeiras, relatórios e Balancetes com filtro do usuário| MÉDIA|
+|RF-006| Asset de notícias, análises financeiras, relatórios e balancetes| MÉDIA
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RN-001| Aplicação responsiva para rodar em celulares, tablets, e desktops| ALTA | 
+|RN-002| O sistema dever ser utilizando utilizando HTML, CSS e JavaScript |  MÉDIA |
+|RN-003| Ao utlizar a aplicação os dados devem ser salvos em localStorage | BAIXA|
 
 ## Restrições
 
@@ -82,10 +73,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|03| O Projeto não pode ser usado com nenhuma biblioteca, como React, Vue.js ou Angular|

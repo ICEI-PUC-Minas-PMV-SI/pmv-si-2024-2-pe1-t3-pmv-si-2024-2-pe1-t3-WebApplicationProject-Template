@@ -1,4 +1,4 @@
-# Título do Projeto
+# FinanceHub - Solução de Agregação Financeira
 
 `CURSO: Sistemas de Informação`
 
@@ -6,20 +6,21 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Atendendo às demandas dos investidores e reduzindo a sobrecarga informacional, o FinanceHub visa desenvolver uma plataforma que centralize e forneça informações essenciais para aplicadores, independentemente do seu nível de experiência. Para os investidores iniciantes, a plataforma oferecerá conteúdos claros e educativos. Para os investidores mais experientes, a aplicação proporcionará uma visão abrangente das notícias mais relevantes, facilitando a tomada de decisões informadas e eficazes. A ferramenta será equipada com uma API financeira projetada para oferecer acesso rápido e fácil a uma vasta gama de dados financeiros, incluindo notícias em tempo real, análises de mercado e identificação de entidades de destaque. Ao consolidar informações de diversas fontes confiáveis e apresentá-las de maneira organizada e acessível, o FinanceHub capacitará investidores e profissionais do mercado financeiro a tomar decisões estratégicas com maior confiança e precisão.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Guilherme Lacerda de Souza
+* Luiz Antônio Braga de Oliveira
+* Mattheus German de Jesus Silva
+* Maria Eduarda da Silva Batista
+* Nicolas Souza Di Lascio
+* Paolla Souza Arantes de Medeiros
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
 # Planejamento
 
