@@ -9,12 +9,10 @@
     <title>GreenCycle | RIA</title>
     <link rel="stylesheet" href="relatorio_impacto_ambiental.css">
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-	
-	<!-- Link para o Chart.js via CDN -->
+
+    <!-- Link para o Chart.js via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Link para o CSS personalizado -->
-    <link rel="stylesheet" href="relatorio.css">
-	
 </head>
 
 <body>
@@ -34,7 +32,7 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
                             <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
@@ -45,7 +43,7 @@
                             </li>
                             <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
                         </ul>
-						
+
                     </li>
                     <!-- Dropdown de Acessibilidade -->
                     <li class="dropdown">
@@ -59,21 +57,23 @@
                     </li>
                     <button class="login-button">
                         <!-- Ícone SVG do usuário -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                         </svg>
-                    Login
-                    <br>
+                        Login
+                        <br>
                     </button>
-              </ul>
+                </ul>
             </div>
         </nav>
     </header>
 
     <!-- Conteúdo principal -->
-	
-	<script>
-		function goto_ria1() {
+
+    <script>
+        function goto_ria1() {
             // Redireciona a página para exemplo.html
             window.location.href = 'relatorio_impacto_ambiental1.html';
         }
@@ -82,16 +82,16 @@
             // Redireciona a página para exemplo.html
             window.location.href = 'relatorio_impacto_ambiental2.html';
         }
-		function goto_ria3() {
+        function goto_ria3() {
             // Redireciona a página para exemplo.html
             window.location.href = 'relatorio_impacto_ambiental3.html';
         }
     </script>
-	
-	<div id="ria_title">
-			Relatório de Impacto Ambiental</div>
-    
-	<div class="custom-report-container">
+
+    <div id="ria_title">
+        Relatório de Impacto Ambiental</div>
+
+    <div class="custom-report-container">
         <div class="custom-report-row">
             <!-- Primeira Coluna -->
             <div class="custom-column">
@@ -105,14 +105,14 @@
                 <canvas id="custom-doughnutChart"></canvas>
             </div>
         </div>
-		
-		
+
+
     </div>
-	
-	<div class="button-container">
-                <button id="button1" onclick="goto_ria1()">Gerar Novo Relatório</button>
-				<button id="button2" onclick="goto_ria3()">Ver Histórico</button>
-            </div>
+
+    <div class="button-container">
+        <button id="button1" onclick="goto_ria1()">Gerar Novo Relatório</button>
+        <button id="button2" onclick="goto_ria3()">Ver Histórico</button>
+    </div>
 
     <script>
         // Gráfico de Linhas - Gestão de Resíduos
@@ -131,7 +131,7 @@
             type: 'line',
             data: {
                 labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-                         'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+                    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
                 datasets: [
                     {
                         label: 'Gerados',
@@ -231,10 +231,10 @@
         });
     </script>
 
-	
-	
-		<br><br>
-        <!-- fim Adicione aqui o conteúdo principal da página -->
+
+
+    <br><br>
+    <!-- fim Adicione aqui o conteúdo principal da página -->
 
     </main>
 
