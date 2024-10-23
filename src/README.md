@@ -9,4 +9,4 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 ### [0.1.0] - 22 outubro de 2024
 #### Primeira versão do site
 - Acesse pelo link:
-- <li><a href="Pages/01- Index.html">Página Inicial do Site da GreenCycle</a></li>
+- <a href="Pages/01- Index.html">Página Inicial do Site da GreenCycle</a>
