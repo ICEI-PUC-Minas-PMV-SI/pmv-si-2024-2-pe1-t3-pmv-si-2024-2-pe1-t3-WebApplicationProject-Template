@@ -265,10 +265,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
 }
 
 footer .footer-links li {
   margin: 0 10px;
+  padding: 5px 0; /* Adiciona espaço entre os itens */
 }
 
 footer .footer-links a {
@@ -279,6 +281,19 @@ footer .footer-links a {
 footer .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; /* Ajusta as margens para os links */
+  }
+}
+
+
 /* Estilo da barra de pesquisa */
 .form-control {
   border: 1px solid #ced4da; /* Borda padrão */
