@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="style Crédito de Carbono.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- MUDAR Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /></a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /></a>
+                            </li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown de Acessibilidade -->
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <button class="login-button">
+                        <!-- Ícone SVG do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        Login
+                    </button>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="section-header">
+            <h2>Crédito de Carbono</h2>
+        </div>
+        <br>
+
+        <div>
+             <!-- Barra de navegação -->
+            <div class="navbar-cc">
+                <a href="#" >Posso gerar Crédito de Carbono? </a>
+                <a href="#">Comprar Crédito de Carbono</a>
+                <a href="#" class="active">Vender Crédito de Carbono</a>
+            </div>
+    
+        </div>
+        <br>
+
+
+        <section class="main-content">
+            <h4> Como podemos te ajudar? </h4>
+            <div class="grid-checkbox">
+                <div class="item1">
+                    <form >
+                        <input type="checkbox" id="doc" name="doc" value="doc">
+                        <label for="doc"> Documentação necessária</label><br>
+                        <input type="checkbox" id="analisar" name="analisar" value="analisar">
+                        <label for="analisar"> Verificação para análise de uso de créditos</label><br>
+                        <input type="checkbox" id="agente" name="agente" value="agente">
+                        <label for="agente"> Agendar visita do agente internacional</label><br>
+                        <input type="checkbox" id="registro" name="registro" value="registro">
+                        <label for="registro"> Fazer registro de Emissão Internacional</label>
+                    </form>
+                </div>
+            </div> 
+            
+            <br>
+            <div class="center-button">
+                <button type="button" onclick="alert ('Sua solicitação foi enviada para análise. Entraremos em contato em breve');">
+                    Vender
+                </button>
+            </div>
+            <br>
+            <p style="font-size: small; text-align: center;"><a href="">Verifique com nossa Assistente Virutal todas as condições para vender créditos de carbono</a></p> 
+            
+        </section>
+        <br>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

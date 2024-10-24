@@ -1,3 +1,105 @@
+
+.section-header {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px;
+}
+
+h4 {
+  text-align: center;
+   margin-top: 10%; 
+   padding-top: 2%;
+}
+
+.container-main { /*tamanho*/
+  width: 35%;
+  height: 400px;
+  background:#d3d3d3;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .grid-checkbox {
+    display: grid;
+    grid: auto/ auto auto auto;
+    grid-gap: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .grid-checkbox >div {
+    text-align: flex;
+    
+  }
+
+  .caixa-texto {
+    margin:0;
+    position: relative;
+    right: 50%;
+    left: 40%;
+    margin-top: auto;
+    
+  }
+
+  .caixa-texto >textarea{
+    width: 50%;
+    height: 120px;
+  }
+
+  .container-main >button {
+    margin:0;
+    position: static;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .navbar-cc {
+    overflow: hidden;
+    background-color: #333; /* Cor de fundo da barra - trocar? */
+}
+
+.navbar-cc a {
+  float:left; /* mudar o alinhamento */
+  display: block;
+  color: white; 
+  text-align: center;
+  padding: 10px 15px; 
+  text-decoration: none; 
+
+}  
+
+.navbar-cc a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  color: black; 
+}
+
+.navbar-cc a.active {
+  background-color: #589c68;
+  color: white;
+}
+
+/* Tornando a barra de navegação responsiva */
+@media screen and (max-width: 600px) {
+  .navbar-cc a {
+    float: none;
+    width: 100%; /* Links ocuparão toda a largura da barra em telas pequenas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /* Reset básico e estilos globais */
 * {
     margin: 0;
