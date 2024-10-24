@@ -1,0 +1,27 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-info {
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field .value {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
