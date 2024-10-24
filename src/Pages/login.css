@@ -1,0 +1,16 @@
+/* Estilos para a página */
+body {
+  background-color: #f4f4f4;
+}
+
+.login-section {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+}
+
+.register-section {
+  background-color: #f1f3f5;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+}
