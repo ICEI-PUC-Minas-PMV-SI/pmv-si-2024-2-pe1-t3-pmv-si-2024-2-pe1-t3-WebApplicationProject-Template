@@ -1,4 +1,16 @@
 
+.section-header {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px;
+}
+
+h4 {
+  text-align: center;
+   margin-top: 10%; 
+   padding-top: 2%;
+}
+
 .container-main { /*tamanho*/
   width: 35%;
   height: 400px;

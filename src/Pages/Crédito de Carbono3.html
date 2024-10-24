@@ -19,7 +19,7 @@
                     <span class="logo-text">GreenCycle</span>
                 </a>
             </div>
-            <!--  MUDAR Menu -->
+            <!-- MUDAR Menu -->
             <div class="menu-container">
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
@@ -62,10 +62,8 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <div style="background-color: #d3d3d3; text-align: center; padding-top: 20px; padding-bottom: 20px;">
-            <h2>
-                Crédito de Carbono
-            </h2>
+        <div class="section-header">
+            <h2>Crédito de Carbono</h2>
         </div>
         <br>
 
@@ -73,79 +71,42 @@
              <!-- Barra de navegação -->
             <div class="navbar-cc">
                 <a href="#" >Posso gerar Crédito de Carbono? </a>
-                <a href="#" class="active">Comprar Crédito de Carbono</a>
-                <a href="#">Vende Crédito de Carbono</a>
+                <a href="#">Comprar Crédito de Carbono</a>
+                <a href="#" class="active">Vender Crédito de Carbono</a>
             </div>
     
         </div>
         <br>
 
-        <div class="container-main">
-            
-            <div class="compra-creditos">
-                <h4 style="text-align: center;">
-                    Quantidade de créditos que deseja comprar:
-                </h4>
-                <form>
-                    <label for="creditos"></label>
-                        <select id="creditos" name="creditos">
-                        <option value="opcao1">50 (min)</option>
-                        <option value="opcao2">100 (min)</option>
-                        <option value="opcao3">150 (min)</option>
-                        <option value="opcao4">200 (min)</option>
-                    </select>
-                </form>
+
+            <section class="main-content">
+                <h4> Como podemos te ajudar? </h4>
+                <div class="grid-checkbox">
+                    <div class="item1">
+                        <form >
+                            <input type="checkbox" id="doc" name="doc" value="doc">
+                            <label for="doc"> Documentação necessária</label><br>
+                            <input type="checkbox" id="analisar" name="analisar" value="analisar">
+                            <label for="analisar"> Verificação para análise de uso de créditos</label><br>
+                            <input type="checkbox" id="agente" name="agente" value="agente">
+                            <label for="agente"> Agendar visita do agente internacional</label><br>
+                            <input type="checkbox" id="registro" name="registro" value="registro">
+                            <label for="registro"> Fazer registro de Emissão Internacional</label>
+                        </form>
+                    </div>
+                </div> 
                 
-            </div> 
+                <br>
+                <div class="center-button">
+                    <button type="button" onclick="alert ('Sua solicitação foi enviada para análise. Entraremos em contato em breve');">
+                        Vender
+                    </button>
+                </div>
+                <br>
+                <p style="font-size: small; text-align: center;"><a href="">Verifique com nossa Assistente Virutal todas as condições para vender créditos de carbono</a></p> 
+                
+            </section>
             <br>
-
-
-            <div class="preco-credito">
-                <h4 style="text-align: center"; >
-                    Origem do preço dos créditos
-                </h4>
-                <form>
-                    <input type="radio" id="origem" name="origem-preco" value="Brasil-REDD">
-                    <label for="Brasil-REDD">Brasil - REDD+ - Floresta R$53,80 cada</label>
-                    <br>
-                </form>
-            </div>
-            <br>
-
-            <div class="selecionar-empresa">
-                <h4 style="text-align: center; margin-top: 10%; padding-top: 2%;">
-                    Empresa:
-                </h4>
-                <form> <!-- mudar o tamanho da fonte-->
-                    <label for="empresa">
-                        <select id="empresa" name="empresa">
-                        <option value="opcao1">Matriz Belo Horizonte (CNPJ xx.xxx.xxx/0001-xx )</option>
-                        <option value="opcao2">Matriz Betim (CNPJ xx.xxx.xxx/0001-xx )</option>
-                        </select>
-                        <br>
-                        <input type="checkbox" id="cadastro" name="cadastro" value="cadastro">
-                        <label for="cadastro" style="font-size: small;"> Usar o mesmo contato de email cadastrado</label>
-                        <br>
-                    </label>
-
-                </form>
-            </div>
-
-
-            <div class="center-button">
-                <button type="button" onclick="alert ('Sua solicitação foi enviada para análise. Entraremos em contato em breve');">
-                    Comprar
-                </button>
-            </div>
-            <br>
-
-            <p style="font-size: small; text-align: center;"><a href="">Verifique com nossa Assistente Virutal se você precisa comprar créditos de carnobo</a></p> 
-
-            
-            
-        </div>
-      
-          
     </main>
 
     <!-- Rodapé -->
