@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenCycle | Homepage</title>
-    <link rel="stylesheet" href="../Pages/sobre-nos.css">
+    <link rel="stylesheet" href="../Pages/PerfilEmpresaCadastroMateriais.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
                         </svg>
-                        Login
+                        Empresa
                     </button>
                     </ul>
             </div>
@@ -61,52 +61,82 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <!-- Adicione aqui o conteúdo principal da página -->
-        <div class="container-sobre-nos">
-            <div class="row-sobre-nos">
-                <!-- Coluna Esquerda: Quem Somos e Nosso Propósito -->
-                <div class="col-left">
-                    <h2>Quem somos</h2>
-                    <p> 
-                        Somos uma equipe apaixonada por desenvolver soluções criativas e inovadoras para problemas complexos. Nosso objetivo é criar produtos que façam a diferença na vida das pessoas.
-                    </p>
-                    <h2>Nosso propósito</h2>
-                    <p>
-                        Nosso propósito é unir tecnologia e criatividade para melhorar a interação entre pessoas e produtos digitais, com foco em acessibilidade, inovação e experiência do usuário.
-                    </p>
+        <section class="cadastro-section">
+            <!-- Barra de Navegação Superior -->
+            <div class="top-nav">
+                <ul class="navbar-nav">
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#" class="active">Meus Endereços</a></li>
+                    <li><a href="#">Pagamentos</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+    
+            <!-- Corpo do Formulário e Resumo de Materiais -->
+            <div class="content">
+                <div class="left-container">
+                    <h2>Cadastrar novo endereço</h2>
+                    <form class="enderecos-form">
+                        <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" placeholder="Av. de Exemplo">
+                            <span class="check-icon">✔</span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" placeholder="1.000">
+                            <span class="check-icon">✔</span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" placeholder="Galpão 2">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" placeholder="XX-XXX-XXX">
+                            <span class="check-icon">✔</span>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="nome-endereco">Nome que deseja aparecer na lista de endereços</label>
+                            <input type="text" id="nome-endereco">
+                        </div>
+        
+                        <button type="submit" class="submit-button" onclick="atualizar()">Adicionar Endereço</button>
+                        <script>
+                        function atualizar() {
+                            alert("Cadastro Atualizado!");
+                        }
+                        </script>
+                    </form>
                 </div>
     
-                <!-- Coluna Direita: Nosso Time -->
-                <div class="col-right">
-                    <h2>Nosso Time</h2>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="João da Silva">
-                        <p>João da Silva</p>
-                    </div>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="Maria Oliveira">
-                        <p>Maria Oliveira</p>
-                    </div>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="Carlos Santos">
-                        <p>Carlos Santos</p>
-                    </div>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="Ana Costa">
-                        <p>Ana Costa</p>
-                    </div>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="Pedro Almeida">
-                        <p>Pedro Almeida</p>
-                    </div>
-                    <div class="team-member-sobre-nos">
-                        <img src="https://via.placeholder.com/50" alt="Luciana Rocha">
-                        <p>Luciana Rocha</p>
+                <div class="right-container">
+                    <h2>Endereços Disponíveis no Site</h2>
+                    <div class="enderecos-disponiveis">
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Matriz Belo Horizonte</label>
+                            <br>
+                            <label><input type="checkbox" checked> Franqueado A - Ouro Preto</label>
+                            <br>
+                            <label><input type="checkbox"> Sede São Paulo</label>
+                            <br>
+                            <label><input type="checkbox"> Subsede São Paulo - Alphaville</label>
+                        </div>
+                        <button type="submit" class="submit-button" onclick="atualizar()">Atualizar</button>
+                        <script>
+                        function atualizar() {
+                            alert("Cadastro Atualizado!");
+                        }
+                        </script>
                     </div>
                 </div>
-            </div>
-        </div>
+        </section>
     </main>
+
 
     <!-- Rodapé -->
     <footer>

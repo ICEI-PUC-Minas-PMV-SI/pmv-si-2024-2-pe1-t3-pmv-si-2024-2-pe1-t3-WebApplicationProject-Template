@@ -492,3 +492,284 @@ h2 {
 .btn-directions:hover {
   background-color: #45a049; /* Cor do botão ao passar o mouse */
 }
+
+
+/* Barra de navegação superior */
+.top-nav {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.top-nav-list li {
+  display: inline;
+}
+
+.top-nav-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.top-nav-list li a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Layout */
+.cadastro-section {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-container, .right-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+/* Tornar colunas em linha única em telas pequenas */
+@media (max-width: 768px) {
+  .left-container, .right-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group input[type="password"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.check-icon {
+  color: green;
+  margin-left: 10px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo do Resumo de Materiais */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggle-materials {
+  margin-top: 20px;
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .form-group label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.info-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.info-icon::before {
+  content: "ℹ️";
+  font-size: 16px;
+  color: #007BFF;
+}
+
+/* Estilo do botão MFA */
+.mfa-button {
+  background-color: #d3e0dc; /* Verde pastel suave */
+  color: #3d3d3d; /* Texto cinza escuro */
+  border: 2px solid #a9bcbc; /* Borda neutra com leve tom pastel */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Mantém o estilo do ícone de interrogação */
+.question-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.question-icon::before {
+    content: "?";
+}
+
+/* Estilo do Tooltip */
+.question-icon[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    top: 25px;
+    left: 0;
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Reduzir o campo de senha para deixá-lo mais compacto */
+input[type="password"] {
+  padding: 8px 12px;
+  width: 100%; /* Largura total dentro do form */
+  max-width: 300px; /* Limita o campo a 300px */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Inclui o padding na largura */
+}
+
+/* Mantém o estilo para o ícone de interrogação */
+.question-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.question-icon::before {
+  content: "?";
+}
+
+/* Estilo do Tooltip */
+.question-icon[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  top: 25px;
+  left: 0;
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilo do menu de navegação horizontal */
+.navbar-nav {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens no menu */
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.navbar-nav li {
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0; /* Remove margem do último item */
+}
+
+.navbar-nav a {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: #666; /* Cor neutra para links não ativos */
+  font-weight: normal; /* Define peso normal para links não ativos */
+}
+
+.navbar-nav .active {
+  border-bottom: 3px solid #333; /* Linha inferior para a aba ativa */
+  color: #333; /* Cor escura para a aba ativa */
+  font-weight: bold; /* Deixa a aba ativa em negrito */
+}
+
+.navbar-nav a:hover {
+  color: #333; /* Cor mais escura ao passar o mouse */
+}
