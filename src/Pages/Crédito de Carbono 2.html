@@ -19,7 +19,7 @@
                     <span class="logo-text">GreenCycle</span>
                 </a>
             </div>
-            <!-- Menu -->
+            <!--  MUDAR Menu -->
             <div class="menu-container">
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
@@ -62,50 +62,86 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <div style="background-color: #d3d3d3; text-align: left;">
-            <h2 style="margin-left: 4%">
+        <div style="background-color: #d3d3d3; text-align: center; padding-top: 20px; padding-bottom: 20px;">
+            <h2>
                 Crédito de Carbono
             </h2>
         </div>
+        <br>
 
-        <div style="background-color: #d3d3d3; margin-top: 3%; width: 33%;">
-            <div>
-                <h5 style="text-align: left; margin-left: 13%; margin-top: 5%;">
-                    Qual o tipo de projeto que você desenolve?
-                </h5>
+        <div>
+             <!-- Barra de navegação -->
+            <div class="navbar-cc">
+                <a href="#" >Posso gerar Crédito de Carbono? </a>
+                <a href="#" class="active">Comprar Crédito de Carbono</a>
+                <a href="#">Vende Crédito de Carbono</a>
             </div>
-            <div style="display: flex;">
-                <form >
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Floresta</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Plantação</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Reserva</label>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Energia Eólica</label>
-                </form>
-                <form style="margin-left: 5%;" >
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Energia Solar</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Biomassa Renovável</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Metano Evitado</label>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Outros</label>
-                </form>
-            </div> 
+    
+        </div>
+        <br>
 
-            <!-- <div style="border-style: solid; border-color: white; margin-top:5%">
-                teste
-
-            </div> -->
-            <div>
+        <div class="container-main">
+            
+            <div class="compra-creditos">
+                <h4 style="text-align: center;">
+                    Quantidade de créditos que deseja comprar:
+                </h4>
                 <form>
-                    <input type="input"> 
+                    <label for="creditos"></label>
+                        <select id="creditos" name="creditos">
+                        <option value="opcao1">50 (min)</option>
+                        <option value="opcao2">100 (min)</option>
+                        <option value="opcao3">150 (min)</option>
+                        <option value="opcao4">200 (min)</option>
+                    </select>
+                </form>
+                
+            </div> 
+            <br>
+
+
+            <div class="preco-credito">
+                <h4 style="text-align: center"; >
+                    Origem do preço dos créditos
+                </h4>
+                <form>
+                    <input type="radio" id="origem" name="origem-preco" value="Brasil-REDD">
+                    <label for="Brasil-REDD">Brasil - REDD+ - Floresta R$53,80 cada</label>
+                    <br>
                 </form>
             </div>
+            <br>
+
+            <div class="selecionar-empresa">
+                <h4 style="text-align: center; margin-top: 10%; padding-top: 2%;">
+                    Empresa:
+                </h4>
+                <form> <!-- mudar o tamanho da fonte-->
+                    <label for="empresa">
+                        <select id="empresa" name="empresa">
+                        <option value="opcao1">Matriz Belo Horizonte (CNPJ xx.xxx.xxx/0001-xx )</option>
+                        <option value="opcao2">Matriz Betim (CNPJ xx.xxx.xxx/0001-xx )</option>
+                        </select>
+                        <br>
+                        <input type="checkbox" id="cadastro" name="cadastro" value="cadastro">
+                        <label for="cadastro" style="font-size: small;"> Usar o mesmo contato de email cadastrado</label>
+                        <br>
+                    </label>
+
+                </form>
+            </div>
+
+
+            <div class="center-button">
+                <button type="button" onclick="alert ('Sua solicitação foi enviada para análise. Entraremos em contato em breve');">
+                    Comprar
+                </button>
+            </div>
+            <br>
+
+            <p style="font-size: small; text-align: center;"><a href="">Verifique com nossa Assistente Virutal se você precisa comprar créditos de carnobo</a></p> 
+
+            
             
         </div>
       
