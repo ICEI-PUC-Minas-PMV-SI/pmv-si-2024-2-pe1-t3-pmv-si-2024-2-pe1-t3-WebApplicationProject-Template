@@ -56,27 +56,47 @@ header {
 }
 
 
-
-.footer {
-  background-color: #000000; /* Cor do rodapé */
-  color: white; /* Texto do rodapé */
-  padding: 10px 0;
+/* Estilos para o rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
   text-align: center;
+  margin-top: auto; /* Empurra o rodapé para baixo */
 }
 
-.footer-links {
-  list-style: none; /* Remove marcadores da lista */
-  padding: 0; /* Remove padding da lista */
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
 }
 
-.footer-links li {
-  display: inline;
-  margin: 0 15px; /* Espaçamento entre os links */
+footer .footer-links li {
+  margin: 0 10px;
+  padding: 5px 0; /* Adiciona espaço entre os itens */
 }
 
-.footer-links a {
-  color: white; /* Cor dos links do rodapé */
-  text-decoration: none; /* Remove underline dos links */
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; /* Ajusta as margens para os links */
+  }
 }
 .video-container {
   display: flex;

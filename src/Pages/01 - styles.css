@@ -23,14 +23,15 @@ body {
 /* Estilos para o Cabeçalho e Navbar */
 header {
   background-color: #589c68;
-  padding: 15px 0; 
-  margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+  padding: 15px 0;
+  margin-bottom: 20px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
 }
 
 .navbar .logo {
@@ -40,7 +41,7 @@ header {
 
 .navbar .logo-image {
   width: 80px; /* Tamanho do logo */
-  height: 80px; /* Faz o logo redondo */
+  height: 80px;
   border-radius: 50%; /* Faz o logo redondo */
   object-fit: cover;
 }
@@ -48,17 +49,17 @@ header {
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Remove o sublinhado do link */
+  text-decoration: none;
 }
 
 .navbar .logo-text {
-  color: white; /* Cor do texto */
-  font-size: 80px; /* Tamanho do texto igual ao tamanho do logo */
-  margin-left: 15px; /* Espaço entre o logo e o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  text-decoration: none; /* Remove qualquer sublinhado */
-  display: inline-block; /* Garante que a estilização funcione corretamente */
-  line-height: 1; /* Garante que não haja espaço extra acima e abaixo do texto */
+  color: white;
+  font-size: 80px;
+  margin-left: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 }
 
 /* Outros estilos para o Navbar */
@@ -66,6 +67,7 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Ajusta para telas menores */
 }
 
 .navbar .nav-list li {
@@ -85,6 +87,55 @@ header {
 .navbar .nav-list .active {
   background-color: #218838;
   border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduz o tamanho do logo em telas menores */
+  }
+
+  .navbar .logo-text {
+    font-size: 40px; /* Reduz o tamanho do texto do logo em telas menores */
+    margin-left: 10px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 14px;
+    padding: 6px 10px; /* Ajusta o padding para telas menores */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .navbar .logo-image {
+    width: 70px;
+    height: 70px; /* Ajuste intermediário para tablets */
+  }
+
+  .navbar .logo-text {
+    font-size: 60px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
 }
 
 /* Estilos para o menu dropdown de Acessibilidade */
@@ -214,10 +265,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
 }
 
 footer .footer-links li {
   margin: 0 10px;
+  padding: 5px 0; /* Adiciona espaço entre os itens */
 }
 
 footer .footer-links a {
@@ -228,6 +281,18 @@ footer .footer-links a {
 footer .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; /* Ajusta as margens para os links */
+  }
+}
+
 /* Estilo da barra de pesquisa */
 .form-control {
   border: 1px solid #ced4da; /* Borda padrão */
