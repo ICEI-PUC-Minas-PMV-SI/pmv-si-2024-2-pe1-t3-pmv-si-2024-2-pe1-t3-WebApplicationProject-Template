@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="../Pages/PerfilEmpresaCadastroMateriais.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /></a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /></a>
+                            </li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown de Acessibilidade -->
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <button class="login-button">
+                        <!-- Login do Usuário-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        Empresa
+                    </button>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="cadastro-section">
+            <!-- Barra de Navegação Superior -->
+            <div class="top-nav">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="active">Cadastro</a></li>
+                    <li><a href="#">Meus Endereços</a></li>
+                    <li><a href="#">Pagamentos</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+    
+            <!-- Corpo do Formulário e Resumo de Materiais -->
+            <div class="content">
+                <div class="left-container">
+                    <form class="cadastro-form">
+                        <h2>Cadastrar</h2>
+                        <div class="form-group">
+                            <label for="razao-social">Razão Social da Empresa</label>
+                            <input type="text" id="razao-social" placeholder="Empresa Sociedade Ltda">
+                            <span class="check-icon">✔</span>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="documento-empresa">Documento da Empresa ou Número D.U.N.S.
+                                <span class="question-icon" data-tooltip="O número D.U.N.S. é um identificador exclusivo para empresas."></span>
+                            </label>
+                            <input type="text" id="documento-empresa" placeholder="XX. XXX. XXX/0001-XX">
+                            <span class="check-icon">✔</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email-cadastro">Email de cadastro</label>
+                            <input type="email" id="email-cadastro" placeholder="empresa@empresa.com">
+                            <span class="check-icon">✔</span>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="senha-acesso">Senha de acesso
+                                <span class="question-icon" data-tooltip="A senha precisa ter no mínimo 8 caracteres, incluindo uma letra maiúscula e um número."></span>
+                            </label>
+                            <input type="password" id="senha-acesso" placeholder="****************">
+                        </div>
+    
+                        <div class="form-group">
+                            <button id="mfa-toggle" class="mfa-button">Habilitar duplo fator de autenticação (MFA)</button>
+                            <span class="question-icon" data-tooltip="A autenticação de dois fatores (MFA) adiciona uma camada extra de segurança, exigindo um código gerado no celular além da senha."></span>
+                        </div>
+                        
+    
+                        
+    
+                        
+                        <button type="submit" class="submit-button" onclick="atualizar()">Atualizar Cadastro</button>
+                        <script>
+                        function atualizar() {
+                            alert("Cadastro Atualizado!");
+                        }
+                        </script>
+                    </form>
+                </div>
+    
+                <div class="right-container">
+                    <div class="resumo-materiais">
+                        <h2>Resumo de Tipos de Materiais Habilitados</h2>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Pilhas e Baterias</label>
+                            <label><input type="checkbox" checked> Materiais Eletrônicos</label>
+                            <label><input type="checkbox"> Remédios</label>
+                            <label><input type="checkbox"> Óleo de Cozinha</label>
+                            <label><input type="checkbox" checked> Plásticos</label>
+                            <label><input type="checkbox" checked> Latas de Alumínio</label>
+                            <label><input type="checkbox"> Material Radioativo</label>
+                            <label><input type="checkbox"> Material Hospitalar</label>
+                        </div>
+    
+                        <div class="toggle-container">
+                            <h3 for="toggle-industries">Habilitar mesmos materiais para demais endereços da empresa</h3>
+                            <label class="switch">
+                                <input type="checkbox" id="toggle-industries">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="#">Regulamentação</a></li>
+                    <li><a href="#">Educacional</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
