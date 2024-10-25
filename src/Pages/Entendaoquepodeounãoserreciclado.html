@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenCycle | Homepage</title>
-    <link rel="stylesheet" href="styleEntendaoquepodeounãoserreciclado.css">
+    <link rel="stylesheet" href="Entendaoquepodeounãoserreciclado.css">
 </head>
 
 <body>
@@ -19,14 +19,14 @@
                 </a>
             </div>
             <!-- Menu -->
-           
+
             <div class="menu-container">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Regulamentação</a></li>
-                    <li><a href="#">Educacional</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li><a href="01- Index.html">Home</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
                             <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
@@ -50,80 +50,107 @@
                     </li>
                     <button class="login-button">
                         <!-- Ícone SVG do usuário -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                         </svg>
                         Login
                     </button>
-                    </ul>
+                </ul>
             </div>
         </nav>
-
     </header>
-
-    <div class="span2">
-        <h1> Entenda o que pode ou não ser reciclado </h1> <!-- Título principal da seção -->
-    </div>
-    
     <!-- Conteúdo principal -->
+    <div class="span2">
+        <h1> Reciclagem </h1>
+    </div>
 
-<main>
+    <main>
+        <article class="article-main">
+            <!-- Seção Principal -->
+            <section class="section-main">
+                <!-- Div para a tabela de materiais recicláveis -->
+                <div class="grid-recyclables">
+                    <!-- Primeiro item: Plástico -->
+                    <div class="grid-plastico">
+                        <h2>Plástico   <span class="question-icon" data-tooltip="Os plásticos são amplamente recicláveis, mas é importante limpar e secar os itens antes de descartá-los. Sacolas plásticas, por exemplo, podem ser recicladas em mercados e outros pontos de coleta específicos."></span></h2>
+                        <p> Garrafas Pet<br>
+                            Isopor<br>
+                            Sacolas plásticas<br>
+                            Tampas de recipientes<br>
+                            Brinquedos quebrados.</p>
+                        
+                    </div>
     
-    <article class="sectiondiv">
-        <div class="plastico"><h1>Plástico</h1>
-        </div>
+                    <!-- Segundo item: Papel -->
+                    <div class="grid-papel">
+                        <h2>Papel   <span class="question-icon" data-tooltip="Papel reciclável inclui jornais, caixas de papelão e impressos em geral. Papéis sujos com alimentos ou papéis encerados não são recicláveis e devem ser descartados no lixo comum."></span></h2>
+                        <p> Papel<br>
+                            Papelão<br>
+                            Jornais<br>
+                            Revistas<br>
+                            Cadernos usados<br>
+                            Livros</p>
+         
+                    </div>
     
-        <div class="ul"> 
-            <ul class="ul001">
-                <li class="li1">Isopor</li>
-                <li class="li1"> Sacolas</li>
-                <li class="li1">Tampas plásticas de recipientes</li>
-                <li class="li1"> Brinquedos quebrados</li>
-            </ul>
-        </div>
-
-      <div class="ul2"> 
-            <ul class="ul002">
-                <li class="li2">Adesivos</li>
-                <li class="li2">Espumas</li>
-                <li class="li2">Papel filme e similares</li>
-                <li class="li2">Cabos de panela</li>
-            </ul>
-        </div> 
-    </div>  
+                    <!-- Terceiro item: Vidro -->
+                    <div class="grid-vidro">
+                        <h2>Vidro   <span class="question-icon" data-tooltip="Vidros são 100% recicláveis, mas é importante remover tampas e lavar antes do descarte. Fragmentos de vidro devem ser manuseados com cuidado e entregues em pontos de coleta específicos."></span></h2>
+                        <p> Garrafas de vidro<br>
+                            Frascos<br>
+                            Potes de alimentos<br>
+                            Jarras e copos quebrados.</p>
+                    </div>
     
-
-
-
-                                 
-        <div class="Papel1"><h1>Papel</h1>
-        </div>
-   
-        <div class="ul3"> 
-           <ul class="ul003">
-               <li class="li3">Papel e papelão</li>
-               <li class="li3">Jornais e revista</li>
-               <li class="li3">Caixas de papelão </li>
-               <li class="li3">Impressos em geral</li>
-              
-           </ul>
-        </div>
-   
-
-    </article>
-
-</main>
-
+                    <!-- Quarto item: Metal -->
+                    <div class="grid-metal">
+                        <h2>Metal   <span class="question-icon" data-tooltip="Metais como latas de alumínio e de aço são altamente recicláveis. No entanto, latas de produtos tóxicos como tintas e solventes, devem ser descartadas separadamente."></span></h2>
+                        <p> Latas de alumínio<br>
+                            Fios elétricos<br>
+                            Fragmentos de metais diversos<br>
+                            Alumínio e aço.</p>
+                    </div>
+    
+                    <!-- Novo item: Outros resíduos -->
+                    <div class="grid-outro">
+                        <h2>Materiais de difícil descarte <span class="question-icon" data-tooltip="Esses materiais requerem cuidados especiais no descarte devido aos riscos ambientais e à saúde. Nunca descarte esses itens no lixo comum! Verifique as diretrizes locais para descarte seguro."></span></h2>
+                        <p> Resíduos inflamáveis<br>
+                            Pneus<br>
+                            Solventes<br>
+                            Restos de construção<br>
+                            Baterias elétricas<br>
+                            Fármacos<br> 
+                            Material radioativo<br>
+                            Explosivos.</p>
+                        
+                        <h5>Veja os locais onde você pode descartar esses materiais</h5>
+                        <button onclick="window.location.href='01 - Index.html'">Ir para mapa</button>
+                    </div>
+    
+                    <!-- Novo item: Perguntas-->
+                    <div class="grid-pergunta">
+                        <h3>Algum material que não encontrou? Pergunte aqui aonde e como descartar!</h3>
+                        <form class="faq-form">
+                            <textarea placeholder="Digite sua dúvida aqui..." rows="5"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
     <!-- Rodapé -->
     <footer>
         <div class="footer">
             <div class="container">
                 <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
                 <ul class="footer-links">
-                    <li><a href="#">Regulamentação</a></li>
-                    <li><a href="#">Educacional</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                    <li><a>Política de Privacidade</a></li>
                 </ul>
             </div>
         </div>
