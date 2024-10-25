@@ -439,7 +439,7 @@ header {
 }
 
 .navbar .login-button {
-  background-color: #333;
+  background-color: #589c68;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -458,20 +458,56 @@ header {
   padding: 20px;
 }
 
+/* Estilizando a div form-container */
 .form-container {
-  background-color: white;
-  padding: 30px;
-  margin: 0 auto;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  background-color: #fff; /* Fundo branco */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 40px; /* Aumenta o espaçamento interno */
+  max-width: 800px; /* Aumenta a largura máxima para 800px */
+  margin: 20px auto; /* Centraliza o formulário e adiciona espaço no topo */
+  border: 1px solid #e0e0e0; /* Borda leve ao redor */
 }
 
-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+/* Estilizando os inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+  width: 100%; /* Preenche toda a largura */
+  padding: 15px; /* Aumenta o espaçamento interno */
+  margin: 15px 0; /* Aumenta o espaçamento entre os elementos */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Garante que padding não afete a largura */
+  font-size: 18px; /* Aumenta o tamanho da fonte */
 }
+
+/* Estilizando o botão */
+.form-container button {
+  background-color: #28a745; /* Cor verde para o botão */
+  color: white; /* Texto branco */
+  padding: 15px 20px; /* Aumenta o espaçamento do botão */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Muda o cursor para "mão" */
+  font-size: 20px; /* Aumenta o tamanho do texto */
+  width: 100%; /* Largura total */
+  margin-top: 25px; /* Espaço superior */
+}
+
+.form-container button:hover {
+  background-color: #218838; /* Cor mais escura no hover */
+}
+
+/* Ajustes para responsividade */
+@media screen and (max-width: 768px) {
+  .form-container {
+      width: 90%; /* Aumenta a largura em telas menores */
+      padding: 20px; /* Reduz o padding para telas menores */
+  }
+}
+
 
 label {
   display: block;
@@ -648,23 +684,125 @@ body {
   font-size: 1.1em;
 }
 
-.cta-footer {
+footer {
+  position: relative; /* Certifique-se de que o rodapé não esteja fixo */
+  padding: 20px 0;
+  background-color: #222;
+  color: white;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px; /* Adicione uma margem superior para espaçamento do conteúdo */
 }
 
-.cta-footer a {
-  padding: 15px 30px;
+
+
+
+.botoes {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-bottom: 40px; /* Espaçamento inferior */
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.btn-venda, .btn-compra {
+  padding: 12px 30px; /* Tamanho confortável do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  color: white; /* Cor do texto */
+  background-color: #589c68; /* Cor verde para os botões */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão */
+  text-decoration: none; /* Remove sublinhado do link */
+  display: inline-block; /* Para que os botões tenham largura ajustada ao texto */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza transições */
+}
+
+.btn-venda:hover, .btn-compra:hover {
+  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve efeito de "crescimento" no hover */
+}
+
+.btn-venda:active, .btn-compra:active {
+  background-color: #3b8b3e; /* Cor ainda mais escura ao clicar */
+  transform: scale(0.98); /* Leve efeito de "redução" ao clicar */
+}
+
+.steps-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.step {
+  display: flex;
+  width: 80%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.step:nth-child(odd) {
+  justify-content: flex-start; /* Passos ímpares à esquerda */
+}
+
+.step:nth-child(even) {
+  justify-content: flex-end; /* Passos pares à direita */
+}
+
+.step-number {
   background-color: #589c68;
   color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: bold;
-  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
 }
 
-.cta-footer a:hover {
-  background-color: #45a049;
+.step-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.steps-section:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+  .step {
+      flex-direction: column; /* Passos em coluna em telas pequenas */
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .step:nth-child(odd),
+  .step:nth-child(even) {
+      justify-content: center; /* Alinha todos ao centro em telas pequenas */
+  }
+
+  .steps-section:before {
+      display: none; /* Remove a linha vertical central em telas pequenas */
+  }
 }
