@@ -773,3 +773,208 @@ input[type="password"] {
 .navbar-nav a:hover {
   color: #333; /* Cor mais escura ao passar o mouse */
 }
+
+/* Layout do conteúdo principal */
+.cadastro-section {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Estilos da Esquerda */
+.left-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  text-align: center;
+}
+
+.left-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  color: #FFD700; /* Cor de estrela dourada */
+}
+
+.company-info {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.company-info p {
+  margin-bottom: 10px;
+}
+
+/* Estilos da Direita */
+.right-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.right-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.right-container ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.right-container ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Botão de ação */
+.submit-button {
+  background-color: #589c68;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #4CAF50;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .left-container, .right-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center;
+  padding: 20px; /* Adiciona espaçamento ao redor da imagem */
+}
+
+.user-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Mantém a imagem redonda */
+  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+  max-width: 100%; /* Para garantir que a imagem não ultrapasse o contêiner */
+  margin: 0 auto; /* Centraliza a imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra à imagem */
+}
+
+
+/* Estilos para a seção de suporte */
+.support-section {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.support-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Formulario */
+.support-section .form-group {
+  margin-bottom: 20px;
+}
+
+.support-section label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.support-section select, 
+.support-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.support-section textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* Estilos para o upload de imagem */
+.support-section .upload-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.support-section .upload-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Botão de envio */
+.support-section .submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.support-section .submit-btn:hover {
+  background-color: #45a049;
+}

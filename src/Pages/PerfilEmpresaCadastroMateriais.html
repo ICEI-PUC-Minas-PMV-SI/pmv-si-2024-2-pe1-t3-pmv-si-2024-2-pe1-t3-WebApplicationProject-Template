@@ -25,7 +25,7 @@
                     <li><a href="#">Regulamentação</a></li>
                     <li><a href="#">Educacional</a></li>
                     <li><a href="#">Sobre Nós</a></li>
-                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
                     <li class="language-selector">
                         <button class="language-toggle">
                             <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
@@ -49,106 +49,99 @@
                     </li>
                     <button class="login-button">
                         <!-- Login do Usuário-->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                         </svg>
                         Empresa
                     </button>
-                    </ul>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
-    <main>
-        <section class="cadastro-section">
-            <!-- Barra de Navegação Superior -->
-            <div class="top-nav">
-                <ul class="navbar-nav">
-                    <li><a href="PerfilEmpresaCadastroMateriais.html" class="active">Cadastro</a></li>
-                    <li><a href="PerfilEmpresaEnderecos.html">Meus Endereços</a></li>
-                    <li><a href="PerfilEmpresaPagamentos.html">Pagamentos</a></li>
-                    <li><a href="#">Suporte</a></li>
-                </ul>
-            </div>
-    
-            <!-- Corpo do Formulário e Resumo de Materiais -->
-            <div class="content">
-                <div class="left-container">
-                    <form class="cadastro-form">
-                        <h2>Cadastrar</h2>
-                        <div class="form-group">
-                            <label for="razao-social">Razão Social da Empresa</label>
-                            <input type="text" id="razao-social" placeholder="Empresa Sociedade Ltda">
-                            <span class="check-icon">✔</span>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="documento-empresa">Documento da Empresa ou Número D.U.N.S.
-                                <span class="question-icon" data-tooltip="O número D.U.N.S. é um identificador exclusivo para empresas."></span>
-                            </label>
-                            <input type="text" id="documento-empresa" placeholder="XX. XXX. XXX/0001-XX">
-                            <span class="check-icon">✔</span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email-cadastro">Email de cadastro</label>
-                            <input type="email" id="email-cadastro" placeholder="empresa@empresa.com">
-                            <span class="check-icon">✔</span>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="senha-acesso">Senha de acesso
-                                <span class="question-icon" data-tooltip="A senha precisa ter no mínimo 8 caracteres, incluindo uma letra maiúscula e um número."></span>
-                            </label>
-                            <input type="password" id="senha-acesso" placeholder="****************">
-                        </div>
-    
-                        <div class="form-group">
-                            <button id="mfa-toggle" class="mfa-button">Habilitar duplo fator de autenticação (MFA)</button>
-                            <span class="question-icon" data-tooltip="A autenticação de dois fatores (MFA) adiciona uma camada extra de segurança, exigindo um código gerado no celular além da senha."></span>
-                        </div>
-                        
-    
-                        
-    
-                        
-                        <button type="submit" class="submit-button" onclick="atualizar()">Atualizar Cadastro</button>
-                        <script>
-                        function atualizar() {
-                            alert("Cadastro Atualizado!");
-                        }
-                        </script>
-                    </form>
+<!-- Conteúdo principal -->
+<main>
+    <section class="cadastro-section">
+        <!-- Barra de Navegação Superior -->
+        <div class="top-nav">
+            <ul class="navbar-nav">
+                <li><a href="PerfilEmpresaCadastroMateriais.html" class="active">Meu Cadastro</a></li>
+                <li><a href="PerfilEmpresaEnderecos.html">Meus Endereços</a></li>
+                <li><a href="PerfilEmpresaPagamentos.html">Pagamentos</a></li>
+                <li><a href="PerfilEmpresaSuporte.html">Suporte</a></li>
+            </ul>
+        </div>
+
+        <!-- Corpo do Formulário e Resumo de Materiais -->
+        <div class="content"> <!-- Ambos os containers devem estar dentro da mesma div content -->
+            <div class="left-container">
+                <h2>PucMinas Coração Eucarístico</h2>
+                <div class="profile-image">
+                    <img src="../images/PucMinas.jpg" alt="Foto do Usuário" class="user-photo">
                 </div>
-    
-                <div class="right-container">
-                    <div class="resumo-materiais">
-                        <h2>Resumo de Tipos de Materiais Habilitados</h2>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" checked> Pilhas e Baterias</label>
-                            <label><input type="checkbox" checked> Materiais Eletrônicos</label>
-                            <label><input type="checkbox"> Remédios</label>
-                            <label><input type="checkbox"> Óleo de Cozinha</label>
-                            <label><input type="checkbox" checked> Plásticos</label>
-                            <label><input type="checkbox" checked> Latas de Alumínio</label>
-                            <label><input type="checkbox"> Material Radioativo</label>
-                            <label><input type="checkbox"> Material Hospitalar</label>
-                        </div>
-    
-                        <div class="toggle-container">
-                            <h3 for="toggle-industries">Habilitar mesmos materiais para demais endereços da empresa</h3>
-                            <label class="switch">
-                                <input type="checkbox" id="toggle-industries">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span> 
                     </div>
-                </div>
+                    <div class="company-info">
+                        <p><strong>Endereço:</strong> Av: Dom José Gaspar, 500 Coração Eucarístico – Belo Horizonte – MG
+                        </p>
+                        <p><strong>CNPJ:</strong> 17.178.195/0029-68</p>
+                    </div>
             </div>
-        </section>
-    </main>
+
+            <div class="right-container">
+                <h2>Resumo de Tipos de Materiais Habilitados</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pilhas" name="materiais" checked>
+                        <label for="pilhas">Pilhas e Baterias</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="eletronicos" name="materiais">
+                        <label for="eletronicos">Materiais Eletrônicos</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="remedios" name="materiais" checked>
+                        <label for="remedios">Remédios</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="oleo" name="materiais">
+                        <label for="oleo">Óleo de Cozinha</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="plasticos" name="materiais" checked>
+                        <label for="plasticos">Plásticos</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="latas" name="materiais">
+                        <label for="latas">Latas de Alumínio</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="radioativo" name="materiais">
+                        <label for="radioativo">Material Radioativo</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="hospitalar" name="materiais" checked>
+                        <label for="hospitalar">Material Hospitalar</label>
+                    </li>
+                </ul>
+                <button type="submit" class="submit-button" onclick="atualizar()">Habilitar mesmos materiais para demais endereços da empresa</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    function atualizar() {
+        alert("Cadastro Atualizado!");
+    }
+</script>
 
 
     <!-- Rodapé -->
