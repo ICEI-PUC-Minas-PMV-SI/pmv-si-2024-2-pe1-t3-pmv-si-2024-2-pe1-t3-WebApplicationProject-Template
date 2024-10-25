@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos Empresariais | GreenCycle</title>
-    <link rel="stylesheet" href="03 - Planos Empresariais.css"> 
+    <link rel="stylesheet" href="03 - Planos Empresariais.css">
 </head>
+
 <body>
     <main>
         <div class="title-container">
             <h1>PLANOS EMPRESARIAIS</h1>
         </div>
-            <h2 class="vantagens-title">Por que escolher a GreenCycle</h2>
-            <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/h94IRxmOono" 
-              frameborder="0" 
-              allowfullscreen>
+        <h2 class="vantagens-title">Por que escolher a GreenCycle</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/h94IRxmOono" frameborder="0" allowfullscreen>
             </iframe>
-            </div>
+        </div>
         <div class="plans-container">
             <div class="plan">
                 <h2>Micro e Pequenas Empresas</h2>
                 <p>Direito a divulgação do material reciclável da sua empresa.</p>
                 <p>Preço: R$ 49,90/mês</p>
-                <button>Assinar</button>
+                <button onclick="atualizar()">Assinar</button>
+                <script>
+                    function atualizar() {
+                        alert("Seja bem vindo a GreenCycle!");
+                        window.location.href = '02 - Index Empresarial.html'; // Redireciona para a nova página
+                    }
+                </script>
             </div>
             <div class="plan">
                 <h2>Empresas de Grande Porte</h2>
                 <p>Direito a relatórios e divulgação do material reciclável da sua empresa</p>
                 <p>Preço: R$ 99,80/mês</p>
-                <button>Assinar</button>
+                <button onclick="atualizar()">Assinar</button>
+                <script>
+                    function atualizar() {
+                        alert("Seja bem vindo a GreenCycle!");
+                        window.location.href = '02 - Index Empresarial.html'; // Redireciona para a nova página
+                    }
+                </script>
             </div>
             <div class="plan">
                 <h2>Empresas Verdes & Empresas Emissoras de CO2</h2>
-                <p>Direito a relatórios e divulgação do material reciclável da sua empresa e acesso a area de compra e venda de créditos de carbono.</p>
+                <p>Direito a relatórios e divulgação do material reciclável da sua empresa e acesso a area de compra e
+                    venda de créditos de carbono.</p>
                 <p>Preço: R$ 129,90/mês</p>
-                <button>Assinar</button>
+                <button onclick="atualizar()">Assinar</button>
+                <script>
+                    function atualizar() {
+                        alert("Seja bem vindo a GreenCycle!");
+                        window.location.href = '02 - Index Empresarial.html'; // Redireciona para a nova página
+                    }
+                </script>
             </div>
         </div>
     </main>
@@ -56,4 +74,5 @@
         </div>
     </footer>
 </body>
+
 </html>

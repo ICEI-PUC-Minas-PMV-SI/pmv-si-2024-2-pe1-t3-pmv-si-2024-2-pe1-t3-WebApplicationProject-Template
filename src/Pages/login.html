@@ -105,11 +105,28 @@
                         <span class="slider round"></span>
                     </label>
                 </div>
-
+                
                 <div class="toggle-container">
-                    <button type="submit" onclick="window.location.href='03 - Planos Empresariais.html'">Criar Conta</button>
+                    <button type="submit" onclick="criarConta()">Criar Conta</button>
                 </div>
-            </div>
+                
+                <script>
+                    function criarConta() {
+                        var termosAceitos = document.getElementById("termos").checked;
+                        var isEmpresa = document.getElementById("toggle-industries").checked;
+                
+                        if (!termosAceitos) {
+                            alert("Você precisa concordar com os termos e condições.");
+                            return; // Interrompe a execução caso os termos não sejam aceitos
+                        }
+                
+                        if (isEmpresa) {
+                            window.location.href = '02 - Index Empresarial.html'; // Redireciona para a página empresarial
+                        } else {
+                            window.location.href = 'perfil-usuario.html'; // Redireciona para a página de perfil de usuário
+                        }
+                    }
+                </script>
         </div>
     </main>
 
