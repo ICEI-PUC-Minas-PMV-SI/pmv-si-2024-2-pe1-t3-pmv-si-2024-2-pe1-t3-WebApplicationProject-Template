@@ -427,157 +427,143 @@
   .btn-directions:hover {
     background-color: #45a049; /* Cor do botão ao passar o mouse */
   }
-
-.container-perfil {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
-/* Estilo para a coluna esquerda (informações do usuário) */
+.container-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: all 0.5s ease;
+    flex-direction: column; /* Coloca tudo em coluna para centralizar */
+}
+
 .user-info {
-  width: 45%;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.materials-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .user-photo {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.user-details {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.user-details label {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
+.star {
+    font-size: 20px;
+    color: gold;
+    margin-right: 2px;
 }
 
 .user-details input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .toggle-section {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.toggle-section span {
-  margin-right: 10px;
-}
-
-/* Estilo do botão de toggle */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 10px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #28a745;
+    background-color: #4CAF50;
 }
 
 input:checked + .slider:before {
-  transform: translateX(20px);
+    transform: translateX(26px);
 }
 
 .btn-update {
-  display: block;
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .btn-update:hover {
-  background-color: #0056b3;
-}
-
-/* Estilo para a coluna direita (materiais) */
-.materials-section {
-  width: 45%;
-}
-
-.materials {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.materials h3 {
-  margin-bottom: 20px;
-}
-
-.materials div {
-  margin-bottom: 10px;
-}
-
-.materials label {
-  margin-left: 10px;
-}
-
-.btn-educacao {
-  display: block;
-  padding: 10px 15px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-educacao:hover {
-  background-color: #218838;
+    background-color: #45a049;
 }

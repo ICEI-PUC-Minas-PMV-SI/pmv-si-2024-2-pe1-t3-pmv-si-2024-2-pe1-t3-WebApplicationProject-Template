@@ -64,7 +64,7 @@
     <!-- Conteúdo principal -->
     <main>
         <div class="esquerdalogin">
-            <!-- Login Section -->
+            <!-- Login-->
             <div class="form-section">
                 <h2>LOGIN</h2>
                 <label for="email-login">E-mail</label>
@@ -76,10 +76,7 @@
                 <button type="submit">Entrar</button>
             </div>
 
-            <!-- Divider -->
-            <div class="divisor"></div>
-
-            <!-- Create Account Section -->
+            <!-- sessão de criação de conta -->
             <div class="direitalogin">
                 <h2>Criar Conta</h2>
                 <label for="nome">Nome</label>
@@ -117,13 +114,13 @@
                 
                         if (!termosAceitos) {
                             alert("Você precisa concordar com os termos e condições.");
-                            return; // Interrompe a execução caso os termos não sejam aceitos
+                            return; 
                         }
                 
                         if (isEmpresa) {
-                            window.location.href = '03 - Planos Empresariais.html'; // Redireciona para a página empresarial
+                            window.location.href = '03 - Planos Empresariais.html'; 
                         } else {
-                            window.location.href = 'perfil-usuario.html'; // Redireciona para a página de perfil de usuário
+                            window.location.href = 'perfil-usuario.html'; 
                         }
                     }
                 </script>
