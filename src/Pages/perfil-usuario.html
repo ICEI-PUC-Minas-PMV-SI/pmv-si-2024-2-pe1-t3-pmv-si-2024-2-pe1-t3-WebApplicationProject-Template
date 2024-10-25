@@ -67,7 +67,7 @@
         <!-- Coluna esquerda com foto e informações do usuário -->
         <div class="user-info">
             <div class="profile-header">
-                <img src="/src/images/Prof.jpg" alt="Foto do Usuário" class="user-photo">
+                <img src="../images/Prof.jpg" alt="Foto do Usuário" class="user-photo" style="width: 100px; height: 100px; border-radius: 50%;">
                 <div class="stars">
                     <span class="star">&#9733;</span>
                     <span class="star">&#9733;</span>
@@ -79,65 +79,68 @@
             <div class="user-details">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" value="Marco Rodrigo Costa">
+            
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" value="marco.rodrigo@sga.pucminas.br">
+            
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" value="123456">
-            </div>
+                <input type="password" id="senha" value="amopãodequeijo123">
             <div class="toggle-section">
                 <span>Sou um centro de coleta</span>
                 <label class="switch">
-                    <input type="checkbox" id="coleta-toggle" onclick="moverCard()">
+                    <input type="checkbox" id="coleta-toggle" onclick="mostrarMateriais()">
                     <span class="slider round"></span>
                 </label>
             </div>
             <button class="btn-update">Atualizar Cadastro</button>
         </div>
+    </div>
 
-        <!-- Coluna direita com tipos de materiais (oculta inicialmente) -->
-        <div class="materials-section" id="materials-section" style="display: none;">
-            <h3>Tipos de Materiais que Coleta</h3>
-            <div class="materials-list">
-                <div>
-                    <input type="checkbox" id="pilhas">
-                    <label for="pilhas">Pilhas e baterias</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="eletronicos">
-                    <label for="eletronicos">Materiais eletrônicos</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="remedios">
-                    <label for="remedios">Remédios</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="oleo">
-                    <label for="oleo">Óleos de cozinha</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="plasticos">
-                    <label for="plasticos">Plásticos</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="latas">
-                    <label for="latas">Latas de alumínio</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="outros" onclick="mostrarCampoDescricao()">
-                    <label for="outros">Outros</label>
-                </div>
+    <!-- Coluna direita com tipos de materiais (oculta inicialmente) -->
+    <div class="materials-section" id="materials-section" style="display: none;">
+        <h3>Tipos de Materiais que Coleta</h3>
+        <div class="materials-list">
+            <div>
+                <input type="checkbox" id="pilhas">
+                <label for="pilhas">Pilhas e baterias</label>
+            </div>
+            <div>
+                <input type="checkbox" id="eletronicos">
+                <label for="eletronicos">Materiais eletrônicos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="remedios">
+                <label for="remedios">Remédios</label>
+            </div>
+            <div>
+                <input type="checkbox" id="oleo">
+                <label for="oleo">Óleos de cozinha</label>
+            </div>
+            <div>
+                <input type="checkbox" id="plasticos">
+                <label for="plasticos">Plásticos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="latas">
+                <label for="latas">Latas de alumínio</label>
+            </div>
+            <div>
+                <input type="checkbox" id="outros" onclick="mostrarCampoDescricao()">
+                <label for="outros">Outros</label>
+            </div>
 
-                <!-- Campo de descrição e botão incluir (ocultos inicialmente) -->
-                <div id="descricao-outros" style="display: none; margin-top: 10px;">
-                    <label for="descricao">Descreva o material:</label>
-                    <input type="text" id="descricao" placeholder="Descreva o material" class="input-field" style="width: 100%; margin-bottom: 10px;">
-                    <button onclick="incluirMaterial()" class="btn-incluir">Incluir</button>
-                </div>
+            <!-- Campo de descrição e botão incluir (ocultos inicialmente) -->
+            <div id="descricao-outros" style="display: none; margin-top: 10px;">
+                <label for="descricao">Descreva o material:</label>
+                <input type="text" id="descricao" placeholder="Descreva o material" class="input-field" style="width: 100%; margin-bottom: 10px;">
+                <button onclick="incluirMaterial()" class="btn-incluir">Incluir</button>
             </div>
         </div>
     </div>
+</div>
 </main>
 
+<!-- Funções JavaScript -->
 <script>
     function mostrarMateriais() {
         var checkbox = document.getElementById("coleta-toggle");
