@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
     <title>Finance Hub</title>
 </head>
 <body>
-    <header>
-        <h1>Finance Hub</h1>
-    </header>
-    
-    <section class="login-section">
-        <div class="login-form">
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Insira seu e-mail">
+    <div class="asset-page-desktop">
+        <header class="header">
+            <h1 class="header-title">Finance Hub</h1>
+        </header>
+        
+        <section class="login-section">
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-input" placeholder="Insira seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id="senha" class="form-input" placeholder="Insira sua senha">
+                </div>
+                <button class="login-button">LOGIN</button>
+                <div class="links">
+                    <span class="forgot-password">Esqueceu sua senha? Clique aqui</span>
+                    <span class="signup">Não possui cadastro? Clique aqui</span>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Insira sua senha">
-            </div>
-            <button class="login-button">LOGIN</button>
-            <div class="links">
-                <span class="forgot-password">Esqueceu sua senha? Clique aqui</span>
-                <span class="signup">Não possui cadastro? Clique aqui</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <span>Copyright 2024 Finance Hub</span>
-    </footer>
+        <footer class="footer">
+            <span class="footer-text">Copyright 2024 Finance Hub</span>
+        </footer>
+    </div>
 </body>
 </html>
+
