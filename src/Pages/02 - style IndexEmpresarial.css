@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
+  flex-wrap: wrap; 
 }
 
 .navbar .logo {
@@ -40,9 +40,9 @@ header {
 }
 
 .navbar .logo-image {
-  width: 80px; /* Tamanho do logo */
+  width: 80px; 
   height: 80px;
-  border-radius: 50%; /* Faz o logo redondo */
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -67,7 +67,7 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Ajusta para telas menores */
+  flex-wrap: wrap; 
 }
 
 .navbar .nav-list li {
@@ -95,14 +95,14 @@ header {
     flex-direction: column;
     align-items: flex-start;
   }
-
+}
   .navbar .logo-image {
     width: 60px;
-    height: 60px; /* Reduz o tamanho do logo em telas menores */
+    height: 60px; 
   }
 
   .navbar .logo-text {
-    font-size: 40px; /* Reduz o tamanho do texto do logo em telas menores */
+    font-size: 40px; 
     margin-left: 10px;
   }
 
@@ -118,14 +118,13 @@ header {
 
   .navbar .nav-list a {
     font-size: 14px;
-    padding: 6px 10px; /* Ajusta o padding para telas menores */
-  }
+    padding: 6px 10px; 
 }
 
 @media (min-width: 600px) and (max-width: 992px) {
   .navbar .logo-image {
     width: 70px;
-    height: 70px; /* Ajuste intermediário para tablets */
+    height: 70px; 
   }
 
   .navbar .logo-text {
@@ -143,10 +142,10 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%; /* Ajusta a posição do dropdown */
-  transform: translateX(-50%); /* Centraliza o dropdown horizontalmente */
-  background-color: #589c68; /* Cor de fundo verde */
-  min-width: 200px; /* Define um valor mínimo para a largura */
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #589c68; 
+  min-width: 200px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   z-index: 1000;
@@ -180,13 +179,13 @@ header {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+  background-color: #218838; 
 }
 
 /* Estilos para o dropdown de Alterar Linguagem */
 .language-selector {
   position: relative;
-  display: inline-block; /* Alinha o dropdown com o botão */
+  display: inline-block; 
 }
 
 .language-toggle {
@@ -197,11 +196,11 @@ header {
 }
 
 .language-toggle .flag-icon {
-  width: 32px; /* Tamanho da bandeira no botão principal */
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent; /* Garantir fundo transparente */
+  background-color: transparent; 
   border: none;
   margin: 0;
 }
@@ -212,13 +211,13 @@ header {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent; /* Torna o fundo do dropdown transparente */
+  background-color: transparent; 
   padding: 0;
   margin: 0;
   z-index: 1000;
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .language-dropdown li {
@@ -232,22 +231,22 @@ header {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 0; /* Remove qualquer padding extra */
-  border: none; /* Remove bordas */
+  padding: 0; 
+  border: none; 
 }
 
 .language-dropdown li a .flag-icon {
-  width: 32px; /* Tamanho das bandeiras dentro do dropdown */
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent; /* Garantir fundo transparente */
+  background-color: transparent; 
   border: none;
-  margin: 0; /* Remove qualquer margem extra */
+  margin: 0; 
 }
 
 .language-selector:hover .language-dropdown {
-  display: block; /* Exibe o dropdown ao passar o mouse */
+  display: block; 
 }
 
 /* Estilos para o rodapé */
@@ -256,7 +255,7 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: auto; /* Empurra o rodapé para baixo */
+  margin-top: auto; 
 }
 
 footer .footer-links {
@@ -265,12 +264,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
+  flex-wrap: wrap; 
 }
 
 footer .footer-links li {
   margin: 0 10px;
-  padding: 5px 0; /* Adiciona espaço entre os itens */
+  padding: 5px 0; 
 }
 
 footer .footer-links a {
@@ -285,44 +284,44 @@ footer .footer-links a:hover {
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
   footer .footer-links {
-    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+    flex-direction: column; 
   }
 
   footer .footer-links li {
-    margin: 5px 0; /* Ajusta as margens para os links */
+    margin: 5px 0; 
   }
 }
 
 
 /* Estilo da barra de pesquisa */
 .form-control {
-  border: 1px solid #ced4da; /* Borda padrão */
-  border-radius: 0.25rem; /* Bordas arredondadas */
-  padding: 10px; /* Espaçamento interno */
-  width: 250px; /* Largura da barra de pesquisa */
+  border: 1px solid #ced4da; 
+  border-radius: 0.25rem; 
+  padding: 10px; 
+  width: 250px; 
 }
 
 .form-control:focus {
   border-color: #80bdff; /* Cor da borda ao focar */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
 }
 
 .btn-outline-success {
-  margin-left: 10px; /* Espaçamento à esquerda do botão */
-  border-radius: 0.25rem; /* Bordas arredondadas */
+  margin-left: 10px; 
+  border-radius: 0.25rem; 
 }
 .btn-procurar {
-  background-color: transparent; /* Fundo transparente */
-  color: white; /* Cor do texto */
-  border: 1px solid white; /* Borda branca */
-  border-radius: 5px; /* Bordas arredondadas */
-  padding: 8px 15px; /* Espaçamento interno */
-  transition: background-color 0.3s ease; /* Transição suave */
-  cursor: pointer; /* Cursor em ponteiro */
+  background-color: transparent; 
+  color: white; 
+  border: 1px solid white; 
+  border-radius: 5px; 
+  padding: 8px 15px; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer; 
 }
 
 .btn-procurar:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
 /* Estilos adicionais para remover bordas e fundos indesejados */
@@ -336,66 +335,66 @@ footer .footer-links a:hover {
 
 /* Contêiner do Mapa e Sidebar */
 .map-container {
-  display: flex; /* Usar flexbox para disposição lado a lado */
-  height: calc(100vh - 200px); /* Ajusta a altura do contêiner */
+  display: flex; 
+  height: calc(100vh - 200px); 
   padding: 20px;
 }
 
 /* Mapa */
 #map {
-  flex: 3; /* Largura do mapa */
-  height: 100%; /* Altura total do contêiner */
-  margin-right: 20px; /* Espaçamento à direita do mapa */
+  flex: 3; 
+  height: 100%; 
+  margin-right: 20px;
 }
 
 .sidebar {
-  background-color: #589c68; /* Altere para a mesma cor da barra de cima */
-  color: white; /* Texto branco */
-  padding: 20px; /* Espaçamento interno */
-  width: 300px; /* Largura da sidebar */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  background-color: #589c68;
+  color: white; 
+  padding: 20px; 
+  width: 300px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .sidebar h2 {
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-  font-size: 1.5em; /* Tamanho do título */
+  margin-bottom: 10px; 
+  font-size: 1.5em; 
 }
 
 .sidebar p {
-  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+  margin-bottom: 15px; 
 }
 
 .sidebar button {
-  background-color: #4CAF50; /* Verde claro para os botões */
-  color: white; /* Texto branco */
-  border: none; /* Sem borda */
-  padding: 10px 15px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas do botão */
-  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
-  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
 .sidebar button:hover {
-  background-color: #45a049; /* Verde mais claro ao passar o mouse */
+  background-color: #45a049; 
 }
 
 .filter-container {
-  margin-bottom: 20px; /* Espaçamento abaixo da seção de filtro */
+  margin-bottom: 20px; 
 }
 
 .filter-container div {
-  margin-bottom: 10px; /* Espaçamento entre as opções de filtro */
+  margin-bottom: 10px; 
 }
 
 .filter-container input[type="checkbox"] {
-  margin-right: 10px; /* Espaçamento à direita dos checkboxes */
+  margin-right: 10px; 
 }
 
 /* Adicionando a linha horizontal */
 .sidebar hr {
-  border: 1px solid #6A8E6A; /* Cor da linha horizontal */
-  margin: 15px 0; /* Margens acima e abaixo da linha */
+  border: 1px solid #6A8E6A; 
+  margin: 15px 0; 
 }
 
 
@@ -414,10 +413,10 @@ footer .footer-links a:hover {
 }
 
 .login-button:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: #45a049;
 }
 
 .login-button svg {
-  margin-right: 8px; /* Espaço entre o ícone e o texto */
+  margin-right: 8px; 
 }
 

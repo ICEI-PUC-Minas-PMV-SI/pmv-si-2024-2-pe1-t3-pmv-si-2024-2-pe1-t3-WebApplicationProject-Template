@@ -10,7 +10,7 @@ function initMap() {
     const directionsRenderer = new google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
 
-    let userLocation = defaultLocation; // Define a localização padrão como PUC Minas
+    let userLocation = defaultLocation; 
 
     // Tenta obter a geolocalização do usuário
     if (navigator.geolocation) {
@@ -73,14 +73,14 @@ function initMap() {
         { name: "Empresa Z", lat: -19.931900, lng: -44.027300, hours: "Segunda a Sexta: 08:30 - 17:30", contact: "(31) 7890-1236", materials: ["Metal Comum"] }
     ];
 
-    const markers = []; // Array para armazenar os marcadores
+    const markers = []; 
 
     function addMarker(location, isIndustry = false) {
         const marker = new google.maps.Marker({
             position: { lat: location.lat, lng: location.lng },
             map: map,
             title: location.name,
-            icon: isIndustry ? 'http://maps.google.com/mapfiles/ms/icons/green-dot.png' : null, // Usa um ícone verde para as indústrias
+            icon: isIndustry ? 'http://maps.google.com/mapfiles/ms/icons/green-dot.png' : null, 
         });
 
         const infoWindowContent = `
@@ -105,15 +105,15 @@ function initMap() {
             const directionsButton = document.getElementById(`get-directions-${location.lat}-${location.lng}`);
             if (directionsButton) {
                 directionsButton.addEventListener("click", (e) => {
-                    e.stopPropagation(); // Impede que o clique feche o infoWindow
+                    e.stopPropagation(); 
                     getDirections(location);
                 });
             }
         });
 
-        markers.push(marker); // Adiciona o marcador ao array de marcadores
+        markers.push(marker); 
     }
-
+    //Função pra Destino
     function getDirections(destination) {
         const request = {
             origin: userLocation,

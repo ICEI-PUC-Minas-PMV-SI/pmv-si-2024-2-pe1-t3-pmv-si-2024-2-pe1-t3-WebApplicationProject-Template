@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #4A6E4A; /* Cor da barra de navegação */
+  background-color: #4A6E4A; 
   padding: 10px 0;
 }
 
@@ -22,37 +22,36 @@ header {
 
 .title-container h1 {
   font-size: 2.5em;
-  color: #4A6E4A; /* Cor do texto */
+  color: #4A6E4A; 
 }
 
 .plans-container {
-  display: flex; /* Use flexbox para alinhar os planos em linha */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  flex-wrap: wrap; /* Permite que os planos se movam para a próxima linha se necessário */
-  margin: 20px 0; /* Espaçamento acima e abaixo */
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
-
 .plan {
-  background-color: #f8f8f8; /* Fundo para cada plano */
-  border: 1px solid #ddd; /* Borda ao redor do plano */
-  border-radius: 5px; /* Bordas arredondadas */
-  padding: 20px; /* Espaçamento interno */
-  margin: 20px; /* Aumente o espaço externo para 20px */
-  width: 300px; /* Largura fixa para os planos */
-  text-align: center; /* Centraliza o texto dentro do plano */
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
 }
 
 .plan button {
-  background-color: #28a745; /* Cor do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Remove borda do botão */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas do botão */
-  cursor: pointer; /* Cursor pointer ao passar sobre o botão */
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .plan button:hover {
-  background-color: #218838; /* Cor do botão ao passar o mouse */
+  background-color: #218838;
 }
 
 
@@ -62,7 +61,7 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: auto; /* Empurra o rodapé para baixo */
+  margin-top: auto; 
 }
 
 footer .footer-links {
@@ -71,12 +70,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
+  flex-wrap: wrap;
 }
 
 footer .footer-links li {
   margin: 0 10px;
-  padding: 5px 0; /* Adiciona espaço entre os itens */
+  padding: 5px 0; 
 }
 
 footer .footer-links a {
@@ -91,29 +90,29 @@ footer .footer-links a:hover {
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
   footer .footer-links {
-    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+    flex-direction: column; 
   }
 
   footer .footer-links li {
-    margin: 5px 0; /* Ajusta as margens para os links */
+    margin: 5px 0; 
   }
 }
 .video-container {
   display: flex;
-  justify-content: center; /* Centraliza o vídeo horizontalmente */
-  margin: 20px 0; /* Espaçamento superior e inferior */
+  justify-content: center; 
+  margin: 20px 0; 
 }
 
 .video-container iframe {
-  width: 80%; /* Largura do vídeo */
-  height: 450px; /* Altura do vídeo */
-  max-width: 800px; /* Largura máxima do vídeo */
-  border-radius: 8px; /* Bordas arredondadas */
+  width: 80%;
+  height: 450px;
+  max-width: 800px;
+  border-radius: 8px;
 }
 
 .vantagens-title {
-  text-align: center; /* Centraliza o texto horizontalmente */
-  margin: 20px 0; /* Espaçamento acima e abaixo */
-  font-size: 24px; /* Tamanho da fonte */
-  color: #333; /* Cor do texto */
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  color: #333;
 }

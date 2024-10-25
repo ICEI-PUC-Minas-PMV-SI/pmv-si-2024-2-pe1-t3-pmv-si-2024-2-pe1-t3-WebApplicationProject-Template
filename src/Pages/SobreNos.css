@@ -579,7 +579,7 @@ main {
 
 section {
   flex: 1;
-  margin-right: 30px; /* Ajusta o espaçamento entre o texto e a lista de membros */
+  margin-right: 30px; 
 }
 
 /* Ajuste da seção do time */

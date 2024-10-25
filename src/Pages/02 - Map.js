@@ -54,12 +54,11 @@ function getUserLocation() {
                     lng: position.coords.longitude,
                 };
                 map.setCenter(userLocation);
-                addCentralMarker(userLocation); // Adiciona o marcador na localização do usuário
+                addCentralMarker(userLocation); 
             },
             () => {
-                // Se o usuário negar acesso, centralizar na localização padrão
                 map.setCenter(defaultLocation);
-                addCentralMarker(defaultLocation); // Adiciona o marcador na localização padrão
+                addCentralMarker(defaultLocation);
             }
         );
     } else {
@@ -76,7 +75,7 @@ function addCentralMarker(location) {
         map: map,
         title: "Você está aqui",
         icon: {
-            url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", // Marcador azul para a localização do usuário
+            url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", 
         },
     });
 }

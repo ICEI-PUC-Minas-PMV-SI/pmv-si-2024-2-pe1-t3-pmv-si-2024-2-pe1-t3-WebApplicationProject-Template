@@ -884,19 +884,19 @@ input[type="password"] {
 
 .profile-image {
   display: flex;
-  justify-content: center; /* Centraliza a imagem horizontalmente */
+  justify-content: center; 
   align-items: center;
-  padding: 20px; /* Adiciona espaçamento ao redor da imagem */
+  padding: 20px; 
 }
 
 .user-photo {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Mantém a imagem redonda */
-  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
-  max-width: 100%; /* Para garantir que a imagem não ultrapasse o contêiner */
-  margin: 0 auto; /* Centraliza a imagem */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra à imagem */
+  border-radius: 50%; 
+  object-fit: cover; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
