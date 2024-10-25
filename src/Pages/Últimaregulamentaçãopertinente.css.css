@@ -23,14 +23,15 @@ body {
 /* Estilos para o Cabeçalho e Navbar */
 header {
   background-color: #589c68;
-  padding: 0% 0; 
-  margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+  padding: 15px 0;
+  margin-bottom: 20px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
 }
 
 .navbar .logo {
@@ -40,7 +41,7 @@ header {
 
 .navbar .logo-image {
   width: 80px; /* Tamanho do logo */
-  height: 80px; /* Faz o logo redondo */
+  height: 80px;
   border-radius: 50%; /* Faz o logo redondo */
   object-fit: cover;
 }
@@ -48,17 +49,17 @@ header {
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Remove o sublinhado do link */
+  text-decoration: none;
 }
 
 .navbar .logo-text {
-  color: white; /* Cor do texto */
-  font-size: 80px; /* Tamanho do texto igual ao tamanho do logo */
-  margin-left: 15px; /* Espaço entre o logo e o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  text-decoration: none; /* Remove qualquer sublinhado */
-  display: inline-block; /* Garante que a estilização funcione corretamente */
-  line-height: 1; /* Garante que não haja espaço extra acima e abaixo do texto */
+  color: white;
+  font-size: 80px;
+  margin-left: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 }
 
 /* Outros estilos para o Navbar */
@@ -66,6 +67,7 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Ajusta para telas menores */
 }
 
 .navbar .nav-list li {
@@ -85,6 +87,55 @@ header {
 .navbar .nav-list .active {
   background-color: #218838;
   border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduz o tamanho do logo em telas menores */
+  }
+
+  .navbar .logo-text {
+    font-size: 40px; /* Reduz o tamanho do texto do logo em telas menores */
+    margin-left: 10px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 14px;
+    padding: 6px 10px; /* Ajusta o padding para telas menores */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .navbar .logo-image {
+    width: 70px;
+    height: 70px; /* Ajuste intermediário para tablets */
+  }
+
+  .navbar .logo-text {
+    font-size: 60px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
 }
 
 /* Estilos para o menu dropdown de Acessibilidade */
@@ -214,10 +265,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
 }
 
 footer .footer-links li {
   margin: 0 10px;
+  padding: 5px 0; /* Adiciona espaço entre os itens */
 }
 
 footer .footer-links a {
@@ -228,6 +281,18 @@ footer .footer-links a {
 footer .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; /* Ajusta as margens para os links */
+  }
+}
+
 /* Estilo da barra de pesquisa */
 .form-control {
   border: 1px solid #ced4da; /* Borda padrão */
@@ -305,103 +370,370 @@ footer .footer-links a:hover {
   margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
-.span2 {
-  background-color: #222;
-  padding: 1%;
-  display:flexbox;
-  justify-content: center; /* centraliza horizontalmente */
-  width: 98%;
-  margin: 0% auto;
-  height: 5%;
-}
-
-
-.span2 h1 {
-  color: #f4f4f4;
-  font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0% auto;
-  display: flexbox;
-}
-
-
-.Article_Main {
-
-  background-color: #bec2cb;
-  padding: 1%;
-  display:flex;
-  justify-content: center; /* centraliza horizontalmente */
-  width: 98%;
-  margin: 0% auto;
-  height: 100%;
-  
-
-}
-
-main {
-  margin-bottom: 10px;
-  height:700px;
-
-}
-
-.Section_Main {
-  background-color: #e5e7ea;
-  padding: 1%;
-  display:flex;
-  width: 98%;
-  margin: 0% auto;
-  height: 95%;  
-  margin-top: 15px;
-}
-
-.Div_Head  {
-
-display:block;
-height:100%;
-width: 25%;
-}
-
-.DivEnunciado {
-  display:flex;
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
   align-items: center; /* Centraliza verticalmente */
+  margin: 10px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px; /* Espaçamento entre o texto e o botão */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Cor do fundo do toggle */
+  transition: .4s;
+  border-radius: 34px; /* Arredondar as bordas */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Cor do círculo do toggle */
+  transition: .4s;
+  border-radius: 50%; /* Círculo perfeito */
+}
+
+/* O que acontece quando o toggle está ativo */
+input:checked + .slider {
+  background-color: #4CAF50; /* Cor do toggle quando ativado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move o círculo para a direita */
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 20px; /* Espaçamento ao redor do contêiner */
+  background-color: #ffffff; /* Fundo branco para o contêiner do mapa */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+}
+
+/* Estilos para os filtros */
+h2 {
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+#material-filter {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ced4da; /* Borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-bottom: 15px; /* Espaçamento abaixo do seletor */
+}
+
+#filter-button {
+  background-color: #589c68; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+#filter-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para o toggle */
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.toggle-container h2 {
+  margin-right: 10px; /* Espaço entre o texto e o toggle */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilos para o mapa */
+#map {
+  height: calc(100vh - 250px); /* Altura do mapa ajustada */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão "Como Chegar" (se houver) */
+.btn-directions {
+  background-color: #4CAF50; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-directions:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+
+.sobre-nos {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container-sobre-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sobre-nos-texto {
+  width: 60%;
+}
+
+.sobre-nos-time {
+  width: 35%;
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li .icon {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .container-sobre-nos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sobre-nos-texto,
+  .sobre-nos-time {
+      width: 100%;
+  }
+
+  ul li {
+      justify-content: center;
+  }
+}
+/* Ajuste do layout principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+section {
+  flex: 1;
+  margin-right: 30px; /* Ajusta o espaçamento entre o texto e a lista de membros */
+}
+
+/* Ajuste da seção do time */
+.team-section {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Ajuste para os membros da equipe */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Ajuste para os avatares */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Títulos da seção */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Ajuste para as descrições */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilo principal */
+.article-main {
+  padding: 20px;
+}
+
+.section-main {
+  display: flex;
+  justify-content: space-around; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
+  background-color: #e6f2e6; /* Fundo verde pastel claro */
+  border-radius: 10px;
+}
+
+.div-head {
+  background-color: #f0f7f0; /* Tom claro para os cartões */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-basis: 23%; /* Para ajustar o tamanho e espaçamento dos cartões */
+  border: 1px solid #b3d9b3; /* Borda em verde pastel */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Animação */
+}
+
+.div-head:hover {
+  transform: translateY(-5px); /* Leve levitação ao passar o mouse */
+  border-color: #66b266; /* Borda verde mais escura ao passar o mouse */
+}
+
+.div-enunciado h2 {
+  font-size: 18px;
+  color: #4d794d; /* Verde mais escuro para os títulos */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.div-texto p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .div-head {
+      flex-basis: 100%;
+  }
+}
+/* Estilo da seção de newsletter */
+.newsletter-section {
+  text-align: center;
+  padding: 30px;
+  background-color: #e6f2e6; /* Verde pastel claro */
+  border-radius: 8px;
+  margin-top: 20px; /* Espaço acima da newsletter */
+}
+
+.newsletter-section h2 {
+  font-size: 20px;
+  color: #4d794d; /* Verde mais escuro */
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
   justify-content: center;
-  border-style: solid;
-  border-color: #9197a3;
-  height:15%;
-  width: 95%;
-  margin-bottom: 30px;
-  box-shadow: 3px 2px 5px #b5b8be;
+  gap: 10px;
 }
 
-.DivEnunciado p { 
-  margin-left: 10%;
-  margin-right:10%;
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #b3d9b3;
+  border-radius: 4px;
+  width: 250px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
-.DivTexto {
-    display: flex; /* Usando flexbox */
-    flex-direction: column; /* Organiza os itens em coluna */
-    justify-content: space-between; /* Garante que o espaço entre os itens seja distribuído */
-    border-style: solid;
-    border-color: #9197a3;
-    height: 75%;
-    width: 85%;
-    margin-left: 5%;
-    padding-bottom: 10px; /* Espaço na parte inferior */
-    box-shadow: 3px 2px 5px #b5b8be;
+.newsletter-form input[type="email"]:focus {
+  border-color: #66b266;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4d794d; /* Verde escuro */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #3d633d;
+}
+
+/* Responsividade para o formulário */
+@media (max-width: 768px) {
+  .newsletter-form {
+      flex-direction: column;
+      gap: 15px;
   }
-  
-  .DivTexto p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin: 3% 5% 0; /* Margem superior e laterais */
+
+  .newsletter-form input[type="email"], .newsletter-form button {
+      width: 100%;
   }
-  
-  .DivTexto a {
-    margin-top: 10px; /* Espaço acima do link */
-    align-self: flex-start; /* Alinha o link à esquerda */
-    display: block; /* Faz o link ocupar toda a largura do contêiner */
-    margin-left: 5%; /* Margem à esquerda para espaçamento */
-    color: #222;
-  }
-  
+}
