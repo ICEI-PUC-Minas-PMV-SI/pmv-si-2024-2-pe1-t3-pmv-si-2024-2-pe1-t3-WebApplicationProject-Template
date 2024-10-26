@@ -105,3 +105,57 @@ p{
     font-family: Playfair Display;
     font-weight: 400;
 }
+
+@media (min-width:768px) {
+    .hotNews{
+        display: flex;
+        justify-content: center;
+    }
+    .cardHotNews {
+        width: 647px;
+        height: 289px;
+        background-image: url('https://placecats.com/647px/289px;'); 
+    }
+    .titleCardHotNews {
+        color: #f8f8f8;
+        font-weight: 700;
+        font-size: 36px;
+        padding-bottom: 4px;
+
+    }
+    
+    .fontCardHotNews {
+        display: block;
+        color: #f8f8f8;
+        padding-left: 12px;
+        padding-bottom: 26px;
+        font-weight: 100;
+        font-size: 12px;
+    }
+    
+    .lastestNews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardsGroupLatestNews{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+    }
+    
+}
+
+@media (min-width:1440px) {
+    .hotNews{
+        display: flex;
+        justify-content: start;
+    }
+    .cardHotNews {
+        width: 870px;
+        height: 400px;
+        background-image: url('https://placecats.com/870/400;'); 
+    }
+}
