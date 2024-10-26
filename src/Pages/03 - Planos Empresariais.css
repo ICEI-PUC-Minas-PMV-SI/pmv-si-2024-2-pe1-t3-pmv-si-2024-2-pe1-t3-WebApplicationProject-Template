@@ -250,6 +250,53 @@ header {
   display: block; 
 }
 
+.title-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title-container h1 {
+  font-size: 2.5em;
+  color: #4A6E4A; 
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.plan {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de pular ao passar o mouse */
+.plan:hover {
+  transform: translateY(-10px); /* Eleva a caixa em 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.plan button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: #218838;
+}
+
 /* Estilos para o rodapé */
 footer {
   background-color: #222;
@@ -265,7 +312,7 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 footer .footer-links li {
@@ -285,66 +332,31 @@ footer .footer-links a:hover {
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
   footer .footer-links {
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   footer .footer-links li {
-    margin: 5px 0; /
+    margin: 5px 0; 
   }
 }
-
-/* Estilo da barra de pesquisa */
-.form-control {
-  border: 1px solid #ced4da; 
-  border-radius: 0.25rem; 
-  padding: 10px; 
-  width: 250px;
+.video-container {
+  display: flex;
+  justify-content: center; 
+  margin: 20px 0; 
 }
 
-.form-control:focus {
-  border-color: #80bdff; 
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+.video-container iframe {
+  width: 80%;
+  height: 450px;
+  max-width: 800px;
+  border-radius: 8px;
 }
 
-.btn-outline-success {
-  margin-left: 10px; 
-  border-radius: 0.25rem; 
-}
-.btn-procurar {
-  background-color: transparent; 
-  color: white; 
-  border: 1px solid white; 
-  border-radius: 5px; 
-  padding: 8px 15px; 
-  transition: background-color 0.3s ease; 
-  cursor: pointer; 
-}
-
-.btn-procurar:hover {
-  background-color: rgba(255, 255, 255, 0.1); 
-}
-
-
-.language-dropdown, .language-dropdown li, .language-dropdown li a {
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  background: none !important;
-}
-
-/* Estilos para o contêiner do mapa */
-.map-container {
-  padding: 10px; 
-}
-/* Altura do mapa */
-#map {
-  height: calc(100vh - 200px); 
-  width: 100%; 
-  margin-top: 54px; 
-}
-
-.filter-container {
-  margin-bottom: 15px; 
+.vantagens-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  color: #333;
 }
 
 .login-button {
@@ -362,228 +374,9 @@ footer .footer-links a:hover {
 }
 
 .login-button:hover {
-  background-color: #45a049; 
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
 }
 
 .login-button svg {
-  margin-right: 8px; 
-}
-
-/* CSS do toggle */
-.toggle-container {
-  display: flex; 
-  align-items: center; 
-  margin: 10px 0;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin-left: 10px; 
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc; 
-  transition: .4s;
-  border-radius: 34px; 
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white; 
-  transition: .4s;
-  border-radius: 50%; 
-}
-
-/* O que acontece quando o toggle está ativo */
-input:checked + .slider {
-  background-color: #4CAF50; 
-}
-input:checked + .slider:before {
-  transform: translateX(26px); 
-}
-
-/* Estilos para o contêiner do mapa */
-.map-container {
-  padding: 20px; 
-  background-color: #ffffff; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 20px; 
-}
-
-/* Estilos para os filtros */
-h2 {
-  color: #333; 
-  margin-bottom: 10px; 
-}
-
-#material-filter {
-  width: 100%; 
-  padding: 10px; 
-  border: 1px solid #ced4da; 
-  border-radius: 5px; 
-  margin-bottom: 15px;
-}
-
-#filter-button {
-  background-color: #589c68; 
-  color: white;
-  border: none; 
-  padding: 10px 15px; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
-}
-
-#filter-button:hover {
-  background-color: #45a049; 
-}
-
-/* Estilos para o toggle */
-.toggle-container {
-  display: flex; 
-  align-items: center; 
-  margin: 20px 0; 
-}
-
-.toggle-container h2 {
-  margin-right: 10px; 
-  color: #333; 
-}
-
-/* Estilos para o mapa */
-#map {
-  height: calc(100vh - 250px); /* Altura do mapa ajustada */
-  border-radius: 8px; /* Bordas arredondadas */
-}
-
-/* Estilo do botão "Como Chegar" (se houver) */
-.btn-directions {
-  background-color: #4CAF50; /* Cor do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Sem borda */
-  padding: 8px 12px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor em ponteiro */
-  transition: background-color 0.3s; /* Transição suave */
-}
-
-.btn-directions:hover {
-  background-color: #45a049; 
-}
-
-/* Título da Página Principal */
-.title-container {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.title-container h1 {
-  font-size: 2em;
-  color: #333;
-}
-
-/* Seção de Vantagens */
-.vantagens-title {
-  text-align: center;
-  font-size: 1.8em;
-  color: #333;
-  margin: 30px 0;
-}
-
-/* Contêiner de Vídeo */
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.video-container iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 315px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Seção de Planos */
-.plans-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.plan {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 300px;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.plan h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.plan p {
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.plan button {
-  background-color: #589c68;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-}
-
-.plan button:hover {
-  background-color: #45a049;
-}
-
-/* Responsividade para o conteúdo principal */
-@media (max-width: 768px) {
-  .plans-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .video-container iframe {
-      width: 100%;
-      height: auto;
-  }
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
