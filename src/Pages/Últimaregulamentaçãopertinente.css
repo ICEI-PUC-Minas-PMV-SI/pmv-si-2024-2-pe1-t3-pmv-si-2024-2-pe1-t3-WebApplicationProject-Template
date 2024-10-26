@@ -621,3 +621,21 @@ p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+/* Efeito hover jump para os títulos das leis */
+.div-enunciado h2:hover {
+  transform: translateY(-8px); /* Move o título para cima */
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.6, 1); /* Animação rápida com curva */
+}
+
+/* Efeito hover jump para os links "Veja Mais" */
+.div-texto a:hover {
+  transform: translateY(-6px); /* Move o link para cima ao passar o mouse */
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.6, 1); /* Transição com efeito de salto */
+}
+
+/* Efeito hover jump para a seção da newsletter */
+.newsletter-section:hover {
+  transform: translateY(-8px);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.6, 1); /* Suaviza o efeito de pulo */
+}
