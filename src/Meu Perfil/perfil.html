@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <title>Finance Hub</title>
 </head>
 <body>
-    <header>
-        <h1>Finance Hub</h1>
-        <nav>
-            <span>Meu perfil</span>
-        </nav>
-    </header>
-    
-    <section>
-        <div class="profile-info">
-            <div class="field">
-                <span>Nome</span>
-                <div class="value">Fulano da Silva</div>
+    <div class="asset-page-desktop">
+        <header class="header">
+            <h1 class="header-title">Finance Hub</h1>
+            <nav class="nav">
+                <span class="nav-item">Meu perfil</span>
+            </nav>
+        </header>
+        
+        <section class="profile-section">
+            <h2 class="section-title">Informações do Perfil</h2> <!-- Adicionado título à seção -->
+            <div class="profile-info">
+                <div class="field">
+                    <span class="field-label">Nome</span>
+                    <div class="field-value">Fulano da Silva</div>
+                </div>
+                <div class="field">
+                    <span class="field-label">E-mail</span>
+                    <div class="field-value">Fulano@seuemail.com</div>
+                </div>
+                <div class="field">
+                    <span class="field-label">Tipo de investidor</span>
+                    <div class="field-value">Investidor iniciante</div>
+                </div>
+                <div class="field">
+                    <span class="field-label">Senha</span>
+                    <div class="field-value">Atualize sua senha</div>
+                    <button class="update-button">Atualizar senha</button>
+                </div>
             </div>
-            <div class="field">
-                <span>E-mail</span>
-                <div class="value">Fulano@seuemail.com</div>
-            </div>
-            <div class="field">
-                <span>Tipo de investidor</span>
-                <div class="value">Investidor iniciante</div>
-            </div>
-            <div class="field">
-                <span>Senha</span>
-                <div class="value">Atualize sua senha</div>
-                <button>Atualizar senha</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <span>Copyright 2024 Finance Hub</span>
-    </footer>
+        <footer class="footer">
+            <span class="footer-text">Copyright 2024 Finance Hub</span>
+        </footer>
+    </div>
 </body>
 </html>
