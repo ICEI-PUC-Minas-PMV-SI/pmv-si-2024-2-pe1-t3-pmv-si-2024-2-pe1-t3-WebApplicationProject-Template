@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:400");
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -10,42 +10,72 @@ html,
 body {
   margin: 0;
   height: 100%;
+  background-color: #F0F0F0; /* Fundo cinza para a página */
   font-family: 'Playfair Display', serif;
 }
 
 header {
-  background-color: var(--white);
-  padding: 20px;
   text-align: center;
+  padding: 20px;
+  background-color: #121221; /* Cor do header */
+  color: #F8F8F8;
 }
 
-.profile-section {
+nav {
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding: 20px;
 }
 
 .profile-info {
-  margin: 0 auto;
+  width: 397px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .field {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.field-label {
+.field span {
   display: block;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
 }
 
-.field-value {
-  font-weight: bold;
+.value {
+  background: #D9D9D9; /* fundo do valor */
+  border: 1px solid #ACACAC; /* borda */
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #121221;
+  color: #F8F8F8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
-  margin-top: 20px;
-  font-size: 0.9em;
+  padding: 10px;
+  background-color: #F8F8F8;
 }
 
-.footer-text {
-  color: var(--black-60);
+.copyright {
+  color: #949494; /* Black 20% */
 }
