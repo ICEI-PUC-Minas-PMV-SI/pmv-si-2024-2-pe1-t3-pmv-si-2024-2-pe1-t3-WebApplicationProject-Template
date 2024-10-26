@@ -1,18 +1,22 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:700,400");
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0px;
   height: 100%;
 }
+
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -316,4 +320,32 @@ a {
   height: 21px;
   top: 8px;
   left: 1157px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--black-80, #121221);
+  font-family: "Playfair Display", Helvetica, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+
+}
+
+.nav-links:hover {
+  color: #121221;
+  transition: .4s;
+  text-decoration: underline;
+
 }
