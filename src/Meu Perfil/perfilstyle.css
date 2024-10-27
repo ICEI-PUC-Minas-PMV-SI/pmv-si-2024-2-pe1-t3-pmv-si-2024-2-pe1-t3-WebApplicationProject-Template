@@ -10,14 +10,14 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #F0F0F0; /* Fundo cinza para a página */
+  background-color: #F0F0F0;  
   font-family: 'Playfair Display', serif;
 }
 
 header {
   text-align: center;
-  padding: 20px;
-  background-color: #121221; /* Cor do header */
+  padding: 10px;
+  background-color: #121221;  
   color: #F8F8F8;
 }
 
@@ -34,7 +34,7 @@ main {
 
 .profile-info {
   width: 397px;
-  background: #FFFFFF;
+  background: #979797;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -52,8 +52,8 @@ main {
 }
 
 .value {
-  background: #D9D9D9; /* fundo do valor */
-  border: 1px solid #ACACAC; /* borda */
+  background: #c9c7c7;  
+  border: 1px solid #747474; 
   border-radius: 5px;
   padding: 8px;
   font-size: 20px;
@@ -73,9 +73,9 @@ button {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #F8F8F8;
+  background-color: #b1b1b1;
 }
 
 .copyright {
-  color: #949494; /* Black 20% */
+  color: #868181; /* Black 20% */
 }

@@ -1,0 +1,275 @@
+body{
+    height: max-content;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h2{
+    margin-block-start: 0px;
+    margin-block-end: 0px;  
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    color: #949494;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.logoNav {
+    background-color: #000000   ;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: Playfair Display;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+p{
+    margin: 0;
+}
+
+.hotNews {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.titleSectionHotNews {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+}
+.cardInfoHotNews {
+    display: flex;
+    flex-direction: row;
+}
+.cardHotNews {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 305px;
+    height: 200px;
+    background-image: url('https://placecats.com/305/200');
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.titleCardHotNews {
+    color: #f8f8f8;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-bottom: 26px;
+}
+
+.fontCardHotNews {
+    display: none;
+}
+
+.infoHotNews {
+    display: none;
+}
+.lastestNews {
+    margin-bottom: 35px;
+}
+
+.titleSectionLatestNews {
+    font-size: 36px;
+    font-family: Playfair Display;
+    margin-bottom: 16px;
+}
+
+.cardLatestNews {
+    margin-bottom: 20px;
+}
+.imgCardLatestNews {
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.titleCardLatestNews{
+    font-size: 16px;
+    font-family: Playfair Display;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.fontCardLatestNews {
+    color: #949494;
+    font-size: 8px;
+    font-family: Playfair Display;
+    font-weight: 400;
+}
+
+
+/* ---------------- ESTILO ASSET.HTML 320px---------------- */
+
+.assetImage{
+    width: 305px;
+    height: 281px;
+    background-image: url('https://placecats.com/305/281');
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    margin-bottom: 14px;
+}
+
+.titleAsset {
+    color: #f8f8f8;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-bottom: 26px;   color: #f8f8f8;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-bottom: 26px;
+}
+
+.fontAsset {
+    color: #949494;
+    font-size: 12px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.textAsset{
+    margin-bottom: 32px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px
+
+}
+
+/* ---------------- FIM ESTILO ASSET.HTML  ---------------- */
+
+@media (min-width:768px) {
+    .hotNews{
+        display: flex;
+        justify-content: center;
+    }
+    .cardHotNews {
+        width: 647px;
+        height: 289px;
+        background-image: url('https://placecats.com/647px/289px;'); 
+    }
+    .titleCardHotNews {
+        color: #f8f8f8;
+        font-weight: 700;
+        font-size: 36px;
+        padding-bottom: 4px;
+
+    }
+    
+    .fontCardHotNews {
+        display: block;
+        color: #f8f8f8;
+        padding-left: 12px;
+        padding-bottom: 26px;
+        font-weight: 100;
+        font-size: 12px;
+    }
+    
+    .lastestNews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }px
+    .cardsGroupLatestNews{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+    }
+
+    /* -----------ESTILO ASSET 768PX ------------- */
+
+    .assetImage{
+        width: 647px;
+        height: 546px;
+        background-image: url('https://placecats.com/647/546');
+    }
+    
+    .titleAsset{
+        font-size: 48px;
+    }
+
+    .textAsset{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+
+     /* ----------- FIM ESTILO ASSET 768PX ------------- */
+}
+
+@media (min-width:1440px) {
+    .hotNews{
+        display: flex;
+        justify-content: start;
+    }
+    .cardInfoHotNews{
+        display: flex;
+        gap: 12px;
+    }
+    .cardHotNews {
+        width: 870px;
+        height: 400px;
+        background-image: url('https://placecats.com/870/400;'); 
+    }
+    .infoHotNews {
+        display: flex;
+        width: 25%;
+        font-size: 24px;
+        font-family: Playfair Display;
+    }
+    .lastestNews {
+        align-items: start;
+        
+    }
+
+    .cardsGroupLatestNews{
+        justify-content: start;
+        width: 80%;
+    }
+
+    /* -----------ESTILO ASSET 768PX ------------- */
+
+    .assetImage{
+        width: 1181px;
+        height: 546px;
+        background-image: url('https://placecats.com/1181/546');
+    }
+    
+    .titleAsset{
+        font-size: 48px;
+    }
+
+    .textAsset{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+
+     /* ----------- FIM ESTILO ASSET 768PX ------------- */
+}
