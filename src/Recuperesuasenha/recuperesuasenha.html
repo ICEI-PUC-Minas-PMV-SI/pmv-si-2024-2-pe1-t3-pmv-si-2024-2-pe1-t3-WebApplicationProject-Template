@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="en, pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recuperesuasenhastyle.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:400">
-    <link rel="stylesheet" href="recuperesuasenhastyle.css" />
-    <title>Recupere Sua Senha</title>
+    <title>FinanceHub - Recupere sua senha</title>
+    <link rel="stylesheet" href="recuperesuasenha.css" />
 </head>
 
 <body>
 
-    <div class="recupere-sua-senha-desktop">
-        <header class="nav">
-            <div class="frame">
-                <h1 class="text-wrapper-1" aria-label="Finance Hub">Finance Hub</h1>
+    <div class="container-center">
+
+        <div class="register-investor-types">
+            <div class="menu">
+                <a href="#">
+                    <div class="logo">Finance Hub</div>
+                </a>
+                <a href="#">
+                    <img class="dropdown" src="img/dropdown.svg" alt="menu-dropdown" />
+                </a>
             </div>
-            <img class="union" src="img/dropdown.svg" alt="Dropdown" />
-        </header>
-        <main>
 
-            <h2 class="text-wrapper-2">Recupere sua senha</h2>
-            <section>
-                <form>
-                    <div class="rectangle-1">
-                        <label for="email" class="form-label">Digite seu e-mail</label>
-                        <input type="email" id="email" class="form-input" placeholder="Insira seu e-mail aqui" required
-                            aria-required="true">
-                        <div class="rectangle-2">
-                            <button type="submit" class="login-button">Enviar senha</button>
-                        </div>
-                </form>
-            </section>
-            <main>
+            <div class="header">
+                <div class="title-main">Recupere sua senha</div>
+            </div>
 
-                <footer>
-                    <div class="div">
-                        <div class="overlap">
-                            <p class="text-wrapper-6">Copyright 2024 Finance Hub</p>
+            <form action="#" method="POST">
+                <div class="form-frame">
+
+                    <div class="investor-type">Digite seu e-mail
+                        <div class="text-field">
+                            <label for="investor-type"></label><input type="text" id="investor-type"
+                                name="investor-type" class="input-field" placeholder=" Insira seu e-mail aqui" required>
                         </div>
                     </div>
-                </footer>
+
+                    <button type="submit" class="submit-button">Enviar Senha</button>
+                </div>
+
+                <div class="footer-background">
+                    <div class="footer-text">Copyright 2024 Finance Hub</div>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
