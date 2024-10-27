@@ -1,78 +1,172 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
 
 * {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Playfair Display', serif;
+:root {
+    --white: rgba(248, 248, 248, 1);
+    --black-20: rgba(148, 148, 148, 1);
+    --dark-grey: rgba(48, 48, 48, 1);
+    --grey-2: rgba(217, 217, 217, 1);
+    --black-80: rgba(18, 18, 33, 1);
+    --grey-3: rgba(172, 172, 172, 1);
+    --grey-1: rgba(240, 240, 240, 1);
 }
 
-.header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
+.container-center {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 80px);  
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
 }
 
-.login-form {
-    width: 330px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: grey;  
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: auto;
+    height: 37px;
+}
+
+.dropdown {
+    width: 23px;
+    height: 21px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-main {
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.form-frame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; /* Diminuindo a largura máxima */
+    padding: 16px;
+    margin: 20px auto;
+    background-color: var(--grey-1);
 }
 
 .form-group {
-    margin-bottom: 30px;
-}
-
-.form-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #c4c0c0;
-    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.text-field {
+    color: rgba(0, 0, 0, 0.38);
+    font-family: "Playfair Display";
+    font-size: 20px;
+}
+
+input.input-field {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid var(--grey-3);
+    border-radius: 5px;
+    background-color: var(--grey-2);
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 20px;
+    color: var(--black-80);
 }
 
 .login-button {
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: rgb(192, 185, 185);
-    border: none;
+    height: 40px;
+    background-color: #d9d9d9;
     border-radius: 5px;
+    border: 1px solid #acacac;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--dark-grey);
+    font-size: 20px;
     cursor: pointer;
-
+    transition: transform 0.1s ease;
 }
 
-.login-button:hover {
-    background-color: #0056b3;
+.login-button:active {
+    transform: scale(0.95);
 }
 
 .links {
-    margin-top: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.footer {
+.forgot-password,
+.signup {
     text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.footer-background {
+    width: 100%;
+    height: 83px;
+    background-color: var(--white);
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+}
+
+.tracinhos.svg {
+    margin-left: auto; 
+}
+
+.tracinhos.svg {
+    height: auto; 
+    width: 40px; 
+}
+
+@media (max-width: 768px) {
+    .title-main {
+        font-size: 32px;
+    }
+
+    .form-frame {
+        width: 90%;
+    }
+
+    input.input-field,
+    .login-button {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
 }
