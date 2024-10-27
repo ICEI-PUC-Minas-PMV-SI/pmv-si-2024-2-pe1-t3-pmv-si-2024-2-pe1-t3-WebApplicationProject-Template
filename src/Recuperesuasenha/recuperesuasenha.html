@@ -3,37 +3,45 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="recuperesuasenhastyle.css" />
-    <title>recupere sua senha</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:400">
+    <link rel="stylesheet" href="recuperesuasenhastyle.css" />
+    <title>Recupere Sua Senha</title>
 </head>
 
 <body>
 
     <div class="recupere-sua-senha-desktop">
-        <div class="nav">
+        <header class="nav">
             <div class="frame">
-                <div class="text-wrapper-1">Finance Hub</div>
+                <h1 class="text-wrapper-1" aria-label="Finance Hub">Finance Hub</h1>
             </div>
             <img class="union" src="img/dropdown.svg" alt="Dropdown" />
-        </div>
-        <section>
-            <div class="text-wrapper-2">Recupere sua senha</div>
-            <form>
-                <div class="rectangle-1">
-                    <label for="email" class="form-label">Digite seu e-mail</label>
-                    <input type="email" id="email" class="form-input" placeholder="Insira seu e-mail aqui">
-                    <div class="rectangle-2">
-                        <button class="login-button">Enviar senha</button>
+        </header>
+        <main>
+
+            <h2 class="text-wrapper-2">Recupere sua senha</h2>
+            <section>
+                <form>
+                    <div class="rectangle-1">
+                        <label for="email" class="form-label">Digite seu e-mail</label>
+                        <input type="email" id="email" class="form-input" placeholder="Insira seu e-mail aqui" required
+                            aria-required="true">
+                        <div class="rectangle-2">
+                            <button type="submit" class="login-button">Enviar senha</button>
+                        </div>
+                </form>
+            </section>
+            <main>
+
+                <footer>
+                    <div class="div">
+                        <div class="overlap">
+                            <p class="text-wrapper-6">Copyright 2024 Finance Hub</p>
+                        </div>
                     </div>
-            </form>
-        </section>
+                </footer>
 </body>
-<footer>
-    <div class="div">
-        <div class="overlap">
-            <div class="text-wrapper-6">Copyright 2024 Finance Hub</div>
-        </div>
-    </div>
-</footer>
 
 </html>
