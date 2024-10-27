@@ -45,12 +45,18 @@ p{
 
 .hotNews {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .titleSectionHotNews {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 16px;
 
+}
+.cardInfoHotNews {
+    display: flex;
+    flex-direction: row;
 }
 .cardHotNews {
     display: flex;
@@ -72,6 +78,10 @@ p{
 }
 
 .fontCardHotNews {
+    display: none;
+}
+
+.infoHotNews {
     display: none;
 }
 .lastestNews {
@@ -153,9 +163,28 @@ p{
         display: flex;
         justify-content: start;
     }
+    .cardInfoHotNews{
+        display: flex;
+        gap: 12px;
+    }
     .cardHotNews {
         width: 870px;
         height: 400px;
         background-image: url('https://placecats.com/870/400;'); 
+    }
+    .infoHotNews {
+        display: flex;
+        width: 25%;
+        font-size: 24px;
+        font-family: Playfair Display;
+    }
+    .lastestNews {
+        align-items: start;
+        
+    }
+
+    .cardsGroupLatestNews{
+        justify-content: start;
+        width: 80%;
     }
 }
