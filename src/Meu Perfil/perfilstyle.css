@@ -1,81 +1,160 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Roboto:400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
 
 * {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;  
+    box-sizing: border-box;  
+    text-decoration: none;  
 }
 
-html,
-body {
-  margin: 0;
-  height: 80%;
-  background-color: #F0F0F0;  
-  font-family: 'Playfair Display', serif;
+:root {
+    --white: rgba(248, 248, 248, 1);
+    --black-20: rgba(148, 148, 148, 1);
+    --dark-grey: rgba(48, 48, 48, 1);
+    --grey-2: rgba(217, 217, 217, 1);
+    --black-80: rgba(18, 18, 33, 1);
+    --grey-3: rgba(172, 172, 172, 1);
+    --grey-1: rgba(240, 240, 240, 1);
 }
 
-header {
-  text-align: center;
-  padding: 5px;
-  background-color: #121221;  
-  color: #F8F8F8;
+.container-center {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px; /* Adicionado padding para melhor espaçamento */
 }
 
-nav {
-  margin-top: 18px;
+.menu {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que o menu se ajuste em telas menores */
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 8px;
+.logo {
+    padding: 7.5px;
+    width: auto; 
 }
 
-.profile-info {
-  width: 397px;
-  background: #d3d3d3;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+.logo svg {
+    width: auto;
+    height: 37px;
+}
+
+.header {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.title-main {
+    font-family: "Playfair Display";
+    font-size: 64px; 
+    font-weight: 700;
+    margin: 0; /* Removido margens para responsividade */
+}
+
+.form-frame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; 
+    padding: 16px;
+    margin: 20px auto;
+    background-color: var(--grey-1);
 }
 
 .field {
-  margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.field span {
-  display: block;
-  font-weight: 400;
-  font-size: 18px;
-  color: #000000;
+.field label {
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 400;
+    font-size: 18px;  
 }
 
-.value {
-  background: #c9c7c7;  
-  border: 1px solid #747474; 
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.38);
+.input-field {
+    width: 100%;
+    padding: 6px; 
+    border: 1px solid var(--grey-3);
+    border-radius: 5px;
+    background-color: var(--grey-2);
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 20px; 
+    color: var(--black-80);
 }
 
-button {
-  margin-top: 10px;
-  padding: 10px 10px;
-  background-color: #c4c4c5;
-  color: #F8F8F8;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.investor-type {
+    background-color: var(--white);
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #ebebeb;
+.password-field {
+    margin-bottom: 0;
 }
 
-.copyright {
-  color: #000000;  
+.button-container {
+    margin-top: 12px;
+}
+
+.submit-button {
+    width: 100%;  
+    height: 40px;
+    background-color: #d9d9d9; 
+    border-radius: 5px;
+    border: 1px solid #acacac;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--dark-grey);
+    font-size: 20px; 
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+.footer-background {
+    width: 100%;
+    height: auto; /* Alterado para auto para melhor responsividade */
+    background-color: var(--white);
+}
+
+.footer-text {
+    text-align: center;
+    padding: 30px 0; /* Ajustado para espaçamento vertical */
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .title-main {
+        font-size: 32px; 
+    }
+    .form-frame {
+        width: 90%;  
+    }
+    .input-field, .submit-button {
+        font-size: 16px; 
+    }
+    .footer-text {
+        font-size: 14px;  
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 100px; 
+    }
+    .title-main {
+        font-size: 24px;  
+    }
+    .footer-text {
+        font-size: 12px;  
+    }
 }

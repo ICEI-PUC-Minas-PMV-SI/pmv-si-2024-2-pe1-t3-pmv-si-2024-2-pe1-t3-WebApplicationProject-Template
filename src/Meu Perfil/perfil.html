@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link href="perfilstyle.css" rel="stylesheet" />
-    <title>Finance Hub</title>
+    <title>Hub Financeiro - Meu Perfil</title>
+    <link rel="stylesheet" href="perfilstyle.css" />
 </head>
 <body>
-    <nav>
-        <div class="meuperfil-desktop">
-            <div class="nav">
-                <logo.svg>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1179.97"
-                    height="37"
-                    viewBox="0 0 1179.97 37"
-                    style="position: absolute; left: 125px; top: 32px;"
-                >
-                    <rect width="1179.97" height="37" fill="#121221" rx="4" />
-                    <text
-                        x="10"
-                        y="25"
-                        font-family="'Playfair Display', serif"
-                        font-weight="700"
-                        font-size="16"
-                        fill="#FFFFFF"
-                    >
-                        Finance Hub
-                    </text>
-                </svg>
-                <tracinhos.svg>
-                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="tracinhos" style="position: absolute; left: 1282px; top: 40px;">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H21.9694C22.5217 0 22.9694 0.447715 22.9694 1C22.9694 1.55228 22.5217 2 21.9694 2H1C0.447715 2 0 1.55228 0 1ZM0 10.3621C0 9.80981 0.447715 9.36209 1 9.36209H21.9694C22.5217 9.36209 22.9694 9.80981 22.9694 10.3621C22.9694 10.9144 22.5217 11.3621 21.9694 11.3621H1C0.447715 11.3621 0 10.9144 0 10.3621ZM1 18.7242C0.447715 18.7242 0 19.1719 0 19.7242C0 20.2765 0.447715 20.7242 1 20.7242H21.9694C22.5217 20.7242 22.9694 20.2765 22.9694 19.7242C22.9694 19.1719 22.5217 18.7242 21.9694 18.7242H1Z" fill="#444444"/>
-                </svg>
+    <div class="container-center">
+        <div class="registrar-tipos-de-investidores">
+            <div class="menu">
+                    <a href="#">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="37" viewBox="0 0 1179.97 37">
+                                <rect width="150" height="37" fill="#121221" rx="4" />
+                                <text x="10" y="25" font-family="'Playfair Display', serif" font-weight="700" font-size="16" fill="#FFFFFF">
+                                    Finance Hub
+                                </text>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="tracinhos">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H21.9694C22.5217 0 23 0.447715 23 1C23 1.55228 22.5217 2 21.9694 2H1C0.447715 2 0 1.55228 0 1ZM0 10.3621C0 9.80981 0.447715 9.36209 1 9.36209H21.9694C22.5217 9.36209 22.9694 9.80981 22.9694 10.3621C22.9694 10.9144 22.5217 11.3621 21.9694 11.3621H1C0.447715 11.3621 0 10.9144 0 10.3621ZM1 18.7242C0.447715 18.7242 0 19.1719 0 19.7242C0 20.2765 0.447715 20.7242 1 20.7242H21.9694C22.5217 20.7242 23 20.2765 23 19.7242C23 19.1719 22.5217 18.7242 21.9694 18.7242H1Z" fill="#444444" />
+                        </svg>
+                    </a>
+                </div>
+            <div class="header">
+                <div class="title-main">Meu Perfil</div>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-frame">
+                    <div class="field">
+                        <label for="investor-name">Nome</label>
+                        <div class="value">
+                            <input type="text" id="nome-investidor" name="nome-investidor" class="input-field" placeholder="Ex: Ana da Silva" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <div class="value">
+                            <input type="email" id="email" name="email" class="input-field" placeholder="Ex: ana@seuemail.com" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="investor-type">Tipo de investidor</label>
+                        <div class="value">
+                            <select id="investor-type" name="investor-type" class="input-field investor-type">
+                                <option value="iniciantes">Investidor iniciante</option>
+                                <option value="intermediario">Investidor intermediário</option>
+                                <option value="avancado">Investidor avançado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field password-field">
+                        <label for="password">Senha</label>
+                        <div class="value">
+                            <input type="password" id="password" name="password" class="input-field" placeholder="Atualize sua senha" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" class="submit-button">Atualizar senha</button>
+                    </div>
+                </div>
+            </form>
+            <div class="footer-background">
+                <div class="footer-text">Copyright 2024 Finance Hub</div>
             </div>
         </div>
-    </nav>
-    <main>
-        <div class="profile-info">
-            <h2 class="meu-perfil-title">Meu perfil</h2>
-            <div class="field">
-                <span>Nome</span>
-                <div class="value">Ana da Silva</div>
-            </div>
-            <div class="field">
-                <span>E-mail</span>
-                <div class="value">ana@seuemail.com</div>
-            </div>
-            <div class="field">
-                <span>Tipo de investidor</span>
-                <div class="value">Investidor iniciante</div>
-            </div>
-            <div class="field">
-                <span>Senha</span>
-                <div class="value">Atualize sua senha</div>
-                <button>Atualizar senha</button>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <span class="copyright">Copyright 2024 Finance Hub</span>
-    </footer>
+    </div>
 </body>
 </html>
