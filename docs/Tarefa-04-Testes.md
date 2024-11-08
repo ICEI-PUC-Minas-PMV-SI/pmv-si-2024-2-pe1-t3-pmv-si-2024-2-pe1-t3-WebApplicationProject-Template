@@ -26,7 +26,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT01 - RF 001 - Pesquisa de Informações sobre Descarte**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Entre na aba Eucacional da barra de navegação <br> 2) Procure pelo material desejado <br>
+**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Entre na aba Educacional da barra de navegação <br> 2) Procure pelo material desejado <br>
 **Requisitos associados** | RF-001
 **Resultado esperado** | Prosseguir para o mapa ou pesquisar outros materiais
 **Dados de entrada** | Nenhum dado de entrada é necessário
@@ -34,7 +34,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 -  RF 002 - Localização de Pontos de Coleta**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Selecione o tipo de material no menudropdown localizado acima do mapa<br> 3)Clique no botão "Filtrar" Localizado entre o mapa e o menu dropdown aonde foi selecionado o material. 4) clique nos "pins" que apareceram no mapa para saber quais locais e respectivas localizações 5)Se não conhecer o endereço, clique em "como chegar" para ver a melhor rota até o local. 
+**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Selecione o tipo de material no menu dropdown localizado acima do mapa<br> 3)Clique no botão "Filtrar" Localizado entre o mapa e o menu dropdown aonde foi selecionado o material. 4) clique nos "pins" que apareceram no mapa para saber quais locais e respectivas localizações 5)Se não conhecer o endereço, clique em "como chegar" para ver a melhor rota até o local. 
 **Requisitos associados** | RF-002
 **Resultado esperado** | Ponto de Coleta Encontrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
@@ -126,9 +126,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Apresentar do relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Pesquisa de Informações sobre Descarte*                                         |
+|*Caso de Teste*                                 |*CT01 - RF 001 - Pesquisa de Informações sobre Descarte*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontre informações sobre o resíduo ser reciclável e como realizar o descarte|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
 
 |*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
