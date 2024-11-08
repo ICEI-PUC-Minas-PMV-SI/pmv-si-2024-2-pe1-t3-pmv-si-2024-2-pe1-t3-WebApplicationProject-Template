@@ -354,3 +354,145 @@ footer .footer-links a:hover {
 .login-button svg {
   margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .map-container {
+    flex-direction: column; /* Stacks the map and sidebar vertically */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  #map {
+    flex: none; /* Disable flex growth/shrink behavior */
+    width: 100%; /* Make the map take full width */
+    height: 300px; /* Adjust height as needed for smaller screens */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+
+  .sidebar {
+    width: 100%; /* Make sidebar take full width */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  #map {
+    height: 200px; /* Further reduce height on very small screens */
+  }
+
+  .sidebar h2, .sidebar p, .sidebar button {
+    font-size: 14px; /* Reduce text size for better fit */
+  }
+
+  .sidebar button {
+    padding: 8px 10px; /* Reduce button padding */
+  }
+}
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  /* Adjust navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar .logo-text {
+    font-size: 36px; /* Smaller font size for logo text */
+    margin-left: 5px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .nav-list a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  /* Adjust container */
+  .container {
+    width: 95%;
+  }
+
+  /* Sidebar adjustments */
+  .sidebar {
+    padding: 15px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.4em;
+  }
+
+  .sidebar button {
+    padding: 8px 12px;
+  }
+
+  /* Form controls */
+  .form-control {
+    width: 100%;
+    margin-bottom: 15px; /* Add margin for spacing */
+  }
+
+  .btn-procurar {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  /* Navbar adjustments */
+  .navbar .logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar .logo-text {
+    font-size: 24px;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Adjust body font size for readability */
+  body {
+    font-size: 14px;
+  }
+
+  /* Sidebar adjustments */
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+}
