@@ -206,7 +206,7 @@ header {
   margin: 0;
 }
 
-.gtranslate_wrapper {
+.language-dropdown {
   display: none;
   position: absolute;
   top: 100%;
@@ -221,13 +221,13 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.gtranslate_wrapper li {
+.language-dropdown li {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.gtranslate_wrapper li a {
+.language-dropdown li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +236,7 @@ header {
   border: none; 
 }
 
-.gtranslate_wrapper li a .flag-icon {
+.language-dropdown li a .flag-icon {
   width: 32px; 
   height: 32px;
   border-radius: 50%;
@@ -246,7 +246,7 @@ header {
   margin: 0; 
 }
 
-.language-selector:hover .gtranslate_wrapper {
+.language-selector:hover .language-dropdown {
   display: block; 
 }
 
@@ -325,7 +325,7 @@ footer .footer-links a:hover {
 }
 
 
-.gtranslate_wrapper, .gtranslate_wrapper li, .gtranslate_wrapper li a {
+.language-dropdown, .language-dropdown li, .language-dropdown li a {
   padding: 0 !important;
   margin: 0 !important;
   border: none !important;
