@@ -66,10 +66,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT06 - RF 006 - Recurso Educacional**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
+**Procedimento**  | 1)  Acesse o endereço www.greencycle.com <br> 2) Acesse a aba "educacional" <br> 3) clique em "veja mais" no material que deseja ler sobre a reciclagem do mesmo
 **Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Resultado esperado** | Usuario encaminhado para o site com as informações
+**Dados de entrada** | Nenhum dado é necessario
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT07 - RNF 001 - Usabilidade Fácil**
@@ -119,7 +119,6 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Resultado esperado** | Usuário cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
-
 
 
 ## Registro dos Testes de Software
