@@ -119,10 +119,10 @@ p{
 
 /* ---------------- ESTILO ASSET.HTML 320px---------------- */
 
-.assetImage{
+.assetImageNoticia1{
     width: 305px;
     height: 281px;
-    background-image: url('https://placecats.com/305/281');
+    background-image: url('https://readytrainingonline.com/wp-content/uploads/2021/12/04.04.24-5-Factors-Business-Growth.jpg');
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -204,10 +204,10 @@ p{
 
     /* -----------ESTILO ASSET 768PX ------------- */
 
-    .assetImage{
+    .assetImageNoticia1{
         width: 647px;
         height: 546px;
-        background-image: url('https://placecats.com/647/546');
+        background-image: url('https://readytrainingonline.com/wp-content/uploads/2021/12/04.04.24-5-Factors-Business-Growth.jpg');
     }
     
     .titleAsset{
@@ -257,10 +257,10 @@ p{
 
     /* -----------ESTILO ASSET 768PX ------------- */
 
-    .assetImage{
+    .assetImageNoticia1{
         width: 1181px;
         height: 546px;
-        background-image: url('https://placecats.com/1181/546');
+        background-image: url('https://readytrainingonline.com/wp-content/uploads/2021/12/04.04.24-5-Factors-Business-Growth.jpg');
     }
     
     .titleAsset{
