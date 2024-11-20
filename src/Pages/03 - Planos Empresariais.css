@@ -206,7 +206,7 @@ header {
   margin: 0;
 }
 
-.language-dropdown {
+.gtranslate_wrapper {
   display: none;
   position: absolute;
   top: 100%;
@@ -221,13 +221,13 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.language-dropdown li {
+.gtranslate_wrapper li {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.language-dropdown li a {
+.gtranslate_wrapper li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +236,7 @@ header {
   border: none; 
 }
 
-.language-dropdown li a .flag-icon {
+.gtranslate_wrapper li a .flag-icon {
   width: 32px; 
   height: 32px;
   border-radius: 50%;
@@ -246,55 +246,8 @@ header {
   margin: 0; 
 }
 
-.language-selector:hover .language-dropdown {
+.language-selector:hover .gtranslate_wrapper {
   display: block; 
-}
-
-.title-container {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.title-container h1 {
-  font-size: 2.5em;
-  color: #4A6E4A; 
-}
-.plans-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.plan {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efeito de pular ao passar o mouse */
-.plan:hover {
-  transform: translateY(-10px); /* Eleva a caixa em 10px */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-}
-
-.plan button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.plan button:hover {
-  background-color: #218838;
 }
 
 /* Estilos para o rodapé */
