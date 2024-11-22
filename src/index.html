@@ -7,11 +7,11 @@
     <script src="script.js"></script>
     <title>Finance Hub</title>
   </head>
-  <body onload="showNews()">
+  <body onload="showNews(),hasLogin()">
     <nav>
       <p class="logoNav">Finance Hub</p>
       <div>
-        <a href="">
+        <a href="/src/login" class="logInButton">
           <svg
             version="1.1"
             id="Capa_1"
@@ -40,7 +40,7 @@
           </svg>
           Entrar
         </a>
-        <a href="">
+        <a href="/src/login" class="logOutButton">
           <svg
             version="1.1"
             id="Capa_1"

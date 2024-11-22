@@ -116,6 +116,13 @@ p{
     font-weight: 400;
 }
 
+.logInButton {
+    display: none;
+}
+
+.logOutButton {
+    display: none;
+}
 
 /* ---------------- ESTILO ASSET.HTML 320px---------------- */
 
