@@ -28,24 +28,28 @@ function hasLogin() {
     }
    
 }
-
+//função utilizada na página de cadastro de usuário
 function userRegister() {
+
     event.preventDefault();
   
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
     const investidorType = document.querySelector('select[name="investidorType"]').value;
     const password = document.querySelector('input[name="password"]').value;
+    const logged = 'true'
   
     const userData = {
       name,
       email,
       investidorType,
       password,
+      logged,
     };
   
     localStorage.setItem('userData', JSON.stringify(userData));
-  
+    
     alert("Usuário cadastrado com sucesso!");
+    window.location.replace('/src')
   }
   
