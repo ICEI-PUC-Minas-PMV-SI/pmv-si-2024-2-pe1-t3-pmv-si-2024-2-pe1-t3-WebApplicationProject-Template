@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinanceHub - Cadastro de Notícia</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="\src\script.js"></script>
   </head>
   <body>
     <nav>
@@ -28,7 +29,7 @@
     </nav>
     <section>
       <h1 class="title">Cadastro</h1>
-      <form>
+      <form method="post">
         <label for="name" class="labelConfig">
           Nome
           <input
@@ -42,8 +43,8 @@
         <label for="email" class="labelConfig">
           E-mail
           <input
-            type="text"
-            name="name"
+            type="email"
+            name="email"
             class="inputConfig"
             placeholder=" Insira seu E-mail"
             required
@@ -54,24 +55,26 @@
           Tipo de Investidor
           <select name="investidorType" class="investidorSelect" required>
             <option value="" disabled selected>Selecione a categoria</option>
-            <option value="placeholder-1">Investidor Iniciante</option>
-            <option value="placeholder-2">Investidor Avançado</option>
-            <option value="placeholder-3">INvestidor Estudante</option>
+            <option value="iniciante">Investidor Iniciante</option>
+            <option value="avançado">Investidor Avançado</option>
+            <option value="estudante">Investidor Estudante</option>
           </select>
         </label>
 
-        <label for="email" class="labelConfig">
+        <label for="password" class="labelConfig">
           Senha
           <input
             type="password"
-            name="name"
+            name="password"
             class="inputConfig"
             placeholder=" Insira sua Senha"
             required
           />
         </label>
 
-        <button type="submit" class="submitButton">Cadastrar</button>
+        <button type="submit" onclick="userRegister()" class="submitButton">
+          Cadastrar
+        </button>
 
         <div class="footer-background">
           <div class="footer-text">Copyright 2024 Finance Hub</div>

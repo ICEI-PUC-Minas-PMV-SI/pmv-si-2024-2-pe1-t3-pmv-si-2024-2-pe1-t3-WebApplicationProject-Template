@@ -1,3 +1,4 @@
+// função usada para exibir as notícias de acordo com o tipo de  usuário ao carregar a página
 function showNews() {
 
     const hasLoggedUser = localStorage.getItem('isLogged') 
@@ -10,6 +11,7 @@ function showNews() {
     } 
 }
 
+//função utilizada para definir qual o botão deve ser exibido ao renderizar a página
 function hasLogin() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
@@ -19,9 +21,6 @@ function hasLogin() {
 
     const isLogged = localStorage.getItem('isLogged')
 
-
-
-
     if (isLogged == 'true') {
         logIn.style.display = 'flex'
     } else {
@@ -29,3 +28,24 @@ function hasLogin() {
     }
    
 }
+
+function userRegister() {
+    event.preventDefault();
+  
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const investidorType = document.querySelector('select[name="investidorType"]').value;
+    const password = document.querySelector('input[name="password"]').value;
+  
+    const userData = {
+      name,
+      email,
+      investidorType,
+      password,
+    };
+  
+    localStorage.setItem('userData', JSON.stringify(userData));
+  
+    alert("Usuário cadastrado com sucesso!");
+  }
+  
