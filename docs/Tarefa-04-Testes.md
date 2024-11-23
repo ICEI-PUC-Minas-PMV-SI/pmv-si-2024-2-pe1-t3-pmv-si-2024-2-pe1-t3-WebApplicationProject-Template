@@ -58,10 +58,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT05 - RF 005 - Interface Multilingue**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Clique no botão com imagem da bandeira do Brasil no canto superior direito da tela <br> 3) selecione o idioma necessario <br> 4) confira o site sendo traduzido para a linguagem selecionada. <br>
+**Requisitos associados** | RF-005
+**Resultado esperado** | Linguagem alterada
+**Dados de entrada** | nenhuma dado de entrada é necessario
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT06 - RF 006 - Recurso Educacional**
@@ -136,20 +136,20 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontrem pontos de coleta ou descarte de todo tipo de material |
 |Link do vídeo do teste realizado: | https://1drv.ms/v/c/37d9dda75edb9b05/ESXlz9HKCLVOjUeHaTIWgCkBuuHe_C89Y57uiDiggOtQfA?e=VdhXPR |
 
-|*Caso de Teste*                                 |*CT03 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT03 - Criar conta parte *                                        |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
-|*Caso de Teste*                                 |*CT04 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT04 - Criar conta parte *                                        |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
-|*Caso de Teste*                                 |*CT05 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT05 - Interface Multilingue*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RF-005 -A aplicação deve mudar o idioma a escolha do usuario|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1K6143IhZGinrRukhLd2j0NuVx4PIHXuX/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT06 - RF 006 - Recurso Educacional*                                        |
 |---|---|
