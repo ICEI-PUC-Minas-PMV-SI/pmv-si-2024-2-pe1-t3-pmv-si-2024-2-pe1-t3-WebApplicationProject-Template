@@ -42,10 +42,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT03 - RF 003 - Relatórios e Análise de Impacto Ambiental**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
+**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br>2) Clique no botão "Login" <br> 3)Preencha os dados de login 4)Clique em "entrar" <br> 5)Acesse a parte de relátório de impacto ambiental que se localiza na barra de navegação superior como "RIA", na barra lateral do site ou no rodapé <br> 6) preencha os dados solicitados <br> 7) Clique em "gerar relatório"   
 **Requisitos associados** | RF-003
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Resultado esperado** | Seja gerado um relatório de impacto ambiental com os dados do usuário
+**Dados de entrada** | Inserção de dados válidos no formulário de login, Inserção de dados válidos no formulário de relatório de impacto ambiental
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT04 - RF 004 - Alerta de Mudança de Regulamentações**
@@ -138,12 +138,12 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT03 - RF 003 - Relatórios e Análise de Impacto Ambiental*                                        |
 |---|---|
-|Requisito Associado | RF-003 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RF-003 - Gerar um relatório de impacto ambiental novo|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1QDtkpgJm2nr_EBpPBtJgh5sk4oF9tdTz/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT04 - RF 004 - Alerta de Mudança de Regulamentações*                                        |
 |---|---|
-|Requisito Associado | RF-004 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-004 - O site deve permitir que os usuários tenham uma forma de saber das novas regulamentações|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
 |*Caso de Teste*                                 |*CT05 - Interface Multilingue*                                        |
@@ -163,8 +163,8 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT08 - RNF 002 - Acessibilidade*                                        |
 |---|---|
-|Requisito Associado | RNF-002 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-002 - O site deve entrar em modo de alto contraste|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1wURenobC2klmWL9YAx1cbvxoqACKhFjH/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT09 - RNF 003 - Segurança e Privacidade*                                        |
 |---|---|
