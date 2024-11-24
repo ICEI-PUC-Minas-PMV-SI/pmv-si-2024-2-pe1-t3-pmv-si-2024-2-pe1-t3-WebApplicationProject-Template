@@ -75,10 +75,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT07 - RNF 001 - Usabilidade Fácil**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | Não se aplica
+**Requisitos associados** | RNF-001
+**Resultado esperado** | Usuário conseguir navegar sem dificuldade no site
+**Dados de entrada** | Não se aplica
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT08 - RNF 002 - Acessibilidade**
@@ -129,12 +129,12 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 |*Caso de Teste*                                 |*CT01 - RF 001 - Pesquisa de Informações sobre Descarte*                                         |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontre informações sobre o resíduo ser reciclável e como realizar o descarte|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/c/37d9dda75edb9b05/EXo_JE0eOGNKkciN7WM9jugBriLXZMnqD300vYKpCfgJTA?e=3LSzHZ |
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/12GEK0lbFT-lqPAs_XV0r9KRosErCueX5/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT02 -  RF 002 - Localização de Pontos de Coleta*                                        |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontrem pontos de coleta ou descarte de todo tipo de material |
-|Link do vídeo do teste realizado: | https://1drv.ms/v/c/37d9dda75edb9b05/ESXlz9HKCLVOjUeHaTIWgCkBuuHe_C89Y57uiDiggOtQfA?e=VdhXPR |
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1QWcJsuUDH8BiDIiGUqXDcgj5g2AqLCxs/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT03 - Criar conta parte *                                        |
 |---|---|
@@ -158,8 +158,8 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT07 - RNF 001 - Usabilidade Fácil*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-001 - Usuário deve conseguir navegar pelo site sem dificuldades|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1IkvrmSdKDGkSbtxe-RAaMoWBmHjv8eDa/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT08 - RNF 002 - Acessibilidade*                                        |
 |---|---|
