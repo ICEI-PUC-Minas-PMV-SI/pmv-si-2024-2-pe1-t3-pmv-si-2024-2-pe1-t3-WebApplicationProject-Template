@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="../Pages/PerfilEmpresaCadastroMateriais.css">
+    <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="02 - Index Empresarial.html">Home</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Crédito de Carbono1 .html"> Crédito de Carbono</a></li>
+                    <li><a href="relatorio_impacto_ambiental1.html"> RIA</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="gtranslate_wrapper"> </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <button class="login-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        Empresa
+                    </button>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="cadastro-section">
+            <div class="top-nav">
+                <ul class="navbar-nav">
+                    <li><a href="PerfilEmpresaCadastroMateriais.html" >Meu Cadastro</a></li>
+                    <li><a href="PerfilEmpresaEnderecos.html">Meus Endereços</a></li>
+                    <li><a href="PerfilEmpresaPagamentos.html" class="active">Pagamentos</a></li>
+                    <li><a href="PerfilEmpresaSuporte.html">Suporte</a></li> 
+                </ul>
+            </div>
+            <!--Formulário-->
+            <div class="content">
+                <div class="left-container">
+                    <h2><i class="payment-icon"></i> Cadastre um novo cartão ou método de pagamento</h2>
+                    <form class="payment-form">
+                        <div class="form-group">
+                            <label for="card-number">Digite apenas os números do cartão</label>
+                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="name-on-card">Nome Impresso no Cartão</label>
+                            <input type="text" id="name-on-card" placeholder="Digite o nome">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="expiry-date">Data de validade</label>
+                            <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" oninput="this.value = this.value.replace(/[^0-9\/]/g, '');" />
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="cvv">Digite o CVV</label>
+                            <input type="text" id="cvv" placeholder="XXX" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                        </div>
+                
+                        <button type="submit" class="submit-button" onclick="atualizarPagamento()">Atualizar método de pagamento</button>
+                
+                        <script>
+                        function atualizarPagamento() {
+                            alert("Método de pagamento atualizado!");
+                        }
+                        </script>
+                    </form>
+                </div>
+    
+                <div class="right-container">
+                    <h3 class="fatura-vencimento">Sua próxima fatura vence no dia 15/10</h3>
+                    <div class="card-info-container">
+                        <div class="form-group card-group">
+                            <label for="credit-card">Cartão de Crédito Utilizado</label>
+                            <input type="text" id="credit-card" value="************-1234" readonly>
+                            <button type="button" class="delete-button" onclick="removerCartao()">Excluir Cartão</button>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="plano">Plano</label>
+                            <input type="text" id="plano" value="Plano Micro Empresário - R$40,99/mês" readonly>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="inicio-plano">Início do plano</label>
+                            <input type="text" id="inicio-plano" value="10/01/2024" readonly>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="renovacao-plano">Renovação automática em:</label>
+                            <input type="text" id="renovacao-plano" value="10/01/2025" readonly>
+                        </div>
+                
+                        <script>
+                            function removerCartao() {
+                                alert("Cartão removido do sistema.");
+                            }
+                        </script>
+                    </div>
+                </div>
+                
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="02 - Index Empresarial.html">Home</a></li>
+                    <li><a href="Crédito de Carbono1 .html">Créditos de Carbono</a></li>
+                    <li><a href="relatorio_impacto_ambiental1.html">Relatórios de Impacto Ambiental</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li> 
+                    <li><a>Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="../Pages/perfil-usuario.css">
+    <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+    </head>
+    
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                        <span class="logo-text">GreenCycle</span>
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div class="menu-container">
+                    <ul class="nav-list">
+                        <li><a href="02 - Index Empresarial.html">Home</a></li>
+                        <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                        <li><a href="Crédito de Carbono1 .html"> Crédito de Carbono</a></li>
+                        <li><a href="relatorio_impacto_ambiental1.html"> RIA</a></li>
+                        <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                        <li><a href="SobreNos.html">Sobre Nós</a></li>
+                       <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                        <li class="language-selector">
+                            <button class="language-toggle">
+                                <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                            </button>
+                            <ul class="gtranslate_wrapper"> </ul>
+                        </li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <a href="login.html">
+                        <button class="login-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                            Login
+                        </button>
+                    </a>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Conteúdo principal -->
+<main>
+    <div class="container-perfil" id="card-perfil">
+        <!-- Coluna do meio - usuário -->
+        <div class="user-info">
+            <div class="profile-header">
+                <img src="../images/Prof.jpg" alt="Foto do Usuário" class="user-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                <h6>Usuário gold premium</h6>
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span> 
+                </div>
+            </div>
+            <div class="user-details">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" value="Marco Rodrigo Costa">
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" value="marco.rodrigo@sga.pucminas.br">
+            
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" value="amopãodequeijo123">
+            <div class="toggle-section">
+                <span>Sou um centro de coleta</span>
+                <label class="switch">
+                    <input type="checkbox" id="coleta-toggle" onclick="mostrarMateriais()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="btn-update">Atualizar Cadastro</button>
+        </div>
+    </div>
+
+    <!-- Coluna oculta-->
+    <div class="materials-section" id="materials-section" style="display: none;">
+        <h3>Tipos de Materiais que Coleta</h3>
+        <div class="materials-list">
+            <div>
+                <input type="checkbox" id="pilhas">
+                <label for="pilhas">Pilhas e baterias</label>
+            </div>
+            <div>
+                <input type="checkbox" id="eletronicos">
+                <label for="eletronicos">Materiais eletrônicos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="remedios">
+                <label for="remedios">Remédios</label>
+            </div>
+            <div>
+                <input type="checkbox" id="oleo">
+                <label for="oleo">Óleos de cozinha</label>
+            </div>
+            <div>
+                <input type="checkbox" id="plasticos">
+                <label for="plasticos">Plásticos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="latas">
+                <label for="latas">Latas de alumínio</label>
+            </div>
+            <div>
+                <input type="checkbox" id="outros" onclick="mostrarCampoDescricao()">
+                <label for="outros">Outros</label>
+            </div>
+            <div id="descricao-outros" style="display: none; margin-top: 10px;">
+                <label for="descricao">Descreva o material:</label>
+                <input type="text" id="descricao" placeholder="Descreva o material" class="input-field" style="width: 100%; margin-bottom: 10px;">
+                <button onclick="incluirMaterial()" class="btn-incluir">Incluir</button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<!--JavaScript -->
+<script>
+    function mostrarMateriais() {
+        var checkbox = document.getElementById("coleta-toggle");
+        var materialsSection = document.getElementById("materials-section");
+
+        if (checkbox.checked) {
+            materialsSection.style.display = "block"; 
+        } else {
+            materialsSection.style.display = "none"; 
+        }
+    }
+
+    function mostrarCampoDescricao() {
+        var checkbox = document.getElementById("outros");
+        var descricaoDiv = document.getElementById("descricao-outros");
+
+        if (checkbox.checked) {
+            descricaoDiv.style.display = "block"; 
+        } else {
+            descricaoDiv.style.display = "none"; 
+        }
+    }
+
+    function incluirMaterial() {
+        var descricao = document.getElementById("descricao").value;
+
+        if (descricao.trim() !== "") {
+            var listaMateriais = document.querySelector('.materials-list');
+            var novoMaterial = document.createElement("div");
+
+            novoMaterial.innerHTML = `
+                <input type="checkbox" id="${descricao}">
+                <label for="${descricao}">${descricao}</label>
+            `;
+            listaMateriais.appendChild(novoMaterial);
+
+            document.getElementById("descricao").value = "";
+            document.getElementById("descricao-outros").style.display = "none";
+            document.getElementById("outros").checked = false;
+
+            alert("Material incluído com sucesso!");
+        } else {
+            alert("Por favor, descreva o material antes de incluir.");
+        }
+    }
+</script>
+            </div>
+
+        </div>
+        
+    </div>
+</main>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="01- Index.html">Home Page</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                    <li><a>Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

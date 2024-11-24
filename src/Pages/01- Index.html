@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Homepage</title>
+    <link rel="stylesheet" href="01 - styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="01- Index.html">Home</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="language-dropdown">
+                            <li><a href="#"><img src="../images/Ingles.png" alt="Inglês" class="flag-icon" /></a></li>
+                            <li><a href="#"><img src="../images/Espahol.png" alt="Espanhol" class="flag-icon" /></a>
+                            </li>
+                            <li><a href="#"><img src="../images/PTBR.png" alt="Português" class="flag-icon" /></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a>Alto Contraste</a></li>
+                            <li><a>Modo Daltonismo</a></li>
+                            <li><a>VoiceOver</a></li>
+                            <li><a>Lupa</a></li>
+                        </ul>
+                    </li>
+                    <a href="login.html">
+                        <button class="login-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                            Login
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="map-container">
+            <h2 for="material-filter">Encontre centro de coletas pelo tipo de material:</h2>
+            <select id="material-filter">
+                <option value="">Selecione o material</option>
+                <option value="Metal Comum">Metal Comum</option>
+                <option value="Plástico Comum">Plástico Comum</option>
+                <option value="Vidro Comum">Vidro Comum</option>
+                <option value="Baterias Elétricas">Baterias Elétricas</option>
+                <option value="Lâmpadas Fluorescentes">Lâmpadas Fluorescentes</option>
+                <option value="Lixo Hospitalar">Lixo Hospitalar</option>
+                <option value="Resíduos Eletrônicos">Resíduos Eletrônicos</option>
+                <option value="Resíduos de Óleo">Resíduos de Óleo</option>
+                <option value="Resíduos de Farmacos">Resíduos de Farmacos </option>
+                <option value="Material Radioativo">Material Radioativo</option>
+                <option value="Resíduos de Construção">Resíduos de Construção</option>
+                <option value="Resíduos de Solventes">Resíduos de Solventes</option>
+                <option value="Materiais Explosivos">Materiais Explosivos</option>
+                <option value="Resíduos de Agroquímicos">Resíduos de Agroquímicos</option>
+                <option value="Resíduos Químicos">Resíduos Químicos</Q></option>
+                <option value="Resíduos Inflamáveis">Resíduos Inflamáveis</option>
+                
+            </select>
+            <button id="filter-button">Filtrar</button>
+
+            <div class="toggle-container">
+                <h2 for="toggle-industries">Ver empresas que estão descartando</h2>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-industries">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="map" style="height: 500px;"></div>
+        </div>
+        </script>
+        <script src="01 -Map.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap"></script>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                    <li><a>Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Empresa</title>
+    <link rel="stylesheet" href="02 - style IndexEmpresarial.css">
+    <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="02 - Index Empresarial.html">Home</a></li>
+                    <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                    <li><a href="Crédito de Carbono1 .html"> Crédito de Carbono</a></li>
+                    <li><a href="relatorio_impacto_ambiental1.html"> RIA</a></li>
+                    <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="../images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="gtranslate_wrapper"> </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <button class="login-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        Empresa
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h2>Veja os centros de coleta próximos a sua empresa:</h2>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="sidebar">
+                <div class="credits">
+                    <h2>Selecionar materiais disponíveis no momento:</h2>
+                    <div>
+                        <input type="checkbox" id="material-radioativo" name="material" value="radioativo">
+                        <label for="material-radioativo">Baterias Eletrônicas </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="material-hospitalar" name="material" value="hospitalar">
+                        <label for="material-hospitalar">Pilhas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="material-baterias" name="material" value="baterias">
+                        <label for="material-baterias">Lâmpadas Fluorescentes</label>
+                    </div>
+                    <button onclick="atualizar()">Atualizar para Coletores</button>
+                    <script>
+                        function atualizar() {
+                            alert("Os coletores e centros de reciclágem já foram avisados!");
+                        }
+                    </script>
+                </div>
+                <div class="register">
+                    <h2>Cadastrar um novo material</h2>
+                    <button onclick="window.location.href='PerfilEmpresaCadastroMateriais.html'">Cadastrar</button>
+                </div>
+                
+
+                <div class="credits">
+                    <h2>Créditos de Carbono</h2>
+                    <button onclick="window.location.href='Crédito de Carbono1 .html'">Inicie seu cadastro</button>
+                    <br>
+                    <br>
+                    <button onclick="window.location.href='Crédito de Carbono2.html'">Comprar</button> <button onclick="window.location.href='Crédito de Carbono3.html'">Vender</button>
+                </div>
+
+                <div class="credits">
+                    <h2>Relatórios de Impacto Ambiental</h2>
+                    <button onclick="window.location.href='relatorio_impacto_ambiental1.html'">Gerar Novo</button>
+                    <button onclick="window.location.href='relatorio_impacto_ambiental3.html'">Acessar Antigos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Scripts do mapa -->
+    <script src="../Pages/02 - Map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_07c_ywgF9zM7_fACi3RgLqT31M5qgdU&callback=initMap">
+        </script>
+</body>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+            <ul class="footer-links">
+                <li><a href="02 - Index Empresarial.html">Home</a></li>
+                            <li><a href="Crédito de Carbono1 .html">Créditos de Carbono</a></li>
+                            <li><a href="relatorio_impacto_ambiental1.html">Relatórios de Impacto Ambiental</a></li>
+                            <li><a href="Última regulamentação pertinente.html.html">Regulamentação</a></li>
+                            <li><a href="Entendaoquepodeounãoserreciclado.html">Educacional</a></li>
+                            <li><a href="SobreNos.html">Sobre Nós</a></li> 
+                            <li><a>Política de Privacidade</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para o Cabeçalho e Navbar */
+header {
+  background-color: #589c68;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-image {
+  width: 80px; /* Tamanho do logo */
+  height: 80px;
+  border-radius: 50%; /* Faz o logo redondo */
+  object-fit: cover;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar .logo-text {
+  color: white;
+  font-size: 80px;
+  margin-left: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Outros estilos para o Navbar */
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Ajusta para telas menores */
+}
+
+.navbar .nav-list li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.navbar .nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-list a:hover,
+.navbar .nav-list .active {
+  background-color: #218838;
+  border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduz o tamanho do logo em telas menores */
+  }
+
+  .navbar .logo-text {
+    font-size: 40px; /* Reduz o tamanho do texto do logo em telas menores */
+    margin-left: 10px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 14px;
+    padding: 6px 10px; /* Ajusta o padding para telas menores */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .navbar .logo-image {
+    width: 70px;
+    height: 70px; /* Ajuste intermediário para tablets */
+  }
+
+  .navbar .logo-text {
+    font-size: 60px;
+  }
+
+  .navbar .nav-list a {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+}
+
+/* Estilos para o menu dropdown de Acessibilidade */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Ajusta a posição do dropdown */
+  transform: translateX(-50%); /* Centraliza o dropdown horizontalmente */
+  background-color: #589c68; /* Cor de fundo verde */
+  min-width: 200px; /* Define um valor mínimo para a largura */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+}
+
+/* Estilos para o dropdown de Alterar Linguagem */
+.language-selector {
+  position: relative;
+  display: inline-block; /* Alinha o dropdown com o botão */
+}
+
+.language-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language-toggle .flag-icon {
+  width: 32px; /* Tamanho da bandeira no botão principal */
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent; /* Garantir fundo transparente */
+  border: none;
+  margin: 0;
+}
+
+.language-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent; /* Torna o fundo do dropdown transparente */
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+.language-dropdown li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.language-dropdown li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0; /* Remove qualquer padding extra */
+  border: none; /* Remove bordas */
+}
+
+.language-dropdown li a .flag-icon {
+  width: 32px; /* Tamanho das bandeiras dentro do dropdown */
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent; /* Garantir fundo transparente */
+  border: none;
+  margin: 0; /* Remove qualquer margem extra */
+}
+
+.language-selector:hover .language-dropdown {
+  display: block; /* Exibe o dropdown ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Empurra o rodapé para baixo */
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
+}
+
+footer .footer-links li {
+  margin: 0 10px;
+  padding: 5px 0; /* Adiciona espaço entre os itens */
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; /* Ajusta as margens para os links */
+  }
+}
+
+/* Estilo da barra de pesquisa */
+.form-control {
+  border: 1px solid #ced4da; /* Borda padrão */
+  border-radius: 0.25rem; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  width: 250px; /* Largura da barra de pesquisa */
+}
+
+.form-control:focus {
+  border-color: #80bdff; /* Cor da borda ao focar */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+}
+
+.btn-outline-success {
+  margin-left: 10px; /* Espaçamento à esquerda do botão */
+  border-radius: 0.25rem; /* Bordas arredondadas */
+}
+.btn-procurar {
+  background-color: transparent; /* Fundo transparente */
+  color: white; /* Cor do texto */
+  border: 1px solid white; /* Borda branca */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 8px 15px; /* Espaçamento interno */
+  transition: background-color 0.3s ease; /* Transição suave */
+  cursor: pointer; /* Cursor em ponteiro */
+}
+
+.btn-procurar:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+}
+
+/* Estilos adicionais para remover bordas e fundos indesejados */
+.language-dropdown, .language-dropdown li, .language-dropdown li a {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 10px; /* Espaçamento ao redor do contêiner */
+}
+
+/* Altura do mapa */
+#map {
+  height: calc(100vh - 200px); /* Calcula a altura total da tela menos a altura do cabeçalho e do rodapé */
+  width: 100%; 
+  margin-top: 54px; 
+}
+
+.filter-container {
+  margin-bottom: 15px; /* Espaçamento abaixo do filtro */
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #589c68; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.login-button svg {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 10px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px; /* Espaçamento entre o texto e o botão */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Cor do fundo do toggle */
+  transition: .4s;
+  border-radius: 34px; /* Arredondar as bordas */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Cor do círculo do toggle */
+  transition: .4s;
+  border-radius: 50%; /* Círculo perfeito */
+}
+
+/* O que acontece quando o toggle está ativo */
+input:checked + .slider {
+  background-color: #4CAF50; /* Cor do toggle quando ativado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move o círculo para a direita */
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 20px; /* Espaçamento ao redor do contêiner */
+  background-color: #ffffff; /* Fundo branco para o contêiner do mapa */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+}
+
+/* Estilos para os filtros */
+h2 {
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+#material-filter {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ced4da; /* Borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-bottom: 15px; /* Espaçamento abaixo do seletor */
+}
+
+#filter-button {
+  background-color: #589c68; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+#filter-button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para o toggle */
+.toggle-container {
+  display: flex; /* Flexbox para alinhar na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.toggle-container h2 {
+  margin-right: 10px; /* Espaço entre o texto e o toggle */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilos para o mapa */
+#map {
+  height: calc(100vh - 250px); /* Altura do mapa ajustada */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão "Como Chegar" (se houver) */
+.btn-directions {
+  background-color: #4CAF50; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 8px 12px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-directions:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
