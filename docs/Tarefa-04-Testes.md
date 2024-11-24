@@ -107,18 +107,18 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT11 - RNF 005 - Compatibilidade**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Acesse o site em um dispositivo móvel ou navegador diferente. 
+**Requisitos associados** | RNF-005
+**Resultado esperado** | É esperado do site que tenha responsividade em qualquer dispositivo ou navegador. 
+**Dados de entrada** | Não se aplica
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT12 - RNF 006 - Manutenção**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | Não se aplica
+**Requisitos associados** | RFN6 
+**Resultado esperado** | Que haja manutenção simples e fácil no servidor e dados do site
+**Dados de entrada** | Não se aplica
 **Resultado obtido** | Sucesso
 
 
@@ -178,13 +178,13 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT11 - RNF 005 - Compatibilidade*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-005 - É esperado do site que tenha responsividade em qualquer dispositivo ou navegador. |
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1-MiCi3nzuLG1X5PCBs3IeR4yPSKUxgu1/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT12 - RNF 006 - Manutenção*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-006 - Que haja manutenção simples e fácil no servidor e dados do site|
+|Link do vídeo do teste realizado: | Não se aplica |
 
 ## Avaliação dos Testes de Software
 
