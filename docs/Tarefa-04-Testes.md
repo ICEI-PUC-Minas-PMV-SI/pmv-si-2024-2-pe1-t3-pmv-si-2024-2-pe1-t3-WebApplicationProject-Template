@@ -66,10 +66,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT06 - RF 006 - Recurso Educacional**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Acesse o endereço www.greencycle.com <br> 2) Acesse a aba Educacional clicando no botão "Educacional" <br> 3) veja os relatorios com informções "o que podemos reciclar?"  
+**Requisitos associados** | RF-006
+**Resultado esperado** | Aba Funcional
+**Dados de entrada** | Nenhum dado de entrada é necessario 
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT07 - RNF 001 - Usabilidade Fácil**
@@ -153,8 +153,8 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT06 - RF 006 - Recurso Educacional*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RF-001 - a aba "Educacional" deve ser executada com sucesso|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/11fSb5LVRQ6tOPw6pv0PYGiv37bZrtSZ8/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT07 - RNF 001 - Usabilidade Fácil*                                        |
 |---|---|
