@@ -51,7 +51,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT04 - RF 004 - Alerta de Mudança de Regulamentações**
  :--------------: | ------------
 **Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
+**Requisitos associados** | RF-004
 **Resultado esperado** | Usuário cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
@@ -91,23 +91,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT09 - RNF 003 - Segurança e Privacidade**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Não se aplica
+**Requisitos associados** | RNF-003
+**Resultado esperado** | Não expor nenhum dado sensível.
+**Dados de entrada** | Não se aplica
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT10 - RNF 004 - Performance e Escalabilidade**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Muitos usuários devem utilizar o site ao mesmo tempo 
+**Requisitos associados** | RNF-004
+**Resultado esperado** | O servidor suportar acesso e uso simultaneo do site
+**Dados de entrada** | Não se aplica
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT11 - RNF 005 - Compatibilidade**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o site em um dispositivo móvel ou navegador diferente. 
+**Procedimento**  | 1) Acesse o site em um dispositivo móvel <br> 2) Acesse em um navegador diferente. <br>
 **Requisitos associados** | RNF-005
 **Resultado esperado** | É esperado do site que tenha responsividade em qualquer dispositivo ou navegador. 
 **Dados de entrada** | Não se aplica
@@ -133,17 +133,17 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT02 -  RF 002 - Localização de Pontos de Coleta*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontrem pontos de coleta ou descarte de todo tipo de material |
+|Requisito Associado | RF-002 - A aplicação deve permitir que os usuários encontrem pontos de coleta ou descarte de todo tipo de material |
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1QWcJsuUDH8BiDIiGUqXDcgj5g2AqLCxs/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT03 - RF 003 - Relatórios e Análise de Impacto Ambiental*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-003 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
 |*Caso de Teste*                                 |*CT04 - RF 004 - Alerta de Mudança de Regulamentações*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RF-004 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
 |*Caso de Teste*                                 |*CT05 - Interface Multilingue*                                        |
@@ -153,7 +153,7 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT06 - RF 006 - Recurso Educacional*                                        |
 |---|---|
-|Requisito Associado | RF-001 - a aba "Educacional" deve ser executada com sucesso|
+|Requisito Associado | RF-006 - a aba "Educacional" deve ser executada com sucesso|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/11fSb5LVRQ6tOPw6pv0PYGiv37bZrtSZ8/view?usp=drive_link |
 
 |*Caso de Teste*                                 |*CT07 - RNF 001 - Usabilidade Fácil*                                        |
@@ -163,18 +163,18 @@ Apresentar do relatório com as evidências dos testes de software realizados no
 
 |*Caso de Teste*                                 |*CT08 - RNF 002 - Acessibilidade*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
+|Requisito Associado | RNF-002 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
 
 |*Caso de Teste*                                 |*CT09 - RNF 003 - Segurança e Privacidade*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-003 - O Site não deve expor dados sensíveis dos usuários|
+|Link do vídeo do teste realizado: | Não se aplica - não há servidor |
 
 |*Caso de Teste*                                 |*CT10 - RNF 004 - Performance e Escalabilidade*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar |
+|Requisito Associado | RNF-004 - O site deve permitir que muitos usuários acessem ao mesmo tempo e utilizem |
+|Link do vídeo do teste realizado: | Não se aplica - não há servidor |
 
 |*Caso de Teste*                                 |*CT11 - RNF 005 - Compatibilidade*                                        |
 |---|---|
