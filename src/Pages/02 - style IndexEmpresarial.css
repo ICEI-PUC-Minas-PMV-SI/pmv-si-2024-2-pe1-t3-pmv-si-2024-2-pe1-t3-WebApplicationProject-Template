@@ -135,7 +135,7 @@ header {
 /* Estilos para o dropdown de Alterar Linguagem */
 .language-selector {
   position: relative;
-  display: inline-block; /* Alinha o dropdown com o botão */
+  display: inline-block; 
 }
 
 .language-toggle {
@@ -146,59 +146,58 @@ header {
 }
 
 .language-toggle .flag-icon {
-  width: 32px; /* Tamanho da bandeira no botão principal */
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent; /* Garantir fundo transparente */
+  background-color: transparent; 
   border: none;
   margin: 0;
 }
 
-.language-dropdown {
+.gtranslate_wrapper {
   display: none;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent; /* Torna o fundo do dropdown transparente */
+  background-color: transparent; 
   padding: 0;
   margin: 0;
   z-index: 1000;
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.language-dropdown li {
+.gtranslate_wrapper li {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.language-dropdown li a {
+.gtranslate_wrapper li a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 0; /* Remove qualquer padding extra */
-  border: none; /* Remove bordas */
+  padding: 0; 
+  border: none; 
 }
 
-.language-dropdown li a .flag-icon {
-  width: 32px; /* Tamanho das bandeiras dentro do dropdown */
+.gtranslate_wrapper li a .flag-icon {
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent; /* Garantir fundo transparente */
+  background-color: transparent; 
   border: none;
-  margin: 0; /* Remove qualquer margem extra */
+  margin: 0; 
 }
 
-.language-selector:hover .language-dropdown {
-  display: block; /* Exibe o dropdown ao passar o mouse */
+.language-selector:hover .gtranslate_wrapper {
+  display: block; 
 }
-
 /* Estilos para o rodapé */
 footer {
   background-color: #222;

@@ -186,7 +186,7 @@ header {
 /* Estilos para o dropdown de Alterar Linguagem */
 .language-selector {
   position: relative;
-  display: inline-block;
+  display: inline-block; 
 }
 
 .language-toggle {
@@ -197,57 +197,57 @@ header {
 }
 
 .language-toggle .flag-icon {
-  width: 32px;
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent;
+  background-color: transparent; 
   border: none;
   margin: 0;
 }
 
-.language-dropdown {
+.gtranslate_wrapper {
   display: none;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent;
+  background-color: transparent; 
   padding: 0;
   margin: 0;
   z-index: 1000;
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.language-dropdown li {
+.gtranslate_wrapper li {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.language-dropdown li a {
+.gtranslate_wrapper li a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 0;
-  border: none;
+  padding: 0; 
+  border: none; 
 }
 
-.language-dropdown li a .flag-icon {
-  width: 32px;
+.gtranslate_wrapper li a .flag-icon {
+  width: 32px; 
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: transparent;
+  background-color: transparent; 
   border: none;
-  margin: 0;
+  margin: 0; 
 }
 
-.language-selector:hover .language-dropdown {
-  display: block;
+.language-selector:hover .gtranslate_wrapper {
+  display: block; 
 }
 
 /* Estilos para o rodapé */
