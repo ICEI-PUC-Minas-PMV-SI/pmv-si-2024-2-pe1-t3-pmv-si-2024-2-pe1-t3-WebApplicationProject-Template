@@ -11,11 +11,9 @@ Atendendo às demandas dos investidores e reduzindo a sobrecarga informacional,
 ## Integrantes
 
 * Guilherme Lacerda de Souza
-* Luiz Antônio Braga de Oliveira
-* Mattheus German de Jesus Silva
 * Maria Eduarda da Silva Batista
+* Mattheus German de Jesus Silva
 * Nicolas Souza Di Lascio
-* Paolla Souza Arantes de Medeiros
 
 
 ## Orientador
