@@ -32,9 +32,9 @@ function hasLogin() {
         
         
         const isLogged = userData.logged
+        console.log(isLogged)
         
-        
-        if (isLogged == 'true') {
+        if (isLogged == 'true' || isLogged == true) {
             logIn.style.display = 'none'
             logOut.style.display = 'flex'
         } else {
