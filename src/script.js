@@ -67,8 +67,8 @@ function userRegister() {
     alert("Usuário cadastrado com sucesso!");
     window.location.replace('/src')
   }
-  
 
+//Função para fazer logout no sistema
 function logOut() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
@@ -78,4 +78,24 @@ function logOut() {
     localStorage.setItem('userData', JSON.stringify(userData))
     logOut.style.display = 'none'
     logIn.style.display = 'flex'
-  }
+}
+  
+function logIn() {
+  const email = document.querySelector('input[name="email"]').value;
+  const password = document.querySelector('input[name="senha"]').value;
+  if (!localStorage.getItem('userData')) {   
+    alert('Usuário não encontrado')
+    window.location.replace('/src/login/index.html')
+  } else {
+    const userDataString = localStorage.getItem('userData')
+    const userData = JSON.parse(userDataString)
+    if (email == userData.email && password == userData.password) {
+      userData.logged = !userData.logged
+      localStorage.setItem('userData', JSON.stringify(userData))
+      alert('Bem-vindo')
+      window.location.assign('/src') //NÂO CONSIGO REDIRECIONAR
+    } else {
+      alert(' usuário e/ou senha incorreta(s)')
+    }
+ }
+}

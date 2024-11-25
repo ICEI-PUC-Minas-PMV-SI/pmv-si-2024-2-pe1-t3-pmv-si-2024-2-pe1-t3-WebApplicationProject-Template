@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Hub - Login</title>
     <link rel="stylesheet" href="loginstyle.css" />
+    <script src="\src\script.js"></script>
   </head>
   <body>
     <div class="container-center">
@@ -36,11 +37,12 @@
         <div class="header">
           <div class="title-main">Login</div>
         </div>
-        <form action="#" method="POST">
+        <form method="get">
           <div class="form-frame">
             <div class="form-group">
               <label for="email">E-mail</label>
               <input
+                name="email"
                 type="email"
                 id="email"
                 class="input-field"
@@ -51,6 +53,7 @@
             <div class="form-group">
               <label for="senha">Senha</label>
               <input
+                name="senha"
                 type="password"
                 id="senha"
                 class="input-field"
@@ -58,14 +61,16 @@
                 required
               />
             </div>
-            <button type="submit" class="login-button">LOGIN</button>
+            <button type="submit" onclick="logIn()" class="login-button">
+              LOGIN
+            </button>
             <div class="links">
-              <span class="forgot-password"
+              <!-- <span class="forgot-password"
                 >Esqueceu sua senha? Clique aqui</span
-              >
+              > -->
               <a href="\src\cadastro-de-usuario\" class="signup"
-                >Não possui cadastro? Clique aqui</a
-              >
+                >Não possui cadastro? Clique aqui
+              </a>
             </div>
           </div>
         </form>
