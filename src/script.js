@@ -93,7 +93,7 @@ function logIn() {
       userData.logged = !userData.logged
       localStorage.setItem('userData', JSON.stringify(userData))
       alert('Bem-vindo')
-      window.location.assign('/src') //NÂO CONSIGO REDIRECIONAR
+      // window.location.assign('/src/index.html') //NÂO CONSIGO REDIRECIONAR
     } else {
       alert(' usuário e/ou senha incorreta(s)')
     }
