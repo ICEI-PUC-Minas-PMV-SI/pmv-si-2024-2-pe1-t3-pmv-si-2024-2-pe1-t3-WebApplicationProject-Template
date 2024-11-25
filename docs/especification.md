@@ -1,10 +1,15 @@
 # Especificações do Projeto
 
-Os investidores enfrentam desafios significativos devido à sobrecarga informacional e à complexidade das notícias financeiras. Eles lutam para filtrar informações relevantes e compreendê-las rapidamente, o que pode levar a decisões apressadas e mal fundamentadas. Essa dificuldade é sentida tanto por investidores iniciantes, que precisam de orientação e clareza, quanto por profissionais experientes, que necessitam de dados detalhados e organizados.
+Para essa etapa, será apresentada a fundamentação do projeto a partir da perspectiva do usuário, detalhando o problema enfrentado, a solução proposta e os requisitos necessários para o desenvolvimento da plataforma. 
+A solução proposta é o FinanceHub, uma plataforma que centraliza e organiza informações financeiras em um único ambiente. Com recursos como, análises simplificadas, acesso a notícias em tempo real, materiais educativos e ferramentas de apoio à decisão, a plataforma visa empoderar investidores, oferecendo praticidade e confiabilidade.
+
 # Perspectiva do Usuário:
-O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta informações financeiras de forma clara e acessível. A solução permitirá que os usuários filtram notícias relevantes, compreendam conceitos com facilidade e tomem decisões informadas de maneira mais eficiente.
+
+O FinanceHub oferecerá uma plataforma centralizada que organiza e apresenta informações financeiras de forma clara e acessível. A solução permitirá que os usuários filtrem notícias relevantes, compreendam conceitos com facilidade e tomem decisões informadas de maneira mais eficiente. Com funcionalidades pensadas para atender diferentes níveis de experiência, a plataforma oferece benefícios claros para investidores iniciantes, experientes e estudantes de finanças.
 
 ## Personas
+
+A seguir, apresentamos as principais personas que representam os potenciais usuários do FinanceHub:
 
  - Iniciante: Busca aprender sobre investimentos e precisa de informações educacionais e simples.
  - Investidor Experiente: Deseja análises detalhadas e atualizações rápidas para tomar decisões estratégicas.
