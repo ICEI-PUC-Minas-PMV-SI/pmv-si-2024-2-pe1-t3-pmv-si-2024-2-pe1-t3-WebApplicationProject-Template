@@ -1,36 +1,51 @@
+
+
 // função usada para exibir as notícias de acordo com o tipo de  usuário ao carregar a página
 function showNews() {
-
-    const hasLoggedUser = localStorage.getItem('isLogged') 
-    const hotNews = document.getElementsByClassName('hotNews')[0]
     
-    console.log(hasLoggedUser == 'true' ? 'logado' : 'deslogado')
+    // const userDataString = localStorage.getItem('userData')
+    // const userData = JSON.parse(userDataString)
+    // // const hotNews = document.getElementsByClassName('hotNews')[0]
+    
+    
 
-    if (hasLoggedUser == 'true' ) {
-        hotNews.style.display = 'none'
-    } 
+    // if (userData.logged == 'true' ) {
+    //     // hotNews.style.display = 'none'
+    // } 
+    // console.log(userData)
 }
 
-//função utilizada para definir qual o botão deve ser exibido ao renderizar a página
+//função utilizada para definir qual o botão (Entrar/Sair) deve ser exibido ao renderizar a página
 function hasLogin() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
-
-    window.localStorage.setItem('nome', 'joão')
-    window.localStorage.setItem('isLogged', 'false')
-
-    const isLogged = localStorage.getItem('isLogged')
-
-    if (isLogged == 'true') {
-        logIn.style.display = 'flex'
-    } else {
-        logOut.style.display = 'flex'
+    
+   
+    if (!localStorage.getItem('userData')) {
+        
+     logIn.style.display = 'flex'
     }
+
+    if (localStorage.getItem('userData')) {
+        const userDataString = localStorage.getItem('userData')
+        const userData = JSON.parse(userDataString)
+        
+        
+        const isLogged = userData.logged
+        
+        
+        if (isLogged == 'true') {
+            logIn.style.display = 'none'
+            logOut.style.display = 'flex'
+        } else {
+            logIn.style.display = 'flex'
+        }
+}
    
 }
 //função utilizada na página de cadastro de usuário
 function userRegister() {
-
+    
     event.preventDefault();
   
     const name = document.querySelector('input[name="name"]').value;
@@ -46,10 +61,21 @@ function userRegister() {
       password,
       logged,
     };
-  
-    localStorage.setItem('userData', JSON.stringify(userData));
+    
+    window.localStorage.setItem('userData', JSON.stringify(userData));
     
     alert("Usuário cadastrado com sucesso!");
     window.location.replace('/src')
   }
   
+
+function logOut() {
+    const logIn = document.getElementsByClassName('logInButton')[0]
+    const logOut = document.getElementsByClassName('logOutButton')[0]
+    const userDataString = localStorage.getItem('userData')
+    const userData = JSON.parse(userDataString)
+    userData.logged = !userData.logged
+    localStorage.setItem('userData', JSON.stringify(userData))
+    logOut.style.display = 'none'
+    logIn.style.display = 'flex'
+  }
