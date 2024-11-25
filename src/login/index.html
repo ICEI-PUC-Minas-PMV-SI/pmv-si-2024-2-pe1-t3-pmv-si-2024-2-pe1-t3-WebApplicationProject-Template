@@ -37,7 +37,7 @@
         <div class="header">
           <div class="title-main">Login</div>
         </div>
-        <form action="\src\index.html" method="get">
+        <form method="POST">
           <div class="form-frame">
             <div class="form-group">
               <label for="email">E-mail</label>
@@ -61,7 +61,7 @@
                 required
               />
             </div>
-            <button type="submit" onclick="logIn()" class="login-button">
+            <button type="button" onclick="logIn(event)" class="login-button">
               LOGIN
             </button>
             <div class="links">

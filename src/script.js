@@ -32,7 +32,7 @@ function hasLogin() {
         
         
         const isLogged = userData.logged
-        console.log(isLogged)
+      
         
         if (isLogged == 'true' || isLogged == true) {
             logIn.style.display = 'none'
@@ -80,20 +80,24 @@ function logOut() {
     logIn.style.display = 'flex'
 }
   
-function logIn() {
+function logIn(event) {
+  event.preventDefault()
+  
   const email = document.querySelector('input[name="email"]').value;
   const password = document.querySelector('input[name="senha"]').value;
+ 
   if (!localStorage.getItem('userData')) {   
     alert('Usuário não encontrado')
     window.location.replace('/src/login/index.html')
   } else {
     const userDataString = localStorage.getItem('userData')
     const userData = JSON.parse(userDataString)
+    
     if (email == userData.email && password == userData.password) {
       userData.logged = !userData.logged
       localStorage.setItem('userData', JSON.stringify(userData))
       alert('Bem-vindo')
-      // window.location.assign('/src/index.html') //NÂO CONSIGO REDIRECIONAR
+      window.location.assign('/src/index.html') 
     } else {
       alert(' usuário e/ou senha incorreta(s)')
     }
