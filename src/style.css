@@ -47,6 +47,7 @@ p{
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
+   
 }
 .titleSectionHotNews {
     font-size: 36px;
@@ -57,6 +58,8 @@ p{
 .cardInfoHotNews {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .cardHotNews {
     display: flex;
@@ -81,9 +84,7 @@ p{
     display: none;
 }
 
-.infoHotNews {
-    display: none;
-}
+
 .lastestNews {
     margin-bottom: 35px;
 }
@@ -118,10 +119,23 @@ p{
 
 .logInButton {
     display: none;
+    display: none;
+    width: 65px;
+    height: 65px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 4px;
 }
 
 .logOutButton {
     display: none;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 4px;
 }
 
 /* ---------------- ESTILO ASSET.HTML 320px---------------- */
@@ -199,14 +213,15 @@ p{
     .lastestNews{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }px
+   
+    }
     .cardsGroupLatestNews{
         display: flex;
         flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
         justify-content: center;
-        gap: 20px
+        align-items: center;
     }
 
     /* -----------ESTILO ASSET 768PX ------------- */
@@ -230,6 +245,7 @@ p{
      /* ----------- FIM ESTILO ASSET 768PX ------------- */
 }
 
+
 @media (min-width:1440px) {
     .hotNews{
         display: flex;
@@ -244,12 +260,7 @@ p{
         height: 400px;
         background-image: url('https://placecats.com/870/400;'); 
     }
-    .infoHotNews {
-        display: flex;
-        width: 25%;
-        font-size: 24px;
-        font-family: Playfair Display;
-    }
+ 
     .lastestNews {
         align-items: start;
         
