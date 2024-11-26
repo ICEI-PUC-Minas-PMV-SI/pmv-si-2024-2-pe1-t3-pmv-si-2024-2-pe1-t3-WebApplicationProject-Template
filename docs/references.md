@@ -1,19 +1,11 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizadas no desenvolvimento do trabalho.
+* FABOZZI, Frank J. Introdução às finanças: mercados, investimentos e gestão financeira. 2. ed. Rio de Janeiro: Elsevier, 2020. ISBN 9788535234008.
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/referencias/)
+* DAMODARAN, Aswath. Avaliação de investimentos: ferramentas e técnicas para a determinação do valor de qualquer ativo. 2. ed. Rio de Janeiro: Qualitymark, 2010. ISBN 9788573039023.
 
-Exemplos de referências bibliográficas:
+* GITMAN, Lawrence J.; ZUTTER, Chad J. Princípios de administração financeira. 13. ed. São Paulo: Pearson, 2012. ISBN 9788581430246.
 
-**[1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
+* ROSS, Stephen A.; WESTERFIELD, Randolph W.; JAFFE, Jeffrey. Administração financeira: corporate finance. 10. ed. São Paulo: McGraw-Hill, 2010. ISBN 9788586804868.
 
-**[2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
-
-**[3]** - _CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. Rio de Janeiro, RJ: Elsevier, Campus, c2012. xvi, 926 p. ISBN 9788535236996._
-
-**[4]** - _SUTHERLAND, Jeffrey Victor. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. 2. ed. rev. São Paulo, SP: Leya, 2016. 236, [4] p. ISBN 9788544104514._
-
-**[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
-
+* BODIE, Zvi; KANE, Alex; MARCUS, Alan J. Investimentos. 10. ed. Porto Alegre: AMGH, 2018. ISBN 9788550801484.
