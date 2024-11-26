@@ -1,3 +1,4 @@
+ /* ----------------INDEX 320PX--------------------- */
 body{
     height: max-content;
 }
@@ -97,6 +98,10 @@ p{
 
 .cardLatestNews {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
 }
 .imgCardLatestNews {
     border-radius: 8px;
@@ -137,6 +142,8 @@ p{
     align-items: center;
     column-gap: 4px;
 }
+
+ /* ---------------- FIM INDEX 320PX--------------------- */
 
 /* ---------------- ESTILO ASSET.HTML 320px---------------- */
 
@@ -184,6 +191,8 @@ p{
 /* ---------------- FIM ESTILO ASSET.HTML  ---------------- */
 
 @media (min-width:768px) {
+     /* ----------------INDEX 768PX--------------------- */
+    
     .hotNews{
         display: flex;
         justify-content: center;
@@ -213,16 +222,22 @@ p{
     .lastestNews{
         display: flex;
         flex-direction: column;
+        width: 100%;
    
     }
     .cardsGroupLatestNews{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
-        gap: 20px;
+        width: 100%;
+        gap: 10px;
         justify-content: center;
-        align-items: center;
+
+
     }
+    .cardLatestNews {
+        width: 40%;
+    }
+     /* ---------------- FIM INDEX 768PX--------------------- */
 
     /* -----------ESTILO ASSET 768PX ------------- */
 
@@ -245,8 +260,16 @@ p{
      /* ----------- FIM ESTILO ASSET 768PX ------------- */
 }
 
+@media (min-width:1024px){
+  /* ---------------- INDEX 1024PX--------------------- */
+  .cardLatestNews {
+    width: 30%;
+}
+  /* ---------------- FIM INDEX 1024PX--------------------- */
+}
 
-@media (min-width:1440px) {
+@media (min-width:1366px) {
+    /* ---------------- INDEX 1366PX--------------------- */
     .hotNews{
         display: flex;
         justify-content: start;
@@ -263,17 +286,21 @@ p{
  
     .lastestNews {
         align-items: start;
+        width: 100%;
         
     }
 
     .cardsGroupLatestNews{
         display: flex;
         gap: 12px;
-        justify-content: start;
-        width: 80%;
+        justify-content: center;
+        width: 100%;
     }
-
-    /* -----------ESTILO ASSET 768PX ------------- */
+    .cardLatestNews{
+        width: 23%
+    }
+ /* ---------------- FIM INDEX 1366PX--------------------- */
+    /* -----------ESTILO ASSET 1366PX ------------- */
 
     .assetImageNoticia1{
         width: 1181px;
@@ -291,5 +318,5 @@ p{
     }
 
 
-     /* ----------- FIM ESTILO ASSET 768PX ------------- */
+     /* ----------- FIM ESTILO ASSET 1366PX ------------- */
 }
