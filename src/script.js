@@ -3,16 +3,35 @@
 // função usada para exibir as notícias de acordo com o tipo de  usuário ao carregar a página
 function showNews() {
     
-    // const userDataString = localStorage.getItem('userData')
-    // const userData = JSON.parse(userDataString)
-    // // const hotNews = document.getElementsByClassName('hotNews')[0]
+  const userDataString = localStorage.getItem('userData')
+  const userData = JSON.parse(userDataString)
+  const begginerUser = document.getElementsByClassName('iniciante')[0]
+  const intermediaryUser = document.getElementsByClassName('intermediario')[0]
+  const advancedUser = document.getElementsByClassName('avancado')[0]
+  const studentUser = document.getElementsByClassName('estudante')[0]
     
-    
+  if (userData.logged == true && userData.investidorType == 'iniciante') {
+    intermediaryUser.style.display = 'none'
+    advancedUser.style.display = 'none'
+    studentUser.style.display = 'none'
+  }
 
-    // if (userData.logged == 'true' ) {
-    //     // hotNews.style.display = 'none'
-    // } 
-    // console.log(userData)
+  if (userData.logged == true && userData.investidorType == 'intermediario') {
+    begginerUser.style.display = 'none'
+    advancedUser.style.display = 'none'
+    studentUser.style.display = 'none'
+  }
+  if (userData.logged == true && userData.investidorType == 'avancado') {
+    intermediaryUser.style.display = 'none'
+    begginerUser.style.display = 'none'
+    studentUser.style.display = 'none'
+  }
+  if (userData.logged == true && userData.investidorType == 'estudante') {
+    intermediaryUser.style.display = 'none'
+    advancedUser.style.display = 'none'
+    begginerUser.style.display = 'none'
+  }
+
 }
 
 //função utilizada para definir qual o botão (Entrar/Sair) deve ser exibido ao renderizar a página
