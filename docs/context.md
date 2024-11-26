@@ -34,8 +34,9 @@ Um estudo de McKinsey & Company intitulado “The Big Data Revolution in Financi
 ## Público-Alvo
 
 O FinanceHub foi desenvolvido para resolver diversas questões, oferecendo uma solução que centraliza e organiza as notícias financeiras mais importantes, tornando-as acessíveis e fáceis de entender, permitindo que os investidores, ou não investidores, tomem decisões mais informadas e estratégicas para seu futuro.
-Investidores Individuais: Iniciantes e experientes que precisam de informações claras e detalhadas.
-Profissionais de Finanças: Analistas e gestores que necessitam de dados atualizados e análises.
-Empresas Financeiras: Bancos, corretoras e gestoras que buscam otimizar o monitoramento e a análise do mercado.
-Instituições Educacionais: Universidades e centros de pesquisa que utilizam dados financeiros para ensino e estudo.
-Entusiastas do Mercado: Pessoas que acompanham o mercado financeiro e buscam insights para suas decisões.
+
+* Investidores Individuais: Iniciantes e experientes que precisam de informações claras e detalhadas.
+* Profissionais de Finanças: Analistas e gestores que necessitam de dados atualizados e análises.
+* Empresas Financeiras: Bancos, corretoras e gestoras que buscam otimizar o monitoramento e a análise do mercado.
+* Instituições Educacionais: Universidades e centros de pesquisa que utilizam dados financeiros para ensino e estudo.
+* Entusiastas do Mercado: Pessoas que acompanham o mercado financeiro e buscam insights para suas decisões.
