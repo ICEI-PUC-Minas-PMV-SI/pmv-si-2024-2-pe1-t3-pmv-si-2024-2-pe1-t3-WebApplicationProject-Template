@@ -2,6 +2,7 @@
 
 Requisito
 • RF-001 - O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail
+
 Para atender ao requisito RF-001 foi desenvolvido a página de Cadastro com a seguinte estrutura.
 Ao clicar em Cadastre-se disponível na tela de Login, o usuário será redirecionado para a tela de Cadastro.
 
@@ -20,7 +21,7 @@ imagem
 Requisito
 • RF-002 - Efetuar a troca de senha do usuário
 
-##Cadastro de Notícias
+## Cadastro de Notícias
 
 Requisito
 • RF-003 - Cadastro de notícias, Análises financeiras, Relatórios e Balancetes
