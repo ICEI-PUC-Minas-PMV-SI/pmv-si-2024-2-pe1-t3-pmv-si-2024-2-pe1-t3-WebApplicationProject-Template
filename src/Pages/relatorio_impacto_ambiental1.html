@@ -87,17 +87,19 @@
             Relatório de Impacto Ambiental</div>
 
         <div class="form-container">
-            <form id="relatorioForm">
+            <!-- <form id="relatorioForm"> -->
                 <div class="form-row">
                     <!-- Primeira Coluna -->
                     <div class="ria_column">
-                        <label style="font-weight: bold" for="natureza" class="ria_label">Natureza</label>
+                        <label for="natureza" style="font-weight: bold" class="ria_label">Natureza</label>
                         <select id="natureza" name="natureza" required>
+                            <optgroup label="Natureza">
                             <option value="" disabled selected>Selecione</option>
                             <option value="industria_petroquimica">Petroquímica</option>
                             <option value="alienticia">Alimentícia</option>
                             <option value="construcao_civil">Construção Civil</option>
                             <option value="automobilistica">Automobilística</option>
+                        </optgroup>
                         </select>
 
                         <br>
@@ -127,15 +129,17 @@
                         </p>
                         <br>
 
-                        <label style="font-weight: bold" for="medidas" class="ria_label">Tipos de resíduos</label>
+                        <label for="medidas" style="font-weight: bold" class="ria_label">Tipos de resíduos</label>
                         <select id="medidas" name="medidas" required>
+                            <optgroup label="Tipos de resíduos">
                             <option value="" disabled selected>Selecione</option>
                             <option value="oleos_graxas">Óleos e Graxas</option>
-                            <option value="residuos_inflamáveis">Resíduos Inflmáveis</option>
+                            <option value="residuos_inflamaveis">Resíduos Inflamáveis</option>
                             <option value="residuos_organicos">Resíduos Orgânicos</option>
                             <option value="embalagens_plasticas">Embalagens Plásticas</option>
                             <option value="entulho_residuos">Entulho e Resíduos de Construção</option>
                             <option value="pneus_descartados">Pneus Descartados</option>
+                            </optgroup>
                         </select>
 
                         <br>
@@ -196,7 +200,7 @@
                     <button id="button2" onclick="goto_ria3()">Relatórios Antigos</button>
                     <button id="button1" onclick="goto_ria2()">Gerar Relatório</button>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
         <br><br>
         <!-- fim Adicione aqui o conteúdo principal da página -->
