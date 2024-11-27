@@ -22,15 +22,18 @@ O FinanceHub visa desenvolver uma plataforma que centralize e forneça informaç
 
 # Documentação
 
-1. [Documentação de Contexto](docs/01.context.md)
-2. [Especificação do Projeto](docs/especification.md) 
-3. [Projeto de Interface](docs/interface.md)
-4. [Template Padrão](docs/template.md) 
-5. [Programação de Funcionalidades - HTML e CSS](docs/development.md) 
-6. [Programação de Funcionalidades - Javascript](docs/development.md) 
-7. [Testes de Software ](docs/tests.md) 
-8. [Apresentação](presentation/README.md)
-9. [Referências](docs/references.md)
+1.  [Documentação de Contexto](docs/01.Documuntação-de-Contexto.md)
+2.  [Especificação do Projeto](docs/02.Especificações-do-Projeto.md) 
+3.  [Projeto de Interface](docs/03.Projeto-de-Interface.md)
+4.  [Template Padrão](docs/04.Template.md) 
+5.  [Programação de Funcionalidades - HTML e CSS](docs/05.Programação-de-Funcionalidades.md) 
+6.  [Programação de Funcionalidades - Javascript](docs/05.Programação-de-Funcionalidades.md) 
+7.  [Plano de Testes de Software ](docs/06.Plano-de-Testes-de-Software.md)
+8.  [Registro de Testes de Software ](docs/07.Registro-de-Testes-de-Software.md)
+9.  [Plano de Testes de Usabilidade ](docs/08.Plano-de-Testes-de-Usabilidade.md)
+10. [Registro de Testes de Usabilidade ](docs/09.Registro-de-Testes-de-Usabilidade.md)  
+11. [Apresentação](docs/10.Apresentação-do-Projeto.md)
+12. [Referências](docs/10.references.md)
 
 # Código
 
@@ -38,4 +41,4 @@ O FinanceHub visa desenvolver uma plataforma que centralize e forneça informaç
 
 # Apresentação
 
-<li><a href="docs/Apresentação do Projeto.md"> Apresentação da solução</a></li>
+<li><a href="docs/10.Apresentação-do-Projeto.md"> Apresentação da solução</a></li>
