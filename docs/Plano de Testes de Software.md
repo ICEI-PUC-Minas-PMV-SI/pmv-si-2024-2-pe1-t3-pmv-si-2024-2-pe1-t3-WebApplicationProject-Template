@@ -1,8 +1,8 @@
 # Plano de Testes de Software para o FinanceHub
 
-# 1. Introdução
+## 1. Introdução
 
-Este plano de testes foi elaborado para garantir que o hub de gestão de processos atenda aos requisitos especificados, proporcionando centralização de informações, integração facilitada entre diferentes ferramentas de gestão e melhor tomada de decisão.
+Este plano de testes foi elaborado para garantir que o FinanceHub atenda aos requisitos especificados, proporcionando centralização de informações, integração facilitada entre diferentes ferramentas de gestão de notícias e melhor tomada de decisão.
 
 
 ## 2. Cenário de Teste - Requisitos Funcionais e dos Requisitos Não Funcionais
@@ -11,7 +11,7 @@ Os cenários de teste foram selecionados para cobrir os principais requisitos fu
 
 ## Dos Requisitos Funcionais
 
-**2.1. Cenário 1: Cadastro de Usuário**
+### **2.1. Cenário 1: Cadastro de Usuário**
 
 - **Objetivo:** Verificar se o usuário pode se cadastrar corretamente utilizando e-mail e senha.
 
