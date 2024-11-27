@@ -1,6 +1,6 @@
 # Cadastro de Novo Usuário
 
-*Requisito*
+**Requisito**
 • RF-001 - O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail.
 
 Para atender ao requisito RF-001 foi desenvolvido a página de Cadastro com a seguinte estrutura.
