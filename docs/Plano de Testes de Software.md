@@ -11,7 +11,7 @@ Os cenários de teste foram selecionados para cobrir os principais requisitos fu
 
 **2.1. Cenário 1: Cadastro de Usuário**
 
-Objetivo: Verificar se o usuário pode se cadastrar corretamente utilizando e-mail e senha.
+- Objetivo: Verificar se o usuário pode se cadastrar corretamente utilizando e-mail e senha.
 
 Funcionalidade Avaliada: Cadastro de usuário.
 
