@@ -43,7 +43,10 @@ footer{
 p{
     margin: 0;
 }
-
+.buttons {
+    display: flex;
+    gap: 15px;
+}
 .hotNews {
     margin-bottom: 40px;
     display: flex;
@@ -141,6 +144,16 @@ p{
     font-size: 8px;
     font-family: Playfair Display;
     font-weight: 400;
+}
+
+.profile {
+        display: none;
+        width: 65px;
+        height: 65px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        column-gap: 4px;
 }
 
 .logInButton {
