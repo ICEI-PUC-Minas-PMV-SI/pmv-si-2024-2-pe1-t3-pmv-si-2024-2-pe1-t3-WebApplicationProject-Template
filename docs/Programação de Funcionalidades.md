@@ -1,6 +1,7 @@
 # Cadastro de Novo Usuário
 
 **Requisito**
+
 • RF-001 - O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail.
 
 Para atender ao requisito RF-001 foi desenvolvido a página de Cadastro com a seguinte estrutura.
@@ -19,42 +20,50 @@ imagem
 
 ## Recuperação de Senha
 
-Requisito
+**Requisito**
+
 • RF-002 - Efetuar a troca de senha do usuário
 
 ## Cadastro de Notícias
 
-Requisito
+**Requisito**
+
 • RF-003 - Cadastro de notícias, Análises financeiras, Relatórios e Balancetes
 
 ## Cadastro de Tipo de Usuários
 
-Requisito
+**Requisito**
+
 • RF-004 - Cadastro de Tipos de Usuários
 
 ## List de Notícias
 
-Requisito
+**Requisito**
+
 • RF-005 - List de notícias, análises financeiras, relatórios e Balancetes com filtro do usuário
 
 ## Asset de Notícias
 
-Requisito
+**Requisito**
+
 • RF-006 -  Asset de notícias, análises financeiras, relatórios e balancetes
 
 ## Responsividade
 
-Requisito
+**Requisito**
+
 • RN-001 -  Aplicação responsiva para rodar em celulares, tablets, e desktops
 
 ## Programação
 
-Requisito
+**Requisito**
+
 • RN-002 - O sistema dever ser utilizando utilizando HTML, CSS e JavaScript
 
 ## LocalStorage
 
-Requisito
+**Requisito**
+
 • RN-003 - Ao utlizar a aplicação os dados devem ser salvos em localStorage
 
 
