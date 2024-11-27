@@ -87,7 +87,7 @@
             Relatório de Impacto Ambiental</div>
 
         <div class="form-container">
-            <!-- <form id="relatorioForm"> -->
+            <form id="relatorioForm" action="relatorio_impacto_ambiental2.html" method="post">
                 <div class="form-row">
                     <!-- Primeira Coluna -->
                     <div class="ria_column">
@@ -101,6 +101,8 @@
                             <option value="automobilistica">Automobilística</option>
                         </optgroup>
                         </select>
+                        <small id="naturezaError" style="color: red;"></small>
+                                               
 
                         <br>
                         <label style="font-weight: bold" for="medidas" class="ria_label">Medidas Mitigadoras</label>
@@ -127,6 +129,7 @@
                                 projetos sociais e ambientais</label>
                             <br>
                         </p>
+                        <small id="medidasError" name="medidasError" style="color: red;"></small>
                         <br>
 
                         <label for="medidas" style="font-weight: bold" class="ria_label">Tipos de resíduos</label>
@@ -150,6 +153,8 @@
 
 
                     </div>
+
+                    
 
                     <!-- Segunda Coluna -->
                     <br>
@@ -176,11 +181,13 @@
                                     id="outras-medidas-mitigatorias_3">
                                 equipe técnica</label>
                             <br>
+                            <small id="medidasError" style="color: red;"></small>
 
                             <label style="font-weight: bold" for="detalhes" class="ria_label">Outros Detalhes</label>
                             <br>
                             <textarea id="detalhes" name="detalhes" placeholder="Insira outros detalhes aqui..."
                                 style="width: 100%;"></textarea>
+                                <small id="detalhesError" style="color: red;"></small>
 
 
                             <br>
@@ -197,10 +204,11 @@
 
                 </div>
                 <div class="button-container">
-                    <button id="button2" onclick="goto_ria3()">Relatórios Antigos</button>
-                    <button id="button1" onclick="goto_ria2()">Gerar Relatório</button>
+                    <button id="button2" onclick="goto_ria3()" type="button">Relatórios Antigos</button>
+                    <!-- <button id="button1" onclick="goto_ria2()" type="submit">Gerar Relatório</button> -->
+                    <button id="button1" type="submit">Gerar Relatório</button>
                 </div>
-            <!-- </form> -->
+            </form>
         </div>
         <br><br>
         <!-- fim Adicione aqui o conteúdo principal da página -->
@@ -222,6 +230,56 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        //Script de validação do formulário:
+        document.getElementById("relatorioForm").addEventListener("submit", function (event) {
+          let isValid = true;
+      
+        // Validação da natureza
+        const natureza = document.getElementById("natureza").value;
+          if (natureza.length < 3 || natureza.length > 50) {
+            document.getElementById("naturezaError").textContent =
+              "Por favor escolha o ramo de atividade";
+            isValid = false;
+          } else {
+            document.getElementById("naturezaError").textContent = "";
+          }
+
+        // Validação do campo detalhes
+        const detalhes = document.getElementById("detalhes").value;
+          if (detalhes.length < 1) {
+            document.getElementById("detalhesError").textContent =
+              "Por favor adicione detalhes ao relatório";
+            isValid = false;
+          } else {
+            document.getElementById("detalhesError").textContent = "";
+        }
+        
+        // Validação do campo medidas mitigadoras
+        const checkboxes = document.querySelectorAll('input[name="medidas-mitigatorias"]');
+            const errorMessage = document.getElementById("medidasError");
+
+            // Verifica se pelo menos uma está marcada
+            const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+            if (!isChecked) {
+                // Mostra mensagem de erro e impede o envio do formulário
+                document.getElementById("medidasError").textContent = "Digite as medidas mitigadoras";
+                isValid = false;
+                event.preventDefault();
+            } else {
+                document.getElementById("medidasError").textContent = "";
+            }
+      
+          // Impede o envio se não estiver válido
+          if (!isValid) {
+            event.preventDefault();
+          }
+        });
+      </script>
+
 </body>
 
 </html>
