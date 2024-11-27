@@ -9,7 +9,7 @@ Os cenários de teste foram selecionados para cobrir os principais requisitos fu
 
 ## Dos Requisitos Funcionais
 
-**2.1. Cenário 1:** Cadastro de Usuário
+**2.1. Cenário 1: Cadastro de Usuário**
 
 Objetivo: Verificar se o usuário pode se cadastrar corretamente utilizando e-mail e senha.
 
@@ -19,7 +19,7 @@ Grupo de Usuários: Novos usuários.
 
 Requisitos Cobertos: RF-001
 
-**2.2. Cenário 2:** Redefinição de Senha
+**2.2. Cenário 2: Redefinição de Senha**
 
 Objetivo: Garantir que os usuários possam redefinir suas senhas.
 
@@ -29,7 +29,7 @@ Grupo de Usuários: Usuários que esqueceram suas senhas.
 
 Requisitos Cobertos: RF-002
 
-**2.3. Cenário 3:** adastro de Notícias
+**2.3. Cenário 3: Cadastro de Notícias**
 
 Objetivo: Testar o cadastro de notícias.
 
@@ -39,7 +39,7 @@ Grupo de Usuários:
 
 Requisitos Cobertos: RF-003
 
-**2.4. Cenário 4:** Cadastro de Tipos de Usuários
+**2.4. Cenário 4: Cadastro de Tipos de Usuários**
 
 Objetivo: Cadastrar os diversos tipos de usuários.
 
@@ -49,7 +49,7 @@ Grupo de Usuários:
 
 Requisitos Cobertos: RF-004
 
-**2.5. Cenário 5:** List de Notícias
+**2.5. Cenário 5: List de Notícias**
 
 Objetivo: Disponibilizar notícias aos usuários.
 
@@ -59,7 +59,7 @@ Grupo de Usuários:
 
 Requisitos Cobertos: RF-005
 
-**2.6. Cenário 6:** Asset  de Notícias
+**2.6. Cenário 6: Asset  de Notícias**
 
 Objetivo: 
 
@@ -71,7 +71,7 @@ Requisitos Cobertos: RF-006
 
 ## Dos Requisitos Não Funcionais
 
-**2.7. Cenário 7:** Responsividade
+**2.7. Cenário 7: Responsividade**
 
 Objetivo:  Verificar se o sistema é responsivo e funciona em dispositivos móveis.
 
@@ -81,7 +81,7 @@ Grupo de Usuários: Todos os usuários.
 
 Requisitos Cobertos: RN-001
 
-**2.8. Cenário 8:** Programação
+**2.8. Cenário 8: Programação**
 
 Objetivo: O sistema dever ser utilizando utilizando HTML, CSS e JavaScript
 
@@ -91,7 +91,7 @@ Grupo de Usuários: Todos os usuários.
 
 Requisitos Cobertos: RN-002
 
-**2.9. Cenário 9:** LocalStorage
+**2.9. Cenário 9: LocalStorage**
 
 Objetivo: Ao utlizar a aplicação os dados devem ser salvos em localStorage
 
