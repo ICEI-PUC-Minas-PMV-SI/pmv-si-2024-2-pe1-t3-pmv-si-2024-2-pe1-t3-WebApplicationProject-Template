@@ -68,13 +68,14 @@ p{
     justify-content: flex-end;
     width: 305px;
     height: 200px;
-    background-image: url('https://placecats.com/305/200');
+    background-image: url('https://investimentocerto.one/wp-content/uploads/2023/05/janeiro-850x550.webp');
     border-radius: 8px;
     background-size: cover;
 }
 
 .titleCardHotNews {
-    color: #f8f8f8;
+    color: black;
+    font-style: italic;
     font-weight: 700;
     font-size: 16px;
     padding-left: 12px;
@@ -98,11 +99,31 @@ p{
 
 .cardLatestNews {
     margin-bottom: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     
 }
+
+
+
+.cardsGroupLatestNews.intermediario .intermediario {
+  display: flex; 
+}
+
+.cardsGroupLatestNews.iniciante .iniciante {
+  display: flex; 
+}
+
+.cardsGroupLatestNews.avancado .avancado {
+  display: flex; 
+}
+
+.cardsGroupLatestNews.estudante .estudante {
+  display: flex; 
+}
+
+
 .imgCardLatestNews {
     border-radius: 8px;
     margin-bottom: 6px;
@@ -123,7 +144,6 @@ p{
 }
 
 .logInButton {
-    display: none;
     display: none;
     width: 65px;
     height: 65px;
@@ -200,7 +220,7 @@ p{
     .cardHotNews {
         width: 647px;
         height: 289px;
-        background-image: url('https://placecats.com/647px/289px;'); 
+    
     }
     .titleCardHotNews {
         color: #f8f8f8;
@@ -281,7 +301,7 @@ p{
     .cardHotNews {
         width: 870px;
         height: 400px;
-        background-image: url('https://placecats.com/870/400;'); 
+
     }
  
     .lastestNews {
@@ -290,12 +310,7 @@ p{
         
     }
 
-    .cardsGroupLatestNews{
-        display: flex;
-        gap: 12px;
-        justify-content: center;
-        width: 100%;
-    }
+  
     .cardLatestNews{
         width: 23%
     }
