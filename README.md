@@ -22,7 +22,7 @@ O FinanceHub visa desenvolver uma plataforma que centralize e forneça informaç
 
 # Documentação
 
-1. [Documentação de Contexto](docs//01. context.md) 
+1. [Documentação de Contexto](docs/01.context.md)
 2. [Especificação do Projeto](docs/especification.md) 
 3. [Projeto de Interface](docs/interface.md)
 4. [Template Padrão](docs/template.md) 
