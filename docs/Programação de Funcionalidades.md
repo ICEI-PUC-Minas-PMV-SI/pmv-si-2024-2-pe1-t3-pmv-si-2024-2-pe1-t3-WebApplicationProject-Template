@@ -1,4 +1,4 @@
-#Cadastro de Novo Usuário
+# Cadastro de Novo Usuário
 
 Requisito
 • RF-001 - O sistema permitirá cadastro de novos usuários, com nome, senha e e-mail
@@ -15,7 +15,7 @@ Os dados são registrados no localStorage do navegador de acordo com a estrutura
 
 imagem
 
-##Recuperação de Senha
+## Recuperação de Senha
 
 Requisito
 • RF-002 - Efetuar a troca de senha do usuário
@@ -25,32 +25,32 @@ Requisito
 Requisito
 • RF-003 - Cadastro de notícias, Análises financeiras, Relatórios e Balancetes
 
-##Cadastro de Tipo de Usuários
+## Cadastro de Tipo de Usuários
 
 Requisito
 • RF-004 - Cadastro de Tipos de Usuários
 
-##List de Notícias
+## List de Notícias
 
 Requisito
 • RF-005 - List de notícias, análises financeiras, relatórios e Balancetes com filtro do usuário
 
-##Asset de Notícias
+## Asset de Notícias
 
 Requisito
 • RF-006 -  Asset de notícias, análises financeiras, relatórios e balancetes
 
-##Responsividade
+## Responsividade
 
 Requisito
 • RN-001 -  Aplicação responsiva para rodar em celulares, tablets, e desktops
 
-##Programação
+## Programação
 
 Requisito
 • RN-002 - O sistema dever ser utilizando utilizando HTML, CSS e JavaScript
 
-##LocalStorage
+## LocalStorage
 
 Requisito
 • RN-003 - Ao utlizar a aplicação os dados devem ser salvos em localStorage
