@@ -518,6 +518,27 @@ h2 {
   flex-wrap: wrap; 
 }
 
+/* Login Form */
+.login_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 20px; */
+  /* background-color: red; */
+  flex-wrap: wrap; 
+  width: 55%;
+}
+
+.form-section2{
+  /* background-color: blue; */
+  width: 45%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 81.8%;
+}
+
 .direitalogin, .form-section {
   width: 45%;
   background-color: #fff;
@@ -525,6 +546,10 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+
+/* .login_form, .form-section{
+  width: 54%;
+} */
 
 /* Estilos para os títulos (h2) */
 h2 {
