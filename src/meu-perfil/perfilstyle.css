@@ -86,7 +86,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 30px;  /* Espaçamento abaixo do título */
+    margin-bottom: 30px;   
 }
 
 .form-frame {
@@ -104,7 +104,7 @@
 
 .form-group {
     width: 100%;
-    margin-bottom: 28px;  /* Espaço entre os campos (nome, email, etc.) */
+    margin-bottom: 28px;  
 }
 
 label {
@@ -130,7 +130,7 @@ input.input-field {
     font-family: "Playfair Display", Helvetica, serif;
     font-size: 20px;
     color: var(--black-80);
-    margin-bottom: 22px;   
+    margin-bottom: 20px;   
 }
 
 .submit-button {
@@ -145,7 +145,7 @@ input.input-field {
     font-size: 20px;
     cursor: pointer;
     transition: transform 0.1s ease;
-    margin-top: 40px;  
+    margin-top: 1px;  
 }
 
 .submit-button:active {
@@ -156,7 +156,7 @@ input.input-field {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 .forgot-password,
