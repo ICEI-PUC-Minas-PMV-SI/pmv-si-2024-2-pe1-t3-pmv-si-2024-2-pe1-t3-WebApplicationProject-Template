@@ -105,8 +105,9 @@
                                                
 
                         <br>
-                        <label style="font-weight: bold" for="medidas" class="ria_label">Medidas Mitigadoras</label>
 
+                        <!-- Medidas Mitigatorias -->
+                        <label style="font-weight: bold" for="medidas" class="ria_label">Medidas Mitigadoras</label>
                         <p>
                             <label>
                                 <input type="checkbox" name="medidas-mitigatorias" value="plano de monitoramento"
@@ -131,9 +132,11 @@
                         </p>
                         <small id="medidasError" name="medidasError" style="color: red;"></small>
                         <br>
+                        <!-- // -->
 
-                        <label for="medidas" style="font-weight: bold" class="ria_label">Tipos de resíduos</label>
-                        <select id="medidas" name="medidas" required>
+                        <!-- Tipos de Resíduos -->
+                        <label for="tipos_residuos" style="font-weight: bold" class="ria_label">Tipos de resíduos</label>
+                        <select id="tipos_residuos" name="tipos_residuos" required>
                             <optgroup label="Tipos de resíduos">
                             <option value="" disabled selected>Selecione</option>
                             <option value="oleos_graxas">Óleos e Graxas</option>
@@ -144,13 +147,17 @@
                             <option value="pneus_descartados">Pneus Descartados</option>
                             </optgroup>
                         </select>
-
+                        <small id="tipos_residuosError" name="tipos_residuosError" style="color: red;"></small>
+                        <!-- // -->
+                        
                         <br>
 
+                        <!-- Quantidade em quilos -->
                         <label style="font-weight: bold" for="medidas">Quantidade em quilos</label>
-                        <input type="number" id="quilos" name="quilos" placeholder="KG" min="0" step="1"
+                        <input type="number" id="quantidade_quilos" name="quantidade_quilos" placeholder="KG" min="0" step="1"
                             pattern="[0-9]*">
 
+                        <small id="quantidade_quilosError" style="color: red;"></small>
 
                     </div>
 
@@ -159,30 +166,36 @@
                     <!-- Segunda Coluna -->
                     <br>
                     <div class="ria_column">
+
+                        <!-- Incluir no relatório -->
                         <label style="font-weight: bold" for="incluir no relatório" class="ria_label">Incluir no
                             Relatório</label>
 
                             <label>
-                            <input type="checkbox" name="outras-medidas-mitigatorias" value="plano de monitoramento"
-                                id="outras-medidas-mitigatorias_0">
+                            <input type="checkbox" name="incluir_no_relatorio" value="plano de monitoramento"
+                                id="incluir_no_relatorio_0">
                             mapa de da área de estudo</label>
                             <label>
-                            <input type="checkbox" name="outras-medidas-mitigatorias" value="áreas de conservação"
-                                id="outras-medidas-mitigatorias_1">
+                            <input type="checkbox" name="incluir_no_relatorio" value="áreas de conservação"
+                                id="incluir_no_relatorio_1">
                             projeção de impacto potencial
                             <br>
                             <label>
-                                <input type="checkbox" name="outras-medidas-mitigatorias" value="projetos sociais"
-                                    id="outras-medidas-mitigatorias_2">
+                                <input type="checkbox" name="incluir_no_relatorio" value="projetos sociais"
+                                    id="incluir_no_relatorio_2">
                                 riscos ambientais associados à atividade</label>
                             <br>
                             <label>
-                                <input type="checkbox" name="outras-medidas-mitigatorias" value="projetos sociais"
-                                    id="outras-medidas-mitigatorias_3">
+                                <input type="checkbox" name="incluir_no_relatorio" value="projetos sociais"
+                                    id="incluir_no_relatorio_3">
                                 equipe técnica</label>
                             <br>
-                            <small id="medidasError" style="color: red;"></small>
+                            <small id="incluir_no_relatorioError" style="color: red;"></small>
 
+
+                            <!-- Outros Detalhes -->
+
+                            <br>
                             <label style="font-weight: bold" for="detalhes" class="ria_label">Outros Detalhes</label>
                             <br>
                             <textarea id="detalhes" name="detalhes" placeholder="Insira outros detalhes aqui..."
@@ -191,10 +204,14 @@
 
 
                             <br>
-                            <label style="font-weight: bold" for="data" class="ria_data">Data de Início do dados</label>
+
+                            <!-- Data de Inicio dos dados -->
+                            <label style="font-weight: bold" for="data" class="ria_data">Data de Início dos dados</label>
                             <input type="date">
 
                             <br>
+
+                            <!-- Relatórios antigos -->
                             <label style="font-weight: bold">Relatórios Antigos</label>
 
                             <label>Sempre que houver modificações no projeto, mudanças nas condições ambientais,
@@ -272,11 +289,57 @@
             } else {
                 document.getElementById("medidasError").textContent = "";
             }
-      
-          // Impede o envio se não estiver válido
-          if (!isValid) {
-            event.preventDefault();
+
+        // Validação do tipos de residuos
+        const tipos_residuos = document.getElementById("tipos_residuos").value;
+          if (tipos_residuos.length < 3 || tipos_residuos.length > 100) {
+            document.getElementById("tipos_residuosError").textContent =
+              "Por favor escolha os tipos de resíduos";
+            isValid = false;
+          } else {
+            document.getElementById("tipos_residuosError").textContent = "";
           }
+
+          //------------
+          const quilosInput = document.getElementById("quantidade_quilos");
+            const errorMessage3 = document.getElementById("quantidade_quilosError");
+
+            // Resetando a mensagem de erro
+            errorMessage3.textContent = "";
+
+            if (quilosInput.value === "" || quilosInput.value === "KG") {
+                document.getElementById("quantidade_quilosError").textContent = "Por favor, digite a quantidade em quilos";
+                isValid = false;
+                event.preventDefault(); // Impede o envio do formulário
+
+            } else if (!/^\d+$/.test(quilosInput.value)) {
+
+                document.getElementById("quantidade_quilosError").textContent = "Por favor, insira apenas números válidos.";
+                event.preventDefault(); // Impede o envio do formulário
+            }
+          //------------
+
+          // Validação do campo "incluir no relatório"
+        const checkboxes2 = document.querySelectorAll('input[name="incluir_no_relatorio"]');
+            const errorMessage2 = document.getElementById("incluir_no_relatorioError");
+
+            // Verifica se pelo menos uma está marcada
+            const isChecked2 = Array.from(checkboxes2).some(checkbox => checkbox.checked);
+
+            if (!isChecked2) {
+                // Mostra mensagem de erro e impede o envio do formulário
+                document.getElementById("incluir_no_relatorioError").textContent = "Escolha os itens que você gostaria de incluir no relatório";
+                isValid = false;
+                event.preventDefault();
+            } else {
+                document.getElementById("incluir_no_relatorioError").textContent = "";
+            }
+
+      
+        // Impede o envio se não estiver válido
+        if (!isValid) {
+        event.preventDefault();
+        }
         });
       </script>
 
