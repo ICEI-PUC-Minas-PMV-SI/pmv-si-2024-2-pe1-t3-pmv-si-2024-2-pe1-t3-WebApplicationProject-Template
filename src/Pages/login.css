@@ -530,7 +530,6 @@ h2 {
 }
 
 .form-section2{
-  /* background-color: blue; */
   width: 45%;
   background-color: #fff;
   border-radius: 8px;
@@ -539,12 +538,18 @@ h2 {
   width: 81.8%;
 }
 
-.direitalogin, .form-section {
+.cadastro_form{
+  background-color: yellow;
+  width: 45%;
+}
+
+.direitalogin{
   width: 45%;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 100%;
 }
 
 /* .login_form, .form-section{
