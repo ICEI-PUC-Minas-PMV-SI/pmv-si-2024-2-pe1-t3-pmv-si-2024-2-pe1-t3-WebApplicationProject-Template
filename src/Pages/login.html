@@ -81,25 +81,37 @@
                 </div>
             </form>
 
+
+
+            <!-- Segundo formulário: Cadastro -->
+            <form id="cadastro_form" name="cadastro_form" class="cadastro_form" action="perfil-usuario.html" method="post">
+
             <!-- sessão de criação de conta -->
             <div class="direitalogin">
                 <h2>Criar Conta</h2>
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Fulano de Tal">
+                <input type="text" id="nomeCadastro" placeholder="Nome Sobrenome">
+                <small id="nomeCadastroError" style="color: red;"></small>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="@xxxxxxx.com">
+                <input type="email" id="emailCadastro" placeholder="nome@dominio.com">
+                <small id="emailCadastroError" style="color: red;"></small>
 
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="**********">
+                <input type="password" id="senhaCadastro" placeholder="**********">
+                <small id="senhaCadastroError" style="color: red;"></small>
 
-                <label for="senha-confirm">Confirme a Senha</label>
-                <input type="password" id="senha-confirm" placeholder="**********">
+                <label for="senha2">Confirme a Senha</label>
+                <input type="password" id="senhaCadastro2" placeholder="**********">
+                <small id="senhaCadastro2Error" style="color: red;"></small>
 
                 <div class="form-check">
                     <input type="checkbox" id="termos">
                     <label for="termos">Li e concordo com os termos e condições</label>
                 </div>
+
+                <small id="termos_e_condicoesError" style="color: red;"></small>
+
                 <div class="toggle-container">
                     <h3 for="toggle-industries">Sou uma empresa</h3>
                     <label class="switch">
@@ -109,25 +121,12 @@
                 </div>
                 
                 <div class="toggle-container">
-                    <button type="submit" onclick="criarConta()">Criar Conta</button>
+                    <button type="submit">Criar Conta</button>
+                    <!-- <button type="submit" onclick="criarConta()">Criar Conta</button> -->
                 </div>
                 
                 <script>
-                    function criarConta() {
-                        var termosAceitos = document.getElementById("termos").checked;
-                        var isEmpresa = document.getElementById("toggle-industries").checked;
-                
-                        if (!termosAceitos) {
-                            alert("Você precisa concordar com os termos e condições.");
-                            return; 
-                        }
-                
-                        if (isEmpresa) {
-                            window.location.href = '03 - Planos Empresariais.html'; 
-                        } else {
-                            window.location.href = 'perfil-usuario.html'; 
-                        }
-                    }
+                    
                 </script>
         </div>
     </main>
@@ -149,7 +148,7 @@
 
 
     <script>
-        // Função para validar o formulário
+        // Função para validar o formulário 1 - LOGIN
         document.getElementById('login_form').addEventListener('submit', function(event) {
             let isValid = true;
 
@@ -180,6 +179,136 @@
                 event.preventDefault();
             }
         });
+
+        // Função para validar o formulário 2 - CADASTRO
+        document.getElementById('cadastro_form').addEventListener('submit', function(event) {
+            let isValid2 = true;
+
+            /* 
+            
+                nomeCadastro
+                nomeCadastroError
+
+
+                emailCadastro
+                emailCadastroError
+
+
+                senhaCadastro
+                senhaCadastroError
+
+                senha-confirm
+                senha-confirmError
+
+            */
+
+
+            //Validar o nome de cadastro
+            const nomeCadastro = document.getElementById('nomeCadastro');
+            const nomeCadastroError = document.getElementById('nomeCadastroError');
+            if (nomeCadastro.value.trim() === "" || !nomeCadastro.validity.valid) {
+                isValid2 = false;
+                nomeCadastroError.textContent = "Informe um nome de cadastro válido.";
+                document.getElementById("nomeCadastroError").textContent = "Informe um nome de cadastro válido.";
+                event.preventDefault();
+            } else {
+                nomeCadastroError.textContent = "";
+            }
+            
+            // Validar o email
+            const emailCadastro = document.getElementById('emailCadastro');
+            const erroEmail = document.getElementById('emailCadastroError');
+            if (emailCadastro.value.trim() === "" || !emailCadastro.validity.valid) {
+                isValid2 = false;
+                erroEmail.textContent = "Informe um email válido.";
+                document.getElementById("emailCadastroError").textContent = "Informe um email válido.";
+                event.preventDefault();
+            } else {
+                erroEmail.textContent = "";
+            }
+
+            // Validar senha
+            const senhaCadastro = document.getElementById('senhaCadastro');
+            const senhaCadastroError = document.getElementById('senhaCadastroError');
+            if (senhaCadastro.value.trim() === "") {
+                
+                senhaCadastroError.textContent = "Digite sua senha";
+                isValid2 = false;
+                event.preventDefault();
+            } else {
+                senhaCadastroError.textContent = "";
+            }
+
+            // Validar confirmação de senha
+            const senhaCadastro2 = document.getElementById('senhaCadastro2');
+            const senhaCadastro2Error = document.getElementById('senhaCadastro2Error');
+            if (senhaCadastro2.value.trim() === "") {
+                senhaCadastro2Error.textContent = "Digite sua senha novamente";
+                isValid2 = false;
+                event.preventDefault();
+            } else {
+                // senhaCadastro2Error.textContent = "";
+
+                if (senhaCadastro != senhaCadastro2){
+                    senhaCadastro2Error.textContent = "As senhas tem que coincidir";
+                    isValid2 = false;
+                    event.preventDefault();
+                }else {
+                    senhaCadastro2Error.textContent = "";
+                }
+            }
+
+            
+
+            //Valida termos
+            var termosAceitos = document.getElementById("termos").checked;
+            var isEmpresa = document.getElementById("toggle-industries").checked;
+    
+            if (!termosAceitos) {
+
+                document.getElementById("termos_e_condicoesError").textContent = "Você precisa concordar com os termos e condições.";
+
+                isValid2 = false;
+                event.preventDefault();
+                // alert("Você precisa concordar com os termos e condições.");
+                return; 
+            }
+    
+            if (isEmpresa) {
+                window.location.href = '03 - Planos Empresariais.html'; 
+            } else {
+                window.location.href = 'perfil-usuario.html'; 
+            }
+
+  
+
+            // Se não for válido, prevenir envio
+            if (!isValid2) {
+                event.preventDefault();
+            }
+
+        });
+
+
+        //Validacão dos termos e condições
+        function criarConta() 
+        {
+            var termosAceitos = document.getElementById("termos").checked;
+            var isEmpresa = document.getElementById("toggle-industries").checked;
+    
+            if (!termosAceitos) {
+
+                document.getElementById("termos_e_condicoesError").textContent = "Você precisa concordar com os termos e condições.";
+                // alert("Você precisa concordar com os termos e condições.");
+                return; 
+            }
+    
+            if (isEmpresa) {
+                window.location.href = '03 - Planos Empresariais.html'; 
+            } else {
+                window.location.href = 'perfil-usuario.html'; 
+            }
+        }
         
     </script>
 
