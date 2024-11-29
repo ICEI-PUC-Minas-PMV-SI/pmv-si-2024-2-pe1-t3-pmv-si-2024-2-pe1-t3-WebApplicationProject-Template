@@ -291,34 +291,82 @@ header {
 .language-selector:hover .gtranslate_wrapper {
   display: block; 
 }
-/* Estilos para o rodapé */
+/* Estilos do Rodapé */
 footer {
   background-color: #222;
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: auto; /* Empurra o rodapé para baixo */
+  margin-top: auto; /* Mantém o rodapé na parte inferior */
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer span {
+  display: block;
+  margin-bottom: 10px;
 }
 
 footer .footer-links {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
   justify-content: center;
-  margin-top: 10px;
+  gap: 15px; /* Espaço entre os itens */
+  margin: 0;
 }
 
 footer .footer-links li {
-  margin: 0 10px;
+  margin: 0;
 }
 
 footer .footer-links a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 
 footer .footer-links a:hover {
+  color: #66cc66; /* Cor verde clara ao passar o mouse */
   text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  footer .footer-links {
+    flex-direction: column; /* Empilha os links verticalmente */
+    gap: 10px; /* Reduz o espaço entre os links */
+  }
+
+  footer .footer-links a {
+    font-size: 16px; /* Aumenta a fonte para melhor legibilidade */
+  }
+}
+
+@media (max-width: 480px) {
+  footer span {
+    font-size: 12px; /* Reduz o tamanho do texto */
+  }
+
+  footer .footer-links a {
+    font-size: 14px; /* Mantém a legibilidade em telas muito pequenas */
+  }
+
+  footer {
+    padding: 15px 10px; /* Reduz o padding para economizar espaço */
+  }
 }
 /* Estilo da barra de pesquisa */
 .form-control {
@@ -351,21 +399,6 @@ footer .footer-links a:hover {
   background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
 }
 
-/* Estilos adicionais para remover bordas e fundos indesejados */
-.language-dropdown, .language-dropdown li, .language-dropdown li a {
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  background: none !important;
-}
-
-
-/* Reset básico e estilos globais */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -652,36 +685,83 @@ header {
   display: block; 
 }
 
-/* Estilos para o rodapé */
+/* Estilos do Rodapé */
 footer {
   background-color: #222;
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: auto; /* Empurra o rodapé para baixo */
+  margin-top: auto; /* Mantém o rodapé na parte inferior */
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer span {
+  display: block;
+  margin-bottom: 10px;
 }
 
 footer .footer-links {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
   justify-content: center;
-  margin-top: 10px;
+  gap: 15px; /* Espaço entre os itens */
+  margin: 0;
 }
 
 footer .footer-links li {
-  margin: 0 10px;
+  margin: 0;
 }
 
 footer .footer-links a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 
 footer .footer-links a:hover {
+  color: #66cc66; /* Cor verde clara ao passar o mouse */
   text-decoration: underline;
 }
 
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  footer .footer-links {
+    flex-direction: column; /* Empilha os links verticalmente */
+    gap: 10px; /* Reduz o espaço entre os links */
+  }
+
+  footer .footer-links a {
+    font-size: 16px; /* Aumenta a fonte para melhor legibilidade */
+  }
+}
+
+@media (max-width: 480px) {
+  footer span {
+    font-size: 12px; /* Reduz o tamanho do texto */
+  }
+
+  footer .footer-links a {
+    font-size: 14px; /* Mantém a legibilidade em telas muito pequenas */
+  }
+
+  footer {
+    padding: 15px 10px; /* Reduz o padding para economizar espaço */
+  }
+}
 /* Estilo da barra de pesquisa */
 .form-control {
   border: 1px solid #ced4da; /* Borda padrão */
@@ -737,16 +817,21 @@ footer .footer-links a:hover {
 }
 
 .sidebar {
-  background-color: #589c68; /* Altere para a mesma cor da barra de cima */
-  color: white; /* Texto branco */
-  padding: 20px; /* Espaçamento interno */
-  width: 300px; /* Largura da sidebar */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-  flex: 1; /* Para garantir que ela ocupe uma proporção do layout */
-  max-width: 100%; /* Garante que a largura não ultrapasse 100% */
-  box-sizing: border-box; /* Para considerar o padding no cálculo da largura */
+  background-color: #589c68;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative; /* Respeita o contêiner */
+  height: auto; /* Deixa a altura ajustar automaticamente */
+  overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo exceder a altura */
+  margin-bottom: 20px; /* Adiciona espaço inferior para evitar tocar o rodapé */
 }
+
 
 .sidebar h2 {
   margin-bottom: 10px; /* Espaçamento abaixo do título */
@@ -996,18 +1081,3 @@ footer .footer-links a:hover {
     padding: 6px 10px;
     font-size: 14px;
   }
-
-  /* Footer adjustments */
-  footer {
-    padding: 15px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-links li {
-    margin: 5px 0;
-  }
-}
