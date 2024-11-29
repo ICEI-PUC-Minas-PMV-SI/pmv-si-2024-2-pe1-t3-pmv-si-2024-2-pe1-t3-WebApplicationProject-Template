@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
+  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
 
 .navbar .logo {
@@ -40,9 +40,9 @@ header {
 }
 
 .navbar .logo-image {
-  width: 80px; /* Tamanho do logo */
-  height: 80px;
-  border-radius: 50%; /* Faz o logo redondo */
+  width: 70px; /* Tamanho reduzido do logo */
+  height: 70px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -54,32 +54,34 @@ header {
 
 .navbar .logo-text {
   color: white;
-  font-size: 80px;
-  margin-left: 15px;
+  font-size: 2.2rem; /* Tamanho reduzido do texto */
+  margin-left: 10px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
   line-height: 1;
 }
 
-/* Outros estilos para o Navbar */
+/* Estilos para o Navbar */
 .navbar .nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Ajusta para telas menores */
+  flex-wrap: nowrap; /* Impede que os itens se movam para uma linha abaixo */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar .nav-list li {
-  margin-left: 20px;
+  margin-left: 15px;
   position: relative;
 }
 
 .navbar .nav-list a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  padding: 8px 15px;
+  font-size: 14px; /* Fonte menor para mais compactação */
+  padding: 6px 12px; /* Ajuste do padding para itens mais compactos */
   transition: background-color 0.3s ease;
 }
 
@@ -90,51 +92,89 @@ header {
 }
 
 /* Estilos responsivos */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduzido mais o logo para telas grandes */
+  }
+
+  .navbar .logo-text {
+    font-size: 2rem; /* Diminui mais o texto para telas grandes */
+    margin-left: 8px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens do menu */
+    width: 100%; /* Garante que o menu ocupe toda a largura disponível */
+  }
+
+  .navbar .nav-list li {
+    margin-left: 12px; /* Ajuste no espaçamento entre os itens */
+  }
+
+  .navbar .nav-list a {
+    font-size: 12px; /* Fonte ainda menor */
+    padding: 5px 10px; /* Ajuste do padding para mais compactação */
+  }
+}
+
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .navbar .logo-image {
-    width: 60px;
-    height: 60px; /* Reduz o tamanho do logo em telas menores */
+    width: 50px;
+    height: 50px; /* Logo ainda menor para dispositivos de tablet */
   }
 
   .navbar .logo-text {
-    font-size: 40px; /* Reduz o tamanho do texto do logo em telas menores */
-    margin-left: 10px;
+    font-size: 1.8rem; /* Diminui mais o tamanho do texto "Greencycle" */
+    margin-left: 5px;
   }
 
   .navbar .nav-list {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly; /* Distribui os itens igualmente na linha */
+    width: 100%;
   }
 
   .navbar .nav-list li {
-    margin-left: 0;
-    margin-bottom: 10px;
+    margin-left: 8px; /* Ajuste no espaçamento */
   }
 
   .navbar .nav-list a {
-    font-size: 14px;
-    padding: 6px 10px; /* Ajusta o padding para telas menores */
+    font-size: 10px; /* Fonte menor para itens de menu */
+    padding: 5px 8px; /* Ajuste de padding para caber mais itens */
   }
 }
 
-@media (min-width: 600px) and (max-width: 992px) {
+@media (max-width: 480px) {
   .navbar .logo-image {
-    width: 70px;
-    height: 70px; /* Ajuste intermediário para tablets */
+    width: 45px;
+    height: 45px; /* Reduz logo ainda mais para dispositivos pequenos */
   }
 
   .navbar .logo-text {
-    font-size: 60px;
+    font-size: 1.6rem; /* Tamanho muito menor para telas pequenas */
+  }
+
+  .navbar .nav-list {
+    flex-direction: row;
+    justify-content: space-between; /* Garantindo que todos os itens do menu caibam na linha */
+    width: 100%;
+    padding: 0 8px; /* Garantir espaçamento adequado nas laterais */
+  }
+
+  .navbar .nav-list li {
+    margin-left: 5px; /* Menor margem entre os itens */
   }
 
   .navbar .nav-list a {
-    font-size: 15px;
-    padding: 7px 12px;
+    font-size: 9px; /* Fonte muito menor para telas pequenas */
+    padding: 4px 7px; /* Ajuste de padding para telas pequenas */
   }
 }
 

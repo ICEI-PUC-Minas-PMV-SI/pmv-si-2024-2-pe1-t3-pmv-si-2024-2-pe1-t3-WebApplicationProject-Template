@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Adiciona flexibilidade ao layout para dispositivos menores */
+  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
 
 .navbar .logo {
@@ -40,9 +40,9 @@ header {
 }
 
 .navbar .logo-image {
-  width: 80px; /* Tamanho do logo */
+  width: 80px; /* Tamanho inicial do logo */
   height: 80px;
-  border-radius: 50%; /* Faz o logo redondo */
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -54,7 +54,7 @@ header {
 
 .navbar .logo-text {
   color: white;
-  font-size: 80px;
+  font-size: 4rem; /* Tamanho inicial do texto */
   margin-left: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -62,12 +62,12 @@ header {
   line-height: 1;
 }
 
-/* Outros estilos para o Navbar */
+/* Estilos para o Navbar */
 .navbar .nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Ajusta para telas menores */
+  flex-wrap: wrap; /* Para ajustar os itens na tela */
 }
 
 .navbar .nav-list li {
@@ -88,6 +88,63 @@ header {
   background-color: #218838;
   border-radius: 5px;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduz o tamanho do logo em telas menores */
+  }
+
+  .navbar .logo-text {
+    font-size: 2.5rem; /* Reduz o tamanho do texto "Greencycle" em telas menores */
+    margin-left: 10px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Garante que os links ocupem toda a largura disponível */
+  }
+
+  .navbar .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens do menu */
+  }
+
+  .navbar .nav-list a {
+    font-size: 14px;
+    padding: 6px 10px; /* Ajusta o padding para telas menores */
+    width: 100%; /* Faz com que cada link ocupe a largura total */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo-image {
+    width: 50px;
+    height: 50px; /* Reduz ainda mais o logo */
+  }
+
+  .navbar .logo-text {
+    font-size: 2rem; /* Reduz o tamanho do texto "Greencycle" para dispositivos móveis pequenos */
+  }
+
+  .navbar .nav-list {
+    width: 100%;
+  }
+
+  .navbar .nav-list a {
+    font-size: 12px;
+    padding: 5px 8px; /* Ajuste para dispositivos bem pequenos */
+  }
+}
+
 
 /* Estilos responsivos */
 @media (max-width: 600px) {

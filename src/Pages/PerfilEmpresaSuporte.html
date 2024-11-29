@@ -66,38 +66,52 @@
     <main class="support-section">
         <h2>Teve algum problema? Fale com a gente! <span>🗨️</span></h2>
     
-        <form class="support-form">
-            <!-- Problema -->
-            <div class="form-group">
-                <label for="problem-select">Selecione abaixo aonde seu problema se encaixa</label>
-                <select id="problem-select">
-                    <option>Problema com a fatura</option>
-                    <option>Problema de cadastro</option>
-                    <option>Problema técnico</option>
-                    <option>Outro</option>
-                </select>
+        <div class="form-group">
+            <label for="problem-select">Selecione abaixo aonde seu problema se encaixa</label>
+            <select id="problem-select" required>
+                <option value="" disabled selected>Selecione um tipo de problema</option>
+                <option value="fatura">Problema com a fatura</option>
+                <option value="cadastro">Problema de cadastro</option>
+                <option value="tecnico">Problema técnico</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="problem-summary">Breve resumo do que aconteceu</label>
+            <textarea id="problem-summary" rows="5" placeholder="até 500 caracteres"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="problem-image">Adicione uma imagem para seu problema</label>
+            <div class="upload-icons">
+                <label for="problem-image">
+                    <img src="../images/uploadicon.png" alt="Icone de upload" class="upload-icon">
+                </label>
+                <input type="file" id="problem-image" style="display:none;">
             </div>
-            <!-- Resumo do problema -->
-            <div class="form-group">
-                <label for="problem-summary">Breve resumo do que aconteceu</label>
-                <textarea id="problem-summary" rows="5" placeholder="até 500 caracteres"></textarea>
-            </div>
-            <!-- Upload de imagem Problema-->
-            <div class="form-group">
-                <label for="problem-image">Adicione uma imagem para seu problema</label>
-                <div class="upload-icons">
-                    <label for="problem-image">
-                        <img src="../images/uploadicon.png" alt="Icone de upload" class="upload-icon">
-                    </label>
-                    <input type="file" id="problem-image" style="display:none;">
-                </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="submit-btn">Enviar Ticket</button>
-            </div>
-        </form>
-    </main>
-
+        </div>
+        <div class="form-group">
+            <button type="button" id="submit-btn" class="submit-btn">Enviar Ticket</button>
+        </div>
+        
+        <script>
+        document.getElementById('submit-btn').addEventListener('click', function () {
+            const problemSelect = document.getElementById('problem-select');
+            const problemSummary = document.getElementById('problem-summary');
+            const errorMessages = [];
+        
+            if (!problemSelect.value) errorMessages.push("Por favor, selecione um tipo de problema.");
+            if (!problemSummary.value.trim()) errorMessages.push("Por favor, insira um breve resumo do problema.");
+            if (problemSummary.value.length > 500) errorMessages.push("O resumo deve ter no máximo 500 caracteres.");
+        
+            if (errorMessages.length > 0) {
+                alert(errorMessages.join("\n"));
+            } else {
+                alert("Formulário enviado com sucesso!");
+                location.reload();
+            }
+        });
+        </script>
+        
     <!-- Rodapé -->
     <footer>
         <div class="footer">

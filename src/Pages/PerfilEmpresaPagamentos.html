@@ -67,75 +67,84 @@
                     <li><a href="PerfilEmpresaSuporte.html">Suporte</a></li> 
                 </ul>
             </div>
-            <!--Formulário-->
+            <!-- Formulário -->
             <div class="content">
                 <div class="left-container">
                     <h2><i class="payment-icon"></i> Cadastre um novo cartão ou método de pagamento</h2>
-                    <form class="payment-form">
+                    <form class="payment-form" id="form-pagamento" onsubmit="return validarPagamento(event)">
                         <div class="form-group">
                             <label for="card-number">Digite apenas os números do cartão</label>
-                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required />
                         </div>
-                
+
                         <div class="form-group">
                             <label for="name-on-card">Nome Impresso no Cartão</label>
-                            <input type="text" id="name-on-card" placeholder="Digite o nome">
+                            <input type="text" id="name-on-card" placeholder="Digite o nome" required />
                         </div>
-                
+
                         <div class="form-group">
                             <label for="expiry-date">Data de validade</label>
-                            <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" oninput="this.value = this.value.replace(/[^0-9\/]/g, '');" />
+                            <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" oninput="this.value = this.value.replace(/[^0-9\/]/g, '');" required />
                         </div>
-                
+
                         <div class="form-group">
                             <label for="cvv">Digite o CVV</label>
-                            <input type="text" id="cvv" placeholder="XXX" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                            <input type="text" id="cvv" placeholder="XXX" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required />
                         </div>
-                
-                        <button type="submit" class="submit-button" onclick="atualizarPagamento()">Atualizar método de pagamento</button>
-                
-                        <script>
-                        function atualizarPagamento() {
-                            alert("Método de pagamento atualizado!");
-                        }
-                        </script>
+
+                        <button type="submit" class="submit-button">Atualizar método de pagamento</button>
                     </form>
                 </div>
-    
+
                 <div class="right-container">
                     <h3 class="fatura-vencimento">Sua próxima fatura vence no dia 15/10</h3>
                     <div class="card-info-container">
                         <div class="form-group card-group">
                             <label for="credit-card">Cartão de Crédito Utilizado</label>
-                            <input type="text" id="credit-card" value="************-1234" readonly>
+                            <input type="text" id="credit-card" value="************-1234" readonly />
                             <button type="button" class="delete-button" onclick="removerCartao()">Excluir Cartão</button>
                         </div>
-                
+
                         <div class="form-group">
                             <label for="plano">Plano</label>
-                            <input type="text" id="plano" value="Plano Micro Empresário - R$40,99/mês" readonly>
+                            <input type="text" id="plano" value="Plano Micro Empresário - R$40,99/mês" readonly />
                         </div>
-                
+
                         <div class="form-group">
                             <label for="inicio-plano">Início do plano</label>
-                            <input type="text" id="inicio-plano" value="10/01/2024" readonly>
+                            <input type="text" id="inicio-plano" value="10/01/2024" readonly />
                         </div>
-                
+
                         <div class="form-group">
                             <label for="renovacao-plano">Renovação automática em:</label>
-                            <input type="text" id="renovacao-plano" value="10/01/2025" readonly>
+                            <input type="text" id="renovacao-plano" value="10/01/2025" readonly />
                         </div>
-                
-                        <script>
-                            function removerCartao() {
-                                alert("Cartão removido do sistema.");
-                            }
-                        </script>
                     </div>
                 </div>
-                
-        </section>
-    </main>
+            </section>
+        </main>
+
+    <script>
+    function validarPagamento(event) {
+        var cardNumber = document.getElementById('card-number').value;
+        var nameOnCard = document.getElementById('name-on-card').value;
+        var expiryDate = document.getElementById('expiry-date').value;
+        var cvv = document.getElementById('cvv').value;
+
+        if (!cardNumber || !nameOnCard || !expiryDate || !cvv) {
+            alert("Por favor, preencha todos os campos obrigatórios!");
+            event.preventDefault();
+            return false;
+        }
+
+        alert("Método de pagamento atualizado!");
+        return true;
+    }
+
+    function removerCartao() {
+        alert("Cartão removido do sistema.");
+    }
+    </script>
 
     <!-- Rodapé -->
     <footer>
