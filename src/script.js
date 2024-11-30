@@ -30,7 +30,7 @@ function showNews() {
     const userDataString = localStorage.getItem('userData')
     const userData = JSON.parse(userDataString)
 
-    console.log('caiu no if com usuario cadastrado')
+
    
     if (userData.logged === false) {
       parentDiv.classList.add('iniciante')
@@ -38,7 +38,7 @@ function showNews() {
       parentDiv.classList.add('avancado')
       parentDiv.classList.add('estudante')
     } else {
-      console.log('caiu no if de usuario logado')
+
       switch (userData.investidorType) {
         case 'iniciante':
           changeParentClass('iniciante')
@@ -121,7 +121,7 @@ function showNews() {
     window.location.replace('/src/index.html')
   }
 
-
+//função Login no sistema
   function logIn(event) {
     event.preventDefault()
   
@@ -146,24 +146,47 @@ function showNews() {
     }
   }
 
+  //Função utilizada na página meu perfil para popular os campos
 function populateFields() {
   const userData = JSON.parse(localStorage.getItem('userData'));
-  switch (userData.investidorType) {
-    case 'iniciante':
-      document.getElementById('investorType').value = 'Investidor Iniciante'
-      break
-    case 'intermediario':
-       document.getElementById('investorType').value = 'Investidor Intermediário'
-      break
-    case 'avancado':
-      document.getElementById('investorType').value = 'Investidor Avançado'
-      break
-    case 'estudante':
-      document.getElementById('investorType').value = 'Investidor Estudante'
-      break
+ 
+  const name = userData.name
+  const email = userData.email
+  const senha = userData.password
+  const investidorType = userData.investidorType
+
+  if (name && email && senha && investidorType) {
+    document.getElementById('nome-investidor').value = name
+    document.getElementById('email').value = email 
+    document.getElementById('password').value = senha 
+    document.getElementById('investidor').value = investidorType
   }
   
-  document.getElementById('nome-investidor').value = userData.name;
-  document.getElementById('email').value = userData.email;
-  document.getElementById('investorType').value = userData.investidorType;
+
+
+  // switch (investidorType) {
+  //   case 'iniciante':
+  //     document.getElementById('investorType').value = 'Investidor Iniciante'
+  //     break
+  //   case 'intermediario':
+  //      document.getElementById('investorType').value = 'Investidor Intermediário'
+  //     break
+  //   case 'avancado':
+  //     document.getElementById('investorType').value = 'Investidor Avançado'
+  //     break
+  //   case 'estudante':
+  //     document.getElementById('investorType').value = 'Investidor Estudante'
+  //     break
+  // }
+  
+}
+
+function updateData() {
+  const userDataString = localStorage.getItem('userData')
+  const userData = JSON.parse(userDataString)
+  const senha = document.getElementById('password').value
+  userData.password = senha
+  localStorage.setItem('userData', JSON.stringify(userData))
+  alert('Senha atualizada com sucesso!')
+  
 }

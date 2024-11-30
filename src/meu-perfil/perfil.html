@@ -11,7 +11,7 @@
     <div class="container-center">
       <div class="registrar-tipos-de-investidores">
         <div class="menu">
-          <a href="#">
+          <a href="\src">
             <div class="logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,10 +83,18 @@
               </div>
             </div>
             <div class="field">
-              <label for="investor-type">Tipo de investidor</label>
-              <div class="value">
-                <input type="text" name="investidorType" readonly />
-              </div>
+              <label for="investidorType">Tipo de investidor</label>
+              <select
+                name="investidorType"
+                class="investidorSelect"
+                id="investidor"
+                disabled
+              >
+                <option value="iniciante">Investidor Iniciante</option>
+                <option value="intermediario">Investidor Intermediário</option>
+                <option value="avancado">Investidor Avançado</option>
+                <option value="estudante">Investidor Estudante</option>
+              </select>
             </div>
             <div class="field password-field">
               <label for="password">Senha</label>
@@ -102,7 +110,11 @@
               </div>
             </div>
             <div class="button-container">
-              <button type="button" class="submit-button">
+              <button
+                type="button"
+                onclick="updateData()"
+                class="submit-button"
+              >
                 Atualizar senha
               </button>
             </div>
