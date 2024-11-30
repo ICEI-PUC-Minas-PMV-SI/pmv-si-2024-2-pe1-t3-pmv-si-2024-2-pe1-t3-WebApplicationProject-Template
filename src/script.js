@@ -3,11 +3,7 @@
 // função usada para exibir as notícias de acordo com o tipo de  usuário ao carregar a página
 function showNews() {
     
-  
-  const begginerUser = document.getElementsByClassName('iniciante')
-  const intermediaryUser = document.getElementsByClassName('intermediario')
-  const advancedUser = document.getElementsByClassName('avancado')
-  const studentUser = document.getElementsByClassName('estudante')
+
   
   const parentDiv = document.getElementsByClassName('cardsGroupLatestNews')[0];
 
@@ -30,8 +26,11 @@ function showNews() {
     const userDataString = localStorage.getItem('userData')
     const userData = JSON.parse(userDataString)
 
+    const filter = document.getElementById('investor')
+    filter.value = userData.investidorType
+    filter.style.display = 'flex'
+    filter.querySelector('select').value = userData.investidorType
 
-   
     if (userData.logged === false) {
       parentDiv.classList.add('iniciante')
       parentDiv.classList.add('intermediario')
@@ -56,6 +55,8 @@ function showNews() {
     }
   }
 }
+
+
   //função utilizada para definir qual o botão (Entrar/Sair) deve ser exibido ao renderizar a página
   function hasLogin() {
     const logIn = document.getElementsByClassName('logInButton')[0]
@@ -163,21 +164,6 @@ function populateFields() {
   }
   
 
-
-  // switch (investidorType) {
-  //   case 'iniciante':
-  //     document.getElementById('investorType').value = 'Investidor Iniciante'
-  //     break
-  //   case 'intermediario':
-  //      document.getElementById('investorType').value = 'Investidor Intermediário'
-  //     break
-  //   case 'avancado':
-  //     document.getElementById('investorType').value = 'Investidor Avançado'
-  //     break
-  //   case 'estudante':
-  //     document.getElementById('investorType').value = 'Investidor Estudante'
-  //     break
-  // }
   
 }
 
@@ -189,4 +175,18 @@ function updateData() {
   localStorage.setItem('userData', JSON.stringify(userData))
   alert('Senha atualizada com sucesso!')
   
+}
+
+function filterInvestor() {
+  const userDataString = localStorage.getItem('userData')
+  const userData = JSON.parse(userDataString)
+  const divFilter = document.getElementById('investor')
+  const investorValue = divFilter.querySelector('select').value
+  userData.investidorType = investorValue
+  localStorage.setItem('userData', JSON.stringify(userData))
+  showNews()
+
+  // filter.value = userData.investidorType
+  // filter.querySelector('select').value = userData.investidorType
+
 }
