@@ -1,33 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="\src\style.css" />
-    <title>Finance Hub</title>
-  </head>
-  <body>
-    <nav>
-      <p class="logoNav">Finance Hub</p>
-      <div>
-        <svg
-          width="24"
-          height="21"
-          viewBox="0 0 24 21"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M0.364929 1C0.364929 0.447715 0.812644 0 1.36493 0H22.9698C23.5221 0 23.9698 0.447715 23.9698 1C23.9698 1.55228 23.5221 2 22.9698 2H1.36493C0.812644 2 0.364929 1.55228 0.364929 1ZM0.364929 10.3621C0.364929 9.80981 0.812644 9.36209 1.36493 9.36209H22.9698C23.5221 9.36209 23.9698 9.80981 23.9698 10.3621C23.9698 10.9144 23.5221 11.3621 22.9698 11.3621H1.36493C0.812644 11.3621 0.364929 10.9144 0.364929 10.3621ZM1.36493 18.7242C0.812644 18.7242 0.364929 19.1719 0.364929 19.7242C0.364929 20.2765 0.812644 20.7242 1.36493 20.7242H22.9698C23.5221 20.7242 23.9698 20.2765 23.9698 19.7242C23.9698 19.1719 23.5221 18.7242 22.9698 18.7242H1.36493Z"
-            fill="#444444"
-          />
-        </svg>
-      </div>
-    </nav>
-    <section>
-      <div class="assetImageNoticia1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="\src\noticias\newsstyle.css" />
+  <script src="\src\script.js"></script>
+  <title>Finance Hub</title>
+</head>
+<body onload="hasLogin()">
+<nav>
+  <a href="\src\index.html">
+    <p class="logoNav">Finance Hub</p>
+  </a>
+  <div class="buttons">
+    <a href="/src/meu-perfil/perfil.html" class="profile">
+      <svg
+              data-name="Layer 1"
+              id="Layer_1"
+              viewBox="0 0 50 50"
+              xmlns="http://www.w3.org/2000/svg"
+      >
+        <title />
+        <path
+                d="M25,1A24,24,0,1,0,49,25,24,24,0,0,0,25,1Zm0,46A22,22,0,1,1,47,25,22,22,0,0,1,25,47Z"
+        />
+        <path
+                d="M25,25.41a13,13,0,0,0-13,13,1,1,0,0,0,2,0,11,11,0,1,1,22,0,1,1,0,0,0,2,0A13,13,0,0,0,25,25.41Z"
+        />
+        <path
+                d="M25,23.71a7,7,0,0,0,6.81-7.2A7,7,0,0,0,25,9.3a7,7,0,0,0-6.81,7.21A7,7,0,0,0,25,23.71ZM25,11.3a5,5,0,0,1,4.81,5.21A5,5,0,0,1,25,21.71a5,5,0,0,1-4.81-5.2A5,5,0,0,1,25,11.3Z"
+        />
+      </svg>
+    </a>
+    <a href="/src/login" class="logInButton">
+      <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="708.631px"
+              height="708.631px"
+              viewBox="0 0 708.631 708.631"
+              style="enable-background: new 0 0 708.631 708.631"
+              xml:space="preserve"
+      >
+            <g>
+              <g>
+                <polygon
+                        points="144.947,499.264 144.947,708.631 660.315,708.631 660.315,0 144.947,0 144.947,209.369 209.368,209.369 
+             209.368,64.421 595.895,64.421 595.895,644.211 209.368,644.211 209.368,499.264 		"
+                />
+                <polygon
+                        points="48.315,386.527 418.736,386.527 338.21,515.369 402.631,515.369 499.263,354.316 402.631,193.263 338.21,193.263 
+             418.736,322.105 48.315,322.105 		"
+                />
+              </g>
+            </g>
+          </svg>
+      Entrar
+    </a>
+    <button onclick="logOut()" class="logOutButton">
+      <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="612px"
+              height="612px"
+              viewBox="0 0 612 612"
+              style="enable-background: new 0 0 612 612"
+              xml:space="preserve"
+      >
+            <g>
+              <g>
+                <polygon
+                        points="222.545,319.909 577.228,319.909 500.728,445.091 528.546,445.091 612,306 528.546,166.909 500.728,166.909 
+			            577.228,292.146 222.545,292.146 		"
+                />
+                <polygon
+                        points="0,612 417.272,612 417.272,431.182 389.454,431.182 389.454,584.182 27.818,584.182 27.818,27.818 
+			            389.454,27.818 389.454,180.818 417.272,180.818 417.272,0 0,0 		"
+                />
+              </g>
+            </g>
+          </svg>
+      Sair
+    </button>
+  </div>
+</nav>
+<section>
+  <div class="assetImageNoticia10">
         <h1 class="titleAsset">
           Mercado de Capitais Atraído por Investimentos em Títulos Verdes
         </h1>
