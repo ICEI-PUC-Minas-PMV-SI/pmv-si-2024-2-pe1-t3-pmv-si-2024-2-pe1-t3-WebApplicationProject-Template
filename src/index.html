@@ -10,6 +10,15 @@
   <body onload="showNews(),hasLogin()">
     <nav>
       <p class="logoNav">Finance Hub</p>
+      <label for="investidorType" class="investorFilter"
+        >Selecione notícias pelo filtro de investidor
+        <select name="investidorType" class="investidorSelect" id="investidor">
+          <option value="iniciante">Investidor Iniciante</option>
+          <option value="intermediario">Investidor Intermediário</option>
+          <option value="avancado">Investidor Avançado</option>
+          <option value="estudante">Investidor Estudante</option>
+        </select>
+      </label>
       <div class="buttons">
         <a href="/src/meu-perfil/perfil.html" class="profile">
           <svg
