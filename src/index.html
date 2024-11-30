@@ -10,20 +10,7 @@
   <body onload="showNews(),hasLogin()">
     <nav>
       <p class="logoNav">Finance Hub</p>
-      <label for="investidorType" class="investorFilter" id="investor"
-        >Tipo de Notícia
-        <select
-          name="investidorType"
-          class="investidorSelect"
-          id="investidor"
-          onclick="filterInvestor()"
-        >
-          <option value="iniciante">Investidor Iniciante</option>
-          <option value="intermediario">Investidor Intermediário</option>
-          <option value="avancado">Investidor Avançado</option>
-          <option value="estudante">Investidor Estudante</option>
-        </select>
-      </label>
+
       <div class="buttons">
         <a href="/src/meu-perfil/perfil.html" class="profile">
           <svg
@@ -118,6 +105,20 @@
     </section>
     <section class="lastestNews">
       <h2 class="titleSectionLatestNews">Últimas Notícias</h2>
+      <label for="investidorType" class="investorFilter" id="investor"
+        >Tipo de Notícia
+        <select
+          name="investidorType"
+          class="investidorSelect"
+          id="investidor"
+          onclick="filterInvestor()"
+        >
+          <option value="iniciante">Investidor Iniciante</option>
+          <option value="intermediario">Investidor Intermediário</option>
+          <option value="avancado">Investidor Avançado</option>
+          <option value="estudante">Investidor Estudante</option>
+        </select>
+      </label>
       <div class="cardsGroupLatestNews">
         <a href="\src\noticias\noticia19.html" class="cardLatestNews estudante">
           <img
