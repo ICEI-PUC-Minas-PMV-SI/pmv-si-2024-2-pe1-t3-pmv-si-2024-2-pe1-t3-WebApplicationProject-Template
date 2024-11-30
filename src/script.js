@@ -145,3 +145,25 @@ function showNews() {
       }
     }
   }
+
+function populateFields() {
+  const userData = JSON.parse(localStorage.getItem('userData'));
+  switch (userData.investidorType) {
+    case 'iniciante':
+      document.getElementById('investorType').value = 'Investidor Iniciante'
+      break
+    case 'intermediario':
+       document.getElementById('investorType').value = 'Investidor Intermediário'
+      break
+    case 'avancado':
+      document.getElementById('investorType').value = 'Investidor Avançado'
+      break
+    case 'estudante':
+      document.getElementById('investorType').value = 'Investidor Estudante'
+      break
+  }
+  
+  document.getElementById('nome-investidor').value = userData.name;
+  document.getElementById('email').value = userData.email;
+  document.getElementById('investorType').value = userData.investidorType;
+}
