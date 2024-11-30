@@ -1,33 +1,41 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: Web Application Template
+title: 'FinanceHub '
 message: >-
-  Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
-  Web da PUC Minas.
+  If you use this software, please cite it using the
+  metadata from this file.
 type: software
 authors:
-  - given-names: Aluno 1
-    family-names: Nome Completo
-    email: aluno@pucminas.br
-    affiliation: PUC Minas
-  - given-names: Hugo
-    name-particle: 'B '
-    family-names: de Paula
-    name-suffix: Prof.
-    email: hugo@pucminas.br
-    affiliation: PUC Minas
-    orcid: 'https://orcid.org/0000-0002-6193-3205'
+  - given-names: 'Guilherme  '
+    family-names: 'Lacerda de Souza  '
+    email: guilherme.lacerda@sga.pucminas.br
+  - given-names: 'Maria Eduarda '
+    family-names: Batista
+    email: maria.batista.1522478@sga.pucminas.br
+  - given-names: 'Mattheus  '
+    family-names: German de Jesus Silva
+    email: mattheus.german@sga.pucminas.br
+  - given-names: 'Nicolas '
+    family-names: Souza Di Lascio
+    email: nicolas.delacio@sga.pucminas.br
+  - name: FINANCEHUB
+    country: BR
+    alias: 'FinanceHub '
+    email: suporte@financehub.com.br
+    date-start: '2024-07-20'
+    date-end: '2024-12-05'
 repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe1-t3-pmv-si-2024-2-pe1-projfinancehub/tree/main
 abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+  O FinanceHub é uma plataforma que centraliza informações
+  financeiras e facilita decisões de investimento de forma
+  acessível e estratégica para todos os níveis de
+  investidores.
 keywords:
+  - Investimento
+  - Plataforma
+  - Integração
   - Desenvolvimento Web
   - HTML
-  - CSS
-  - JavaScript
-  - Template
-date-released: '2024-06-23'
+version: '2024-11-27'
+date-released: '2024-11-27'
+

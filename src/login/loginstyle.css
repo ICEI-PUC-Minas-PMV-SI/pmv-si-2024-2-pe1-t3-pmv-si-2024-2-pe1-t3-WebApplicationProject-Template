@@ -24,60 +24,83 @@
     width: 100%;
 }
 
-.login-section {
+.register-investor-types {
     overflow: hidden;
-    max-width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 1043px;
     position: relative;
-    padding: 20px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    position: absolute;
+    top: 32px;
+    left: 125px;
 }
 
 .logo {
+    width: 109px;
+    gap: 10px;
+    padding: 7.5px;
+    background-color: var(--black-80);
+    border-radius: 4px;
     display: flex;
-    align-items: center;
-}
-
-.logo svg {
-    width: auto;
-    height: 37px;
+    align-items: flex-start;
+    position: relative;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 16px;
+    line-height: normal;
 }
 
 .dropdown {
+    position: absolute;
     width: 23px;
     height: 21px;
+    top: 8px;
+    left: 1157px;
 }
 
 .header {
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    width: 401px;
+    height: 168px;
+    top: 84px;
+    left: 520px;
 }
 
 .title-main {
+    text-align: center;
     font-family: "Playfair Display";
     font-size: 64px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
 .form-frame {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 350px;  
-    padding: 16px;
+    width: 638px;
+    padding: 22px;
     margin: 20px auto;
     background-color: var(--grey-1);
+    position: absolute;
+    top: 360px;
+    left: 397px;
+    min-height: 50px;  
 }
 
 .form-group {
     width: 100%;
     margin-bottom: 20px;
+}
+
+label {
+    font-family: "Playfair Display", Helvetica;
+    font-size: 20px;  
+    color: var(----black-80);  
+    font-weight: 500;  
 }
 
 .text-field {
@@ -119,37 +142,38 @@ input.input-field {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .forgot-password,
 .signup {
     text-align: center;
-    margin: 5px 0;
+    margin: 10px 0;
+    font-size: 22px;   
+    color: var(--black-80);   
 }
 
 .footer-background {
-    width: 100%;
+    position: absolute;
+    width: 100%;   
     height: 83px;
+    top: 960px;   
+    left: 0;     
     background-color: var(--white);
 }
 
 .footer-text {
-    text-align: center;
-    padding-top: 30px;
+    position: absolute;
+    top: 30px;
+    left: 0;        
+    width: 100%;     
     font-family: "Playfair Display", Helvetica, serif;
     font-weight: 700;
     color: var(--black-20);
     font-size: 16px;
-}
-
-.tracinhos.svg {
-    margin-left: auto; 
-}
-
-.tracinhos.svg {
-    height: auto; 
-    width: 40px; 
+    text-align: center;  
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 @media (max-width: 768px) {
@@ -159,6 +183,7 @@ input.input-field {
 
     .form-frame {
         width: 90%;
+        min-height: 450px;  
     }
 
     input.input-field,
