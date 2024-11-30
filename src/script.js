@@ -185,8 +185,4 @@ function filterInvestor() {
   userData.investidorType = investorValue
   localStorage.setItem('userData', JSON.stringify(userData))
   showNews()
-
-  // filter.value = userData.investidorType
-  // filter.querySelector('select').value = userData.investidorType
-
 }
