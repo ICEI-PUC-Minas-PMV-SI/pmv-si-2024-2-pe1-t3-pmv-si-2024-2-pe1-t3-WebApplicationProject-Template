@@ -42,6 +42,6 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 # Apresentação
 
-<li><a href="presentation/GreenCycle Slides v.1.2.pdf"> Apresentação da solução</a></li>
-<li><a href="presentation/GreenCycle Doc v.1.2.pdf"> Documento do Trabalho</a></li>
-<li><a href="presentation/README.md"> Arquivo de Exemplo</a></li>
+<li><a href="docs/Apresentação-Sampex.pptx"> Apresentação da solução</a></li>
+<li><a href="docs/01.-Eixo-01-Etapa-01-GreenCycle-Doc-v.1.2.pdf"> Documento do Trabalho</a></li>
+<li><a href="docs/citation.cff"> Arquivo de Exemplo (CFF) </a></li>
