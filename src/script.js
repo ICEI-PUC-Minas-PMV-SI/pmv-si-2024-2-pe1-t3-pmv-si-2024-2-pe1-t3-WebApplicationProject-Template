@@ -111,7 +111,7 @@ function showNews() {
     window.localStorage.setItem('userData', JSON.stringify(userData));
     
     alert("Usuário cadastrado com sucesso!");
-    window.location.replace('/src')
+    window.location.replace('/index.html')
   }
 
   //Função para fazer logout no sistema
@@ -126,7 +126,7 @@ function showNews() {
     logOut.style.display = 'none'
     logIn.style.display = 'flex'
     filter.style.display = 'none'
-    window.location.replace('/src/index.html')
+    window.location.replace('/index.html')
   }
 
 //função Login no sistema
@@ -147,7 +147,7 @@ function showNews() {
         userData.logged = !userData.logged
         localStorage.setItem('userData', JSON.stringify(userData))
         alert('Bem-vindo')
-        window.location.assign('/src/index.html')
+        window.location.assign('/index.html')
       } else {
         alert(' usuário e/ou senha incorreta(s)')
       }
