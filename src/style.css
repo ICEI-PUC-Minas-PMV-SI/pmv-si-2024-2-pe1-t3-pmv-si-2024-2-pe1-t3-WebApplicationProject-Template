@@ -93,6 +93,10 @@ p{
     display: none;
 }
 
+.subtitleAndFilter {
+    display: block;
+    gap: 30px
+}
 
 .lastestNews {
     margin-bottom: 35px;
@@ -179,6 +183,9 @@ p{
     align-items: center;
     column-gap: 4px;
 }
+.investorFilter {
+    display: none;
+}
 
  /* ---------------- FIM INDEX 320PX--------------------- */
 
@@ -254,6 +261,12 @@ p{
         padding-bottom: 26px;
         font-weight: 100;
         font-size: 12px;
+    }
+
+    .subtitleAndFilter {
+        display: flex;
+        gap: 50px;
+        align-items: center;
     }
     
     .lastestNews{

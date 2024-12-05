@@ -36,6 +36,7 @@ function showNews() {
       parentDiv.classList.add('intermediario')
       parentDiv.classList.add('avancado')
       parentDiv.classList.add('estudante')
+      filter.style.display = 'none'
     } else {
 
       switch (userData.investidorType) {
@@ -61,7 +62,8 @@ function showNews() {
   function hasLogin() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
-    const profile = document.getElementsByClassName('profile')[0]
+    const filter = document.getElementsByClassName('investorFilter')[0]
+
    
     if (!localStorage.getItem('userData')) {
         
@@ -77,9 +79,11 @@ function showNews() {
       if (isLogged == 'true' || isLogged == true) {
         logIn.style.display = 'none'
         logOut.style.display = 'flex'
-        profile.style.display = 'flex'
+      
+        filter.style.display = 'flex'
       } else {
         logIn.style.display = 'flex'
+     
       }
     }
    
@@ -113,12 +117,14 @@ function showNews() {
   function logOut() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
+    const filter = document.getElementsByClassName('investorFilter')[0]
     const userDataString = localStorage.getItem('userData')
     const userData = JSON.parse(userDataString)
     userData.logged = !userData.logged
     localStorage.setItem('userData', JSON.stringify(userData))
     logOut.style.display = 'none'
     logIn.style.display = 'flex'
+    filter.style.display = 'none'
     window.location.replace('/src/index.html')
   }
 
