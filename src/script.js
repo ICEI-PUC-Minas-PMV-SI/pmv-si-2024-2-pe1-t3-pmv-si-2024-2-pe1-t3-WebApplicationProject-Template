@@ -62,7 +62,8 @@ function showNews() {
   function hasLogin() {
     const logIn = document.getElementsByClassName('logInButton')[0]
     const logOut = document.getElementsByClassName('logOutButton')[0]
-    const filter = document.getElementsByClassName('investorFilter')[0]
+    const profile = document.getElementsByClassName('profile')[0]
+
 
    
     if (!localStorage.getItem('userData')) {
@@ -79,11 +80,11 @@ function showNews() {
       if (isLogged == 'true' || isLogged == true) {
         logIn.style.display = 'none'
         logOut.style.display = 'flex'
-      
-        filter.style.display = 'flex'
+        profile.style.display = 'flex'
+       
       } else {
         logIn.style.display = 'flex'
-     
+        profile.style.display = 'none'
       }
     }
    
