@@ -44,4 +44,4 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 <li><a href="docs/Apresentação-Sampex.pptx"> Apresentação da solução</a></li>
 <li><a href="docs/01.-Eixo-01-Etapa-01-GreenCycle-Doc-v.1.2.pdf"> Documento do Trabalho</a></li>
-<li><a href="docs/citation.cff"> Arquivo para Citações- Citation File Format </a></li>
+<li><a href="docs/citation.cff"> Arquivo para Citações - Citation File Format (CFF) </a></li>
