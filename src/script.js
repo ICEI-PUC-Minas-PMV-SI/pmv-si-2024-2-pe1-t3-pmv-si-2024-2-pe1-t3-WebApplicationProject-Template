@@ -193,3 +193,98 @@ function filterInvestor() {
   localStorage.setItem('userData', JSON.stringify(userData))
   showNews()
 }
+
+ //Função Página
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("investment-form");
+  const resultDiv = document.getElementById("result");
+
+  form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Pegar valores do formulário
+      const investType = document.getElementById("invest-type");
+      const rate = parseFloat(investType.options[investType.selectedIndex].dataset.rate);
+      const amount = parseFloat(document.getElementById("amount").value);
+      const duration = parseInt(document.getElementById("duration").value);
+
+      // Verificar se os valores são válidos
+      if (isNaN(amount) || isNaN(duration) || amount <= 0 || duration <= 0) {
+          resultDiv.style.display = "block";
+          resultDiv.textContent = "Por favor, insira valores válidos.";
+          return;
+      }
+
+      // Calcular a rentabilidade
+      const annualRate = rate;
+      const monthlyRate = Math.pow(1 + annualRate, 1 / 12) - 1;
+      const finalAmount = amount * Math.pow(1 + monthlyRate, duration);
+      const profit = finalAmount - amount;
+
+      // Exibir o resultado
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = `
+          <p>Investimento inicial: <strong>R$ ${amount.toFixed(2)}</strong></p>
+          <p>Após <strong>${duration}</strong> meses, o valor será:</p>
+          <p><strong>R$ ${finalAmount.toFixed(2)}</strong></p>
+          <p>Lucro total: <strong>R$ ${profit.toFixed(2)}</strong></p>
+      `;
+  });
+});
+// Cálculo Rentabilidade
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("profit-calculator");
+  const resultDiv = document.getElementById("calculation-result");
+
+  form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Obter valores do formulário
+      const initialInvestment = parseFloat(document.getElementById("initial-investment").value);
+      const interestRate = parseFloat(document.getElementById("interest-rate").value) / 100;
+      const investmentPeriod = parseInt(document.getElementById("investment-period").value);
+
+      // Verificar se os valores são válidos
+      if (isNaN(initialInvestment) || isNaN(interestRate) || isNaN(investmentPeriod) ||
+          initialInvestment <= 0 || interestRate <= 0 || investmentPeriod <= 0) {
+          resultDiv.style.display = "block";
+          resultDiv.textContent = "Por favor, insira valores válidos.";
+          return;
+      }
+
+      // Calcular rentabilidade
+      const monthlyRate = Math.pow(1 + interestRate, 1 / 12) - 1;
+      const finalAmount = initialInvestment * Math.pow(1 + monthlyRate, investmentPeriod);
+      const profit = finalAmount - initialInvestment;
+
+      // Exibir resultado
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = `
+          <p>Investimento Inicial: <strong>R$ ${initialInvestment.toFixed(2)}</strong></p>
+          <p>Taxa de Juros: <strong>${(interestRate * 100).toFixed(2)}% ao ano</strong></p>
+          <p>Prazo: <strong>${investmentPeriod}</strong> meses</p>
+          <p>Valor Final: <strong>R$ ${finalAmount.toFixed(2)}</strong></p>
+          <p>Lucro Total: <strong>R$ ${profit.toFixed(2)}</strong></p>
+      `;
+  });
+});
+
+//form contratar consulta
+
+// Redirect to form page when button is clicked
+document.getElementById('consultButton')?.addEventListener('click', () => {
+  window.location.href = 'form.html';
+});
+
+// Handle form submission
+document.getElementById('investmentForm')?.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent form from refreshing the page
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const objective = document.getElementById('objective').value;
+
+  alert(`Obrigado por agendar sua consulta, ${name}! Entraremos em contato pelo email ${email}.`);
+  // Optionally, send this data to a backend or save it in a database
+  document.getElementById('investmentForm').reset();
+});

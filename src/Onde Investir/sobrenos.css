@@ -1,0 +1,158 @@
+/* Reset básico de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo o estilo de fonte geral */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo leve */
+    color: #333;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Centralizando e estilizando o container da página */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Título da página */
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilizando a seção "Sobre nós" */
+  .about-us {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilizando o botão "Contratar Consulta Particular" */
+  button.contratar-consulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4rem; /* Tamanho maior do texto */
+    color: #fff;
+    background-color: #4CAF50; /* Cor de fundo destacada */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px 0;
+    position: relative; /* Necessário para a imagem de fundo */
+    text-align: center; /* Garante que o texto seja centralizado */
+  }
+  
+  button.contratar-consulta:hover {
+    background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho */
+  }
+  
+  button.contratar-consulta::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Centraliza a imagem verticalmente */
+    background-image: url('https://img.icons8.com/ios/452/money-stack.png'); /* Imagem de dinheiro */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+  
+  button.contratar-consulta span {
+    margin-left: 50px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  /* Estilizando os formulários de entrada */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="password"]:focus,
+  form select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Botão de envio de formulário */
+  form button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-us {
+      padding: 20px;
+    }
+  
+    button.contratar-consulta {
+      font-size: 1.2rem; /* Ajusta o tamanho da fonte para telas menores */
+      padding: 15px;
+    }
+  
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select {
+      font-size: 1rem;
+    }
+  
+    form button {
+      font-size: 1.1rem;
+    }
+  }
