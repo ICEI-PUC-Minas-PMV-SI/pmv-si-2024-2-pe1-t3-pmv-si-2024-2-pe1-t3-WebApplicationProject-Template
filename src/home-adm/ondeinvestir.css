@@ -225,4 +225,12 @@ footer {
     letter-spacing: 0;
     line-height: normal;
   }
+
+  .image-between-buttons {
+    display: block;
+    margin: 20px 0; /* Ajuste o espaço acima e abaixo da imagem conforme necessário */
+    width: 100%; /* Ou um tamanho específico, como 500px, dependendo do seu layout */
+    max-width: 500px; /* Para limitar o tamanho máximo da imagem */
+    height: auto;
+}
   
