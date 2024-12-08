@@ -2,10 +2,11 @@ const authContainer = document.getElementById("auth-container");
 
 function checkLoginStatus() {
 
-    const currentUser = localStorage.getItem("name");
+    let currentUser = localStorage.getItem("name");
 
     if (currentUser) {
         console.log("logado")
+        currentUser = currentUser.split(" ")[0];
         renderLoggedIn(currentUser);
     } else {
         console.log("deslogado")
@@ -30,8 +31,8 @@ function renderLoginButton() {
 
 function renderLoggedIn(currentUser) {
     authContainer.innerHTML = `
-        <li><a href="perfil-usuario.html">${currentUser}</a></li>
-        <li><a href="#" id="logout-btn">Logout</a></li>
+        <li><a href="perfil-usuario.html" style="margin-right: 3em; margin-bottom: 5px;">${currentUser}</a></li>
+        <li><a href="#" id="logout-btn" style="margin-right: 3em;">Sair</a></li>
     `;
     document.getElementById("logout-btn").addEventListener("click", logout);
 }
