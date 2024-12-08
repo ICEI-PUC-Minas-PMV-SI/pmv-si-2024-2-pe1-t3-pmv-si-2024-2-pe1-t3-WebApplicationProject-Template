@@ -2,67 +2,67 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
 
 :root {
-  --white: rgba(248, 248, 248, 1);
-  --black-20: rgba(148, 148, 148, 1);
-  --dark-grey: rgba(48, 48, 48, 1);
-  --grey-2: rgba(217, 217, 217, 1);
-  --black-80: rgba(18, 18, 33, 1);
-  --grey-3: rgba(172, 172, 172, 1);
-  --grey-1: rgba(240, 240, 240, 1);
+    --white: rgba(248, 248, 248, 1);
+    --black-20: rgba(148, 148, 148, 1);
+    --dark-grey: rgba(48, 48, 48, 1);
+    --grey-2: rgba(217, 217, 217, 1);
+    --black-80: rgba(18, 18, 33, 1);
+    --grey-3: rgba(172, 172, 172, 1);
+    --grey-1: rgba(240, 240, 240, 1);
 }
 
 .container-center {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .register-investor-types {
-  overflow: hidden;
-  width: 1440px;
-  height: 1043px;
-  position: relative;
+    overflow: hidden;
+    width: 1440px;
+    height: 1043px;
+    position: relative;
 }
 
 .investor-type {
-  width: 80%;   
-  padding: 6px;   
-  font-size: 20px;  
-  border: 1px solid var(--grey-3);
-  border-radius: 5px;
-  background-color: var(--white);
-  color: var(--black-80);
+    width: 80%;
+    padding: 6px;
+    font-size: 20px;
+    border: 1px solid var(--grey-3);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black-80);
 }
 
 .menu {
-  position: absolute;
-  top: 32px;
-  left: 125px;
+    position: absolute;
+    top: 32px;
+    left: 125px;
 }
 
 .logo {
-  width: 109px;
-  gap: 10px;
-  padding: 7.5px;
-  background-color: var(--black-80);
-  border-radius: 4px;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  font-family: "Playfair Display", Helvetica, serif;
-  font-weight: 700;
-  color: var(--white);
-  font-size: 16px;
-  line-height: normal;
+    width: 109px;
+    gap: 10px;
+    padding: 7.5px;
+    background-color: var(--black-80);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 16px;
+    line-height: normal;
 }
 
 .dropdown {
-  position: absolute;
-  width: 23px;
-  height: 21px;
-  top: 8px;
-  left: 1157px;
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 8px;
+    left: 1157px;
 }
 
 /* Estilos gerais */
@@ -111,7 +111,7 @@ h1 {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
@@ -124,7 +124,7 @@ h1 {
 .form-container {
     width: 100%;
     font-family: "Playfair Display";
-     max-width: 400px;
+    max-width: 400px;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -194,6 +194,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .contact-btn:hover {
     background-color: #333;
 }
@@ -208,34 +209,37 @@ footer {
     font-size: 16px;
     text-align: center;
 }
+
 .footer-background {
     position: absolute;
-    width: 100%;   
+    width: 100%;
     height: 83px;
-    top: 960px;   
-    left: 0;     
+    top: 960px;
+    left: 0;
     background-color: var(--white);
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     position: absolute;
     top: 30px;
-    left: 0;        
-    width: 100%;     
+    left: 0;
+    width: 100%;
     font-family: "Playfair Display", Helvetica, serif;
     font-weight: 700;
     color: var(--black-20);
     font-size: 16px;
-    text-align: center;  
+    text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
+}
 
-  .image-between-buttons {
+.image-between-buttons {
     display: block;
-    margin: 20px 0; /* Ajuste o espaço acima e abaixo da imagem conforme necessário */
-    width: 100%; /* Ou um tamanho específico, como 500px, dependendo do seu layout */
-    max-width: 350px; /* Para limitar o tamanho máximo da imagem */
+    margin: 20px 0;
+    /* Ajuste o espaço acima e abaixo da imagem conforme necessário */
+    width: 100%;
+    /* Ou um tamanho específico, como 500px, dependendo do seu layout */
+    max-width: 350px;
+    /* Para limitar o tamanho máximo da imagem */
     height: auto;
 }
-  
