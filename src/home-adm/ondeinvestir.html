@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceHub - Onde Investir</title>
+    <link rel="stylesheet" href="ondeinvestir.css">
+    <script src="\src\script.js"></script>
+</head>
+
+<body>
+    <div class="container-center">
+        <div class="register-investor-types">
+          <div class="menu">
+            <a href="#">
+              <div class="logo">Finance Hub</div>
+            </a>
+            <a href="#">
+              <img class="dropdown" src="img\dropdown.svg" alt="menu-dropdown" />
+            </a>
+          </div>
+    
+    <main class="main-content">
+        <section class="profile">
+            <h1>Onde Investir</h1>
+            <div class="form-container">
+                <p class="description">Compare opções de investimento e escolha a melhor para você!</p>
+                <form id="investment-form">
+                    <label for="invest-type">Tipo de Investimento</label>
+                    <select id="invest-type">
+                        <option value="renda-fixa" data-rate="0.07">Renda Fixa (7% ao ano)</option>
+                        <option value="acoes" data-rate="0.15">Ações (15% ao ano)</option>
+                        <option value="fiis" data-rate="0.10">Fundos Imobiliários (10% ao ano)</option>
+                    </select>
+
+                    <label for="amount">Valor do Investimento (R$)</label>
+                    <input type="number" id="amount" placeholder="Ex: 1000" required />
+
+                    <label for="duration">Prazo (meses)</label>
+                    <input type="number" id="duration" placeholder="Ex: 12" required />
+
+                    <button type="submit" class="btn">Calcular Rentabilidade</button>
+                </form>
+                <div id="result" class="result"></div>
+            </div>
+        </section>
+        <div class="contact-container">
+            <button class="contact-btn" onclick="redirectToConsultation()">Está com dúvidas? Entre em contato para
+                contratar uma consulta particular</button>
+        </div>
+    </main>
+    <div class="footer-background">
+        <div class="footer-text">Copyright 2024 Finance Hub</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
