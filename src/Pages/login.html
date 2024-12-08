@@ -74,8 +74,8 @@
                     <label for="senha-login">Senha</label>
                     <input type="password" id="senha-login" placeholder="**********">
                     <small id="senhaError" style="color: red;"></small>
-
-                    <button type="submit" onclick="login()">Entrar</button>
+                    
+                    <button type="submit" onclick="login(event)">Entrar</button>
                 </div>
             </form>
 
@@ -290,7 +290,7 @@
                 return; 
             }
 
-            saveData()
+            saveData(isEmpresa)
 
             if (isEmpresa) {
                 window.location.href = '03 - Planos Empresariais.html'; 
@@ -299,8 +299,8 @@
             }
         }
         
-        function saveData(){
-
+        function saveData(isEmpresa){
+    
         let name, email, password;
 
         name = document.getElementById("nomeCadastro").value;
@@ -310,6 +310,7 @@
         localStorage.setItem("name", name);
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
+        localStorage.setItem("business", isEmpresa);
 
         let user_records = new Array();
         user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
@@ -322,7 +323,8 @@
             user_records.push({
                 "name": name,
                 "email": email,
-                "password": password
+                "password": password,
+                "business": isEmpresa
             })
 
             localStorage.setItem("users", JSON.stringify(user_records));
@@ -331,8 +333,9 @@
         }
 
         function login(){
+        event.preventDefault();
 
-        console.log("logar")
+        console.log("logar html")
 
         let email, password;
 
@@ -352,8 +355,17 @@
 
             localStorage.setItem("name", current_user.name);
             localStorage.setItem("email", current_user.email);
-            
-            window.location.href="/perfil-usuario.html";
+            localStorage.setItem("email", current_user.business);
+
+            if(current_user.business){
+                console.log("if buss")
+                window.location.href = '03 - Planos Empresariais.html'; 
+            } else {
+                console.log("if notb")
+                window.location.href = 'perfil-usuario.html'; 
+            }
+
+            console.log("fim")
         }
 
         else {
