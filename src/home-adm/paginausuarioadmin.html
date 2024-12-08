@@ -5,6 +5,17 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="paginausuarioadmin.css" />
   <title>Home Page Desktop</title>
+  <script>
+    // Função JavaScript para redirecionar para 'src/onde investir/sobrenos.html'
+    function redirectSobreNos() {
+      window.location.href = 'src/onde investir/sobrenos.html';
+    }
+
+    // Função JavaScript para redirecionar para 'src/onde investir/ondeinvestir.html'
+    function redirectOndeInvestir() {
+      window.location.href = 'src/onde investir/ondeinvestir.html';
+    }
+  </script>
 </head>
 
 <body>
@@ -80,8 +91,8 @@
         <img class="union" src="img/dropdown.svg" alt="Dropdown" />
         <div>
           <nav>
-            <a href="#" class="nav-links">Sobre nós</a>
-            <a href="#" class="nav-links">Onde Investir</a>
+            <a href="javascript:void(0);" onclick="redirectSobreNos()" class="nav-links">Sobre nós</a>
+            <a href="javascript:void(0);" onclick="redirectOndeInvestir()" class="nav-links">Onde Investir</a>
             <a href="#" class="nav-links">X</a>
             <a href="#" class="nav-links">Y</a>
           </nav>
