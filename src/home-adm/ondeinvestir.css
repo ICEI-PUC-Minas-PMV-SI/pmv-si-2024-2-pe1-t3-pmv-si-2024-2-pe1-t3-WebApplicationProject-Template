@@ -67,7 +67,7 @@
 
 /* Estilos gerais */
 body {
-    font-family: 'Georgia', serif;
+    font-family: "Playfair Display";
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -100,14 +100,19 @@ header .menu-icon {
 .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 50px 20px;
+
 }
 
 h1 {
-    font-size: 36px;
+    font-family: "Playfair Display";
+    font-size: 64px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
 }
 
 .description {
@@ -118,7 +123,8 @@ h1 {
 /* Formulário */
 .form-container {
     width: 100%;
-    max-width: 400px;
+    font-family: "Playfair Display";
+     max-width: 400px;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -153,7 +159,7 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: #555;
+    color: #fff;
 }
 
 /* Resultado */
@@ -180,17 +186,16 @@ footer {
 
 .contact-btn {
     padding: 10px 20px;
-    background-color: #007bff;
     color: #fff;
-    border: none;
+    border: #333;
+    background-color: #333;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .contact-btn:hover {
-    background-color: #0056b3;
+    background-color: #333;
 }
 
 .hidden {
@@ -230,7 +235,7 @@ footer {
     display: block;
     margin: 20px 0; /* Ajuste o espaço acima e abaixo da imagem conforme necessário */
     width: 100%; /* Ou um tamanho específico, como 500px, dependendo do seu layout */
-    max-width: 500px; /* Para limitar o tamanho máximo da imagem */
+    max-width: 350px; /* Para limitar o tamanho máximo da imagem */
     height: auto;
 }
   
