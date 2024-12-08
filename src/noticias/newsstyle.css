@@ -198,6 +198,71 @@ footer {
     background-image: url('https://tse4.mm.bing.net/th?id=OIP.DEbu5VdpBUpNX3CZs52o8gHaEK&pid=Api&P=0&h=180');
 }
 
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.1s ease;
+}
+
+.navigation-buttons button:active {
+    transform: scale(0.95);
+}
+
+.navigation-buttons button:hover {
+    background-color: #444444;
+}
+
+#prev-news,
+#next-news {
+    position: relative;
+    cursor: pointer;
+}
+
+#prev-news::after,
+#next-news::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #444444;
+    color: #f8f8f8;
+    padding: 10px 10px;
+    border-radius: 4px;
+    white-space: normal;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+#prev-news:hover::after,
+#next-news:hover::after {
+    opacity: 95%;
+    visibility: visible;
+}
+
+#prev-news:disabled,
+#next-news:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 @media (max-width: 1200px) {
 
     .titleAsset {
