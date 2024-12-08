@@ -288,3 +288,16 @@ document.getElementById('investmentForm')?.addEventListener('submit', (event) =>
   // Optionally, send this data to a backend or save it in a database
   document.getElementById('investmentForm').reset();
 });
+
+function redirectToConsultation() {
+  window.location.href = "form.html";
+}
+document.getElementById("investment-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Evita o recarregamento da página
+  const confirmationMessage = document.getElementById("confirmation-message");
+  confirmationMessage.classList.remove("hidden"); // Exibe a mensagem
+  confirmationMessage.textContent = "E-mail enviado, entraremos em contato";
+  
+  // Limpar o formulário após a mensagem (opcional)
+  event.target.reset();
+});
