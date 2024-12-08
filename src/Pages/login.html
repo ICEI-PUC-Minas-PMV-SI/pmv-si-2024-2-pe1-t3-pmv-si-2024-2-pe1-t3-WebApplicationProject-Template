@@ -64,7 +64,7 @@
     <main>
         <div class="esquerdalogin">
             <!-- Login-->
-            <form id="login_form" name="login_form" class="login_form" action="perfil-usuario.html" method="post">
+            <form id="login_form" name="login_form" class="login_form">
                 <div class="form-section2">
                     <h2>LOGIN</h2>
                     <label for="email-login">E-mail</label>
@@ -75,22 +75,18 @@
                     <input type="password" id="senha-login" placeholder="**********">
                     <small id="senhaError" style="color: red;"></small>
 
-                    <!-- <button type="submit" onclick="window.location.href='perfil-usuario.html'">Entrar</button> -->
-                    <button type="submit">Entrar</button>
-
+                    <button type="submit" onclick="login()">Entrar</button>
                 </div>
             </form>
 
-
-
             <!-- Segundo formulário: Cadastro -->
-            <form id="cadastro_form" name="cadastro_form" class="cadastro_form" action="perfil-usuario.html" method="post">
+            <form id="cadastro_form" name="cadastro_form" class="cadastro_form">
 
             <!-- sessão de criação de conta -->
             <div class="direitalogin">
                 <h2>Criar Conta</h2>
                 <label for="nome">Nome</label>
-                <input type="text" id="nomeCadastro" placeholder="Nome Sobrenome">
+                <input type="text" id="nomeCadastro" placeholder="Nome Completo">
                 <small id="nomeCadastroError" style="color: red;"></small>
 
                 <label for="email">E-mail</label>
@@ -121,8 +117,7 @@
                 </div>
                 
                 <div class="toggle-container">
-                    <button type="submit">Criar Conta</button>
-                    <!-- <button type="submit" onclick="criarConta()">Criar Conta</button> -->
+                    <button type="submit" onclick="criarConta()">Criar Conta</button>
                 </div>
                 
                 <script>
@@ -274,14 +269,6 @@
                 return; 
             }
     
-            if (isEmpresa) {
-                window.location.href = '03 - Planos Empresariais.html'; 
-            } else {
-                window.location.href = 'perfil-usuario.html'; 
-            }
-
-  
-
             // Se não for válido, prevenir envio
             if (!isValid2) {
                 event.preventDefault();
@@ -302,7 +289,9 @@
                 // alert("Você precisa concordar com os termos e condições.");
                 return; 
             }
-    
+
+            saveData()
+
             if (isEmpresa) {
                 window.location.href = '03 - Planos Empresariais.html'; 
             } else {
@@ -310,6 +299,67 @@
             }
         }
         
+        function saveData(){
+
+        let name, email, password;
+
+        name = document.getElementById("nomeCadastro").value;
+        email = document.getElementById("emailCadastro").value;
+        password = document.getElementById("senhaCadastro").value;
+
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        let user_records = new Array();
+        user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+        if (user_records.some((v) => {
+            return v.email == email
+        })){
+            alert("Já existe um usuário cadastrado com esse e-mail.");
+        }
+        else {
+            user_records.push({
+                "name": name,
+                "email": email,
+                "password": password
+            })
+
+            localStorage.setItem("users", JSON.stringify(user_records));
+            }
+
+        }
+
+        function login(){
+
+        console.log("logar")
+
+        let email, password;
+
+        email = document.getElementById("email-login").value;
+        password = document.getElementById("senha-login").value;
+
+        let user_records = new Array();
+        user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
+
+        if (user_records.some((v) => {
+            return v.email == email && v.password === password
+        })){
+            alert("Login realizado.")
+            let current_user = user_records.filter((v) => {
+                return v.email == email && v.password == password;
+            })[0]
+
+            localStorage.setItem("name", current_user.name);
+            localStorage.setItem("email", current_user.email);
+            
+            window.location.href="/perfil-usuario.html";
+        }
+
+        else {
+            alert("Dados incorretos.")
+            }
+        }
     </script>
 
 </body>
