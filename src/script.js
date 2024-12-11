@@ -301,3 +301,65 @@ document.getElementById("investment-form").addEventListener("submit", function (
   // Limpar o formulário após a mensagem (opcional)
   event.target.reset();
 });
+
+// Simula o estado de autenticação do usuário
+const isLoggedIn = false; // Alterar para true quando o usuário estiver logado
+
+// Função para renderizar o menu de navegação com base no estado de autenticação
+function renderNavigation() {
+    const navigationContainer = document.getElementById('navigation');
+
+    if (isLoggedIn) {
+        navigationContainer.innerHTML = `
+            <a href="javascript:void(0);" onclick="redirectSobreNos()" class="nav-links">Sobre nós</a>
+            <a href="javascript:void(0);" onclick="redirectOndeInvestir()" class="nav-links">Onde Investir</a>
+        `;
+    } else {
+        navigationContainer.innerHTML = ''; // Remove o conteúdo se o usuário não estiver logado
+    }
+}
+
+// Funções fictícias de redirecionamento
+function redirectSobreNos() {
+    console.log('Redirecionando para Sobre Nós...');
+    // Implementar lógica de redirecionamento
+}
+
+function redirectOndeInvestir() {
+    console.log('Redirecionando para Onde Investir...');
+    // Implementar lógica de redirecionamento
+}
+
+// Chamada inicial para renderizar a navegação
+document.addEventListener('DOMContentLoaded', () => {
+    renderNavigation();
+});
+
+// Função para renderizar o menu de navegação com base no estado de autenticação
+function renderNavigation() {
+  const navigationContainer = document.getElementById('navigation');
+
+  // Verificando se o usuário está logado
+  if (localStorage.getItem('userData')) {
+      const userData = JSON.parse(localStorage.getItem('userData'));
+
+      if (userData.logged === true) {
+          // Se o usuário estiver logado, exibe os botões de navegação
+          navigationContainer.innerHTML = `
+              <a href="/src/home-adm/ondeinvestir.html" class="nav-links">Onde Investir</a>
+              <a href="/src/home-admin/sobrenos.html" class="nav-links">Sobre Nós</a>
+          `;
+      } else {
+          // Se não estiver logado, remove os botões de navegação
+          navigationContainer.innerHTML = '';
+      }
+  } else {
+      // Se não houver dados de usuário, remove os botões de navegação
+      navigationContainer.innerHTML = '';
+  }
+}
+
+// Chamada inicial para renderizar a navegação ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  renderNavigation();
+});

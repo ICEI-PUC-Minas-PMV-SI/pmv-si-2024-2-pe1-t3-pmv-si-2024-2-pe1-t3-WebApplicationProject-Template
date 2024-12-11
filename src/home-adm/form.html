@@ -6,9 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consulta de Investimentos</title>
   <link rel="stylesheet" href="form.css">
-  <script src="\src\script.js"></script>
-</head>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+</head>
+<script>
+  // Inicializa o EmailJS com seu User ID
+  (function(){
+    emailjs.init("SEU_USER_ID");
+  })();
+
+  function salvarEmailNoLocalStorage(email) {
+    localStorage.setItem("userEmail", email);
+  }
+
+  function carregarEmailDoLocalStorage() {
+    return localStorage.getItem("userEmail") || "";
+  }
+
+  function preencherEmail() {
+    const emailSalvo = carregarEmailDoLocalStorage();
+    if (emailSalvo) {
+      document.getElementById("email").value = emailSalvo;
+    }
+  }
+
+  function enviarFormulario(event) {
+    event.preventDefault(); // Evita recarregar a página
+
+    // Captura os dados do formulário
+    const nomeUsuario = document.getElementById("name").value;
+    const emailUsuario = document.getElementById("email").value;
+    const objetivoUsuario = document.getElementById("objective").value;
+
+    // Verifica se os campos foram preenchidos
+    if (!nomeUsuario || !emailUsuario || !objetivoUsuario) {
+      alert("Por favor, preencha todos os campos antes de enviar.");
+      return;
+    }
+
+    // Salva o e-mail no LocalStorage
+    salvarEmailNoLocalStorage(emailUsuario);
+
+    // Configura os parâmetros do e-mail
+    const parametros = {
+      to_email: emailUsuario,
+      from_name: nomeUsuario,
+      message: "Obrigado pelo contato. Teria disponibilidade de marcar uma reunião para conversarmos sobre os seus objetivos e o caminho que podemos trilhar para obter melhores investimentos?"
+    };
+
+    // Usa o EmailJS para enviar o e-mail
+    emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", parametros)
+      .then(function(response) {
+        // Exibe o pop-up de confirmação
+        alert("E-mail enviado, entraremos em contato.");
+      }, function(error) {
+        alert("Ocorreu um erro ao enviar o e-mail. Tente novamente mais tarde.");
+        console.error("Erro: ", error);
+      });
+  }
+
+  // Preenche o campo de e-mail ao carregar a página
+  window.onload = preencherEmail;
+</script>
 <body>
   <div class="container-center">
     <div class="register-investor-types">
@@ -22,25 +81,30 @@
       </div>
       <main class="main-content">
         <section class="profile">
-            <h1>Contrate</h1>
-  <div class="form-container">
-    <form id="investmentForm">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+          <h1>Contrate</h1>
+          <div class="form-container">
+            <form id="investmentForm" onsubmit="enviarFormulario(event)">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu email" required>
 
-      <label for="objective">Objetivo:</label>
-      <textarea id="objective" name="objective" placeholder="Descreva seu objetivo de investimento" required></textarea>
+              <label for="objective">Objetivo:</label>
+              <textarea id="objective" name="objective" placeholder="Descreva seu objetivo de investimento" required></textarea>
 
-      <button type="submit" class="btn">Enviar</button>
-    </form>
+              <button type="submit" class="btn">Enviar</button>
+            
+            </div>
+            </form>
+          </div>
+          <div class="footer-background">
+            <div class="footer-text">Copyright 2024 Finance Hub</div>
+          </div>
+        </section>
+      </main>
+    </div>
   </div>
-  <div class="footer-background">
-    <div class="footer-text">Copyright 2024 Finance Hub</div>
-  </div>
-  <script src="script.js"></script>
 </body>
 
 </html>
