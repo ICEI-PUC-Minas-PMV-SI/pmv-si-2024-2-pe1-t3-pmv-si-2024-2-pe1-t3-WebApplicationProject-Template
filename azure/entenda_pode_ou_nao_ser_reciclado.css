@@ -759,7 +759,7 @@ p {
   width: 100%; 
   max-width: 1200px; 
   flex-wrap: wrap; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 /* Contêiner pai */
@@ -811,7 +811,7 @@ p {
   }
 }
 
-.newsletter-section button {
+.newsletter-section button { 
   background-color: #4d794d;
   color: white;
   border: none;
