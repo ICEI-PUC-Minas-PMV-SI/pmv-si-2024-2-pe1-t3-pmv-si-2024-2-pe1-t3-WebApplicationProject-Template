@@ -183,10 +183,10 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%; /* Ajusta a posição do dropdown */
-  transform: translateX(-50%); /* Centraliza o dropdown horizontalmente */
-  background-color: #589c68; /* Cor de fundo verde */
-  min-width: 200px; /* Define um valor mínimo para a largura */
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #589c68; 
+  min-width: 200px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   z-index: 1000;
@@ -220,7 +220,7 @@ header {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+  background-color: #218838; 
 }
 
 /* Estilos para o dropdown de Alterar Linguagem */
@@ -296,7 +296,7 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
-  margin-top: auto; /* Empurra o rodapé para baixo */
+  margin-top: auto; 
 }
 
 footer .footer-links {
@@ -305,12 +305,12 @@ footer .footer-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  flex-wrap: wrap; /* Para garantir que os links não quebrem em telas menores */
+  flex-wrap: wrap; 
 }
 
 footer .footer-links li {
   margin: 0 10px;
-  padding: 5px 0; /* Adiciona espaço entre os itens */
+  padding: 5px 0; 
 }
 
 footer .footer-links a {
@@ -325,43 +325,43 @@ footer .footer-links a:hover {
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
   footer .footer-links {
-    flex-direction: column; /* Alinha os links verticalmente em telas menores */
+    flex-direction: column; 
   }
 
   footer .footer-links li {
-    margin: 5px 0; /* Ajusta as margens para os links */
+    margin: 5px 0; 
   }
 }
 
 /* Estilo da barra de pesquisa */
 .form-control {
-  border: 1px solid #ced4da; /* Borda padrão */
-  border-radius: 0.25rem; /* Bordas arredondadas */
-  padding: 10px; /* Espaçamento interno */
-  width: 250px; /* Largura da barra de pesquisa */
+  border: 1px solid #ced4da; 
+  border-radius: 0.25rem; 
+  padding: 10px; 
+  width: 250px; 
 }
 
 .form-control:focus {
-  border-color: #80bdff; /* Cor da borda ao focar */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+  border-color: #80bdff; 
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
 }
 
 .btn-outline-success {
-  margin-left: 10px; /* Espaçamento à esquerda do botão */
-  border-radius: 0.25rem; /* Bordas arredondadas */
+  margin-left: 10px; 
+  border-radius: 0.25rem; 
 }
 .btn-procurar {
-  background-color: transparent; /* Fundo transparente */
-  color: white; /* Cor do texto */
-  border: 1px solid white; /* Borda branca */
-  border-radius: 5px; /* Bordas arredondadas */
-  padding: 8px 15px; /* Espaçamento interno */
-  transition: background-color 0.3s ease; /* Transição suave */
-  cursor: pointer; /* Cursor em ponteiro */
+  background-color: transparent; 
+  color: white; 
+  border: 1px solid white; 
+  border-radius: 5px; 
+  padding: 8px 15px; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer; 
 }
 
 .btn-procurar:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
 /* Estilos adicionais para remover bordas e fundos indesejados */
@@ -374,25 +374,25 @@ footer .footer-links a:hover {
 
 /* Estilos para o contêiner do mapa */
 .map-container {
-  padding: 10px; /* Espaçamento ao redor do contêiner */
+  padding: 10px; 
 }
 
 /* Altura do mapa */
 #map {
-  height: calc(100vh - 200px); /* Calcula a altura total da tela menos a altura do cabeçalho e do rodapé */
+  height: calc(100vh - 200px); 
   width: 100%; 
   margin-top: 54px; 
 }
 
 .filter-container {
-  margin-bottom: 15px; /* Espaçamento abaixo do filtro */
+  margin-bottom: 15px; 
 }
 
 .login-button {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #589c68; /* Cor do botão */
+  background-color: #589c68; 
   color: white;
   text-decoration: none;
   border: none;
@@ -403,16 +403,16 @@ footer .footer-links a:hover {
 }
 
 .login-button:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: #45a049; 
 }
 
 .login-button svg {
-  margin-right: 8px; /* Espaço entre o ícone e o texto */
+  margin-right: 8px; 
 }
 
 .toggle-container {
-  display: flex; /* Flexbox para alinhar na mesma linha */
-  align-items: center; /* Centraliza verticalmente */
+  display: flex; 
+  align-items: center; 
   margin: 10px 0;
 }
 
@@ -421,7 +421,7 @@ footer .footer-links a:hover {
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin-left: 10px; /* Espaçamento entre o texto e o botão */
+  margin-left: 10px; 
 }
 
 .switch input {
@@ -437,9 +437,9 @@ footer .footer-links a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc; /* Cor do fundo do toggle */
+  background-color: #ccc; 
   transition: .4s;
-  border-radius: 34px; /* Arredondar as bordas */
+  border-radius: 34px; 
 }
 
 .slider:before {
@@ -449,165 +449,145 @@ footer .footer-links a:hover {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white; /* Cor do círculo do toggle */
+  background-color: white; 
   transition: .4s;
-  border-radius: 50%; /* Círculo perfeito */
+  border-radius: 50%;
 }
 
 /* O que acontece quando o toggle está ativo */
 input:checked + .slider {
-  background-color: #4CAF50; /* Cor do toggle quando ativado */
+  background-color: #4CAF50; 
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px); /* Move o círculo para a direita */
+  transform: translateX(26px); 
 }
 
 /* Estilos para o contêiner do mapa */
 .map-container {
-  padding: 20px; /* Espaçamento ao redor do contêiner */
-  background-color: #ffffff; /* Fundo branco para o contêiner do mapa */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
 }
 
 /* Estilos para os filtros */
 h2 {
-  color: #333; /* Cor do texto */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color: #333; 
+  margin-bottom: 10px; 
 }
 
 #material-filter {
-  width: 100%; /* Largura total */
-  padding: 10px; /* Espaçamento interno */
-  border: 1px solid #ced4da; /* Borda padrão */
-  border-radius: 5px; /* Bordas arredondadas */
-  margin-bottom: 15px; /* Espaçamento abaixo do seletor */
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ced4da; 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
 }
 
 #filter-button {
-  background-color: #589c68; /* Cor do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Sem borda */
-  padding: 10px 15px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor em ponteiro */
-  transition: background-color 0.3s; /* Transição suave */
+  background-color: #589c68; 
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 #filter-button:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: #45a049; 
 }
 
 /* Estilos para o toggle */
 .toggle-container {
-  display: flex; /* Flexbox para alinhar na mesma linha */
-  align-items: center; /* Centraliza verticalmente */
-  margin: 20px 0; /* Espaçamento vertical */
+  display: flex; 
+  align-items: center; 
+  margin: 20px 0; 
 }
 
 .toggle-container h2 {
-  margin-right: 10px; /* Espaço entre o texto e o toggle */
-  color: #333; /* Cor do texto */
+  margin-right: 10px; 
+  color: #333; 
 }
 
 /* Estilos para o mapa */
 #map {
-  height: calc(100vh - 250px); /* Altura do mapa ajustada */
-  border-radius: 8px; /* Bordas arredondadas */
+  height: calc(100vh - 250px); 
+  border-radius: 8px; 
 }
 
 /* Estilo do botão "Como Chegar" (se houver) */
 .btn-directions {
-  background-color: #4CAF50; /* Cor do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Sem borda */
-  padding: 8px 12px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor em ponteiro */
-  transition: background-color 0.3s; /* Transição suave */
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 .btn-directions:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: #45a049; 
 }
 
-
-.sobre-nos {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.container-sobre-nos {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.sobre-nos-texto {
-  width: 60%;
-}
-
-.sobre-nos-time {
-  width: 35%;
-}
-
-h1 {
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
+.section-header {
+  background-color: #d3d3d3;
   text-align: center;
+  padding: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
+h4 {
+  text-align: center;
+  margin-top: 10%; 
+  padding-top: 2%;
 }
 
-p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  display: flex;
+.container-main {
+  width: 35%;
+  height: 400px;
+  background: #d3d3d3;
+  display: flex; 
+  justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-ul li .icon {
-  width: 12px;
-  height: 12px;
-  background-color: #333;
-  border-radius: 50%;
-  margin-right: 10px;
+.grid-checkbox {
+  display: flex; 
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-@media (max-width: 768px) {
-  .container-sobre-nos {
-      flex-direction: column;
-      align-items: center;
-  }
+.grid-checkbox > div {
+  text-align: left; 
+}
 
-  .sobre-nos-texto,
-  .sobre-nos-time {
-      width: 100%;
-  }
+.caixa-texto {
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  margin-top: 20px;
+}
 
-  ul li {
-      justify-content: center;
-  }
+.caixa-texto > textarea {
+  width: 100%; 
+  height: 120px;
+}
+
+.container-main > button {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navbar-cc {
@@ -617,7 +597,7 @@ ul li .icon {
 }
 
 .navbar-cc a {
-  float: none;
+  float: none; 
   display: inline-block;
   color: white;
   padding: 10px 15px;
@@ -634,34 +614,430 @@ ul li .icon {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar-cc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-cc a {
-    width: 50%;
-    text-align: center;
-  }
-}
-
 /* Responsividade */
 @media screen and (max-width: 600px) {
   .navbar-cc a {
     float: none;
-    width: 50%;
+    width: 100%;
   }
 
   .container-main {
-    width: 50%;
+    width: 90%;
     height: auto;
   }
 
   .caixa-texto {
     width: 90%;
   }
+}
+
+
+/* Estilos para o dropdown de Acessibilidade */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #589c68;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #218838;
+}
+
+/* Estilos para o dropdown de Alterar Linguagem */
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language-toggle .flag-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.language-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.language-dropdown li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.language-dropdown li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+}
+
+.language-dropdown li a .flag-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.language-selector:hover .language-dropdown {
+  display: block;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .footer-links li {
+  margin: 0 10px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Barra de pesquisa */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 10px;
+  width: 250px;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-outline-success {
+  margin-left: 10px;
+  border-radius: 0.25rem;
+}
+
+.btn-procurar {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-procurar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.language-dropdown, .language-dropdown li, .language-dropdown li a {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.map-container {
+  padding: 10px;
+}
+
+#map {
+  height: calc(100vh - 200px);
+  width: 100%;
+  margin-top: 54px;
+}
+
+.filter-container {
+  margin-bottom: 15px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #589c68;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.login-button svg {
+  margin-right: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilos da seção de formulário */
+.section-header {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilizando a div form-container */
+.form-container {
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 40px; 
+  max-width: 800px; 
+  margin: 20px auto; 
+  border: 1px solid #e0e0e0; 
+}
+
+/* Estilizando os inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+  width: 100%; 
+  padding: 15px; 
+  margin: 15px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-size: 18px; 
+}
+
+/* Estilizando o botão */
+.form-container button {
+  background-color: #28a745; 
+  color: white; 
+  padding: 15px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 20px; 
+  width: 100%; 
+  margin-top: 25px; 
+}
+
+.form-container button:hover {
+  background-color: #218838; 
+}
+
+/* Ajustes para responsividade */
+@media screen and (max-width: 768px) {
+  .form-container {
+      width: 90%; 
+      padding: 20px; 
+  }
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.header-section {
+  background-color: #589c68;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cta-buttons a {
+  padding: 15px 30px;
+  background-color: white;
+  color: #589c68;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.cta-buttons a:hover {
+  background-color: #f0f0f0;
+}
+
+.scroll-indicator {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px 0;
+  color: #589c68;
 }
 
 .steps-section {
