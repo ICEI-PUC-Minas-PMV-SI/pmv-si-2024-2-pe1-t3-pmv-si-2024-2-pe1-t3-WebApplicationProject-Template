@@ -1,0 +1,206 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --white: rgba(248, 248, 248, 1);
+    --black-20: rgba(148, 148, 148, 1);
+    --dark-grey: rgba(48, 48, 48, 1);
+    --grey-2: rgba(217, 217, 217, 1);
+    --black-80: rgb(18, 18, 33);
+    --grey-3: rgba(172, 172, 172, 1);
+    --grey-1: rgba(240, 240, 240, 1);
+}
+
+.container-center {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-investor-types {
+    overflow: hidden;
+    width: 1440px;
+    height: 1043px;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 32px;
+    left: 125px;
+}
+
+.logo {
+    width: 109px;
+    gap: 10px;
+    padding: 7.5px;
+    background-color: var(--black-80);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 16px;
+    line-height: normal;
+}
+
+.dropdown {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 8px;
+    left: 1157px;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  nav {
+    background-color: #121221;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1140px;  
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem; 
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .lg:hidden {
+    display: none !important; 
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .lg:flex-row {
+    flex-direction: row; 
+  }
+  
+  .gap-4 {
+    gap: 1rem; 
+  }
+  
+  .lg:w-1-4 {
+    width: 25%;
+  }
+  
+  .lg:w-3-4 {
+    width: 75%; 
+  }
+  
+  .bg-gray-100 {
+    background-color: #f5f5f5;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .border {
+    border: 1px solid #ddd;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  #cryptoChart {
+    height: 300px; 
+  }
+  
+  .space-y-4 {
+    margin-top: 1rem;
+  }
+  
+  .textarea {
+    resize: none; 
+  }
+  
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .md:grid-cols-4, .lg:grid-cols-6 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  } 
+
+  .text-center {
+   text-align: center;
+  
+  }
+
+  .text-gray-600 {
+    color: #666;
+  }
+
+  .footer-background {
+    position: absolute;
+    width: 100%;   
+    height: 83px;
+    top: 960px;   
+    left: 0;     
+    background-color: var(--white);
+  }
+
+  .footer-text {
+    position: absolute;
+    top: 30px;
+    left: 0;        
+    width: 100%;     
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+    text-align: center;  
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+    .form-frame {
+      width: 90%;
+      min-height: 450px;  
+  }
