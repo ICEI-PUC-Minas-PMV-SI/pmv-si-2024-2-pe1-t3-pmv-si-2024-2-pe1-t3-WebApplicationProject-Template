@@ -7,9 +7,26 @@
     <script src="/src/script.js"></script>
     <title>Finance Hub</title>
   </head>
+  <script>
+    // Função JavaScript para redirecionar para 'src/onde investir/sobrenos.html'
+    function redirectSobreNos() {
+      window.location.href = 'Sobrenos.html';
+    }
+    
+
+    // Função JavaScript para redirecionar para 'src/onde investir/ondeinvestir.html'
+    function redirectOndeInvestir() {
+      window.location.href = 'ondeinvestir.html';
+    }
+  </script>
+
   <body onload="showNews(),hasLogin()">
     <nav>
       <p class="logoNav">Finance Hub</p>
+      <div class="nav-1">
+          <a href="javascript:void(0);" onclick="redirectSobreNos()" class="nav-links">Sobre nós</a>
+          <a href="javascript:void(0);" onclick="redirectOndeInvestir()" class="nav-links">Onde Investir</a>
+</div>
 
       <div class="buttons">
         <a href="/src/meu-perfil/perfil.html" class="profile">
@@ -372,6 +389,7 @@
             Alta do Dólar Pressiona Exportadores, Mas Beneficia Setores
             Estratégicos
           </p>
+          
 
           <p class="fontCardLatestNews">CNN Indonesia</p>
         </a>

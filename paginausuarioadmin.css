@@ -322,7 +322,7 @@ a {
   left: 1157px;
 }
 
-nav {
+.nav-1 {
   display: flex;
   gap: 2rem;
   justify-content: center;

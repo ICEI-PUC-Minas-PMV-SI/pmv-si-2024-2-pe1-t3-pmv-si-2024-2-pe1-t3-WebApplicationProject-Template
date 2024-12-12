@@ -380,6 +380,48 @@
          line-height: 48px;
      }
 
+    
+    .nav-1 {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      
+      }
+  
+  
+  .nav-links {
+    text-decoration: none;
+    color: var(--black-80, #121221);
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  
+  }
+  
+  .nav-links:hover {
+    color: #121221;
+    transition: .4s;
+    text-decoration: underline;
+  
+  }
+  .home-desktop .frame {
+    display: flex;
+    width: 109px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-80);
+    border-radius: 4px;
+  }
+
 
      /* ----------- FIM ESTILO ASSET 1366PX ------------- */
  }
