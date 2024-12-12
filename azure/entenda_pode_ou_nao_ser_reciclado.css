@@ -1,0 +1,879 @@
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para o Cabeçalho e Navbar */
+header {
+  background-color: #589c68;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-image {
+  width: 70px; /* Tamanho reduzido do logo */
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar .logo-text {
+  color: white;
+  font-size: 2.2rem; /* Tamanho reduzido do texto */
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Estilos para o Navbar */
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Impede que os itens se movam para uma linha abaixo */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-list li {
+  margin-left: 15px;
+  position: relative;
+}
+
+.navbar .nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px; /* Fonte menor para mais compactação */
+  padding: 6px 12px; /* Ajuste do padding para itens mais compactos */
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-list a:hover,
+.navbar .nav-list .active {
+  background-color: #218838;
+  border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .navbar .logo-image {
+    width: 60px;
+    height: 60px; /* Reduzido mais o logo para telas grandes */
+  }
+
+  .navbar .logo-text {
+    font-size: 2rem; /* Diminui mais o texto para telas grandes */
+    margin-left: 8px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens do menu */
+    width: 100%; /* Garante que o menu ocupe toda a largura disponível */
+  }
+
+  .navbar .nav-list li {
+    margin-left: 12px; /* Ajuste no espaçamento entre os itens */
+  }
+
+  .navbar .nav-list a {
+    font-size: 12px; /* Fonte ainda menor */
+    padding: 5px 10px; /* Ajuste do padding para mais compactação */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo-image {
+    width: 50px;
+    height: 50px; /* Logo ainda menor para dispositivos de tablet */
+  }
+
+  .navbar .logo-text {
+    font-size: 1.8rem; /* Diminui mais o tamanho do texto "Greencycle" */
+    margin-left: 5px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: row;
+    justify-content: space-evenly; /* Distribui os itens igualmente na linha */
+    width: 100%;
+  }
+
+  .navbar .nav-list li {
+    margin-left: 8px; /* Ajuste no espaçamento */
+  }
+
+  .navbar .nav-list a {
+    font-size: 10px; /* Fonte menor para itens de menu */
+    padding: 5px 8px; /* Ajuste de padding para caber mais itens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo-image {
+    width: 45px;
+    height: 45px; /* Reduz logo ainda mais para dispositivos pequenos */
+  }
+
+  .navbar .logo-text {
+    font-size: 1.6rem; /* Tamanho muito menor para telas pequenas */
+  }
+
+  .navbar .nav-list {
+    flex-direction: row;
+    justify-content: space-between; /* Garantindo que todos os itens do menu caibam na linha */
+    width: 100%;
+    padding: 0 8px; /* Garantir espaçamento adequado nas laterais */
+  }
+
+  .navbar .nav-list li {
+    margin-left: 5px; /* Menor margem entre os itens */
+  }
+
+  .navbar .nav-list a {
+    font-size: 9px; /* Fonte muito menor para telas pequenas */
+    padding: 4px 7px; /* Ajuste de padding para telas pequenas */
+  }
+}
+
+
+/* Estilos para o menu dropdown de Acessibilidade */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #589c68; 
+  min-width: 200px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #218838; 
+}
+
+/* Estilos para o dropdown de Alterar Linguagem */
+.language-selector {
+  position: relative;
+  display: inline-block; 
+}
+
+.language-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language-toggle .flag-icon {
+  width: 32px; 
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent; 
+  border: none;
+  margin: 0;
+}
+
+.gtranslate_wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent; 
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.gtranslate_wrapper li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.gtranslate_wrapper li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0; 
+  border: none; 
+}
+
+.gtranslate_wrapper li a .flag-icon {
+  width: 32px; 
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent; 
+  border: none;
+  margin: 0; 
+}
+
+.language-selector:hover .gtranslate_wrapper {
+  display: block; 
+}
+/* Estilos para o rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; 
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap; 
+}
+
+footer .footer-links li {
+  margin: 0 10px;
+  padding: 5px 0; 
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  footer .footer-links {
+    flex-direction: column; 
+  }
+
+  footer .footer-links li {
+    margin: 5px 0; 
+  }
+}
+
+/* Estilo da barra de pesquisa */
+.form-control {
+  border: 1px solid #ced4da; 
+  border-radius: 0.25rem; 
+  padding: 10px; 
+  width: 250px; 
+}
+
+.form-control:focus {
+  border-color: #80bdff; 
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
+
+.btn-outline-success {
+  margin-left: 10px; 
+  border-radius: 0.25rem; 
+}
+.btn-procurar {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-procurar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Estilos adicionais para remover bordas e fundos indesejados */
+.language-dropdown, .language-dropdown li, .language-dropdown li a {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 10px; 
+}
+
+/* Altura do mapa */
+#map {
+  height: calc(100vh - 200px); 
+  width: 100%; 
+  margin-top: 54px; 
+}
+
+.filter-container {
+  margin-bottom: 15px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #589c68; 
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049; 
+}
+
+.login-button svg {
+  margin-right: 8px; 
+}
+
+.toggle-container {
+  display: flex; 
+  align-items: center; 
+  margin: 10px 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px; 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; 
+  transition: .4s;
+  border-radius: 34px; 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; 
+  transition: .4s;
+  border-radius: 50%; 
+}
+
+/* O que acontece quando o toggle está ativo */
+input:checked + .slider {
+  background-color: #4CAF50; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); 
+}
+
+/* Estilos para o contêiner do mapa */
+.map-container {
+  padding: 20px; 
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+/* Estilos para os filtros */
+h2 {
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+#material-filter {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
+}
+
+#filter-button {
+  background-color: #589c68;
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#filter-button:hover {
+  background-color: #45a049; 
+}
+
+/* Estilos para o toggle */
+.toggle-container {
+  display: flex; 
+  align-items: center; 
+  margin: 20px 0; 
+}
+.toggle-container h2 {
+  margin-right: 10px; 
+  color: #333; 
+}
+
+/* Estilos para o mapa */
+#map {
+  height: calc(100vh - 250px);
+  border-radius: 8px;
+}
+
+.btn-directions {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.btn-directions:hover {
+  background-color: #45a049; 
+}
+
+
+.sobre-nos {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container-sobre-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sobre-nos-texto {
+  width: 60%;
+}
+
+.sobre-nos-time {
+  width: 35%;
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li .icon {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .container-sobre-nos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sobre-nos-texto,
+  .sobre-nos-time {
+      width: 100%;
+  }
+
+  ul li {
+      justify-content: center;
+  }
+}
+/* Ajuste do layout principal */
+main {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  margin: 0 auto; 
+  width: 90%; 
+  max-width: 1200px; 
+  box-sizing: border-box; 
+}
+
+
+section {
+  flex: 1;
+  margin-right: 30px; 
+}
+
+/* Ajuste da seção do time */
+.team-section {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Ajuste para os membros da equipe */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Ajuste para os avatares */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Títulos da seção */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Ajuste para as descrições */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilo principal */
+.article-main {
+  padding: 20px;
+}
+
+.div-enunciado h2 {
+  font-size: 18px;
+  color: #4d794d; 
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.div-texto p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+/* Estilo da seção de newsletter */
+.newsletter-section {
+  text-align: center;
+  padding: 30px;
+  background-color: #e6f2e6; 
+  border-radius: 8px;
+  margin-top: 20px; 
+}
+
+.newsletter-section h2 {
+  font-size: 20px;
+  color: #4d794d; 
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #b3d9b3;
+  border-radius: 4px;
+  width: 250px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: #66b266;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4d794d; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #3d633d;
+}
+
+/* Responsividade para o formulário */
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .newsletter-form input[type="email"], .newsletter-form button {
+    width: 100%;
+  }
+}
+
+.section-main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #e6f2e6;
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Contêiner pai */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: space-between; /* Espaçamento uniforme */
+  width: 100%; /* Ocupa toda a largura da tela */
+  box-sizing: border-box; /* Inclui padding no cálculo total */
+  padding: 0 20px; /* Espaçamento lateral de 20px */
+}
+
+/* Estilo dos itens */
+.div-head {
+  background-color: #f0f7f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 20px); /* 25% da largura menos o espaçamento */
+  min-width: 250px; /* Garante um tamanho mínimo */
+  max-width: 25%; /* Limita o tamanho máximo em 25% */
+  border: 1px solid #b3d9b3;
+  min-height: 320px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.div-head:hover {
+  transform: translateY(-5px);
+  border-color: #66b266;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .div-head {
+    flex: 1 1 calc(25% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .div-head {
+    flex: 1 1 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 500px) {
+  .div-head {
+    flex: 1 1 100%; /* Ocupa 100% em telas pequenas */
+  }
+}
+
+.newsletter-section button {
+  background-color: #4d794d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-section button:hover {
+  background-color: #388E3C;
+}
+
+a.lermais1
+
+{
+ 
+ 
+  position: relative;
+  float:inline-start;
+  top: 100px;
+  
+
+}
+
+a.lermais2
+
+{
+ 
+ 
+  position: relative;
+  float:inline-start;
+  top: 77px;
+  
+
+}
+
+
+a.lermais3
+
+{
+ 
+ 
+  position: relative;
+  float:inline-start;
+  top: 100px;
+  
+
+}
+
+
+
+a.lermais4
+
+{
+ 
+ 
+  position: relative;
+  float:inline-start;
+  top: 123px;
+  
+
+}
