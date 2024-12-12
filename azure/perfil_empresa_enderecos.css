@@ -256,7 +256,7 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
-  position: fixed; /* Fixa o rodapé */
+  margin-bottom: auto; /* Fixa o rodapé */
   bottom: 0; /* Alinha o rodapé na parte inferior */
   left: 0; /* Alinha na borda esquerda */
   width: 100%; /* Faz o rodapé ocupar 100% da largura */
