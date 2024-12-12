@@ -1,0 +1,150 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
+
+body {
+    .menu {
+        position: absolute;
+        top: 32px;
+        left: 125px;
+    }
+    
+    .logo {
+        width: 109px;
+        gap: 10px;
+        padding: 7.5px;
+        background-color: var(--black-80);
+        border-radius: 4px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        font-family: "Playfair Display", Helvetica, serif;
+        font-weight: 700;
+        color: var(--white);
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .dropdown {
+        position: absolute;
+        width: 23px;
+        height: 21px;
+        top: 8px;
+        left: 1157px;
+    }
+  }
+  
+  /* Navigation bar */
+  nav {
+    background-color: #121221;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1140px; /* Adjust for your desired container width */
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem; /* Adjust font size for headings */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .lg:hidden {
+    display: none !important; /* Hide element on large screens */
+  }
+  
+  /* Main content area */
+  .flex {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .lg:flex-row {
+    flex-direction: row;  
+  }
+  
+  .gap-4 {
+    gap: 1rem;  
+  }
+  
+  .lg:w-1-4 {
+    width: 25%;  
+  }
+  
+  .lg:w-3-4{
+    width: 75%; /* Set width to 75% on large screens */
+  }
+  /* Aside (Crypto list) */
+  .bg-gray-100 {
+    background-color: #f5f5f5;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Select elements */
+  .border {
+    border: 1px solid #ddd;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Chart area */
+  #cryptoChart {
+    height: 300px; /* Adjust chart height as needed */
+  }
+  
+  /* Form (Analysis) */
+  .space-y-4 {
+    margin-top: 1rem;
+  }
+  
+  .textarea {
+    resize: none; /* Prevent textarea resizing */
+  }
+  
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  /* Trending cryptos section */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 1rem;
+  }
+  
+  .md:grid-cols-4, .lg:grid-cols-6 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns for medium and large screens */
+  }
+  
+  /* Informative section */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-600 {
+    color: #666;
+  }
