@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenCycle | Homepage</title>
-    <link rel="stylesheet" href="../Pages/PerfilEmpresaCadastroMateriais.css">
+    <link rel="stylesheet" href="../Pages/PerfilEmpresaEnderecos.css">
     <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
 <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
 <script src="auth-validator.js" defer></script>
@@ -75,84 +75,84 @@
             </div>
     
             <!-- Formulário -->
-<div class="content">
-    <div class="left-container">
-        <h2>Cadastrar novo endereço</h2>
-        <form class="enderecos-form" id="form-endereco" onsubmit="return validarFormulario(event)">
-            <div class="form-group">
-                <label for="endereco">Endereço</label>
-                <input type="text" id="endereco" placeholder="Av. de Exemplo" required>
-                <span class="check-icon">✔</span>
+        <div class="content">
+            <div class="left-container">
+                <h2>Cadastrar novo endereço</h2>
+                <form class="enderecos-form" id="form-endereco" onsubmit="return validarFormulario(event)">
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Av. de Exemplo" required>
+                        <span class="check-icon">✔</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" placeholder="1.000" required>
+                        <span class="check-icon">✔</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" placeholder="Galpão 2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="XX-XXX-XXX" required>
+                        <span class="check-icon">✔</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome-endereco">Nome que deseja aparecer na lista de endereços</label>
+                        <input type="text" id="nome-endereco" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Adicionar Endereço</button>
+                </form>
             </div>
 
-            <div class="form-group">
-                <label for="numero">Número</label>
-                <input type="text" id="numero" placeholder="1.000" required>
-                <span class="check-icon">✔</span>
+            <div class="right-container">
+                <h2>Endereços Disponíveis no Site</h2>
+                <div class="enderecos-disponiveis">
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" checked> Matriz Belo Horizonte</label>
+                        <br>
+                        <label><input type="checkbox" checked> Franqueado A - Ouro Preto</label>
+                        <br>
+                        <label><input type="checkbox"> Sede São Paulo</label>
+                        <br>
+                        <label><input type="checkbox"> Subsede São Paulo - Alphaville</label>
+                    </div>
+                    <button type="button" class="submit-button" onclick="atualizarEnderecos()">Atualizar</button>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="complemento">Complemento</label>
-                <input type="text" id="complemento" placeholder="Galpão 2">
-            </div>
-
-            <div class="form-group">
-                <label for="cep">CEP</label>
-                <input type="text" id="cep" placeholder="XX-XXX-XXX" required>
-                <span class="check-icon">✔</span>
-            </div>
-
-            <div class="form-group">
-                <label for="nome-endereco">Nome que deseja aparecer na lista de endereços</label>
-                <input type="text" id="nome-endereco" required>
-            </div>
-
-            <button type="submit" class="submit-button">Adicionar Endereço</button>
-        </form>
-    </div>
-
-    <div class="right-container">
-        <h2>Endereços Disponíveis no Site</h2>
-        <div class="enderecos-disponiveis">
-            <div class="checkbox-group">
-                <label><input type="checkbox" checked> Matriz Belo Horizonte</label>
-                <br>
-                <label><input type="checkbox" checked> Franqueado A - Ouro Preto</label>
-                <br>
-                <label><input type="checkbox"> Sede São Paulo</label>
-                <br>
-                <label><input type="checkbox"> Subsede São Paulo - Alphaville</label>
-            </div>
-            <button type="button" class="submit-button" onclick="atualizarEnderecos()">Atualizar</button>
         </div>
-    </div>
-</div>
 
-<script>
-// Função de validação para o formulário de cadastro de endereço
-function validarFormulario(event) {
-    var endereco = document.getElementById('endereco').value;
-    var numero = document.getElementById('numero').value;
-    var cep = document.getElementById('cep').value;
-    var nomeEndereco = document.getElementById('nome-endereco').value;
+    <script>
+    // Função de validação para o formulário de cadastro de endereço
+    function validarFormulario(event) {
+        var endereco = document.getElementById('endereco').value;
+        var numero = document.getElementById('numero').value;
+        var cep = document.getElementById('cep').value;
+        var nomeEndereco = document.getElementById('nome-endereco').value;
 
-    // Verificar se os campos obrigatórios estão preenchidos
-    if (!endereco || !numero || !cep || !nomeEndereco) {
-        alert("Por favor, preencha todos os campos obrigatórios!");
-        event.preventDefault(); // Impede o envio do formulário
-        return false; // Retorna false para evitar o submit
+        // Verificar se os campos obrigatórios estão preenchidos
+        if (!endereco || !numero || !cep || !nomeEndereco) {
+            alert("Por favor, preencha todos os campos obrigatórios!");
+            event.preventDefault(); // Impede o envio do formulário
+            return false; // Retorna false para evitar o submit
+        }
+
+        // Se todos os campos obrigatórios estiverem preenchidos, exibe a mensagem de sucesso
+        alert("Cadastro Atualizado!");
+        return true; // Permite o envio do formulário
     }
 
-    // Se todos os campos obrigatórios estiverem preenchidos, exibe a mensagem de sucesso
-    alert("Cadastro Atualizado!");
-    return true; // Permite o envio do formulário
-}
-
-// Função chamada ao clicar no botão de atualizar endereços
-function atualizarEnderecos() {
-    alert("Endereços Atualizados!");
-}
-</script>
+    // Função chamada ao clicar no botão de atualizar endereços
+    function atualizarEnderecos() {
+        alert("Endereços Atualizados!");
+    }
+    </script>
 
 
     <!-- Rodapé -->
