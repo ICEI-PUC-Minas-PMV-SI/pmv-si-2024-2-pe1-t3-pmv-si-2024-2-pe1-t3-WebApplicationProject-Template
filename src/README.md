@@ -10,5 +10,5 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 #### Primeira versão do site
 - Acesse pelo repositório:
 - <a href="Pages/01- Index.html">Página Inicial do Site da GreenCycle</a>
-- Acesse a versão online no GithubPages:
-- <a href="colocarlinkaqui"> Ainda não colocamos o link
+- Acesse a versão online no Azure:
+- <a href="https://greencycle.z5.web.core.windows.net/index_empresarial.html"> Site Online
