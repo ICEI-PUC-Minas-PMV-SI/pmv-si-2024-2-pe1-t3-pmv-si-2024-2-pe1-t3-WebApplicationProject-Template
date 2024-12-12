@@ -832,3 +832,27 @@ footer {
       display: none; 
   }
 }
+
+/* Estilos para o container do formulário */
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título do formulário */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os labels */
+label {
+  display: block;
+  font-size: 14px;
