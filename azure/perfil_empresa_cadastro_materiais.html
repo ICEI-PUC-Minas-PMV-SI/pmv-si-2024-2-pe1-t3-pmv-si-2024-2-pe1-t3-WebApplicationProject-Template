@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCycle | Materiais</title>
+    <link rel="stylesheet" href="../azure/perfil_empresa_cadastro_materiais.css">
+    <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+<script src="auth-validator.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/GreenCycleLogo.jpeg" alt="Logo GreenCycle" class="logo-image">
+                    <span class="logo-text">GreenCycle</span>
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="index_empresarial.html">Home</a></li>
+                    <li><a href="ultima_regulamentacao_pertinente.html">Regulamentação</a></li>
+                    <li><a href="credito_de_carbono1.html"> Crédito de Carbono</a></li>
+                    <li><a href="relatorio_impacto_ambiental1.html"> RIA</a></li>
+                    <li><a href="entenda_pode_ou_nao_ser_reciclado.html">Educacional</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                   <!-- Dropdown de Alterar Linguagem com ícone do Brasil como padrão -->
+                    <li class="language-selector">
+                        <button class="language-toggle">
+                            <img src="images/PTBR.png" alt="Português" class="flag-icon" />
+                        </button>
+                        <ul class="gtranslate_wrapper"> </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Acessibilidade</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Alto Contraste</a></li>
+                            <li><a href="#">Modo Daltonismo</a></li>
+                            <li><a href="#">VoiceOver</a></li>
+                            <li><a href="#">Lupa</a></li>
+                        </ul>
+                    </li>
+                    <div id="auth-container">
+                        <a href="login.html">
+                            <button class="login-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                </svg>
+                                Login
+                            </button>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Conteúdo principal -->
+<main>
+    <section class="cadastro-section">
+        <!-- Barra de Nav Superior -->
+        <div class="top-nav">
+            <ul class="navbar-nav">
+                <li><a href="perfil_empresa_cadastro_materiais.html" class="active">Meu Cadastro</a></li>
+                <li><a href="perfil_empresa_enderecos.html">Meus Endereços</a></li>
+                <li><a href="perfil_empresa_pagamentos.html">Pagamentos</a></li>
+                <li><a href="perfil_empresa_suporte.html">Suporte</a></li>
+            </ul>
+        </div>
+        <!--Formulário de Materiais -->
+        <div class="content"> <!-- Ambos os containers devem estar dentro da mesma div content -->
+            <div class="left-container">
+                <h2>PucMinas Coração Eucarístico</h2>
+                <div class="profile-image">
+                    <img src="images/PucMinas.jpg" alt="Foto do Usuário" class="user-photo">
+                </div>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span> 
+                    </div>
+                    <div class="company-info">
+                        <p><strong>Endereço:</strong> Av: Dom José Gaspar, 500 Coração Eucarístico – Belo Horizonte – MG
+                        </p>
+                        <p><strong>CNPJ:</strong> 17.178.195/0029-68</p>
+                        <button type="submit" class="submit-button" onclick="logout()">Sair</button>
+                    </div>
+            </div>
+            <div class="right-container">
+                <h2>Resumo de Tipos de Materiais Habilitados</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pilhas" name="materiais" checked>
+                        <label for="pilhas">Pilhas e Baterias</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="eletronicos" name="materiais">
+                        <label for="eletronicos">Materiais Eletrônicos</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="remedios" name="materiais" checked>
+                        <label for="remedios">Remédios</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="oleo" name="materiais">
+                        <label for="oleo">Óleo de Cozinha</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="plasticos" name="materiais" checked>
+                        <label for="plasticos">Plásticos</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="latas" name="materiais">
+                        <label for="latas">Latas de Alumínio</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="radioativo" name="materiais">
+                        <label for="radioativo">Material Radioativo</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="hospitalar" name="materiais" checked>
+                        <label for="hospitalar">Material Hospitalar</label>
+                    </li>
+                </ul>
+                <button type="submit" class="submit-button" onclick="atualizar()">Habilitar mesmos materiais para demais endereços da empresa</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    function atualizar() {
+        alert("Cadastro Atualizado!");
+    }
+</script>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <span>© 2024 GreenCycle™. Todos os direitos reservados.</span>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="credito_de_carbono1.html">Créditos de Carbono</a></li>
+                    <li><a href="relatorio_impacto_ambiental1.html">Relatórios de Impacto Ambiental</a></li>
+                    <li><a href="ultima_regulamentacao_pertinente.html">Regulamentação</a></li>
+                    <li><a href="entenda_pode_ou_nao_ser_reciclado.html">Educacional</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li> 
+                    <li><a>Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

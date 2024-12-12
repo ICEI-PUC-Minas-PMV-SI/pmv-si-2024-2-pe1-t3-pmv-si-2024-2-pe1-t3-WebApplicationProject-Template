@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Se você utilizar este repositório, cite-o da seguinte forma."
+authors:
+  * Lucas Israel Franca Gontijo
+  * Lucas Oue
+  * Alexandre Henrique Silveira
+  * Rafael Contarini Ferreira Barbosa
+  * Suelen Larissa Alvares Marchito
+  * Thiago Campos Brandao Mol
+    orcid: "https://orcid.org/0000-0002-1825-0097" # Substitua com ORCID
+title: "GreenCycle"
+version: "1.0.0"
+date-released: "2024-12-01"
+identifiers:
+  - type: "doi"
+    value: "https://doi.org/10.xxxx/xxxxx" # Substitua com  DOI
+keywords:
+  - "Reciclagem"
+  - "Resíduos"
+  - "GreenCycle"
+license: "MIT"
+repository: "https://github.com/usuario/nome-do-repositorio"
