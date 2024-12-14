@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Hub - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="\src\script.js"></script>
+  </head>
+
+  <body>
+    <div class="container-center">
+      <div class="register-investor-types">
+        <div class="menu">
+          <a href="#">
+            <div class="logo">Finance Hub</div>
+          </a>
+          <a href="#">
+            <img class="dropdown" src="img\dropdown.svg" alt="menu-dropdown" />
+          </a>
+        </div>
+
+        <div class="header">
+          <div class="title-main">Login</div>
+        </div>
+        <form method="POST">
+          <div class="form-frame">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                class="input-field"
+                placeholder="Insira seu e-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input
+                name="senha"
+                type="password"
+                id="senha"
+                class="input-field"
+                placeholder="Insira sua senha"
+                required
+              />
+            </div>
+            <button type="button" onclick="logIn(event)" class="login-button">
+              LOGIN
+            </button>
+            <div class="links">
+              <a href="\src\cadastro-de-usuario\" class="signup"
+                >Não possui cadastro? Clique aqui
+              </a>
+            </div>
+          </div>
+        </form>
+        <div class="footer-background">
+          <div class="footer-text">Copyright 2024 Finance Hub</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

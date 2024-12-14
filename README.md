@@ -1,4 +1,4 @@
-# Título do Projeto
+# FinanceHub - Solução de Agregação Financeira
 
 `CURSO: Sistemas de Informação`
 
@@ -6,30 +6,34 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O FinanceHub visa desenvolver uma plataforma que centralize e forneça informações essenciais para aplicadores, independentemente do seu nível de experiência. A ferramenta será equipada com uma API financeira projetada para oferecer acesso rápido e fácil a uma vasta gama de dados financeiros, incluindo notícias em tempo real, análises de mercado e identificação de entidades de destaque. Ao consolidar informações de diversas fontes confiáveis e apresentá-las de maneira organizada e acessível, o FinanceHub capacitará investidores e profissionais do mercado financeiro a tomar decisões estratégicas com maior confiança e precisão.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Guilherme Lacerda de Souza
+* Maria Eduarda da Silva Batista
+* Mattheus German de Jesus Silva
+* Nicolas Souza Di Lascio
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
-# Planejamento
+# Documentação
 
-| Etapa         | Atividades |
-|  :----:   | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) |
-| ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
-| ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
-| ETAPA 4        |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
-| ETAPA 5         | [Apresentação](presentation/README.md) |
+1.  [Documentação de Contexto](docs/01.Documuntação-de-Contexto.md)
+2.  [Especificação do Projeto](docs/02.Especificações-do-Projeto.md) 
+3.  [Projeto de Interface](docs/03.Projeto-de-Interface.md)
+4.  [Template Padrão](docs/04.Template.md) 
+5.  [Programação de Funcionalidades - HTML e CSS](docs/05.Programação-de-Funcionalidades.md) 
+6.  [Programação de Funcionalidades - Javascript](docs/05.Programação-de-Funcionalidades.md) 
+7.  [Plano de Testes de Software ](docs/06.Plano-de-Testes-de-Software.md)
+8.  [Registro de Testes de Software ](docs/07.Registro-de-Testes-de-Software.md)
+9.  [Plano de Testes de Usabilidade ](docs/08.Plano-de-Testes-de-Usabilidade.md)
+10. [Registro de Testes de Usabilidade ](docs/09.Registro-de-Testes-de-Usabilidade.md)  
+11. [Apresentação](docs/10.Apresentação-do-Projeto.md)
+12. [Referências](docs/10.references.md)
 
 # Código
 
@@ -37,4 +41,4 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="docs/10.Apresentação-do-Projeto.md"> Apresentação da solução</a></li>

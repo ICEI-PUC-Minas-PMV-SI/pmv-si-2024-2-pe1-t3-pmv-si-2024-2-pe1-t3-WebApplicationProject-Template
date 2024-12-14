@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Financeiro - Meu Perfil</title>
+    <link rel="stylesheet" href="perfilstyle.css" />
+</head>
+<body>
+    <div class="container-center">
+      <div class="register-investor-types">
+        <div class="menu">
+            <a href="#">
+                <div class="logo">Finance Hub</div>
+            </a>
+            <a href="#">
+                <img class="dropdown" src="img/dropdown.svg" alt="menu-dropdown" />
+            </a>
+        </div>
+            <div class="header">
+                <div class="title-main">Meu Perfil</div>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-frame">
+                    <div class="field">
+                        <label for="investor-name">Nome</label>
+                        <div class="value">
+                            <input type="text" id="nome-investidor" name="nome-investidor" class="input-field" placeholder="Ex: Ana da Silva" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <div class="value">
+                            <input type="email" id="email" name="email" class="input-field" placeholder="Ex: ana@seuemail.com" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="investor-type">Tipo de investidor</label>
+                        <div class="value">
+                            <select id="investor-type" name="investor-type" class="input-field investor-type">
+                                <option value="iniciantes">Investidor iniciante</option>
+                                <option value="intermediario">Investidor intermediário</option>
+                                <option value="avancado">Investidor avançado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field password-field">
+                        <label for="password">Senha</label>
+                        <div class="value">
+                            <input type="password" id="password" name="password" class="input-field" placeholder="Atualize sua senha" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" class="submit-button">Atualizar senha</button>
+                    </div>
+                </div>
+                <div class="footer-background">
+                  <div class="footer-text">Copyright 2024 Finance Hub</div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

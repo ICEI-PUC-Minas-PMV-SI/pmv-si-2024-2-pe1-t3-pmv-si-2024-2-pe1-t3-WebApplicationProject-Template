@@ -1,0 +1,284 @@
+body {
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logoNav {
+    background-color: #000000;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.titleAsset {
+    text-align: center;
+    color: #f8f8f8;
+    font-weight: 700;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70%;
+    margin: 50px;
+}
+
+.textAsset {
+    text-align: justify;
+    margin: 0 auto;
+    height: auto;
+    width: 70%;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.fontAsset {
+    color: #949494;
+    font-size: 12px;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    color: #949494;
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.profile {
+    display: none;
+    width: 65px;
+    height: 65px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.logInButton {
+    display: none;
+    width: 65px;
+    height: 65px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.logOutButton {
+    display: none;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.assetImageNoticiaQuente, .assetImageNoticia1, .assetImageNoticia2, .assetImageNoticia3, .assetImageNoticia4, .assetImageNoticia5, .assetImageNoticia6, .assetImageNoticia7, .assetImageNoticia8, .assetImageNoticia9, .assetImageNoticia10, .assetImageNoticia11, .assetImageNoticia12, .assetImageNoticia13, .assetImageNoticia14, .assetImageNoticia15, .assetImageNoticia16, .assetImageNoticia17, .assetImageNoticia18, .assetImageNoticia19, .assetImageNoticia20 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 14px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}
+
+.assetImageNoticiaQuente {
+    background-image: url('https://readytrainingonline.com/wp-content/uploads/2021/12/04.04.24-5-Factors-Business-Growth.jpg');
+}
+
+.assetImageNoticia1 {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.gugiujAaBk5jok0yW_u0MwHaDv&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia2 {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.T7VOuSLFhTp9oyILL7FjcgHaEK&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia3 {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.Ai9WcIshCNHjoZo7bUxMCQHaEL&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia4 {
+    background-image: url('https://fontanive.com.br/wp-content/uploads/2020/01/guia-completo-de-como-investir-no-mercado-imobiliario.jpg');
+}
+
+.assetImageNoticia5 {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.B4V0n3kisk4hpmBCaXp0LQHaFS&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia6 {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.HgGdqv0n4eHeB4J8ZUDUDQHaEU&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia7 {
+    background-image: url('https://chuadistribuidora.com.br/wp-content/uploads/2021/09/tendencias-do-varejo-para-o-pos-pandemia-varejo-phygital-1024x536.jpg');
+}
+
+.assetImageNoticia8 {
+    background-image: url('https://www.revistaadnormas.com.br/uploads/2021/08/011.jpg');
+}
+
+.assetImageNoticia9 {
+    background-image: url('https://cdn.esbrasil.com.br/wp-content/uploads/2022/11/22132931/trabalhadores-da-construcao-civil.png');
+}
+
+.assetImageNoticia10 {
+    background-image: url('https://assets-blog.pagseguro.uol.com.br/wp-content/2022/06/mercado-de-capitais-min-1980x1320.jpg');
+}
+
+.assetImageNoticia11 {
+    background-image: url('https://conteudos.bloxs.com.br/wp-content/uploads/2020/09/taxa-selic-destaque.jpg');
+}
+
+.assetImageNoticia12 {
+    background-image: url('https://blog.mag.com.br/wp-content/uploads/2020/09/renda-fixa-ou-tesouro-direto-diferencas-.jpg');
+}
+
+.assetImageNoticia13 {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.VasY5XiVUnUHnmCqyhEDRwHaE8&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia14 {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.ysYdPxKPX7gf2q_6V8fUvwHaE7&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia15 {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.Q-ld5EqfXO1D-XyM69tFngHaE8&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia16 {
+    background-image: url('https://media.licdn.com/dms/image/v2/C4D12AQHzTCoj6L4APg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520251433518?e=2147483647&v=beta&t=3Tq0ZDZJ1GIoSyyVYVuZiXiRKZPKwWQVSmB5N1mIpf0');
+}
+
+.assetImageNoticia17 {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.1qgN3FnyEbpcavdnOF9MkAHaDo&pid=Api&P=0&h=180');
+}
+
+.assetImageNoticia18 {
+    background-image: url('https://investidorsardinha.r7.com/wp-content/uploads/2022/07/curva-de-phillips-veja-a-relacao-entre-inflacao-e-desemprego-1024x683.jpg');
+}
+
+.assetImageNoticia19 {
+    background-image: url('https://esri.net.br/wp-content/uploads/2024/05/Teoria-dos-Jogos-e-Relacoes-Internacionais.png.webp');
+}
+
+.assetImageNoticia20 {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.DEbu5VdpBUpNX3CZs52o8gHaEK&pid=Api&P=0&h=180');
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.1s ease;
+}
+
+.navigation-buttons button:active {
+    transform: scale(0.95);
+}
+
+.navigation-buttons button:hover {
+    background-color: #444444;
+}
+
+#prev-news,
+#next-news {
+    position: relative;
+    cursor: pointer;
+}
+
+#prev-news::after,
+#next-news::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #444444;
+    color: #f8f8f8;
+    padding: 10px 10px;
+    border-radius: 4px;
+    white-space: normal;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+#prev-news:hover::after,
+#next-news:hover::after {
+    opacity: 95%;
+    visibility: visible;
+}
+
+#prev-news:disabled,
+#next-news:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+
+    .titleAsset {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .textAsset {
+        font-size: 25px;
+        line-height: 48px;
+    }
+
+    .assetImageNoticiaQuente,.assetImageNoticia1, .assetImageNoticia2, .assetImageNoticia3, .assetImageNoticia4, .assetImageNoticia5, .assetImageNoticia6, .assetImageNoticia7, .assetImageNoticia8, .assetImageNoticia9, .assetImageNoticia10, .assetImageNoticia11, .assetImageNoticia12, .assetImageNoticia13, .assetImageNoticia14, .assetImageNoticia15, .assetImageNoticia16, .assetImageNoticia17, .assetImageNoticia18, .assetImageNoticia19, .assetImageNoticia20 {
+        height: 400px;
+        background-size: cover;
+        width: 80%;
+        margin: auto;
+    }
+}

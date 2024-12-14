@@ -1,0 +1,228 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
+
+:root {
+  --white: rgba(248, 248, 248, 1);
+  --black-20: rgba(148, 148, 148, 1);
+  --dark-grey: rgba(48, 48, 48, 1);
+  --grey-2: rgba(217, 217, 217, 1);
+  --black-80: rgba(18, 18, 33, 1);
+  --grey-3: rgba(172, 172, 172, 1);
+  --grey-1: rgba(240, 240, 240, 1);
+}
+
+.container-center {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.register-investor-types {
+  overflow: hidden;
+  width: 1440px;
+  height: 1043px;
+  position: relative;
+}
+
+.investor-type {
+  width: 80%;   
+  padding: 6px;   
+  font-size: 20px;  
+  border: 1px solid var(--grey-3);
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black-80);
+}
+
+.menu {
+  position: absolute;
+  top: 32px;
+  left: 125px;
+}
+
+.logo {
+  width: 109px;
+  gap: 10px;
+  padding: 7.5px;
+  background-color: var(--black-80);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  font-family: "Playfair Display", Helvetica, serif;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 16px;
+  line-height: normal;
+}
+
+.dropdown {
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  top: 8px;
+  left: 1157px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .menu-icon {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Conteúdo principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.btn:hover {
+    background-color: #555;
+}
+
+/* Resultado */
+.result {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 12px;
+    color: #999;
+}
+
+.contact-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    color: green;
+    font-size: 16px;
+    text-align: center;
+}
+.footer-background {
+    position: absolute;
+    width: 100%;   
+    height: 83px;
+    top: 960px;   
+    left: 0;     
+    background-color: var(--white);
+  }
+  
+  .footer-text {
+    position: absolute;
+    top: 30px;
+    left: 0;        
+    width: 100%;     
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+    text-align: center;  
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

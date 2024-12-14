@@ -1,0 +1,211 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); 
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --white: rgba(248, 248, 248, 1);
+    --black-20: rgba(148, 148, 148, 1);
+    --dark-grey: rgba(48, 48, 48, 1);
+    --grey-2: rgba(217, 217, 217, 1);
+    --black-80: rgba(18, 18, 33, 1);
+    --grey-3: rgba(172, 172, 172, 1);
+    --grey-1: rgba(240, 240, 240, 1);
+}
+
+.container-center {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-investor-types {
+    overflow: hidden;
+    width: 1440px;
+    height: 1043px;
+    position: relative;
+}
+
+.investor-type {
+    width: 80%;   
+    padding: 6px;   
+    font-size: 20px;  
+    border: 1px solid var(--grey-3);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black-80);
+}
+
+.menu {
+    position: absolute;
+    top: 32px;
+    left: 125px;
+}
+
+.logo {
+    width: 109px;
+    gap: 10px;
+    padding: 7.5px;
+    background-color: var(--black-80);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 16px;
+    line-height: normal;
+}
+
+.dropdown {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 8px;
+    left: 1157px;
+}
+
+.header {
+    position: absolute;
+    width: 401px;
+    height: 168px;
+    top: 84px;
+    left: 520px;
+}
+
+.title-main {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;   
+}
+
+.form-frame {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 22px;
+    margin: 20px auto;
+    background-color: var(--grey-1);
+    position: absolute;
+    top: 260px;
+    left: 540px;
+    min-height: 500px;  
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 28px;   
+}
+
+label {
+    font-family: "Playfair Display", Helvetica;
+    font-size: 20px;  
+    color: var(--black-80);  
+    font-weight: 500;
+    margin-bottom: 5px;  
+}
+
+.text-field {
+    color: rgba(0, 0, 0, 0.38);
+    font-family: "Playfair Display";
+    font-size: 20px;
+}
+
+input.input-field {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid var(--grey-3);
+    border-radius: 5px;
+    background-color: var(--grey-2);
+    font-family: "Playfair Display", Helvetica, serif;
+    font-size: 20px;
+    color: var(--black-80);
+    margin-bottom: 22px;   
+}
+
+.submit-button {
+    width: 80%;
+    height: 40px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border: 1px solid #acacac;
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--dark-grey);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    margin-top: 40px;  
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.forgot-password,
+.signup {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;   
+    color: var(--black-80);   
+}
+
+.footer-background {
+    position: absolute;
+    width: 100%;   
+    height: 83px;
+    top: 960px;   
+    left: 0;     
+    background-color: var(--white);
+}
+
+.footer-text {
+    position: absolute;
+    top: 30px;
+    left: 0;        
+    width: 100%;     
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+    text-align: center;  
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .title-main {
+        font-size: 32px;
+    }
+
+    .form-frame {
+        width: 90%;
+        min-height: 450px;  
+    }
+
+    input.input-field,
+    .submit-button {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,352 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400");
+
+:root {
+  --white: rgba(248, 248, 248, 1);
+  --black-20: rgba(148, 148, 148, 1);
+  --dark-grey: rgba(48, 48, 48, 1);
+  --grey-2: rgba(217, 217, 217, 1);
+  --black-80: rgba(18, 18, 33, 1);
+  --grey-3: rgba(172, 172, 172, 1);
+  --grey-1: rgba(240, 240, 240, 1);
+}
+
+.container-center {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.register-investor-types {
+  overflow: hidden;
+  width: 100%; /* Full width to allow responsiveness */
+  max-width: 1440px;
+  height: auto; /* Height adjusted for responsiveness */
+  position: relative;
+}
+
+.investor-type {
+  width: 80%;   
+  padding: 6px;   
+  font-size: 20px;  
+  border: 1px solid var(--grey-3);
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black-80);
+}
+
+.menu {
+  position: absolute;
+  top: 32px;
+  left: 5%;
+}
+
+.logo {
+  width: 109px;
+  gap: 10px;
+  padding: 7.5px;
+  background-color: var(--black-80);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  font-family: "Playfair Display", Helvetica, serif;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 16px;
+  line-height: normal;
+}
+
+.dropdown {
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  top: 8px;
+  left: 1157px;
+}
+
+/* Reset básico */
+h1 {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+.h1 {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  text-align: right;
+}
+
+.form-container {
+  background: var(--grey-1, #F0F0F0);
+  font-family: "Playfair Display";
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  width: 100%; 
+  max-width: 500px; 
+}
+
+.form-container label {
+  font-family: "Playfair Display";
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  display: flex;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  border-radius: 5px;
+  border: 1px solid var(--grey-3, #ACACAC);
+  background: var(--grey-2, #D9D9D9);
+  font-family: "Playfair Display";
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.form-container .btn {
+  border: 1px solid var(--grey-3, #ACACAC);
+  background: var(--grey-2, #D9D9D9);
+  font-family: "Playfair Display";
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%; /* Full width on small screens */
+}
+
+.form-container .btn:hover {
+    background-color: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f1f1f1;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+    display: none;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 200px;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-background {
+    position: absolute;
+    width: 100%;   
+    height: 83px;
+    top: 960px;   
+    left: 0;     
+    background-color: var(--white);
+}
+  
+.footer-text {
+    position: absolute;
+    top: 30px;
+    left: 0;        
+    width: 100%;     
+    font-family: "Playfair Display", Helvetica, serif;
+    font-weight: 700;
+    color: var(--black-20);
+    font-size: 16px;
+    text-align: center;  
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (Mobile) */
+@media (max-width: 767px) {
+  .container-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .register-investor-types {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu {
+    top: 10px;
+    left: 20px;
+  }
+
+  .logo {
+    font-size: 14px;
+    width: 80px;
+  }
+
+  .main-content {
+    margin: 20px 10px;
+  }
+
+  .form-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .form-container .btn {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* Medium devices (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    font-size: 16px;
+    width: 100px;
+  }
+
+  .main-content {
+    margin: 30px 20px;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+    max-width: 80%;
+  }
+
+  .form-container .btn {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .logo {
+    font-size: 18px;
+    width: 120px;
+  }
+
+  .main-content {
+    margin: 40px 30px;
+  }
+
+  .form-container {
+    max-width: 70%;
+  }
+
+  .form-container .btn {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 56px;
+  }
+}
+
+/* Extra Large devices (Large Desktops) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .logo {
+    font-size: 20px;
+    width: 140px;
+  }
+
+  .form-container {
+    max-width: 60%;
+  }
+
+  .form-container .btn {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 64px;
+  }
+}
+

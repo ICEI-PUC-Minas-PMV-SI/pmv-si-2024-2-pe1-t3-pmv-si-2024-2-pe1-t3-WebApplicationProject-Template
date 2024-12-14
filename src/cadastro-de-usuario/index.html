@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanceHub - Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="\src\script.js"></script>
+  </head>
+
+  <body>
+    <div class="container-center">
+      <div class="register-investor-types">
+        <!-- Menu -->
+        <div class="menu">
+          <a href="#">
+            <div class="logo">Finance Hub</div>
+          </a>
+          <a href="#">
+            <img class="dropdown" src="img/dropdown.svg" alt="menu-dropdown" />
+          </a>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+          <div class="title-main">Cadastro</div>
+        </div>
+
+        <form method="get">
+          <div class="form-frame">
+            <label for="name" class="investor-type">
+              Nome
+              <div class="text-field">
+                <input
+                  type="text"
+                  name="name"
+                  class="input-field"
+                  placeholder=" Insira seu Nome"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="email" class="investor-type">
+              E-mail
+              <div class="text-field">
+                <input
+                  type="email"
+                  name="email"
+                  class="input-field"
+                  placeholder=" Insira seu E-mail"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="investidorType" class="investor-type">
+              Tipo de Investidor
+            </label>
+            <div class="text-field">
+              <label for="investidorType" class="labelConfig"> </label>
+              <select name="investidorType" class="investidorSelect" required>
+                <option value="" disabled selected>
+                  Selecione a categoria
+                </option>
+                <option value="iniciante">Investidor Iniciante</option>
+                <option value="intermediario">Investidor Intermediário</option>
+                <option value="avançado">Investidor Avançado</option>
+                <option value="estudante">Investidor Estudante</option>
+              </select>
+            </div>
+
+            <label for="password" class="investor-type">
+              Senha
+              <div class="text-field">
+                <input
+                  type="password"
+                  name="password"
+                  class="input-field"
+                  placeholder=" Insira sua Senha"
+                  required
+                />
+              </div>
+            </label>
+
+            <button
+              type="submit"
+              onclick="userRegister()"
+              class="submit-button"
+            >
+              Cadastrar
+            </button>
+          </div>
+          <div class="footer-background">
+            <div class="footer-text">Copyright 2024 Finance Hub</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
