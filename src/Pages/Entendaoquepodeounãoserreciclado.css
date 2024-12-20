@@ -611,14 +611,16 @@ ul li .icon {
 }
 /* Ajuste do layout principal */
 main {
-  width: fit-content; 
-  margin: 0 auto; 
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  margin: 0 auto; 
+  width: 90%; 
+  max-width: 1200px; 
+  box-sizing: border-box; 
 }
+
 
 section {
   flex: 1;
@@ -642,8 +644,8 @@ section {
 
 /* Ajuste para os avatares */
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 10px;
   object-fit: cover;
@@ -668,22 +670,6 @@ p {
 /* Estilo principal */
 .article-main {
   padding: 20px;
-}
-
-
-.div-head {
-  background-color: #f0f7f0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-basis: 23%;
-  border: 1px solid #b3d9b3;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.div-head:hover {
-  transform: translateY(-5px); 
-  border-color: #66b266; 
 }
 
 .div-enunciado h2 {
@@ -765,28 +751,41 @@ p {
 
 .section-main {
   display: flex;
-  justify-content: space-between;
-  padding: 50px 200px;
+  justify-content: center;
   gap: 20px;
+  padding: 20px;
   background-color: #e6f2e6;
-  width: calc(100% - 40px);
-  margin: 20px;
-  max-width: 2000px;
-  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+/* Contêiner pai */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: space-between; /* Espaçamento uniforme */
+  width: 100%; /* Ocupa toda a largura da tela */
+  box-sizing: border-box; /* Inclui padding no cálculo total */
+  padding: 0 20px; /* Espaçamento lateral de 20px */
+}
+
+/* Estilo dos itens */
 .div-head {
   background-color: #f0f7f0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 22%;
-  min-width: 350px;
-  max-width: 300px;
+  flex: 1 1 calc(25% - 20px); /* 25% da largura menos o espaçamento */
+  min-width: 250px; /* Garante um tamanho mínimo */
+  max-width: 25%; /* Limita o tamanho máximo em 25% */
   border: 1px solid #b3d9b3;
   min-height: 320px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
-
 
 .div-head:hover {
   transform: translateY(-5px);
@@ -794,15 +793,21 @@ p {
 }
 
 /* Responsividade */
+@media (max-width: 1200px) {
+  .div-head {
+    flex: 1 1 calc(25% - 20px); 
+  }
+}
+
 @media (max-width: 768px) {
   .div-head {
-    flex-basis: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px); 
   }
 }
 
 @media (max-width: 500px) {
   .div-head {
-    flex-basis: 100%;
+    flex: 1 1 100%; /* Ocupa 100% em telas pequenas */
   }
 }
 

@@ -30,11 +30,11 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 | Etapa         | Atividades |
 |      :----:   | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) <br> [Entregável 1 - Parte Escrita](docs/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Doc%20v.1.2.pdf) <br> [Entregável 2 - Apresentação](Presentation/01.%20Eixo%2001%20-%20Etapa%2001%20-%20GreenCycle%20Slides%20v.1.2.pdf) |
+| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) <br> [Entregável 1 - Parte Escrita](docs/01.-Eixo-01-Etapa-01-GreenCycle-Doc-v.1.2.pdf) <br> [Entregável 2 - Apresentação](Presentation/01.Eixo-01-Etapa-01-GreenCycle-Slides-v.1.2.pdf) |
 | ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) <br> [Entregável 1 - Projeto de Interface](docs/GreenCycle%20!%20Wireframe%20&%20Navegação.png) <br> [Entregável 2 - Template Padrão](/src/Template_GreenCycle_Padrao.png) ||
-| ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
-| ETAPA 4        |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
-| ETAPA 5         | [Apresentação](presentation/README.md) |
+| ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) <br> [Entregável 1 - Descritivo de Funcionalidades](docs/t3.md)|
+| ETAPA 4        |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) <br> [Entregável 1 - Funcionalidades com JS ](docs/t4.md)<br>[Entregável 2 - Testes Realizados](docs/Tarefa-04-Testes.md)|
+| ETAPA 5         | [Apresentação](presentation/README.md) <br> [Entregável 1 - Video de Apresentação](docs/Final-Video-GreenCycle.mp4)<br> [Entregável 2 - Slide de Apresentação do Sampex](docs/Apresentação-Sampex.pptx) |
 
 # Código
 
@@ -42,6 +42,6 @@ Projeto para desenvolvimento de software que apresenta pontos mais próximos de 
 
 # Apresentação
 
-<li><a href="presentation/GreenCycle Slides v.1.2.pdf"> Apresentação da solução</a></li>
-<li><a href="presentation/GreenCycle Doc v.1.2.pdf"> Documento do Trabalho</a></li>
-<li><a href="presentation/README.md"> Arquivo de Exemplo</a></li>
+<li><a href="docs/Apresentação-Sampex.pptx"> Apresentação da solução</a></li>
+<li><a href="docs/01.-Eixo-01-Etapa-01-GreenCycle-Doc-v.1.2.pdf"> Documento do Trabalho</a></li>
+<li><a href="docs/citation.cff"> Arquivo para Citações - Citation File Format (CFF) </a></li>

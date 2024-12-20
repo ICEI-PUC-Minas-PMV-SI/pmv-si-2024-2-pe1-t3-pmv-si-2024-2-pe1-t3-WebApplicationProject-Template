@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="03 - Planos Empresariais.css">
     <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
 <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+<script src="auth-validator.js" defer></script>
 </head>
 
 <body>
@@ -45,26 +46,27 @@
                             <li><a>Lupa</a></li>
                         </ul>
                     </li>
-                    <a href="login.html">
-                        <button class="login-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                            </svg>
-                            Login
-                        </button>
-                    </a>
+                    <div id="auth-container">
+                        <a href="login.html">
+                            <button class="login-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                </svg>
+                                Login
+                            </button>
+                        </a>
+                    </div>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <div class="title-container">
-            <h1>PLANOS EMPRESARIAIS</h1>
+            <h1 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 20px;">PLANOS EMPRESARIAIS</h1>
         </div>
         <h2 class="vantagens-title">Por que escolher a GreenCycle</h2>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/h94IRxmOono" frameborder="0" allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/WdtgRoO5qK0" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="plans-container">
             <div class="plan">
@@ -100,7 +102,7 @@
                 <script>
                     function atualizar() {
                         alert("Seja bem vindo a GreenCycle!");
-                        window.location.href = '02 - Index Empresarial.html'; 
+                        window.location.href = 'index_empresarial.html'; 
                     }
                 </script>
             </div>
